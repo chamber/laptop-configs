@@ -3,7 +3,7 @@ export EDITOR=vim
 alias ls='ls --color=auto'
 #[ ! "$UID" = "0" ] && archey3 -c blue
 #[  "$UID" = "0" ] && archey3 i -c red
-PS1="\[\e[01;31m\]┌─[\[\e[01;34m\u\e[01;31m\]]──[\[\e[00;37m\]${HOSTNAME%%.*}\[\e[01;33m\]]:\w$\[\e[01;31m\]\n\[\e[01;31m\]└──\[\e[01;36m\]>>\[\e[0m\]"
+PS1="\[\e[01;34m\]┌─[\[\e[01;34m\u\e[01;34m\]]──[\[\e[00;37m\]${HOSTNAME%%.*}\[\e[01;34m\]]:\w$\[\e[01;34m\]\n\[\e[01;34m\]└──\[\e[01;36m\]>>\[\e[0m\]"
 
 alias ll='ls -l'
 alias la='ls -la'
@@ -11,10 +11,11 @@ alias eP='vim ~/.bashrc'
 alias eD='vim /home/conor/abs/dwm/config.h'
 alias redwm='cd /home/conor/abs/dwm; updpkgsums; makepkg -efi'
 alias reload='. ~/.bashrc'
+alias icons='for i in {50..255}; do  printf "\\$(printf '%03o' $i)\n" ; done'
 
 # Screenshot
 
-alias screener="archey3 && colours && scrot -cd 5"
+alias screener="archey3 && colors && scrot -cd 5"
 
 # dropbox
 
@@ -26,6 +27,10 @@ alias vol='alsamixer'
 if [ $UID -ne 0 ]; then
     alias volstore='sudo alsactl store'
 fi
+
+#SSH Sessions
+alias pint='ssh pi@192.168.2.20'
+alias pext='ssh pi@cjk.dlinkddns.com'
 
 # privileged access
 
@@ -39,7 +44,8 @@ if [ $UID -ne 0 ]; then
     alias halt='sudo halt'
     alias update='sudo pacman -Syyu'
     alias whoup='sudo nmap -sN 192.168.2.0/24'
-    alias abs='sudo abs'   
+    alias abs='sudo abs'
+    alias wifi='sudo wifi-menu -o wlan0'   
 fi
 
 # pacman aliases (if applicable, replace 'pacman' with your favourite AUR helper)
@@ -56,6 +62,7 @@ if [ $UID -ne 0 ]; then
   alias paco="pacman -Qo"    # '[o]wner'          - determine which package owns a given file
   alias pacf="pacman -Ql"    # '[f]iles'          - list all files installed by a given package
   alias pacc="sudo pacman -Sc"    # '[c]lean cache'    - delete all not currently installed package files
+  alias pak="sudo packer -S"
 fi
   alias pacm="makepkg -fci"  # '[m]ake'           - make package from PKGBUILD file in current directory
   alias aur="sudo packer -Syu" # - upgrade AUR compnents via packer
@@ -63,6 +70,9 @@ fi
 # Misc
 
 alias :q="exit"
+alias c='clear'
+alias h='cd ~/'
+alias ulb='cd /usr/local/bin/'
 
 # Functions
 

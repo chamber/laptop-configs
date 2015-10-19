@@ -12,10 +12,12 @@ URxvt*cursorBlink: true
 URxvt*cursorColor: #A7BF76
 URxvt*scrollBar: false
 URxvt*saveLines: 1000
-URxvt*perl-ext-common: default,matcher,clipboard,url-select,keyboard-select
+URxvt*perl-lib:         /usr/lib/urxvt/perl/
+URxvt*perl-ext: default,matcher,clipboard,url-select,keyboard-select
+URxvt*matcher.Button: 1
 URxvt.clipboard.copycmd:  xsel -ib
 URxvt.clipboard.pastecmd: xsel -ob
-URxvt*urlLauncher: chromium 
+URxvt*url-launcher: /usr/bin/chromium 
 URxvt*colorUL: #7FB0F1
 URxvt*matcher.button: 1
 URxvt*tabbed.tabbar-fg: 10

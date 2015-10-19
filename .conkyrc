@@ -6,4 +6,4 @@ total_run_times 0
 use_spacer none
 
 TEXT
-${exec pacman -Qu | wc -l} | Ñ ${cpu}% | Î ${memperc}% | ñ ${battery_percent}% | ª ${acpitemp} | í ${exec amixer get Master -M | grep -oE "[[:digit:]]*%"} | É ${time %I:%M} | ¤ ${addr wlan0}
+| º ${exec pacman -Qu | wc -l} | Ñ ${cpu}% | Î ${memperc}% | ñ ${battery_percent}% | ª ${acpitemp} | í ${exec amixer get Master -M | grep -oE "[[:digit:]]*%"} | É ${time %I:%M} | ¤ ${addr wlan0}
