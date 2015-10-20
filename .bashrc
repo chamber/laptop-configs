@@ -8,14 +8,16 @@ PS1="\[\e[01;34m\]┌─[\[\e[01;34m\u\e[01;34m\]]──[\[\e[00;37m\]${HOSTNAME
 alias ll='ls -l'
 alias la='ls -la'
 alias eP='vim ~/.bashrc'
+alias eC='vim ~/.conkyrc'
 alias eD='vim /home/conor/abs/dwm/config.h'
 alias redwm='cd /home/conor/abs/dwm; updpkgsums; makepkg -efi'
 alias reload='. ~/.bashrc'
 alias icons='for i in {50..255}; do  printf "\\$(printf '%03o' $i)\n" ; done'
+alias theme='gtk-chtheme'
 
 # Screenshot
 
-alias screener="archey3 && colors && scrot -cd 5"
+alias screener="archey3 && colours && scrot -cd 5"
 
 # dropbox
 
@@ -41,7 +43,7 @@ if [ $UID -ne 0 ]; then
     alias svim='sudo vim'
     alias root='sudo su'
     alias kick='sudo reboot'
-    alias halt='sudo halt'
+    alias halt='sudo poweroff'
     alias update='sudo pacman -Syyu'
     alias whoup='sudo nmap -sN 192.168.2.0/24'
     alias abs='sudo abs'
