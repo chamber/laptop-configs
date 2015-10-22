@@ -6,4 +6,4 @@ total_run_times 0
 use_spacer none
 
 TEXT
-| º ${exec pacman -Qu | wc -l} | Ñ ${cpu}% | Î ${memperc}% | ñ ${battery_percent}% | ª ${acpitemp} | í ${exec amixer get Master -M | grep -oE "[[:digit:]]*%"} | É ${time %I:%M} | ¤ ${addr wlan0}
+¹ $kernel | º ${execi 300 /usr/local/bin/list_upgradable.pl} | Ñ ${cpu}% | Î ${memperc}% | ñ ${battery_percent}% | ª ${acpitemp} | í ${exec amixer get Master -M | grep -oE "[[:digit:]]*%"} | É ${time %k:%M} | ¤ ${addr wlan0}

@@ -14,6 +14,7 @@ alias redwm='cd /home/conor/abs/dwm; updpkgsums; makepkg -efi'
 alias reload='. ~/.bashrc'
 alias icons='for i in {50..255}; do  printf "\\$(printf '%03o' $i)\n" ; done'
 alias theme='gtk-chtheme'
+alias wbox='lftp whatbox'
 
 # Screenshot
 
@@ -47,7 +48,9 @@ if [ $UID -ne 0 ]; then
     alias update='sudo pacman -Syyu'
     alias whoup='sudo nmap -sN 192.168.2.0/24'
     alias abs='sudo abs'
-    alias wifi='sudo wifi-menu -o wlan0'   
+    alias wifi='sudo wifi-menu -o wlan0'
+    alias mmedia='sudo mount /dev/sda3 /media/Media/'
+    alias umedia='sudo umount /media/Media/'
 fi
 
 # pacman aliases (if applicable, replace 'pacman' with your favourite AUR helper)

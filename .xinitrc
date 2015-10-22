@@ -20,6 +20,9 @@ xset fp rehash
 #Bindkeys
 xbindkeys &
 
+# MPD daemon start (if no other user instance exists)
+[ ! -s ~/.config/mpd/pid ] && mpd ~/.config/mpd/mpd.conf &
+
 #Sort clipboards
 autocutsel -fork &
 autocutsel -selection PRIMARY -fork &
