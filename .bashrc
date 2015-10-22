@@ -32,8 +32,8 @@ if [ $UID -ne 0 ]; then
 fi
 
 #SSH Sessions
-alias pint='ssh pi@192.168.2.20'
-alias pext='ssh pi@cjk.dlinkddns.com'
+alias pint='ssh '
+alias pext='ssh '
 
 # privileged access
 
