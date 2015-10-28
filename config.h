@@ -3,12 +3,12 @@
 /* appearance */
 static const char font[]            = "-*-ohsnap.icons-medium-r-*-*-11-*-*-*-*-*-*-*";
 static const char normbordercolor[] = "#444444";
-static const char normbgcolor[]     = "#222222";
+static const char normbgcolor[]     = "#2E323B";
 static const char normfgcolor[]     = "#bbbbbb";
-static const char selbordercolor[]  = "#222222";
-static const char selbgcolor[]      = "#222222";
+static const char selbordercolor[]  = "#2E323B";
+static const char selbgcolor[]      = "#2E323B";
 static const char selfgcolor[]      = "#eeeeee";
-static const unsigned int gappx     = 5;        /* border pixel of windows */
+static const unsigned int gappx     = 5;        /* gap pixel of windows */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const Bool showbar           = True;     /* False means no bar */
@@ -23,6 +23,8 @@ static const Rule rules[] = {
     /* class      instance    title       tags mask     isfloating */
     { "chromium",  NULL,       NULL,        1 << 3,  False},
     { "Pcmanfm",      NULL,       NULL,       1 << 2,  False},
+    { "MPlayer",      NULL,       NULL,       1 << 1,  False},
+    { "Calibre",      NULL,       NULL,       1 << 1,  False},
     { "urxvt",      NULL,       NULL,       0,       True },
 };
 
@@ -51,7 +53,7 @@ static const Layout layouts[] = {
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 
 /* commands */
-static const char *dmenucmd[] = { "dmenu_run", "-fn", font, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-b", "-fn", font, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
 static const char *termcmd[]  = { "urxvt", NULL };
 static const char *filecmd[] = { "pcmanfm", NULL };
 static const char *webcmd[] = { "chromium", NULL };

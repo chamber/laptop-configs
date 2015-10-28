@@ -15,6 +15,9 @@ alias reload='. ~/.bashrc'
 alias icons='for i in {50..255}; do  printf "\\$(printf '%03o' $i)\n" ; done'
 alias theme='gtk-chtheme'
 alias wbox='lftp whatbox'
+alias muzak='ncmpcpp'
+
+#alias imageup='curl https://images.baconbits.org/upload.php -X POST -F "ImageUp=@"'
 
 # Screenshot
 
@@ -32,8 +35,8 @@ if [ $UID -ne 0 ]; then
 fi
 
 #SSH Sessions
-alias pint='ssh '
-alias pext='ssh '
+alias pint='ssh pi@192.168.2.20'
+alias pext='ssh pi@cjk.dlinkddns.com'
 
 # privileged access
 
@@ -125,8 +128,14 @@ unpack() {
 
 #Generate random password
 
-genpasswd() {
+genpass() {
         local l=$1
         [ "$l" == "" ] && l=16
         tr -dc A-Za-z0-9_ < /dev/urandom | head -c ${l} | xargs
 }
+
+#upload to bB
+
+imageup() {
+	curl https://images.baconbits.org/upload.php -X POST -F "ImageUp=@$1"
+	}

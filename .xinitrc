@@ -27,11 +27,13 @@ xbindkeys &
 autocutsel -fork &
 autocutsel -selection PRIMARY -fork &
 
+sleep 10 && ~/.dropbox-dist/dropboxd &
+
 #Set auto lock
 xautolock -time 10 -locker slock -nowlocker slock -detectsleep -corners 000+ -cornerdelay 3 &
 
 exec urxvt &
-exec chromium &
-exec pcmanfm &
+sleep 3 && exec chromium &
+sleep 4 && exec pcmanfm &
 
 exec dwm
