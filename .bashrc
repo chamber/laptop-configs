@@ -35,8 +35,8 @@ if [ $UID -ne 0 ]; then
 fi
 
 #SSH Sessions
-alias pint='ssh pi@192.168.2.20'
-alias pext='ssh pi@cjk.dlinkddns.com'
+alias pint='ssh '
+alias pext='ssh '
 
 # privileged access
 
@@ -137,5 +137,5 @@ genpass() {
 #upload to bB
 
 imageup() {
-	curl https://images.baconbits.org/upload.php -X POST -F "ImageUp=@$1"
+	curl https://upload.php -X POST -F "ImageUp=@$1"
 	}
