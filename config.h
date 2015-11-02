@@ -3,10 +3,10 @@
 /* appearance */
 static const char font[]            = "-*-ohsnap.icons-medium-r-*-*-11-*-*-*-*-*-*-*";
 static const char normbordercolor[] = "#444444";
-static const char normbgcolor[]     = "#2E323B";
+static const char normbgcolor[]     = "#000000";
 static const char normfgcolor[]     = "#bbbbbb";
-static const char selbordercolor[]  = "#2E323B";
-static const char selbgcolor[]      = "#2E323B";
+static const char selbordercolor[]  = "#000000";
+static const char selbgcolor[]      = "#000000";
 static const char selfgcolor[]      = "#eeeeee";
 static const unsigned int gappx     = 5;        /* gap pixel of windows */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
@@ -17,16 +17,14 @@ static const Bool topbar            = True;     /* False means bottom bar */
 /* tagging */
 static const char *tags[] = {"Term","Media","File","WWW"};
 
-
-
 static const Rule rules[] = {
-    /* class      instance    title       tags mask     isfloating */
-    { "chromium",  NULL,       NULL,        1 << 3,  False},
-    { "Pcmanfm",      NULL,       NULL,       1 << 2,  False},
-    { "MPlayer",      NULL,       NULL,       1 << 1,  False},
-    { "Calibre",      NULL,       NULL,       1 << 1,  False},
-    { "urxvt",      NULL,       NULL,       0,       True },
-};
+         /* class      instance    title       tags mask     isfloating   monitor     */
+         { "urxvt",     NULL,       NULL,       0,            True,        -1 },
+         { "Chromium",  NULL,       NULL,       1 << 3,       False,       -1 },
+         { "Pcmanfm",   NULL,       NULL,       1 << 2,       False,       -1 },
+         { "MPlayer",   NULL,       NULL,       1 << 1,       False,       -1 },
+         { "Calibre",   NULL,       NULL,       1 << 1,       False,       -1 },
+ }
 
 
 /* layout(s) */
