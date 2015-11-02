@@ -1,6 +1,6 @@
 xvt*termName: rxvt
-URxvt*font: -*-ohsnap.icons-medium-r-*-*-11-*-*-*-*-*-*-*
-URxvt*boldFont: -*-ohsnap.icons-bold-r-*-*-11-*-*-*-*-*-*-* 
+!URxvt*font: -*-ohsnap.icons-medium-r-*-*-11-*-*-*-*-*-*-*
+!URxvt*boldFont: -*-ohsnap.icons-bold-r-*-*-11-*-*-*-*-*-*-* 
 URxvt*allow_bold: true
 URxvt*depth: 0
 URxvt*foreground: grey
@@ -24,6 +24,21 @@ URxvt*tabbed.tabbar-fg: 10
 URxvt*tabbed.tabbar-bg: #000000
 URxvt*tabbed.tab-fg: 4
 URxvt*tabbed.tab-bg: #000000
+
+!Fonts
+!Hermit
+!URxvt*font: xft:Hermit:medium:size=7:antialiasing=true
+!URxvt*boldFont: xft:Hermit:bold:size=7:antialiasing=true:style=medium
+!URxvt*italicFont: xft:Hermit:medium:size=7:antialiasing=true:style=medium
+!URxvt*boldItalicFont: xft:Hermit:bold:size=7:antialiasing=true:style=medium
+!URxvt.letterSpace: -1
+
+!Envy Code R
+URxvt.font:xft:Envy Code R:Regular:pixelsize=11i:antialiasing=true
+!URxvt.font: -*-envy code r-medium-r-*-*-12-*-*-*-*-*-iso8859-*
+URxvt.boldFont:xft:Envy Code R:Regular:pixelsize=11:antialiasing=true
+URxvt.italicFont:xft:Envy Code R:Italic:pixelsize=11:antialiasing=true
+URxvt.boldItalicFont:xft:Envy Code R:Italic:pixelsize=11:antialiasing=true
 
 !black
 *color0: #222222
