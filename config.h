@@ -24,7 +24,7 @@ static const Rule rules[] = {
          { "Pcmanfm",   NULL,       NULL,       1 << 2,       False,       -1 },
          { "MPlayer",   NULL,       NULL,       1 << 1,       False,       -1 },
          { "Calibre",   NULL,       NULL,       1 << 1,       False,       -1 },
- }
+ };
 
 
 /* layout(s) */
