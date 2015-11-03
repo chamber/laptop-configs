@@ -15,15 +15,16 @@ static const Bool showbar           = True;     /* False means no bar */
 static const Bool topbar            = True;     /* False means bottom bar */
 
 /* tagging */
-static const char *tags[] = {"Term","Media","File","WWW"};
+static const char *tags[] = {"Term","Media","File","WWW","Mail"};
 
 static const Rule rules[] = {
          /* class      instance    title       tags mask     isfloating   monitor     */
          { "urxvt",     NULL,       NULL,       0,            True,        -1 },
-         { "Chromium",  NULL,       NULL,       1 << 3,       False,       -1 },
+         { "chromium",  NULL,       NULL,       1 << 3,       False,       -1 },
          { "Pcmanfm",   NULL,       NULL,       1 << 2,       False,       -1 },
-         { "MPlayer",   NULL,       NULL,       1 << 1,       False,       -1 },
+         { "MPlayer",   NULL,       NULL,       1 << 1,       True,        -1 },
          { "Calibre",   NULL,       NULL,       1 << 1,       False,       -1 },
+	 {  NULL,       NULL,      "mutt",      1 << 4,       False,       -1 },
  };
 
 
@@ -54,12 +55,14 @@ static const Layout layouts[] = {
 static const char *dmenucmd[] = { "dmenu_run", "-b", "-fn", font, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
 static const char *termcmd[]  = { "urxvt", NULL };
 static const char *filecmd[] = { "pcmanfm", NULL };
+static const char *mailcmd[] = { "urxvt", "-title", "mutt", "-e", "mutt", NULL };
 static const char *webcmd[] = { "chromium", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
+	{ MODKEY|ShiftMask,             XK_m,      spawn,          {.v = mailcmd } },
 	{ MODKEY|ShiftMask,             XK_f,      spawn,          {.v = filecmd } },
 	{ MODKEY,                       XK_w,      spawn,          {.v = webcmd } },	
         { MODKEY,                       XK_b,      togglebar,      {0} },
