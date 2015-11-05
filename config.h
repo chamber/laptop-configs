@@ -8,6 +8,8 @@ static const char normfgcolor[]     = "#bbbbbb";
 static const char selbordercolor[]  = "#000000";
 static const char selbgcolor[]      = "#000000";
 static const char selfgcolor[]      = "#eeeeee";
+static const unsigned int systrayspacing = 2;   /* systray spacing */
+static const Bool showsystray       = True;           /* false means no systray */
 static const unsigned int gappx     = 5;        /* gap pixel of windows */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
@@ -24,7 +26,8 @@ static const Rule rules[] = {
          { "Pcmanfm",   NULL,       NULL,       1 << 2,       False,       -1 },
          { "MPlayer",   NULL,       NULL,       1 << 1,       True,        -1 },
          { "Calibre",   NULL,       NULL,       1 << 1,       False,       -1 },
-	 {  NULL,       NULL,      "mutt",      1 << 4,       False,       -1 },
+	 {  NULL,       NULL,      "mutt",      1 << 4,       True,        -1 },
+	 {  NULL,       NULL,      "ncmpcpp",   1 << 1,       True,        -1 },
  };
 
 
@@ -34,10 +37,12 @@ static const int nmaster      = 1;    /* number of clients in master area */
 static const Bool resizehints = True; /* True means respect size hints in tiled resizals */
 
 static const Layout layouts[] = {
-	/* symbol     arrange function */
-	{ "[]=",      tile },    /* first entry is default */
-	{ "><>",      NULL },    /* no layout function means floating behavior */
-	{ "[M]",      monocle },
+	/* symbol   arrange function */
+	{ "þ",      tile },    /* first entry is default */
+	{ "ý",      NULL },    /* no layout function means floating behavior */
+	{ "ÿ",      monocle },
+	{ "ü",      bstack },
+	{ "û",      bstackhoriz },
 };
 
 /* key definitions */
@@ -56,6 +61,7 @@ static const char *dmenucmd[] = { "dmenu_run", "-b", "-fn", font, "-nb", normbgc
 static const char *termcmd[]  = { "urxvt", NULL };
 static const char *filecmd[] = { "pcmanfm", NULL };
 static const char *mailcmd[] = { "urxvt", "-title", "mutt", "-e", "mutt", NULL };
+static const char *musiccmd[] = { "urxvt", "-title", "ncmpcpp", "-e", "ncmpcpp", NULL };
 static const char *webcmd[] = { "chromium", NULL };
 
 static Key keys[] = {
@@ -63,9 +69,10 @@ static Key keys[] = {
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY|ShiftMask,             XK_m,      spawn,          {.v = mailcmd } },
+	{ MODKEY|ShiftMask,             XK_n,      spawn,          {.v = musiccmd } },
 	{ MODKEY|ShiftMask,             XK_f,      spawn,          {.v = filecmd } },
 	{ MODKEY,                       XK_w,      spawn,          {.v = webcmd } },	
-        { MODKEY,                       XK_b,      togglebar,      {0} },
+        { MODKEY|ShiftMask,             XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
 	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
@@ -78,6 +85,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
 	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
+	{ MODKEY,                       XK_b,      setlayout,      {.v = &layouts[3]} },
+	{ MODKEY|ShiftMask,             XK_h,      setlayout,      {.v = &layouts[4]} },
 	{ MODKEY,                       XK_space,  setlayout,      {0} },
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },

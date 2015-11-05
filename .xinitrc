@@ -15,6 +15,10 @@ sh ~/.fehbg &
 
 #Fonts
 xset +fp /usr/share/fonts/local
+xset +fp /usr/share/fonts/OTF
+xset +fp /usr/share/fonts/TTF
+xset +fp /usr/share/fonts/Type1
+xset +fp /usr/share/fonts/misc
 xset fp rehash
 
 #Bindkeys
@@ -35,5 +39,9 @@ xautolock -time 10 -locker slock -nowlocker slock -detectsleep -corners 000+ -co
 exec urxvt &
 sleep 3 && exec chromium &
 sleep 4 && exec pcmanfm &
+
+compton & 
+
+sleep 15 && google-musicmanager &
 
 exec dwm
