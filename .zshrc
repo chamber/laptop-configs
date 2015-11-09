@@ -36,6 +36,8 @@ alias theme='gtk-chtheme'
 alias wbox='lftp whatbox'
 alias muzak='ncmpcpp'
 alias fehbg='feh --bg-scale'
+alias ..='cd ..'
+alias watch='mplayer'
 
 # Screenshot
 
@@ -165,3 +167,7 @@ imageup() {
 checkup() {
 	ps aux | grep $1 | grep -v grep
 	}
+
+hg() {
+     history 0 | grep $1 | grep -v grep
+      }
