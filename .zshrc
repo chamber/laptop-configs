@@ -29,7 +29,7 @@ alias eP='vim ~/.zshrc'
 alias eC='vim ~/.conkyrc'
 alias eD='vim /home/conor/abs/dwm/config.h'
 alias eX='vim ~/.Xresources'
-alias redwm='cd /home/conor/abs/dwm; updpkgsums; makepkg -efi'
+alias redwm='cd /home/conor/dwm; updpkgsums; makepkg -efi'
 alias reload='. ~/.zshrc'
 alias icons='for i in {50..255}; do  printf "\\$(printf '%03o' $i)\n" ; done'
 alias theme='gtk-chtheme'
@@ -56,8 +56,9 @@ if [ $UID -ne 0 ]; then
 fi
 
 #SSH Sessions
-alias pint='ssh pi@192.168.2.20'
-alias pext='ssh pi@cjk.dlinkddns.com'
+alias pint='ssh @'
+alias pext='ssh @com'
+alias sbox='ssh @ca'
 
 # privileged access
 
