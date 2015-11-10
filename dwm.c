@@ -120,6 +120,7 @@ typedef struct {
 	int x, y, w, h;
 	unsigned long norm[ColLast];
 	unsigned long sel[ColLast];
+ 	unsigned long occ[ColLast];
 	Drawable drawable;
 	GC gc;
 	struct {
@@ -850,10 +851,8 @@ drawbar(Monitor *m) {
 	dc.x = 0;
 	for(i = 0; i < LENGTH(tags); i++) {
 		dc.w = TEXTW(tags[i]);
-		col = m->tagset[m->seltags] & 1 << i ? dc.sel : dc.norm;
+ 		col = (m->tagset[m->seltags] & 1 << i) ? dc.sel : (occ &  1 << i ? dc.occ : dc.norm);
 		drawtext(tags[i], col, urg & 1 << i);
-		drawsquare(m == selmon && selmon->sel && selmon->sel->tags & 1 << i,
-		           occ & 1 << i, urg & 1 << i, col);
 		dc.x += dc.w;
 	}
 	dc.w = blw = TEXTW(m->ltsymbol);
@@ -1852,6 +1851,9 @@ setup(void) {
 	dc.sel[ColBorder] = getcolor(selbordercolor);
 	dc.sel[ColBG] = getcolor(selbgcolor);
 	dc.sel[ColFG] = getcolor(selfgcolor);
+ 	dc.occ[ColBorder] = getcolor(occbordercolor);
+ 	dc.occ[ColBG] = getcolor(occbgcolor);
+ 	dc.occ[ColFG] = getcolor(occfgcolor);
 	dc.drawable = XCreatePixmap(dpy, root, DisplayWidth(dpy, screen), bh, DefaultDepth(dpy, screen));
 	dc.gc = XCreateGC(dpy, root, 0, NULL);
 	XSetLineAttributes(dpy, dc.gc, 1, LineSolid, CapButt, JoinMiter);

@@ -1,5 +1,5 @@
 /* See LICENSE file for copyright and license details. */
-
+#define MONKEY          Mod4Mask
 /* appearance */
 static const char font[]            = "-*-ohsnap.icons-medium-r-*-*-11-*-*-*-*-*-*-*";
 static const char normbordercolor[] = "#444444";
@@ -8,6 +8,9 @@ static const char normfgcolor[]     = "#bbbbbb";
 static const char selbordercolor[]  = "#000000";
 static const char selbgcolor[]      = "#000000";
 static const char selfgcolor[]      = "#eeeeee";
+static const char occbordercolor[]  = "#8EB0AA";
+static const char occbgcolor[]      = "#5E5474";
+static const char occfgcolor[]      = "#bbbbbb";
 static const unsigned int systrayspacing = 2;   /* systray spacing */
 static const Bool showsystray       = True;           /* false means no systray */
 static const unsigned int gappx     = 5;        /* gap pixel of windows */
@@ -63,6 +66,14 @@ static const char *filecmd[] = { "pcmanfm", NULL };
 static const char *mailcmd[] = { "urxvt", "-title", "mutt", "-e", "mutt", NULL };
 static const char *musiccmd[] = { "urxvt", "-title", "ncmpcpp", "-e", "ncmpcpp", NULL };
 static const char *webcmd[] = { "chromium", NULL };
+static const char *prts[] = { "scrot", NULL };
+static const char *play[] = { "ncmpcpp", "toggle" };
+static const char *stop[] = { "ncmpcpp", "stop" };
+static const char *prev[] = { "ncmpcpp", "prev" };
+static const char *next[] = { "ncmpcpp", "next" };
+static const char *mute[] = { "amixer", "-q", "set", "PCM", "toggle", NULL };
+static const char *volu[] = { "amixer", "-q", "set", "PCM", "5%+", "unmute", NULL };
+static const char *vold[] = { "amixer", "-q", "set", "PCM", "5%-", "unmute", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -72,6 +83,13 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_n,      spawn,          {.v = musiccmd } },
 	{ MODKEY|ShiftMask,             XK_f,      spawn,          {.v = filecmd } },
 	{ MODKEY,                       XK_w,      spawn,          {.v = webcmd } },	
+        { MONKEY,                       XK_F5,     spawn,          {.v = play } },
+        { MONKEY,                       XK_F6,     spawn,          {.v = stop } },
+        { MONKEY,                       XK_F7,     spawn,          {.v = prev } },
+        { MONKEY,                       XK_F8,     spawn,          {.v = next } },
+        { MONKEY,                       XK_F10,    spawn,          {.v = mute } },
+        { MONKEY,                       XK_F11,    spawn,          {.v = vold } },
+        { MONKEY,                       XK_F12,    spawn,          {.v = volu } },
         { MODKEY|ShiftMask,             XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
