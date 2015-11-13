@@ -59,7 +59,6 @@ fi
 #Git
 alias ga='git add .'
 alias gp='git push'
-alias gc='git commit -m'
 
 #SSH Sessions
 alias pint='ssh @'
@@ -133,7 +132,7 @@ compress () {
 
 #Unpack archive
 
-unpack() {
+function unpack() {
     if [ -f $1 ] ; then
         case $1 in
             *.tar.bz2)  tar xjf $1    ;;
@@ -157,7 +156,7 @@ unpack() {
 
 #Generate random password
 
-genpass() {
+function genpass() {
         local l=$1
         [ "$l" == "" ] && l=16
         tr -dc A-Za-z0-9_ < /dev/urandom | head -c ${l} | xargs
@@ -165,16 +164,20 @@ genpass() {
 
 #upload to bB
 
-imageup() {
+function imageup() {
 	curl https://images.baconbits.org/upload.php -X POST -F "ImageUp=@$1"
 	}
 
 #Can't be arsed with ps bollocks and such
 
-checkup() {
+function checkup() {
 	ps aux | grep $1 | grep -v grep
 	}
 
-hg() {
+function hg() {
      history 0 | grep $1 | grep -v grep
       }
+
+function gc() {
+     git commit -m "$1"
+       }
