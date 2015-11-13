@@ -27,7 +27,7 @@ alias ll='ls -l'
 alias la='ls -la'
 alias eP='vim ~/.zshrc'
 alias eC='vim ~/.conkyrc'
-alias eD='vim /home/conor/abs/dwm/config.h'
+alias eD='vim /home/conor/dwm/config.h'
 alias eX='vim ~/.Xresources'
 alias redwm='cd /home/conor/dwm; updpkgsums; makepkg -efi'
 alias reload='. ~/.zshrc'
@@ -38,6 +38,7 @@ alias muzak='ncmpcpp'
 alias fehbg='feh --bg-scale'
 alias ..='cd ..'
 alias watch='mplayer'
+alias free='dfc'
 
 # Screenshot
 
@@ -55,10 +56,15 @@ if [ $UID -ne 0 ]; then
     alias volstore='sudo alsactl store'
 fi
 
+#Git
+alias ga='git add .'
+alias gp='git push'
+alias gc='git commit -m'
+
 #SSH Sessions
 alias pint='ssh @'
-alias pext='ssh @com'
-alias sbox='ssh @ca'
+alias pext='ssh @'
+alias sbox='ssh @'
 
 # privileged access
 
