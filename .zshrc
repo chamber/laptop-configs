@@ -59,6 +59,7 @@ fi
 #Git
 alias ga='git add .'
 alias gp='git push'
+alias gs='git status'
 
 #SSH Sessions
 alias pint='ssh @'
@@ -167,10 +168,10 @@ function genpass() {
         tr -dc A-Za-z0-9_ < /dev/urandom | head -c ${l} | xargs
 }
 
-#upload to bB
+#upload to 
 
 function imageup() {
-	curl https://images.baconbits.org/upload.php -X POST -F "ImageUp=@$1"
+	curl https://upload.php -X POST -F "ImageUp=@$1"
 	}
 
 #Can't be arsed with ps bollocks and such
