@@ -103,12 +103,17 @@ fi
   alias pacm="makepkg -fci"  # '[m]ake'           - make package from PKGBUILD file in current directory
   alias aur="sudo packer -Syu" # - upgrade AUR compnents via packer
 
+# Fonts
+alias Fonts='fc-cache -vf ~/.fonts'
+alias font-check='echo "\ue0b0 \u00b1 \ue0a0 \u27a6 \u2718 \u26a1 \u2699"'
+
 # Misc
 
 alias :q="exit"
 alias c='clear'
 alias h='cd ~/'
 alias ulb='cd /usr/local/bin/'
+alias starwars='telnet towel.blinkenlights.nl'
 
 # Functions
 
