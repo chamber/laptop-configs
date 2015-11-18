@@ -39,6 +39,8 @@ alias fehbg='feh --bg-scale'
 alias ..='cd ..'
 alias watch='mplayer'
 alias free='dfc'
+alias Movies='cd /media/Movies/'
+alias TV='cd /media/TV/'
 
 # Screenshot
 
@@ -83,6 +85,7 @@ if [ $UID -ne 0 ]; then
     alias wifi='sudo wifi-menu -o wlan0'
     alias mmedia='sudo mount /dev/sda3 /media/Media/'
     alias umedia='sudo umount /media/Media/'
+    alias hvpn='sudo openvpn --config /etc/openvpn/laptop.conf'
 fi
 
 # pacman aliases (if applicable, replace 'pacman' with your favourite AUR helper)
@@ -171,7 +174,7 @@ function genpass() {
 #upload to 
 
 function imageup() {
-	curl https://upload.php -X POST -F "ImageUp=@$1"
+	curl https://.org/upload.php -X POST -F "ImageUp=@$1"
 	}
 
 #Can't be arsed with ps bollocks and such
