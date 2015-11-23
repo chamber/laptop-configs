@@ -41,6 +41,7 @@ alias watch='mplayer'
 alias free='dfc'
 alias Movies='cd /media/Movies/'
 alias TV='cd /media/TV/'
+alias genpass='tr -dc A-Za-z0-9_ < /dev/urandom | head -c 27 | xargs'
 
 # Screenshot
 
@@ -162,19 +163,10 @@ function unpack() {
     fi
 }
 
-
-#Generate random password
-
-function genpass() {
-        local l=$1
-        [ "$l" == "" ] && l=16
-        tr -dc A-Za-z0-9_ < /dev/urandom | head -c ${l} | xargs
-}
-
 #upload to 
 
 function imageup() {
-	curl https://.org/upload.php -X POST -F "ImageUp=@$1"
+	curl https://images..org/upload.php -X POST -F "ImageUp=@$1"
 	}
 
 #Can't be arsed with ps bollocks and such
