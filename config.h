@@ -28,6 +28,7 @@ static const Rule rules[] = {
          { "chromium",  NULL,       NULL,       1 << 3,       False,       -1 },
          { "Pcmanfm",   NULL,       NULL,       1 << 2,       False,       -1 },
          { "MPlayer",   NULL,       NULL,       1 << 1,       True,        -1 },
+         { "vlc",       NULL,       NULL,       1 << 1,       True,        -1 },
          { "Calibre",   NULL,       NULL,       1 << 1,       False,       -1 },
 	 {  NULL,       NULL,      "mutt",      1 << 4,       True,        -1 },
 	 {  NULL,       NULL,      "ncmpcpp",   1 << 1,       True,        -1 },
