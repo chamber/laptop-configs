@@ -42,7 +42,8 @@ alias free='dfc'
 alias Movies='cd /media/Movies/'
 alias TV='cd /media/TV/'
 alias genpass='tr -dc A-Za-z0-9_ < /dev/urandom | head -c 27 | xargs'
-
+alias batt='acpi'
+alias snip='scrot -s'
 # Screenshot
 
 alias screener="screenfetch && colours && scrot -cd 5"
@@ -65,9 +66,9 @@ alias gp='git push'
 alias gs='git status'
 
 #SSH Sessions
-alias pint='ssh @'
-alias pext='ssh @'
-alias sbox='ssh @'
+alias pint='ssh pi@192.168.2.20'
+alias pext='ssh conor@cjk.dlinkddns.com'
+alias svm='ssh conor@192.168.2.4'
 
 # privileged access
 
@@ -163,11 +164,10 @@ function unpack() {
     fi
 }
 
-#upload to 
+#upload to bB
 
-function imageup() {
-	curl https://images..org/upload.php -X POST -F "ImageUp=@$1"
-	}
+function imageup() {curl https://images.baconbits.org/upload.php -X POST -F "ImageUp=@$1"
+                   }
 
 #Can't be arsed with ps bollocks and such
 
@@ -182,3 +182,8 @@ function hg() {
 function gc() {
      git commit -m "$1"
        }
+
+function excuse()
+{
+curl -s http://pages.cs.wisc.edu/~ballard/bofh/bofhserver.pl|grep "font size"|awk -F'>' '{print $8,$10}'|sed 's/<//'|sed 's/br//'
+}
