@@ -66,9 +66,9 @@ alias gp='git push'
 alias gs='git status'
 
 #SSH Sessions
-alias pint='ssh pi@192.168.2.20'
-alias pext='ssh conor@cjk.dlinkddns.com'
-alias svm='ssh conor@192.168.2.4'
+alias pint='ssh pi@'
+alias pext='ssh conor@'
+alias svm='ssh conor@'
 
 # privileged access
 
