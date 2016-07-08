@@ -92,11 +92,11 @@ fi
 
 # pacman aliases (if applicable, replace 'pacman' with your favourite AUR helper)
 if [ $UID -ne 0 ]; then
-  alias pac="sudo pacman -S"      # default action     - install one or more packages
+  alias install="sudo pacman -S"      # default action     - install one or more packages
   alias pacu="sudo pacman -U"   # '[U]pgrading packages'
-  alias pacs="sudo pacman -Ss"    # '[s]earch'         - search for a package using one or more keywords
+  alias search="sudo pacman -Ss"    # '[s]earch'         - search for a package using one or more keywords
   alias paci="pacman -Si"    # '[i]nfo'           - show information about a package
-  alias pacr="sudo pacman -Rs"     # '[r]emove'         - uninstall one or more packages
+  alias remove="sudo pacman -Rs"     # '[r]emove'         - uninstall one or more packages
   alias pacl="pacman -Sl"    # '[l]ist'           - list all packages of a repository
   alias pacq="pacman -Qi"    # '[l]ist'           - list details about a package
   alias pacll="pacman -Qqm"  # '[l]ist [l]ocal'   - list all packages which were locally installed (e.g. AUR packages)
