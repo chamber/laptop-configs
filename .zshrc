@@ -15,7 +15,6 @@ setopt share_history
 # Customize to your needs...
 export VISUAL="vim"
 export EDITOR="vim"
-export PICVIEW="gpicview"
 export BROWSER="chromium"
 
 # File Extensions
@@ -33,8 +32,8 @@ alias redwm='cd /home/conor/dwm; updpkgsums; makepkg -efi'
 alias reload='. ~/.zshrc'
 alias icons='for i in {50..255}; do  printf "\\$(printf '%03o' $i)\n" ; done'
 alias theme='gtk-chtheme'
+alias grab='lftp server'
 alias wbox='lftp whatbox'
-alias muzak='ncmpcpp'
 alias fehbg='feh --bg-scale'
 alias ..='cd ..'
 alias watch='mplayer'
@@ -44,10 +43,11 @@ alias TV='cd /media/TV/'
 alias genpass='tr -dc A-Za-z0-9_ < /dev/urandom | head -c 27 | xargs'
 alias batt='acpi'
 alias snip='scrot -s'
-# Screenshot
-
-alias screener="screenfetch && colours && scrot -cd 5"
-alias screen="screenfetch && scrot -cd 5"
+alias linkq='iwconfig wlp3s0 | grep -i --color quality'
+alias phone='aft-mtp-mount ~/nexus'
+alias pvm='ping 192.168.2.4'
+alias lease='cat /run/systemd/netif/leases/3'
+alias windows='VBoxManage startvm windows'
 
 # dropbox
 
@@ -66,9 +66,8 @@ alias gp='git push'
 alias gs='git status'
 
 #SSH Sessions
-alias pint='ssh pi@'
-alias pext='ssh conor@'
-alias svm='ssh conor@'
+alias svm=''
+alias scb=''
 
 # privileged access
 
@@ -80,13 +79,9 @@ if [ $UID -ne 0 ]; then
     alias root='sudo su'
     alias kick='sudo reboot'
     alias die='sudo poweroff'
-    alias sleep='sudo pm-suspend'
-    alias update='sudo pacman -Syyu'
+    alias update='sudo pacman -Syu'
     alias whoup='sudo nmap -sN 192.168.2.0/24'
     alias abs='sudo abs'
-    alias wifi='sudo wifi-menu -o wlan0'
-    alias mmedia='sudo mount /dev/sda3 /media/Media/'
-    alias umedia='sudo umount /media/Media/'
     alias hvpn='sudo openvpn --config /etc/openvpn/laptop.conf'
 fi
 
@@ -117,7 +112,7 @@ alias font-check='echo "\ue0b0 \u00b1 \ue0a0 \u27a6 \u2718 \u26a1 \u2699"'
 
 alias :q="exit"
 alias c='clear'
-alias h='cd ~/'
+alias h='cd ~/ && clear'
 alias ulb='cd /usr/local/bin/'
 alias starwars='telnet towel.blinkenlights.nl'
 
@@ -187,3 +182,4 @@ function excuse()
 {
 curl -s http://pages.cs.wisc.edu/~ballard/bofh/bofhserver.pl|grep "font size"|awk -F'>' '{print $8,$10}'|sed 's/<//'|sed 's/br//'
 }
+

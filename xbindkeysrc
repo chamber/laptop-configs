@@ -67,17 +67,17 @@
 #Key bindings for Function keys on laptop
 
 # Lower Volume
-"amixer set PCM playback 1-"
+"amixer set Master playback 1-"
     m:0x0 + c:122
     XF86AudioLowerVolume
 
 # Increase Volume
-"amixer set PCM playback 1+"
+"amixer set Master playback 1+"
     m:0x0 + c:123
     XF86AudioRaiseVolume
 
 #Toggle mute
-"amixer set PCM toggle"
+"amixer set Master toggle"
     m:0x0 + c:121
     XF86AudioMute
 

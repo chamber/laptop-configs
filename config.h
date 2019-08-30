@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 #define MONKEY          Mod4Mask
 /* appearance */
-static const char font[]            = "-*-ohsnap.icons-medium-r-*-*-11-*-*-*-*-*-*-*";
+static const char font[]            = "-*-ohsnap.icons-medium-r-*-*-12-*-*-*-*-*-*-*";
 static const char normbordercolor[] = "#444444";
 static const char normbgcolor[]     = "#000000";
 static const char normfgcolor[]     = "#bbbbbb";
@@ -20,12 +20,12 @@ static const Bool showbar           = True;     /* False means no bar */
 static const Bool topbar            = True;     /* False means bottom bar */
 
 /* tagging */
-static const char *tags[] = {"Term","Media","File","WWW","Mail"};
+static const char *tags[] = {"Term","Media","File","WWW","Misc"};
 
 static const Rule rules[] = {
          /* class      instance    title       tags mask     isfloating   monitor     */
          { "urxvt",     NULL,       NULL,       0,            True,        -1 },
-         { "chromium",  NULL,       NULL,       1 << 3,       False,       -1 },
+         { "Chromium",  NULL,       NULL,       1 << 3,       False,       -1 },
          { "Pcmanfm",   NULL,       NULL,       1 << 2,       False,       -1 },
          { "MPlayer",   NULL,       NULL,       1 << 1,       True,        -1 },
          { "vlc",       NULL,       NULL,       1 << 1,       True,        -1 },
@@ -61,7 +61,7 @@ static const Layout layouts[] = {
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 
 /* commands */
-static const char *dmenucmd[] = { "dmenu_run", "-fn", "Hermit-7", "-b", "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-fn", "Hermit-8", "-b", "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
 static const char *termcmd[]  = { "urxvt", NULL };
 static const char *filecmd[] = { "pcmanfm", NULL };
 static const char *mailcmd[] = { "urxvt", "-title", "mutt", "-e", "mutt", NULL };

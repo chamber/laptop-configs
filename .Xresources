@@ -1,6 +1,6 @@
 xvt*termName: rxvt
-URxvt*font: -*-ohsnap.icons-medium-r-*-*-11-*-*-*-*-*-*-*
-URxvt*boldFont: -*-ohsnap.icons-bold-r-*-*-11-*-*-*-*-*-*-* 
+!URxvt*font: -*-ohsnap.icons-medium-r-*-*-11-*-*-*-*-*-*-*
+!URxvt*boldFont: -*-ohsnap.icons-bold-r-*-*-11-*-*-*-*-*-*-* 
 URxvt*allow_bold: true
 URxvt*depth: 0
 URxvt*foreground: grey
@@ -27,11 +27,11 @@ URxvt*tabbed.tab-bg: #000000
 
 !Fonts
 !Hermit
-URxvt*font: xft:Hermit:medium:size=7:antialiasing=true
-URxvt*boldFont: xft:Hermit:bold:size=7:antialiasing=true:style=medium
-URxvt*italicFont: xft:Hermit:medium:size=7:antialiasing=true:style=medium
-URxvt*boldItalicFont: xft:Hermit:bold:size=7:antialiasing=true:style=medium
-URxvt.letterSpace: -1
+URxvt*font: xft:Hermit:medium:size=8:antialiasing=true:minspace=False, xft:DejaVu Sans:pixelsize=10
+URxvt*boldFont: xft:Hermit:bold:size=8:antialiasing=true:style=medium:minspace=False, xft:DejaVu Sans:pixelsize=10
+URxvt*italicFont: xft:Hermit:medium:size=8:antialiasing=true:style=medium
+URxvt*boldItalicFont: xft:Hermit:bold:size=8:antialiasing=true:style=medium
+URxvt.letterSpace: 1
 
 !Envy Code R
 !URxvt.font:xft:Envy Code R:Regular:pixelsize=11i:antialiasing=true
@@ -39,6 +39,13 @@ URxvt.letterSpace: -1
 !URxvt.italicFont:xft:Envy Code R:Italic:pixelsize=11:antialiasing=true
 !URxvt.boldItalicFont:xft:Envy Code R:Italic:pixelsize=11:antialiasing=true
 !URxvt.letterSpace: -1
+
+!Bitstream Vera
+!URxvt.font:     xft:bitstream vera sans mono:size=9:antialias=true
+!URxvt.boldFont: xft:bitstream vera sans mono:bold:size=9:antialias=true
+
+!Dejavu Sans Mono
+!URxvt*font: xft:DejaVu Sans Mono:size=9
 
 !Colours
 !Brighter
@@ -71,7 +78,7 @@ URxvt.letterSpace: -1
 !Muted
 !Black
 !*color0:  #525252
-!*color8:  #707070 
+!*color8:  #707070
 !Red
 !*color1:  #BF606B
 !*color9:  #8A7885
@@ -89,7 +96,7 @@ URxvt.letterSpace: -1
 !*color13: #AAA7B4
 !Cyan
 !*color6:  #83B8B2
-!*color14: #83B8B2 
+!*color14: #83B8B2
 !White
 !*color7:  #E8E5DC
 !*color15: #F5F5EB

@@ -4,7 +4,7 @@
 xrdb -merge ~/.Xresources
 
 #defaults
-export BROWSER=chromium & 
+export BROWSER=chromium &
 export EDITOR=vim &
 
 #set info bar
@@ -25,7 +25,9 @@ xset fp rehash
 xbindkeys &
 
 # MPD daemon start (if no other user instance exists)
-[ ! -s ~/.config/mpd/pid ] && mpd ~/.config/mpd/mpd.conf &
+#[ ! -s ~/.config/mpd/pid ] && mpd ~/.config/mpd/mpd.conf &
+
+udiskie &
 
 #Sort clipboards
 autocutsel -fork &
@@ -40,7 +42,7 @@ exec urxvt &
 sleep 3 && exec chromium &
 sleep 4 && exec pcmanfm &
 
-compton & 
+compton &
 
 sleep 15 && google-musicmanager &
 
