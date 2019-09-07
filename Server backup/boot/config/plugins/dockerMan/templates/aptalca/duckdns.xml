@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Name>Duckdns</Name>
+  <Description>
+    Duckdns is a free dynamic DNS service hosted on Amazon VPC.[br][br]
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+    [b]/config[/b] This is where the duckdns configuration and log files will reside[br][br]
+    Enter in the subdomains (comma separated, no spaces) and token in the advanced view. [br][br]
+    Visit [b]www.duckns.org[/b] to register a domain and retrieve your token[br]
+  </Description>
+  <Overview>
+    Duckdns is a free dynamic DNS service hosted on Amazon VPC. 
+    Unlike most other free dynamic DNS providers, DuckDNS accounts do not require periodic user action to keep them alive. Visit [b]www.duckdns.org[/b] to register your domain.
+  </Overview>
+  <Support>http://lime-technology.com/forum/index.php?topic=39413.0</Support>
+  <Registry>https://registry.hub.docker.com/u/aptalca/docker-duckdns/</Registry>
+  <GitHub>https://github.com/aptalca/docker-duckdns</GitHub>
+  <Repository>aptalca/docker-duckdns</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+    <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort></HostPort>
+        <ContainerPort></ContainerPort>
+        <Protocol></Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>SUBDOMAINS</Name>
+      <Value></Value>
+    </Variable>
+    <Variable>
+      <Name>TOKEN</Name>
+      <Value></Value>
+    </Variable>
+  </Environment>    
+  <Data>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI></WebUI>
+  <Banner></Banner>
+  <Icon>https://www.duckdns.org/img/ducky_icon.png</Icon>
+  <Beta>False</Beta>
+  <Category>Network:DNS</Category>
+  <Date>2015-12-15</Date>
+  <Changes>
+    [center][font size=5]DuckDNS Change Log[/font][/center]
+    
+    [font size=4]2015.12.15[/font]
+    - Fixed permissions on local files
+    
+    [font size=4]2015.08.05[/font]
+    - No more editing config files. The subdomains and token are now entered as environment variables.
+    - Due to issues with dockerman, if you update from an earlier release, your xml may not get updated with the new environment variable. In that case, the container will retrieve the values from the old duck.conf file if it exists. You can delete the container and reinstall from Community Applications to update the xml.
+
+  </Changes>
+</Containers>

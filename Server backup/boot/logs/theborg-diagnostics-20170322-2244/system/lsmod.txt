@@ -1,0 +1,42 @@
+Module                  Size  Used by
+xt_CHECKSUM             1335  1
+iptable_mangle          1658  1
+ipt_REJECT              1521  2
+nf_reject_ipv4          2483  1 ipt_REJECT
+ebtable_filter          1903  0
+ebtables               14552  1 ebtable_filter
+vhost_net               9091  1
+vhost                  19681  1 vhost_net
+macvtap                11622  1 vhost_net
+macvlan                12389  1 macvtap
+veth                    4966  0
+xt_nat                  1913  7
+ipt_MASQUERADE          1277  11
+nf_nat_masquerade_ipv4     1865  1 ipt_MASQUERADE
+iptable_nat             1897  1
+nf_conntrack_ipv4       5874  3
+nf_nat_ipv4             4199  1 iptable_nat
+iptable_filter          1706  1
+ip_tables               9853  3 iptable_mangle,iptable_filter,iptable_nat
+nf_nat                 11145  3 xt_nat,nf_nat_masquerade_ipv4,nf_nat_ipv4
+md_mod                 36572  4
+tun                    19240  4 vhost_net
+bonding                92464  0
+hid_logitech_hidpp     15911  0
+mxm_wmi                 1571  0
+e1000e                143207  0
+i2c_i801               11888  0
+ptp                     9308  1 e1000e
+x86_pkg_temp_thermal     4669  0
+i2c_smbus               3041  1 i2c_i801
+coretemp                5340  0
+pps_core                5928  1 ptp
+i2c_core               20390  2 i2c_i801,i2c_smbus
+ahci                   26326  5
+hid_logitech_dj         8972  0
+libahci                19716  1 ahci
+kvm_intel             160423  4
+video                  27138  0
+kvm                   289582  1 kvm_intel
+wmi                     6548  1 mxm_wmi
+backlight               5833  1 video

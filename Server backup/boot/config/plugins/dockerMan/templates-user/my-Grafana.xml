@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Grafana</Name>
+  <Repository>grafana/grafana</Repository>
+  <Registry>https://hub.docker.com/r/grafana/grafana/</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>https://lime-technology.com/forum/index.php?topic=51498.0</Support>
+  <Overview>&#xD;
+    Grafana is an open source, feature rich metrics dashboard and graph editor for Graphite, Elasticsearch, OpenTSDB, Prometheus and InfluxDB.[br]&#xD;
+    [br]&#xD;
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]&#xD;
+    [b]Container Volumes:[/b][br]&#xD;
+    [b]/var/lib/grafana[/b] Persistent data storage location[br]&#xD;
+    [br]&#xD;
+    [b]Container Ports:[/b][br]&#xD;
+    [b]3000[/b] Web admin interface[br]&#xD;
+    [br]&#xD;
+    [b]Environment Variables:[/b][br]&#xD;
+    [b]GF_SERVER_ROOT_URL[/b] The url to which you will be navigating to get to the grafana dashboard. Typically your ip or hostname[br]&#xD;
+    [b]GF_SECURITY_ADMIN_PASSWORD[/b] Your password to use with the admin user. The default is user admin with password admin.[br]&#xD;
+    [br]&#xD;
+    [b][u][span style='color: #E80000;']CLICK ADVANCED VIEW AND SET THE ENVIRONMENT VARIABLES[/span][/u][/b][br]&#xD;
+    [br]&#xD;
+    After the docker container is running check out the datasource documentation at http://docs.grafana.org/datasources/overview/ and then the getting started guide at http://docs.grafana.org/guides/gettingstarted/[br]&#xD;
+    A convient datasource would be Influxdb, which can also be found in the community apps.&#xD;
+  </Overview>
+  <Category>Network:Management Tools:</Category>
+  <WebUI>http://[IP]:[PORT:3000]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/atribe/unRAID-docker/raw/master/icons/grafana.png</Icon>
+  <ExtraParams/>
+  <DateInstalled>1491749690</DateInstalled>
+  <Description>&#xD;
+    Grafana is an open source, feature rich metrics dashboard and graph editor for Graphite, Elasticsearch, OpenTSDB, Prometheus and InfluxDB.[br]&#xD;
+    [br]&#xD;
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]&#xD;
+    [b]Container Volumes:[/b][br]&#xD;
+    [b]/var/lib/grafana[/b] Persistent data storage location[br]&#xD;
+    [br]&#xD;
+    [b]Container Ports:[/b][br]&#xD;
+    [b]3000[/b] Web admin interface[br]&#xD;
+    [br]&#xD;
+    [b]Environment Variables:[/b][br]&#xD;
+    [b]GF_SERVER_ROOT_URL[/b] The url to which you will be navigating to get to the grafana dashboard. Typically your ip or hostname[br]&#xD;
+    [b]GF_SECURITY_ADMIN_PASSWORD[/b] Your password to use with the admin user. The default is user admin with password admin.[br]&#xD;
+    [br]&#xD;
+    [b][u][span style='color: #E80000;']CLICK ADVANCED VIEW AND SET THE ENVIRONMENT VARIABLES[/span][/u][/b][br]&#xD;
+    [br]&#xD;
+    After the docker container is running check out the datasource documentation at http://docs.grafana.org/datasources/overview/ and then the getting started guide at http://docs.grafana.org/guides/gettingstarted/[br]&#xD;
+    A convient datasource would be Influxdb, which can also be found in the community apps.&#xD;
+  </Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>3000</HostPort>
+        <ContainerPort>3000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/grafana</HostDir>
+      <ContainerDir>/var/lib/grafana</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value/>
+      <Name>GF_SERVER_ROOT_URL</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>ConDeb1983@</Value>
+      <Name>GF_SECURITY_ADMIN_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Config Name="Host Port 1" Target="3000" Default="3000" Mode="tcp" Description="Container Port: 3000" Type="Port" Display="always" Required="true" Mask="false">3000</Config>
+  <Config Name="Host Path 1" Target="/var/lib/grafana" Default="/mnt/user/appdata/grafana" Mode="rw" Description="Container Path: /var/lib/grafana" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/grafana</Config>
+  <Config Name="Key 1" Target="GF_SERVER_ROOT_URL" Default="http://your.server.ip.or.hostname" Mode="" Description="Container Variable: GF_SERVER_ROOT_URL" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Key 2" Target="GF_SECURITY_ADMIN_PASSWORD" Default="admin" Mode="" Description="Container Variable: GF_SECURITY_ADMIN_PASSWORD" Type="Variable" Display="always" Required="false" Mask="false">ConDeb1983@</Config>
+</Container>

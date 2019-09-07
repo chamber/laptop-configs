@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Name>JDownloader2</Name>
+  <Description>
+    JDownloader is a free, open-source download management tool with a huge community of developers that makes downloading as easy and fast as it should be.[br][br]
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+    [b]/config[/b] This is where the JD2 configuration and library files will reside[br][br]
+    Don't forget to enter in the host port and the config folder location. [br][br]
+    [span style='color: #E80000;']8080[/span] is the WebUI port[br]
+    To access the JD2 GUI, open the WebUI. By default downloads will go to /config/Downloads but you can change that in the GUI[br]
+    Ctrl-Alt-Shft brings up the menu where you can switch input method (ie. touch)[br]
+    In order to use the built-in browser for manual recaptcha solving, go to advanced settings, find the following two settings: 1) GeneralSettings: Browser Command Line and 2) BrowserCaptchaSolver: Browser Commandline and change both values to the following: [ "/usr/bin/firefox", "%s" ] (they should be brackets, not less than or greater than signs &lt; &gt;) [br]
+    JDownloader 2 also has a webserver accessible through my.jdownloader.org
+  </Description>
+  <Overview>
+    JDownloader is a free, open-source download management tool with a huge community of developers that makes downloading as easy and fast as it should be. Users can start, stop or pause downloads, set bandwith limitations, auto-extract archives and much more. It's an easy-to-extend framework that can save hours of your valuable time every day! [br]
+    JDownloader 2 also has a webserver accessible through my.jdownloader.org
+  </Overview>
+  <Support>http://lime-technology.com/forum/index.php?topic=39413.0</Support>
+  <Registry>https://registry.hub.docker.com/u/aptalca/docker-jdownloader2/</Registry>
+  <GitHub>https://github.com/aptalca/docker-jdownloader2</GitHub>
+  <Repository>aptalca/docker-jdownloader2</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+    <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort></HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>WIDTH</Name>
+      <Value>1280</Value>
+    </Variable>
+    <Variable>
+      <Name>HEIGHT</Name>
+      <Value>720</Value>
+    </Variable>
+  </Environment>    
+  <Data>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:8080]/#/client/c/JDownloader2</WebUI>
+  <Banner></Banner>
+  <Icon>http://upload.wikimedia.org/wikipedia/commons/f/f7/Jdownloader.png</Icon>
+  <Beta>False</Beta>
+  <Category>Cloud: Downloaders:</Category>
+  <Date>2016-06-08</Date>
+  <Changes>
+    [center][font size=5]JDownloader2 Change Log[/font][/center]
+
+    [font size=4]2016.06.08[/font]
+    - Added firefox for recaptcha in the webgui (See the container description for settings instructions)
+
+    [font size=4]2016.01.08[/font]
+    - Fixed downloaded file permissions. They should now work in samba shares.
+    
+    [font size=4]2015.08.16[/font]
+    - Switched to base xrdp 1.3 so clipboard should work
+    
+    [font size=4]2015.05.18[/font]
+    - Initial Release
+    
+  </Changes>
+</Containers>

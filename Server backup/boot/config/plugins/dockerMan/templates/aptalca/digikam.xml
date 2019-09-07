@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Name>DigiKam</Name>
+  <Description>
+    DigiKam is a docker for the digiKam picture management software [br][br]
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+    [b]/config[/b] This is where the digiKam configuration and library files will reside[br]
+    [span style='color: #E80000;']8080[/span] is the WebUI port[br][br]
+    Don't forget to enter in the host port, config folder and the pictures location. [br][br]
+    To access the digiKam GUI, open the WebUI. [span style='color: #E80000;']First time running the WebUI, select /config as the database location.[/span][br]
+    Default resolution for the digiKam window is 1280x720. You can change that to any resolution by opening the Advanced View and modifying the HEIGHT and WIDTH variables.[br]
+    This docker will install digiKam 4.9.0. If you would like to keep up to date with the latest releases, please set the EDGE variable to 1
+  </Description>
+  <Overview>
+    DigiKam is an advanced digital photo management application. The people who inspired digiKam's design are the photographers like you who want to view, manage, edit, enhance, organize, tag, and share photographs under Linux systems.
+  </Overview>
+  <Support>http://lime-technology.com/forum/index.php?topic=39413.0</Support>
+  <Registry>https://registry.hub.docker.com/u/aptalca/docker-digikam/</Registry>
+  <GitHub>https://github.com/aptalca/docker-digikam</GitHub>
+  <Repository>aptalca/docker-digikam</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+    <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort></HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>WIDTH</Name>
+      <Value>1280</Value>
+    </Variable>
+    <Variable>
+      <Name>HEIGHT</Name>
+      <Value>720</Value>
+    </Variable>
+    <Variable>
+      <Name>EDGE</Name>
+      <Value>0</Value>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/pictures</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:8080]/#/client/c/digiKam</WebUI>
+  <Banner></Banner>
+  <Icon>http://www.h-online.com/imgs/43/6/9/3/5/4/7/Digikam-logo200-22eb510f46d16449.png</Icon>
+  <Beta>False</Beta>
+  <Category>MediaApp:Photos MediaServer:Photos</Category>
+  <Changes>
+    [center][font size=5]DigiKam Change Log[/font][/center]
+    
+    [font size=4]2015.05.06[/font]
+    - Minor update - DigiKam updated to 4.9.0, EDGE variable added to enable future updates
+    
+    [font size=4]2015.05.03[/font]
+    - Initial release
+  </Changes>
+</Containers>

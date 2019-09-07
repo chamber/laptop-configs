@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>ZNC</Name>
+  <Beta>False</Beta>
+  <Category>Network:Messenger</Category>
+  <Description>
+    ZNC is an IRC bouncer that supports persistent connectivity. [br]
+
+    [b][span style='color: #E80000;']Directions:[/span][/b][br]
+    [b]/config[/b]  : set this path to where you wish ZNC to store it's configuration.[br]
+    [br][br]
+  </Description>
+  <Registry>https://registry.hub.docker.com/u/hurricane/znc/</Registry>
+  <GitHub>https://github.com/hurricanehrndz/docker-containers/tree/master/znc</GitHub>
+  <Repository>hurricane/znc</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment>
+    <Variable>
+      <Name>APP_UID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>APP_GID</Name>
+      <Value>100</Value>
+    </Variable>
+  </Environment>
+  <Networking>
+    <Mode>bridge</Mode>
+     <Publish>
+      <Port>
+        <HostPort>6660</HostPort>
+        <ContainerPort>6660</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/znc/</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Banner>http://i.imgur.com/ir3vAxL.png</Banner>
+  <WebUI>https://[IP]:[PORT:6660]/</WebUI>
+  <Icon>http://i.imgur.com/ir3vAxL.png</Icon>
+</Container>

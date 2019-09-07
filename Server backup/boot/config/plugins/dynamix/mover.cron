@@ -1,0 +1,3 @@
+# Generated mover schedule:
+40 3 * * * /usr/local/sbin/mover |& logger
+

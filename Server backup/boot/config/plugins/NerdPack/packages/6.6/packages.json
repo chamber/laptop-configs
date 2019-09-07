@@ -1,0 +1,1506 @@
+[
+  {
+    "name": "apr-1.5.2-x86_64-1.txz",
+    "path": "packages/6.6/apr-1.5.2-x86_64-1.txz",
+    "sha": "b65fb80526fe8a330f58b6b407d11a98f4bd1994",
+    "size": 234776,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/apr-1.5.2-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/apr-1.5.2-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/b65fb80526fe8a330f58b6b407d11a98f4bd1994",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/apr-1.5.2-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/apr-1.5.2-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/b65fb80526fe8a330f58b6b407d11a98f4bd1994",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/apr-1.5.2-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "apr-util-1.5.4-x86_64-2.txz",
+    "path": "packages/6.6/apr-util-1.5.4-x86_64-2.txz",
+    "sha": "fce6851b106716c82c4b30569a84c62f5f3a4765",
+    "size": 125180,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/apr-util-1.5.4-x86_64-2.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/apr-util-1.5.4-x86_64-2.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/fce6851b106716c82c4b30569a84c62f5f3a4765",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/apr-util-1.5.4-x86_64-2.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/apr-util-1.5.4-x86_64-2.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/fce6851b106716c82c4b30569a84c62f5f3a4765",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/apr-util-1.5.4-x86_64-2.txz"
+    }
+  },
+  {
+    "name": "atop-2.2-x86_64-2.txz",
+    "path": "packages/6.6/atop-2.2-x86_64-2.txz",
+    "sha": "8d58734070435e7f480fc52ba21cc36e59838380",
+    "size": 127956,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/atop-2.2-x86_64-2.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/atop-2.2-x86_64-2.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/8d58734070435e7f480fc52ba21cc36e59838380",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/atop-2.2-x86_64-2.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/atop-2.2-x86_64-2.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/8d58734070435e7f480fc52ba21cc36e59838380",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/atop-2.2-x86_64-2.txz"
+    }
+  },
+  {
+    "name": "bash-completion-2.8-noarch-1.txz",
+    "path": "packages/6.6/bash-completion-2.8-noarch-1.txz",
+    "sha": "0674403aae9d3b3eda9267457b4cee7ece01e654",
+    "size": 166984,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/bash-completion-2.8-noarch-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/bash-completion-2.8-noarch-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/0674403aae9d3b3eda9267457b4cee7ece01e654",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/bash-completion-2.8-noarch-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/bash-completion-2.8-noarch-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/0674403aae9d3b3eda9267457b4cee7ece01e654",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/bash-completion-2.8-noarch-1.txz"
+    }
+  },
+  {
+    "name": "bc-1.06.95-x86_64-3.txz",
+    "path": "packages/6.6/bc-1.06.95-x86_64-3.txz",
+    "sha": "b6f143cd7b791d5399a776e3902350a8ca998865",
+    "size": 101680,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/bc-1.06.95-x86_64-3.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/bc-1.06.95-x86_64-3.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/b6f143cd7b791d5399a776e3902350a8ca998865",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/bc-1.06.95-x86_64-3.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/bc-1.06.95-x86_64-3.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/b6f143cd7b791d5399a776e3902350a8ca998865",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/bc-1.06.95-x86_64-3.txz"
+    }
+  },
+  {
+    "name": "bind-9.13.2-x86_64-1.txz",
+    "path": "packages/6.6/bind-9.13.2-x86_64-1.txz",
+    "sha": "07f3fc8675719c0cddf5d404718afa0da4e2dc56",
+    "size": 2456932,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/bind-9.13.2-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/bind-9.13.2-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/07f3fc8675719c0cddf5d404718afa0da4e2dc56",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/bind-9.13.2-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/bind-9.13.2-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/07f3fc8675719c0cddf5d404718afa0da4e2dc56",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/bind-9.13.2-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "borgbackup-1.1.4-x86_64-2.txz",
+    "path": "packages/6.6/borgbackup-1.1.4-x86_64-2.txz",
+    "sha": "8f9e63cce5b222294bcad5ce2ab0c64ff3d05066",
+    "size": 911064,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/borgbackup-1.1.4-x86_64-2.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/borgbackup-1.1.4-x86_64-2.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/8f9e63cce5b222294bcad5ce2ab0c64ff3d05066",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/borgbackup-1.1.4-x86_64-2.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/borgbackup-1.1.4-x86_64-2.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/8f9e63cce5b222294bcad5ce2ab0c64ff3d05066",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/borgbackup-1.1.4-x86_64-2.txz"
+    }
+  },
+  {
+    "name": "bwm-ng-0.6-x86_64-1_SBo.txz",
+    "path": "packages/6.6/bwm-ng-0.6-x86_64-1_SBo.txz",
+    "sha": "3192deec82d307a12eb8fde0eb838bdf17664bbc",
+    "size": 41644,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/bwm-ng-0.6-x86_64-1_SBo.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/bwm-ng-0.6-x86_64-1_SBo.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/3192deec82d307a12eb8fde0eb838bdf17664bbc",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/bwm-ng-0.6-x86_64-1_SBo.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/bwm-ng-0.6-x86_64-1_SBo.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/3192deec82d307a12eb8fde0eb838bdf17664bbc",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/bwm-ng-0.6-x86_64-1_SBo.txz"
+    }
+  },
+  {
+    "name": "ccat-1.1.0-x86_64-1.txz",
+    "path": "packages/6.6/ccat-1.1.0-x86_64-1.txz",
+    "sha": "e4aaaa834934b560b9ff06a4bd4157bd4f7c837b",
+    "size": 919944,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/ccat-1.1.0-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/ccat-1.1.0-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/e4aaaa834934b560b9ff06a4bd4157bd4f7c837b",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/ccat-1.1.0-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/ccat-1.1.0-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/e4aaaa834934b560b9ff06a4bd4157bd4f7c837b",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/ccat-1.1.0-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "cdrtools-3.01-x86_64-3.txz",
+    "path": "packages/6.6/cdrtools-3.01-x86_64-3.txz",
+    "sha": "20c32d3e0bc01da4ee895f98ce57b39b7774ccd4",
+    "size": 883000,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/cdrtools-3.01-x86_64-3.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/cdrtools-3.01-x86_64-3.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/20c32d3e0bc01da4ee895f98ce57b39b7774ccd4",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/cdrtools-3.01-x86_64-3.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/cdrtools-3.01-x86_64-3.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/20c32d3e0bc01da4ee895f98ce57b39b7774ccd4",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/cdrtools-3.01-x86_64-3.txz"
+    }
+  },
+  {
+    "name": "cksfv-1.3.14-x86_64-1_slack.txz",
+    "path": "packages/6.6/cksfv-1.3.14-x86_64-1_slack.txz",
+    "sha": "b3feb58612170946df1806605db6a04ae99f45e2",
+    "size": 22968,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/cksfv-1.3.14-x86_64-1_slack.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/cksfv-1.3.14-x86_64-1_slack.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/b3feb58612170946df1806605db6a04ae99f45e2",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/cksfv-1.3.14-x86_64-1_slack.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/cksfv-1.3.14-x86_64-1_slack.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/b3feb58612170946df1806605db6a04ae99f45e2",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/cksfv-1.3.14-x86_64-1_slack.txz"
+    }
+  },
+  {
+    "name": "ddrescue-1.22-x86_64-1.txz",
+    "path": "packages/6.6/ddrescue-1.22-x86_64-1.txz",
+    "sha": "8f99e31a254f5ad2abc9dc4c2178f4d0a72d2a0b",
+    "size": 98216,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/ddrescue-1.22-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/ddrescue-1.22-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/8f99e31a254f5ad2abc9dc4c2178f4d0a72d2a0b",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/ddrescue-1.22-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/ddrescue-1.22-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/8f99e31a254f5ad2abc9dc4c2178f4d0a72d2a0b",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/ddrescue-1.22-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "docker-compose-1.23.2-x86_64-1.txz",
+    "path": "packages/6.6/docker-compose-1.23.2-x86_64-1.txz",
+    "sha": "dc520f9ae61d6dffd40faaf65abf9dddaf98708f",
+    "size": 11414576,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/docker-compose-1.23.2-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/docker-compose-1.23.2-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/dc520f9ae61d6dffd40faaf65abf9dddaf98708f",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/docker-compose-1.23.2-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/docker-compose-1.23.2-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/dc520f9ae61d6dffd40faaf65abf9dddaf98708f",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/docker-compose-1.23.2-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "dry-0.9.b4-x86_64-1.txz",
+    "path": "packages/6.6/dry-0.9.b4-x86_64-1.txz",
+    "sha": "33d537741faaee1b263b998ca27ba8b91ffddfca",
+    "size": 3543304,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/dry-0.9.b4-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/dry-0.9.b4-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/33d537741faaee1b263b998ca27ba8b91ffddfca",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/dry-0.9.b4-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/dry-0.9.b4-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/33d537741faaee1b263b998ca27ba8b91ffddfca",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/dry-0.9.b4-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "dstat-0.7.3-noarch-1.txz",
+    "path": "packages/6.6/dstat-0.7.3-noarch-1.txz",
+    "sha": "112dbf62fc6487e876bbac5f70b99f5cce96e13c",
+    "size": 83792,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/dstat-0.7.3-noarch-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/dstat-0.7.3-noarch-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/112dbf62fc6487e876bbac5f70b99f5cce96e13c",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/dstat-0.7.3-noarch-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/dstat-0.7.3-noarch-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/112dbf62fc6487e876bbac5f70b99f5cce96e13c",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/dstat-0.7.3-noarch-1.txz"
+    }
+  },
+  {
+    "name": "exiftool-10.40-x86_64-1.txz",
+    "path": "packages/6.6/exiftool-10.40-x86_64-1.txz",
+    "sha": "01901da0107ce70c43edae328b13fe8ba3abde83",
+    "size": 2979892,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/exiftool-10.40-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/exiftool-10.40-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/01901da0107ce70c43edae328b13fe8ba3abde83",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/exiftool-10.40-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/exiftool-10.40-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/01901da0107ce70c43edae328b13fe8ba3abde83",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/exiftool-10.40-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "expect-5.45-x86_64-1.txz",
+    "path": "packages/6.6/expect-5.45-x86_64-1.txz",
+    "sha": "869fb4f72b9b401f0d7cdca078ff32cd9b99f62d",
+    "size": 298004,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/expect-5.45-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/expect-5.45-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/869fb4f72b9b401f0d7cdca078ff32cd9b99f62d",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/expect-5.45-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/expect-5.45-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/869fb4f72b9b401f0d7cdca078ff32cd9b99f62d",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/expect-5.45-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "fasd-1.0.1-x86_64-1.txz",
+    "path": "packages/6.6/fasd-1.0.1-x86_64-1.txz",
+    "sha": "a7d56ab4cf5d01ee26b3a32531e7492b80f88cd7",
+    "size": 16504,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/fasd-1.0.1-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/fasd-1.0.1-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/a7d56ab4cf5d01ee26b3a32531e7492b80f88cd7",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/fasd-1.0.1-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/fasd-1.0.1-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/a7d56ab4cf5d01ee26b3a32531e7492b80f88cd7",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/fasd-1.0.1-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "fd-6.2.0-x86_64-1_slonly.txz",
+    "path": "packages/6.6/fd-6.2.0-x86_64-1_slonly.txz",
+    "sha": "23df0ecc98d203f8d25500da8d1cdfdd7da57143",
+    "size": 657360,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/fd-6.2.0-x86_64-1_slonly.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/fd-6.2.0-x86_64-1_slonly.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/23df0ecc98d203f8d25500da8d1cdfdd7da57143",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/fd-6.2.0-x86_64-1_slonly.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/fd-6.2.0-x86_64-1_slonly.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/23df0ecc98d203f8d25500da8d1cdfdd7da57143",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/fd-6.2.0-x86_64-1_slonly.txz"
+    }
+  },
+  {
+    "name": "fdupes-1.51-x86_64-3_slack.txz",
+    "path": "packages/6.6/fdupes-1.51-x86_64-3_slack.txz",
+    "sha": "812721209a7d3757556247edb70889e1f104db54",
+    "size": 17484,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/fdupes-1.51-x86_64-3_slack.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/fdupes-1.51-x86_64-3_slack.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/812721209a7d3757556247edb70889e1f104db54",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/fdupes-1.51-x86_64-3_slack.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/fdupes-1.51-x86_64-3_slack.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/812721209a7d3757556247edb70889e1f104db54",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/fdupes-1.51-x86_64-3_slack.txz"
+    }
+  },
+  {
+    "name": "fish-2.7.1-x86_64-1.txz",
+    "path": "packages/6.6/fish-2.7.1-x86_64-1.txz",
+    "sha": "5e3d633e191e459c823fa5b2f0d84db3fdb17436",
+    "size": 1684368,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/fish-2.7.1-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/fish-2.7.1-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/5e3d633e191e459c823fa5b2f0d84db3fdb17436",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/fish-2.7.1-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/fish-2.7.1-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/5e3d633e191e459c823fa5b2f0d84db3fdb17436",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/fish-2.7.1-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "fswatch-1.9.3-x86_64-1.txz",
+    "path": "packages/6.6/fswatch-1.9.3-x86_64-1.txz",
+    "sha": "013619eefa4b0ebdeeb145db0015eb5fd452c957",
+    "size": 161868,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/fswatch-1.9.3-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/fswatch-1.9.3-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/013619eefa4b0ebdeeb145db0015eb5fd452c957",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/fswatch-1.9.3-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/fswatch-1.9.3-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/013619eefa4b0ebdeeb145db0015eb5fd452c957",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/fswatch-1.9.3-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "fuseiso-20070708-x86_64-2.txz",
+    "path": "packages/6.6/fuseiso-20070708-x86_64-2.txz",
+    "sha": "77812f0ddc117a95d42aecffe1f23023aad2836d",
+    "size": 26000,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/fuseiso-20070708-x86_64-2.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/fuseiso-20070708-x86_64-2.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/77812f0ddc117a95d42aecffe1f23023aad2836d",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/fuseiso-20070708-x86_64-2.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/fuseiso-20070708-x86_64-2.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/77812f0ddc117a95d42aecffe1f23023aad2836d",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/fuseiso-20070708-x86_64-2.txz"
+    }
+  },
+  {
+    "name": "git-2.14.1-x86_64-1.txz",
+    "path": "packages/6.6/git-2.14.1-x86_64-1.txz",
+    "sha": "6fcf3f7c391760f4d6f84b749b25bfbe66b18350",
+    "size": 5733468,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/git-2.14.1-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/git-2.14.1-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/6fcf3f7c391760f4d6f84b749b25bfbe66b18350",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/git-2.14.1-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/git-2.14.1-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/6fcf3f7c391760f4d6f84b749b25bfbe66b18350",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/git-2.14.1-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "httrack-3.49.2-x86_64-1.txz",
+    "path": "packages/6.6/httrack-3.49.2-x86_64-1.txz",
+    "sha": "5eac00b3eed18ea3f08db71efae293c5038fdf92",
+    "size": 1013972,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/httrack-3.49.2-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/httrack-3.49.2-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/5eac00b3eed18ea3f08db71efae293c5038fdf92",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/httrack-3.49.2-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/httrack-3.49.2-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/5eac00b3eed18ea3f08db71efae293c5038fdf92",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/httrack-3.49.2-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "idle3-tools-0.9.1-x86_64-1.txz",
+    "path": "packages/6.6/idle3-tools-0.9.1-x86_64-1.txz",
+    "sha": "8340b6222ebe92752bddda7c9ede8c6e1ae4ff01",
+    "size": 22048,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/idle3-tools-0.9.1-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/idle3-tools-0.9.1-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/8340b6222ebe92752bddda7c9ede8c6e1ae4ff01",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/idle3-tools-0.9.1-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/idle3-tools-0.9.1-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/8340b6222ebe92752bddda7c9ede8c6e1ae4ff01",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/idle3-tools-0.9.1-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "iftop-1.0pre2-x86_64-1.txz",
+    "path": "packages/6.6/iftop-1.0pre2-x86_64-1.txz",
+    "sha": "c3ff93ebf565e061f1f4cc98d87c0fbba4f78563",
+    "size": 38604,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/iftop-1.0pre2-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/iftop-1.0pre2-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/c3ff93ebf565e061f1f4cc98d87c0fbba4f78563",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/iftop-1.0pre2-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/iftop-1.0pre2-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/c3ff93ebf565e061f1f4cc98d87c0fbba4f78563",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/iftop-1.0pre2-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "iotop-0.6-x86_64-1_fs.tgz",
+    "path": "packages/6.6/iotop-0.6-x86_64-1_fs.tgz",
+    "sha": "fdfe9270c20d923ef5af2ec09de25918575fa12c",
+    "size": 50268,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/iotop-0.6-x86_64-1_fs.tgz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/iotop-0.6-x86_64-1_fs.tgz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/fdfe9270c20d923ef5af2ec09de25918575fa12c",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/iotop-0.6-x86_64-1_fs.tgz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/iotop-0.6-x86_64-1_fs.tgz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/fdfe9270c20d923ef5af2ec09de25918575fa12c",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/iotop-0.6-x86_64-1_fs.tgz"
+    }
+  },
+  {
+    "name": "iperf-3.1.6-x86_64-1cf.txz",
+    "path": "packages/6.6/iperf-3.1.6-x86_64-1cf.txz",
+    "sha": "5bb28ab8b3a6317231561a716d9b80a397236c7e",
+    "size": 72468,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/iperf-3.1.6-x86_64-1cf.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/iperf-3.1.6-x86_64-1cf.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/5bb28ab8b3a6317231561a716d9b80a397236c7e",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/iperf-3.1.6-x86_64-1cf.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/iperf-3.1.6-x86_64-1cf.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/5bb28ab8b3a6317231561a716d9b80a397236c7e",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/iperf-3.1.6-x86_64-1cf.txz"
+    }
+  },
+  {
+    "name": "ipmitool-1.8.17-x86_64-1.txz",
+    "path": "packages/6.6/ipmitool-1.8.17-x86_64-1.txz",
+    "sha": "1b23d1b037b188d74226fbdfdfb7337a7a8986e5",
+    "size": 392364,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/ipmitool-1.8.17-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/ipmitool-1.8.17-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/1b23d1b037b188d74226fbdfdfb7337a7a8986e5",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/ipmitool-1.8.17-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/ipmitool-1.8.17-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/1b23d1b037b188d74226fbdfdfb7337a7a8986e5",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/ipmitool-1.8.17-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "irssi-1.0.4-x86_64-1.txz",
+    "path": "packages/6.6/irssi-1.0.4-x86_64-1.txz",
+    "sha": "a192d6421a9a1e2586f8e9c2f13dc8fcdf44d609",
+    "size": 607908,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/irssi-1.0.4-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/irssi-1.0.4-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/a192d6421a9a1e2586f8e9c2f13dc8fcdf44d609",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/irssi-1.0.4-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/irssi-1.0.4-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/a192d6421a9a1e2586f8e9c2f13dc8fcdf44d609",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/irssi-1.0.4-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "jhead-3.00-x86_64-1_slack.txz",
+    "path": "packages/6.6/jhead-3.00-x86_64-1_slack.txz",
+    "sha": "31e169a0030c70e35aaf5d7261fca85a675207e6",
+    "size": 48832,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/jhead-3.00-x86_64-1_slack.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/jhead-3.00-x86_64-1_slack.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/31e169a0030c70e35aaf5d7261fca85a675207e6",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/jhead-3.00-x86_64-1_slack.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/jhead-3.00-x86_64-1_slack.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/31e169a0030c70e35aaf5d7261fca85a675207e6",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/jhead-3.00-x86_64-1_slack.txz"
+    }
+  },
+  {
+    "name": "joe-4.1-x86_64-1.txz",
+    "path": "packages/6.6/joe-4.1-x86_64-1.txz",
+    "sha": "ecb4d159e10337316523e876a448e99b062ed330",
+    "size": 431956,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/joe-4.1-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/joe-4.1-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/ecb4d159e10337316523e876a448e99b062ed330",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/joe-4.1-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/joe-4.1-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/ecb4d159e10337316523e876a448e99b062ed330",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/joe-4.1-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "jq-onig-1.5-x86_64.txz",
+    "path": "packages/6.6/jq-onig-1.5-x86_64.txz",
+    "sha": "4100394f1348968d5d7d08562d50e8e23f865500",
+    "size": 281464,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/jq-onig-1.5-x86_64.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/jq-onig-1.5-x86_64.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/4100394f1348968d5d7d08562d50e8e23f865500",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/jq-onig-1.5-x86_64.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/jq-onig-1.5-x86_64.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/4100394f1348968d5d7d08562d50e8e23f865500",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/jq-onig-1.5-x86_64.txz"
+    }
+  },
+  {
+    "name": "json-c-0.13.1-x86_64-1.txz",
+    "path": "packages/6.6/json-c-0.13.1-x86_64-1.txz",
+    "sha": "20de2bfb6e69068e27ef9fc7845b20cc676e7e77",
+    "size": 160920,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/json-c-0.13.1-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/json-c-0.13.1-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/20de2bfb6e69068e27ef9fc7845b20cc676e7e77",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/json-c-0.13.1-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/json-c-0.13.1-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/20de2bfb6e69068e27ef9fc7845b20cc676e7e77",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/json-c-0.13.1-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "kbd-1.15.3-x86_64-2.txz",
+    "path": "packages/6.6/kbd-1.15.3-x86_64-2.txz",
+    "sha": "554072a6a13787ebc6bf8686142f7b608564a641",
+    "size": 1147168,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/kbd-1.15.3-x86_64-2.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/kbd-1.15.3-x86_64-2.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/554072a6a13787ebc6bf8686142f7b608564a641",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/kbd-1.15.3-x86_64-2.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/kbd-1.15.3-x86_64-2.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/554072a6a13787ebc6bf8686142f7b608564a641",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/kbd-1.15.3-x86_64-2.txz"
+    }
+  },
+  {
+    "name": "ksh93-2012.08.01-x86_64-2.txz",
+    "path": "packages/6.6/ksh93-2012.08.01-x86_64-2.txz",
+    "sha": "f9a5e746c2fab5366d547e0ab050f210a8861e96",
+    "size": 736440,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/ksh93-2012.08.01-x86_64-2.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/ksh93-2012.08.01-x86_64-2.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/f9a5e746c2fab5366d547e0ab050f210a8861e96",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/ksh93-2012.08.01-x86_64-2.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/ksh93-2012.08.01-x86_64-2.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/f9a5e746c2fab5366d547e0ab050f210a8861e96",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/ksh93-2012.08.01-x86_64-2.txz"
+    }
+  },
+  {
+    "name": "lftp-4.8.3-x86_64-1.txz",
+    "path": "packages/6.6/lftp-4.8.3-x86_64-1.txz",
+    "sha": "ea0c663d5dd38e4918f5a98c108b90cb69d93e9b",
+    "size": 833864,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/lftp-4.8.3-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/lftp-4.8.3-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/ea0c663d5dd38e4918f5a98c108b90cb69d93e9b",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/lftp-4.8.3-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/lftp-4.8.3-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/ea0c663d5dd38e4918f5a98c108b90cb69d93e9b",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/lftp-4.8.3-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "llfuse-1.1-x86_64-4_slonly.txz",
+    "path": "packages/6.6/llfuse-1.1-x86_64-4_slonly.txz",
+    "sha": "2babdddc3afa1c6071b6cef4aad46164e251cad7",
+    "size": 427908,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/llfuse-1.1-x86_64-4_slonly.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/llfuse-1.1-x86_64-4_slonly.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/2babdddc3afa1c6071b6cef4aad46164e251cad7",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/llfuse-1.1-x86_64-4_slonly.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/llfuse-1.1-x86_64-4_slonly.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/2babdddc3afa1c6071b6cef4aad46164e251cad7",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/llfuse-1.1-x86_64-4_slonly.txz"
+    }
+  },
+  {
+    "name": "lrzip-0.631-x86_64-1.txz",
+    "path": "packages/6.6/lrzip-0.631-x86_64-1.txz",
+    "sha": "b9eb9bad44f6a9815eed8b998612bbb91032489c",
+    "size": 212244,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/lrzip-0.631-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/lrzip-0.631-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/b9eb9bad44f6a9815eed8b998612bbb91032489c",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/lrzip-0.631-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/lrzip-0.631-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/b9eb9bad44f6a9815eed8b998612bbb91032489c",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/lrzip-0.631-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "lynx-2.8.8rel.2-x86_64-1.txz",
+    "path": "packages/6.6/lynx-2.8.8rel.2-x86_64-1.txz",
+    "sha": "bccca1f0ce889b06140d2357493f86404b412abd",
+    "size": 1559916,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/lynx-2.8.8rel.2-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/lynx-2.8.8rel.2-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/bccca1f0ce889b06140d2357493f86404b412abd",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/lynx-2.8.8rel.2-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/lynx-2.8.8rel.2-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/bccca1f0ce889b06140d2357493f86404b412abd",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/lynx-2.8.8rel.2-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "mcelog-161-x86_64-1.txz",
+    "path": "packages/6.6/mcelog-161-x86_64-1.txz",
+    "sha": "b4c17f6d58e4477a0d28441a3cc7a47bf613109e",
+    "size": 339460,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/mcelog-161-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/mcelog-161-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/b4c17f6d58e4477a0d28441a3cc7a47bf613109e",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/mcelog-161-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/mcelog-161-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/b4c17f6d58e4477a0d28441a3cc7a47bf613109e",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/mcelog-161-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "md5deep-4.4-x86_64-2.txz",
+    "path": "packages/6.6/md5deep-4.4-x86_64-2.txz",
+    "sha": "58d1c8a4b028b24c810538897c9116722dbdb7da",
+    "size": 132400,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/md5deep-4.4-x86_64-2.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/md5deep-4.4-x86_64-2.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/58d1c8a4b028b24c810538897c9116722dbdb7da",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/md5deep-4.4-x86_64-2.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/md5deep-4.4-x86_64-2.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/58d1c8a4b028b24c810538897c9116722dbdb7da",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/md5deep-4.4-x86_64-2.txz"
+    }
+  },
+  {
+    "name": "mediainfo-17.12-x86_64-1_slonly.txz",
+    "path": "packages/6.6/mediainfo-17.12-x86_64-1_slonly.txz",
+    "sha": "63f2aac4969d8b0a54c2e5bc8ea6c36b8774c155",
+    "size": 2593856,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/mediainfo-17.12-x86_64-1_slonly.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/mediainfo-17.12-x86_64-1_slonly.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/63f2aac4969d8b0a54c2e5bc8ea6c36b8774c155",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/mediainfo-17.12-x86_64-1_slonly.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/mediainfo-17.12-x86_64-1_slonly.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/63f2aac4969d8b0a54c2e5bc8ea6c36b8774c155",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/mediainfo-17.12-x86_64-1_slonly.txz"
+    }
+  },
+  {
+    "name": "mktorrent-1.1-x86_64-1.txz",
+    "path": "packages/6.6/mktorrent-1.1-x86_64-1.txz",
+    "sha": "cbe8bcadfe36e7e34c51b7df454b07ec5762f60e",
+    "size": 18116,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/mktorrent-1.1-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/mktorrent-1.1-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/cbe8bcadfe36e7e34c51b7df454b07ec5762f60e",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/mktorrent-1.1-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/mktorrent-1.1-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/cbe8bcadfe36e7e34c51b7df454b07ec5762f60e",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/mktorrent-1.1-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "mosh-1.2.4-x86_64-2_slonly.txz",
+    "path": "packages/6.6/mosh-1.2.4-x86_64-2_slonly.txz",
+    "sha": "e58c11305062e057ea5296077b0d15fdfc460957",
+    "size": 209648,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/mosh-1.2.4-x86_64-2_slonly.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/mosh-1.2.4-x86_64-2_slonly.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/e58c11305062e057ea5296077b0d15fdfc460957",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/mosh-1.2.4-x86_64-2_slonly.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/mosh-1.2.4-x86_64-2_slonly.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/e58c11305062e057ea5296077b0d15fdfc460957",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/mosh-1.2.4-x86_64-2_slonly.txz"
+    }
+  },
+  {
+    "name": "mtr-0.86-x86_64-1.txz",
+    "path": "packages/6.6/mtr-0.86-x86_64-1.txz",
+    "sha": "30196b676b29f974305346beb443d47b37db7f3b",
+    "size": 53084,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/mtr-0.86-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/mtr-0.86-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/30196b676b29f974305346beb443d47b37db7f3b",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/mtr-0.86-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/mtr-0.86-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/30196b676b29f974305346beb443d47b37db7f3b",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/mtr-0.86-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "multitail-6.4.2-x86_64-1.txz",
+    "path": "packages/6.6/multitail-6.4.2-x86_64-1.txz",
+    "sha": "58a9960acae802534aa2e7f1dc9b4faa1a233cdb",
+    "size": 133948,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/multitail-6.4.2-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/multitail-6.4.2-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/58a9960acae802534aa2e7f1dc9b4faa1a233cdb",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/multitail-6.4.2-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/multitail-6.4.2-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/58a9960acae802534aa2e7f1dc9b4faa1a233cdb",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/multitail-6.4.2-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "nc-1.10-x86_64-1.txz",
+    "path": "packages/6.6/nc-1.10-x86_64-1.txz",
+    "sha": "3c8b277c0acba953d32c3173517de3be9e7c4830",
+    "size": 53592,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/nc-1.10-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/nc-1.10-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/3c8b277c0acba953d32c3173517de3be9e7c4830",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/nc-1.10-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/nc-1.10-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/3c8b277c0acba953d32c3173517de3be9e7c4830",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/nc-1.10-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "ncdu-1.12-x86_64-1.txz",
+    "path": "packages/6.6/ncdu-1.12-x86_64-1.txz",
+    "sha": "067aff2b54a0779dacb7eed3d405251425f27963",
+    "size": 38788,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/ncdu-1.12-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/ncdu-1.12-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/067aff2b54a0779dacb7eed3d405251425f27963",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/ncdu-1.12-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/ncdu-1.12-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/067aff2b54a0779dacb7eed3d405251425f27963",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/ncdu-1.12-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "neon-0.30.1-x86_64-2.txz",
+    "path": "packages/6.6/neon-0.30.1-x86_64-2.txz",
+    "sha": "0407f99637a4efc489c56b432b3b112300609235",
+    "size": 210608,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/neon-0.30.1-x86_64-2.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/neon-0.30.1-x86_64-2.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/0407f99637a4efc489c56b432b3b112300609235",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/neon-0.30.1-x86_64-2.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/neon-0.30.1-x86_64-2.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/0407f99637a4efc489c56b432b3b112300609235",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/neon-0.30.1-x86_64-2.txz"
+    }
+  },
+  {
+    "name": "netcat-openbsd-1.105-x86_64-2.tgz",
+    "path": "packages/6.6/netcat-openbsd-1.105-x86_64-2.tgz",
+    "sha": "c3a0ffbbd58b0a71c686afcc32a7ed2079071e0a",
+    "size": 203428,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/netcat-openbsd-1.105-x86_64-2.tgz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/netcat-openbsd-1.105-x86_64-2.tgz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/c3a0ffbbd58b0a71c686afcc32a7ed2079071e0a",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/netcat-openbsd-1.105-x86_64-2.tgz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/netcat-openbsd-1.105-x86_64-2.tgz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/c3a0ffbbd58b0a71c686afcc32a7ed2079071e0a",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/netcat-openbsd-1.105-x86_64-2.tgz"
+    }
+  },
+  {
+    "name": "nload-0.7.4-x86_64-1_slack.txz",
+    "path": "packages/6.6/nload-0.7.4-x86_64-1_slack.txz",
+    "sha": "163badb089b8924c1d0b0471c66ab79d5fe52164",
+    "size": 59996,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/nload-0.7.4-x86_64-1_slack.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/nload-0.7.4-x86_64-1_slack.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/163badb089b8924c1d0b0471c66ab79d5fe52164",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/nload-0.7.4-x86_64-1_slack.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/nload-0.7.4-x86_64-1_slack.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/163badb089b8924c1d0b0471c66ab79d5fe52164",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/nload-0.7.4-x86_64-1_slack.txz"
+    }
+  },
+  {
+    "name": "nodejs-8.9.4-x86_64-1_slonly.txz",
+    "path": "packages/6.6/nodejs-8.9.4-x86_64-1_slonly.txz",
+    "sha": "b710f650f17e43f8f7b8ee9a538f34ec05d51f32",
+    "size": 9780412,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/nodejs-8.9.4-x86_64-1_slonly.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/nodejs-8.9.4-x86_64-1_slonly.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/b710f650f17e43f8f7b8ee9a538f34ec05d51f32",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/nodejs-8.9.4-x86_64-1_slonly.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/nodejs-8.9.4-x86_64-1_slonly.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/b710f650f17e43f8f7b8ee9a538f34ec05d51f32",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/nodejs-8.9.4-x86_64-1_slonly.txz"
+    }
+  },
+  {
+    "name": "p7zip-16.02-x86_64-1sl.txz",
+    "path": "packages/6.6/p7zip-16.02-x86_64-1sl.txz",
+    "sha": "efb97a9f688f6179439b79711462c73e086b258a",
+    "size": 1285484,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/p7zip-16.02-x86_64-1sl.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/p7zip-16.02-x86_64-1sl.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/efb97a9f688f6179439b79711462c73e086b258a",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/p7zip-16.02-x86_64-1sl.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/p7zip-16.02-x86_64-1sl.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/efb97a9f688f6179439b79711462c73e086b258a",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/p7zip-16.02-x86_64-1sl.txz"
+    }
+  },
+  {
+    "name": "par2cmdline-0.8.0a-x86_64-1.txz",
+    "path": "packages/6.6/par2cmdline-0.8.0a-x86_64-1.txz",
+    "sha": "7299f03059c876213d7c26c523ff04fbe9b4eee8",
+    "size": 108104,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/par2cmdline-0.8.0a-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/par2cmdline-0.8.0a-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/7299f03059c876213d7c26c523ff04fbe9b4eee8",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/par2cmdline-0.8.0a-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/par2cmdline-0.8.0a-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/7299f03059c876213d7c26c523ff04fbe9b4eee8",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/par2cmdline-0.8.0a-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "parallel-20160822-x86_64-1_slonly.txz",
+    "path": "packages/6.6/parallel-20160822-x86_64-1_slonly.txz",
+    "sha": "2cdccb47212895ffc158b2df3c86a8b8d94ccbf0",
+    "size": 1132288,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/parallel-20160822-x86_64-1_slonly.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/parallel-20160822-x86_64-1_slonly.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/2cdccb47212895ffc158b2df3c86a8b8d94ccbf0",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/parallel-20160822-x86_64-1_slonly.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/parallel-20160822-x86_64-1_slonly.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/2cdccb47212895ffc158b2df3c86a8b8d94ccbf0",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/parallel-20160822-x86_64-1_slonly.txz"
+    }
+  },
+  {
+    "name": "perl-5.26.1-x86_64-4.txz",
+    "path": "packages/6.6/perl-5.26.1-x86_64-4.txz",
+    "sha": "fa9916a85c6bbae264bd502f0bc9ee763431a326",
+    "size": 15240000,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/perl-5.26.1-x86_64-4.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/perl-5.26.1-x86_64-4.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/fa9916a85c6bbae264bd502f0bc9ee763431a326",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/perl-5.26.1-x86_64-4.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/perl-5.26.1-x86_64-4.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/fa9916a85c6bbae264bd502f0bc9ee763431a326",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/perl-5.26.1-x86_64-4.txz"
+    }
+  },
+  {
+    "name": "pigz-2.3-x86_64-1.txz",
+    "path": "packages/6.6/pigz-2.3-x86_64-1.txz",
+    "sha": "f8b0cafd56f78198b0e12036d14a8cd4e17752cf",
+    "size": 48924,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/pigz-2.3-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/pigz-2.3-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/f8b0cafd56f78198b0e12036d14a8cd4e17752cf",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/pigz-2.3-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/pigz-2.3-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/f8b0cafd56f78198b0e12036d14a8cd4e17752cf",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/pigz-2.3-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "pip-10.0.1-x86_64-1.txz",
+    "path": "packages/6.6/pip-10.0.1-x86_64-1.txz",
+    "sha": "9c69632c01f805e0808ca3d4165a03ed181e4bb5",
+    "size": 2070188,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/pip-10.0.1-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/pip-10.0.1-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/9c69632c01f805e0808ca3d4165a03ed181e4bb5",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/pip-10.0.1-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/pip-10.0.1-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/9c69632c01f805e0808ca3d4165a03ed181e4bb5",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/pip-10.0.1-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "protobuf-3.5.2-x86_64-1dj.txz",
+    "path": "packages/6.6/protobuf-3.5.2-x86_64-1dj.txz",
+    "sha": "8d16c258b61b50f5bf46b09421c531d868d3fb03",
+    "size": 2884952,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/protobuf-3.5.2-x86_64-1dj.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/protobuf-3.5.2-x86_64-1dj.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/8d16c258b61b50f5bf46b09421c531d868d3fb03",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/protobuf-3.5.2-x86_64-1dj.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/protobuf-3.5.2-x86_64-1dj.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/8d16c258b61b50f5bf46b09421c531d868d3fb03",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/protobuf-3.5.2-x86_64-1dj.txz"
+    }
+  },
+  {
+    "name": "python-2.7.14a-x86_64-1.txz",
+    "path": "packages/6.6/python-2.7.14a-x86_64-1.txz",
+    "sha": "a3f0f092c4fbf8279ae7ecaac6e2157ebeae8fa6",
+    "size": 14807380,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/python-2.7.14a-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/python-2.7.14a-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/a3f0f092c4fbf8279ae7ecaac6e2157ebeae8fa6",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/python-2.7.14a-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/python-2.7.14a-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/a3f0f092c4fbf8279ae7ecaac6e2157ebeae8fa6",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/python-2.7.14a-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "python3-3.6.2b-x86_64-1.txz",
+    "path": "packages/6.6/python3-3.6.2b-x86_64-1.txz",
+    "sha": "a9f87cce0f0eddac5f36d9e15140bd94cdd8136e",
+    "size": 19332516,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/python3-3.6.2b-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/python3-3.6.2b-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/a9f87cce0f0eddac5f36d9e15140bd94cdd8136e",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/python3-3.6.2b-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/python3-3.6.2b-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/a9f87cce0f0eddac5f36d9e15140bd94cdd8136e",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/python3-3.6.2b-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "rar-5.5.0-x86_64-1.txz",
+    "path": "packages/6.6/rar-5.5.0-x86_64-1.txz",
+    "sha": "d91a04c71cca0a11581cd14bd74a39d5905e4206",
+    "size": 282312,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/rar-5.5.0-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/rar-5.5.0-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/d91a04c71cca0a11581cd14bd74a39d5905e4206",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/rar-5.5.0-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/rar-5.5.0-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/d91a04c71cca0a11581cd14bd74a39d5905e4206",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/rar-5.5.0-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "rar2fs-1.26.0-x86_64-1.txz",
+    "path": "packages/6.6/rar2fs-1.26.0-x86_64-1.txz",
+    "sha": "9909683cfbbfad476056f08b27909f39685ec8c3",
+    "size": 144400,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/rar2fs-1.26.0-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/rar2fs-1.26.0-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/9909683cfbbfad476056f08b27909f39685ec8c3",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/rar2fs-1.26.0-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/rar2fs-1.26.0-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/9909683cfbbfad476056f08b27909f39685ec8c3",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/rar2fs-1.26.0-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "readline-7.0-x86_64-1.txz",
+    "path": "packages/6.6/readline-7.0-x86_64-1.txz",
+    "sha": "d751d744a2d62847c821f30c5768966ceee366af",
+    "size": 295052,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/readline-7.0-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/readline-7.0-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/d751d744a2d62847c821f30c5768966ceee366af",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/readline-7.0-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/readline-7.0-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/d751d744a2d62847c821f30c5768966ceee366af",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/readline-7.0-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "reptyr-0.6.2-x86_64-3.txz",
+    "path": "packages/6.6/reptyr-0.6.2-x86_64-3.txz",
+    "sha": "f167d436288ab31fce20af4d4bba3112b1fe401d",
+    "size": 21136,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/reptyr-0.6.2-x86_64-3.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/reptyr-0.6.2-x86_64-3.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/f167d436288ab31fce20af4d4bba3112b1fe401d",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/reptyr-0.6.2-x86_64-3.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/reptyr-0.6.2-x86_64-3.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/f167d436288ab31fce20af4d4bba3112b1fe401d",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/reptyr-0.6.2-x86_64-3.txz"
+    }
+  },
+  {
+    "name": "ripgrep-0.7.1-x86_64-3_slonly.txz",
+    "path": "packages/6.6/ripgrep-0.7.1-x86_64-3_slonly.txz",
+    "sha": "a115fb34e2a04dd51488ee3e7cddcf1dcb6a40bc",
+    "size": 857692,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/ripgrep-0.7.1-x86_64-3_slonly.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/ripgrep-0.7.1-x86_64-3_slonly.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/a115fb34e2a04dd51488ee3e7cddcf1dcb6a40bc",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/ripgrep-0.7.1-x86_64-3_slonly.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/ripgrep-0.7.1-x86_64-3_slonly.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/a115fb34e2a04dd51488ee3e7cddcf1dcb6a40bc",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/ripgrep-0.7.1-x86_64-3_slonly.txz"
+    }
+  },
+  {
+    "name": "rmlint-2.4.6-x86_64-1.txz",
+    "path": "packages/6.6/rmlint-2.4.6-x86_64-1.txz",
+    "sha": "27d724f083e79d479ee1b6b09de6f5e3b718b156",
+    "size": 88652,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/rmlint-2.4.6-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/rmlint-2.4.6-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/27d724f083e79d479ee1b6b09de6f5e3b718b156",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/rmlint-2.4.6-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/rmlint-2.4.6-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/27d724f083e79d479ee1b6b09de6f5e3b718b156",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/rmlint-2.4.6-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "rsnapshot-1.4.2-x86_64-1.txz",
+    "path": "packages/6.6/rsnapshot-1.4.2-x86_64-1.txz",
+    "sha": "2355f0d69e0bb43e3aa40dfcfc3ec65ea1e1beb8",
+    "size": 112868,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/rsnapshot-1.4.2-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/rsnapshot-1.4.2-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/2355f0d69e0bb43e3aa40dfcfc3ec65ea1e1beb8",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/rsnapshot-1.4.2-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/rsnapshot-1.4.2-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/2355f0d69e0bb43e3aa40dfcfc3ec65ea1e1beb8",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/rsnapshot-1.4.2-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "screen-4.6.2s-x86_64-2.txz",
+    "path": "packages/6.6/screen-4.6.2s-x86_64-2.txz",
+    "sha": "ce084ecc6623873a18de326959e02e7323f01634",
+    "size": 566260,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/screen-4.6.2s-x86_64-2.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/screen-4.6.2s-x86_64-2.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/ce084ecc6623873a18de326959e02e7323f01634",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/screen-4.6.2s-x86_64-2.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/screen-4.6.2s-x86_64-2.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/ce084ecc6623873a18de326959e02e7323f01634",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/screen-4.6.2s-x86_64-2.txz"
+    }
+  },
+  {
+    "name": "sdparm-1.10.0.1-x86_64-1.txz",
+    "path": "packages/6.6/sdparm-1.10.0.1-x86_64-1.txz",
+    "sha": "3fd33c60a968c1251324fce8bcf3da9cf438883d",
+    "size": 121828,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/sdparm-1.10.0.1-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/sdparm-1.10.0.1-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/3fd33c60a968c1251324fce8bcf3da9cf438883d",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/sdparm-1.10.0.1-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/sdparm-1.10.0.1-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/3fd33c60a968c1251324fce8bcf3da9cf438883d",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/sdparm-1.10.0.1-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "slocate-3.1-x86_64-4.txz",
+    "path": "packages/6.6/slocate-3.1-x86_64-4.txz",
+    "sha": "0f1da76aedbfb8cc6c282af3e787d617f28264fc",
+    "size": 28504,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/slocate-3.1-x86_64-4.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/slocate-3.1-x86_64-4.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/0f1da76aedbfb8cc6c282af3e787d617f28264fc",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/slocate-3.1-x86_64-4.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/slocate-3.1-x86_64-4.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/0f1da76aedbfb8cc6c282af3e787d617f28264fc",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/slocate-3.1-x86_64-4.txz"
+    }
+  },
+  {
+    "name": "socat-1.7.3.2-x86_64-1.txz",
+    "path": "packages/6.6/socat-1.7.3.2-x86_64-1.txz",
+    "sha": "a4ada478037f45aaac81ac984688269df2e2169d",
+    "size": 258200,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/socat-1.7.3.2-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/socat-1.7.3.2-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/a4ada478037f45aaac81ac984688269df2e2169d",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/socat-1.7.3.2-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/socat-1.7.3.2-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/a4ada478037f45aaac81ac984688269df2e2169d",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/socat-1.7.3.2-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "sshfs-fuse-2.8-x86_64-1sl.txz",
+    "path": "packages/6.6/sshfs-fuse-2.8-x86_64-1sl.txz",
+    "sha": "1574f349c80b275be038c0ffe77e1611e9afc400",
+    "size": 41480,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/sshfs-fuse-2.8-x86_64-1sl.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/sshfs-fuse-2.8-x86_64-1sl.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/1574f349c80b275be038c0ffe77e1611e9afc400",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/sshfs-fuse-2.8-x86_64-1sl.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/sshfs-fuse-2.8-x86_64-1sl.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/1574f349c80b275be038c0ffe77e1611e9afc400",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/sshfs-fuse-2.8-x86_64-1sl.txz"
+    }
+  },
+  {
+    "name": "strace-4.11-x86_64-1.txz",
+    "path": "packages/6.6/strace-4.11-x86_64-1.txz",
+    "sha": "3eec914e48df74902ade8b128e4a4af2ff182e3d",
+    "size": 172520,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/strace-4.11-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/strace-4.11-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/3eec914e48df74902ade8b128e4a4af2ff182e3d",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/strace-4.11-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/strace-4.11-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/3eec914e48df74902ade8b128e4a4af2ff182e3d",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/strace-4.11-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "strongswan-5.3.4-x86_64-3.txz",
+    "path": "packages/6.6/strongswan-5.3.4-x86_64-3.txz",
+    "sha": "cf86ddca683d79348ae6b7a33e2502f8c843673b",
+    "size": 673064,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/strongswan-5.3.4-x86_64-3.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/strongswan-5.3.4-x86_64-3.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/cf86ddca683d79348ae6b7a33e2502f8c843673b",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/strongswan-5.3.4-x86_64-3.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/strongswan-5.3.4-x86_64-3.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/cf86ddca683d79348ae6b7a33e2502f8c843673b",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/strongswan-5.3.4-x86_64-3.txz"
+    }
+  },
+  {
+    "name": "stunnel-5.35-x86_64-2.txz",
+    "path": "packages/6.6/stunnel-5.35-x86_64-2.txz",
+    "sha": "773fe54e9228848c4f0f5e7d0ee181aa53e7c99a",
+    "size": 165448,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/stunnel-5.35-x86_64-2.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/stunnel-5.35-x86_64-2.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/773fe54e9228848c4f0f5e7d0ee181aa53e7c99a",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/stunnel-5.35-x86_64-2.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/stunnel-5.35-x86_64-2.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/773fe54e9228848c4f0f5e7d0ee181aa53e7c99a",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/stunnel-5.35-x86_64-2.txz"
+    }
+  },
+  {
+    "name": "subversion-1.9.5-x86_64-1.txz",
+    "path": "packages/6.6/subversion-1.9.5-x86_64-1.txz",
+    "sha": "fcb2aef300112c73772c45cd2159882dff9e2ceb",
+    "size": 4590540,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/subversion-1.9.5-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/subversion-1.9.5-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/fcb2aef300112c73772c45cd2159882dff9e2ceb",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/subversion-1.9.5-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/subversion-1.9.5-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/fcb2aef300112c73772c45cd2159882dff9e2ceb",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/subversion-1.9.5-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "sysstat-11.2.1.1-x86_64-1.txz",
+    "path": "packages/6.6/sysstat-11.2.1.1-x86_64-1.txz",
+    "sha": "f70f5dd5eeb869042b3604d33bd753712227b829",
+    "size": 266912,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/sysstat-11.2.1.1-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/sysstat-11.2.1.1-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/f70f5dd5eeb869042b3604d33bd753712227b829",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/sysstat-11.2.1.1-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/sysstat-11.2.1.1-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/f70f5dd5eeb869042b3604d33bd753712227b829",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/sysstat-11.2.1.1-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "tcl-8.6.7-x86_64-1.txz",
+    "path": "packages/6.6/tcl-8.6.7-x86_64-1.txz",
+    "sha": "51d6a39ee28b0d17850cb83f36e25cf856a144b5",
+    "size": 2830776,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/tcl-8.6.7-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/tcl-8.6.7-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/51d6a39ee28b0d17850cb83f36e25cf856a144b5",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/tcl-8.6.7-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/tcl-8.6.7-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/51d6a39ee28b0d17850cb83f36e25cf856a144b5",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/tcl-8.6.7-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "tcpdump-4.9.0-x86_64-1.txz",
+    "path": "packages/6.6/tcpdump-4.9.0-x86_64-1.txz",
+    "sha": "18da1417b209d177f977bec4f0be903ce6724779",
+    "size": 365560,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/tcpdump-4.9.0-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/tcpdump-4.9.0-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/18da1417b209d177f977bec4f0be903ce6724779",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/tcpdump-4.9.0-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/tcpdump-4.9.0-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/18da1417b209d177f977bec4f0be903ce6724779",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/tcpdump-4.9.0-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "testdisk-7.0-x86_64-2.txz",
+    "path": "packages/6.6/testdisk-7.0-x86_64-2.txz",
+    "sha": "87c496d24dca8fdfc49c812cf497fe679033f211",
+    "size": 434188,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/testdisk-7.0-x86_64-2.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/testdisk-7.0-x86_64-2.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/87c496d24dca8fdfc49c812cf497fe679033f211",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/testdisk-7.0-x86_64-2.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/testdisk-7.0-x86_64-2.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/87c496d24dca8fdfc49c812cf497fe679033f211",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/testdisk-7.0-x86_64-2.txz"
+    }
+  },
+  {
+    "name": "tinc-1.0.34-x86_64-1.txz",
+    "path": "packages/6.6/tinc-1.0.34-x86_64-1.txz",
+    "sha": "f902a44686495d63ac2befdb2f1950fd9d09931c",
+    "size": 111320,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/tinc-1.0.34-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/tinc-1.0.34-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/f902a44686495d63ac2befdb2f1950fd9d09931c",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/tinc-1.0.34-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/tinc-1.0.34-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/f902a44686495d63ac2befdb2f1950fd9d09931c",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/tinc-1.0.34-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "tmux-2.8t-x86_64-1.txz",
+    "path": "packages/6.6/tmux-2.8t-x86_64-1.txz",
+    "sha": "40f1ad2b8276fc2b32032f78fe5da1187212c601",
+    "size": 255708,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/tmux-2.8t-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/tmux-2.8t-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/40f1ad2b8276fc2b32032f78fe5da1187212c601",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/tmux-2.8t-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/tmux-2.8t-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/40f1ad2b8276fc2b32032f78fe5da1187212c601",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/tmux-2.8t-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "unionfs-fuse-0.26-x86_64-1dj.txz",
+    "path": "packages/6.6/unionfs-fuse-0.26-x86_64-1dj.txz",
+    "sha": "59569f54a94e11a6badc6091bcc39c1dc2ff92a4",
+    "size": 36244,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/unionfs-fuse-0.26-x86_64-1dj.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/unionfs-fuse-0.26-x86_64-1dj.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/59569f54a94e11a6badc6091bcc39c1dc2ff92a4",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/unionfs-fuse-0.26-x86_64-1dj.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/unionfs-fuse-0.26-x86_64-1dj.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/59569f54a94e11a6badc6091bcc39c1dc2ff92a4",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/unionfs-fuse-0.26-x86_64-1dj.txz"
+    }
+  },
+  {
+    "name": "unrar-5.6.1-x86_64-1.txz",
+    "path": "packages/6.6/unrar-5.6.1-x86_64-1.txz",
+    "sha": "f3efc3f62b9346d42c8f073f76ab0c0e20f63d78",
+    "size": 336448,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/unrar-5.6.1-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/unrar-5.6.1-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/f3efc3f62b9346d42c8f073f76ab0c0e20f63d78",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/unrar-5.6.1-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/unrar-5.6.1-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/f3efc3f62b9346d42c8f073f76ab0c0e20f63d78",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/unrar-5.6.1-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "utempter-1.1.6-x86_64-2.txz",
+    "path": "packages/6.6/utempter-1.1.6-x86_64-2.txz",
+    "sha": "09cf0529c36a7612145a5251db90cf0928795c43",
+    "size": 15624,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/utempter-1.1.6-x86_64-2.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/utempter-1.1.6-x86_64-2.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/09cf0529c36a7612145a5251db90cf0928795c43",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/utempter-1.1.6-x86_64-2.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/utempter-1.1.6-x86_64-2.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/09cf0529c36a7612145a5251db90cf0928795c43",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/utempter-1.1.6-x86_64-2.txz"
+    }
+  },
+  {
+    "name": "vim-7.4.1938-x86_64-1.txz",
+    "path": "packages/6.6/vim-7.4.1938-x86_64-1.txz",
+    "sha": "8935186216af11f8b67c1cd1bf1050ac61ab450b",
+    "size": 6478448,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/vim-7.4.1938-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/vim-7.4.1938-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/8935186216af11f8b67c1cd1bf1050ac61ab450b",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/vim-7.4.1938-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/vim-7.4.1938-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/8935186216af11f8b67c1cd1bf1050ac61ab450b",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/vim-7.4.1938-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "virtualenv-13.1.2-x86_64-1_slack.txz",
+    "path": "packages/6.6/virtualenv-13.1.2-x86_64-1_slack.txz",
+    "sha": "046ba000585e63674d640de4c6a214cfef2cad00",
+    "size": 1593076,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/virtualenv-13.1.2-x86_64-1_slack.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/virtualenv-13.1.2-x86_64-1_slack.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/046ba000585e63674d640de4c6a214cfef2cad00",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/virtualenv-13.1.2-x86_64-1_slack.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/virtualenv-13.1.2-x86_64-1_slack.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/046ba000585e63674d640de4c6a214cfef2cad00",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/virtualenv-13.1.2-x86_64-1_slack.txz"
+    }
+  },
+  {
+    "name": "vnstat-2.1-x86_64-1.txz",
+    "path": "packages/6.6/vnstat-2.1-x86_64-1.txz",
+    "sha": "7d4549632abb82f0b9c86985ea2a1c1d938ef08d",
+    "size": 93656,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/vnstat-2.1-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/vnstat-2.1-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/7d4549632abb82f0b9c86985ea2a1c1d938ef08d",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/vnstat-2.1-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/vnstat-2.1-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/7d4549632abb82f0b9c86985ea2a1c1d938ef08d",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/vnstat-2.1-x86_64-1.txz"
+    }
+  },
+  {
+    "name": "xinetd-2.3.15-x86_64-3.txz",
+    "path": "packages/6.6/xinetd-2.3.15-x86_64-3.txz",
+    "sha": "1b2661bff250ed8e6fb8eadc73cefd9f5b6fe725",
+    "size": 122084,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/xinetd-2.3.15-x86_64-3.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/xinetd-2.3.15-x86_64-3.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/1b2661bff250ed8e6fb8eadc73cefd9f5b6fe725",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/xinetd-2.3.15-x86_64-3.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/xinetd-2.3.15-x86_64-3.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/1b2661bff250ed8e6fb8eadc73cefd9f5b6fe725",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/xinetd-2.3.15-x86_64-3.txz"
+    }
+  },
+  {
+    "name": "zpaq-7.15-x86_64-1_slonly.txz",
+    "path": "packages/6.6/zpaq-7.15-x86_64-1_slonly.txz",
+    "sha": "92941ecbb299610a5a8af108ded56cc7d8bfdf4c",
+    "size": 170036,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/zpaq-7.15-x86_64-1_slonly.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/zpaq-7.15-x86_64-1_slonly.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/92941ecbb299610a5a8af108ded56cc7d8bfdf4c",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/zpaq-7.15-x86_64-1_slonly.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/zpaq-7.15-x86_64-1_slonly.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/92941ecbb299610a5a8af108ded56cc7d8bfdf4c",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/zpaq-7.15-x86_64-1_slonly.txz"
+    }
+  },
+  {
+    "name": "zsh-5.2-x86_64-1.txz",
+    "path": "packages/6.6/zsh-5.2-x86_64-1.txz",
+    "sha": "941b19b093477843d219b11e0ab58e6c12945c5b",
+    "size": 2738596,
+    "url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/zsh-5.2-x86_64-1.txz?ref=master",
+    "html_url": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/zsh-5.2-x86_64-1.txz",
+    "git_url": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/941b19b093477843d219b11e0ab58e6c12945c5b",
+    "download_url": "https://raw.githubusercontent.com/dmacias72/unRAID-NerdPack/master/packages/6.6/zsh-5.2-x86_64-1.txz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/contents/packages/6.6/zsh-5.2-x86_64-1.txz?ref=master",
+      "git": "https://api.github.com/repos/dmacias72/unRAID-NerdPack/git/blobs/941b19b093477843d219b11e0ab58e6c12945c5b",
+      "html": "https://github.com/dmacias72/unRAID-NerdPack/blob/master/packages/6.6/zsh-5.2-x86_64-1.txz"
+    }
+  }
+]

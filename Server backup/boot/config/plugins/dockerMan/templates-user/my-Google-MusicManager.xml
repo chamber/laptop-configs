@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>Google-MusicManager</Name>
+  <Description>Allows uploading of local music files for use with the Google Play Music service.[br][br]&#13;
+All credit to ruippeixotog.[br][br]&#13;
+[b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]&#13;
+[b]/appdata[/b]  The working directory of Google Music Manager, where application logs and internal database files are stored.[br][br]&#13;
+[b]/music[/b] The music directory that should be synchronized with Google Play Music. [br][br]&#13;
+[b]5900[/b] is the port exposed by the VNC server. Map a different port number as to not conflict with any existing VMs.[br][br] &#13;
+[b][u][span style='color: #E80000;']Instructions[/span][/u][/b][br]&#13;
+1.Open your VNC viewer of choice and connect to the mapped port that you specificed during the install.[br] &#13;
+2.Once connected, sign in with your Google Credentials to complete the setup of Music Manager.&#13;
+</Description>
+  <Registry>https://registry.hub.docker.com/u/ruippeixotog/google-musicmanager/</Registry>
+  <Repository>ruippeixotog/google-musicmanager:dev</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment>
+    <Variable>
+      <Name>BRANCH</Name>
+      <Value>dev</Value>
+    </Variable>
+  </Environment>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5000</HostPort>
+        <ContainerPort>5900</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/Media/Music/</HostDir>
+      <ContainerDir>/music</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/google-musicmanager</HostDir>
+      <ContainerDir>/appdata</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Version>a8490d71</Version>
+  <WebUI></WebUI>
+  <Banner></Banner>
+  <Icon>http://i.imgur.com/E9wSQ9N.png</Icon>
+  <ExtraParams></ExtraParams>
+</Container>

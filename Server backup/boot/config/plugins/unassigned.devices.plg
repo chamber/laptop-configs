@@ -1,0 +1,1052 @@
+<?xml version='1.0' standalone='yes'?>
+
+<!DOCTYPE PLUGIN [
+<!ENTITY name      "unassigned.devices">
+<!ENTITY author    "dlandon">
+<!ENTITY version   "2019.03.31">
+<!ENTITY launch    "Main/UnassignedDevices">
+<!ENTITY gitURL    "https://github.com/&author;/&name;/raw/master">
+<!ENTITY pluginURL "&gitURL;/&name;.plg">
+<!ENTITY supportURL	"https://forums.unraid.net/topic/44104-unassigned-devices-managing-disk-drives-outside-of-the-unraid-array/">
+<!ENTITY packages	"/boot/config/plugins/&name;/packages">
+<!ENTITY MD5		"1797a59c3b7a4e00fc99a88f85cdf86b">
+]>
+
+<PLUGIN name="&name;"
+		author="&author;"
+		launch="&launch;"
+		version="&version;"
+		pluginURL="&pluginURL;"
+		support="&supportURL;"
+		icon="unlock-alt"
+		min="6.4.0">
+
+<CHANGES>
+##&name;
+###&version;
+- Fix: Mounting issue when the username is blank.
+
+###2019.03.30
+- Add: Separate line for domain in add SMB share.
+
+###2019.03.28
+- Add: Move scripts from flash to /tmp to execute them.
+
+###2019.03.25
+- Fix: Mount Windows SMB share error.
+
+###209.03.22
+- Add: Domain to user for smb shares on a domain - user@domain.
+
+###2019.03.13
+- Fix: Don't check for disk running to try to keep the disk from spinning up when there is no script defined.
+
+###2019.03.07
+- Fix: Cut down on writes of smb-extra.conf on flash drive.
+
+###2019.03.05
+- Fix: Adjust timeouts when determining device sizes to keep UD from 'hanging'.
+
+###2019.02.12
+- Fix: Implement Unraid logo spinner for 6.6 and 6.7.
+- Fix: Duplicate Unraid logo spinners when rescanning disks.
+
+###2019.02.05a
+- Fix: Don't remove slash characters on SMB and NFS mount points when initially selected.
+- Fix: Return to UD tab when 'Done' button clicked. (Thanks gfjardim)
+
+###2019.02.04
+- Fix: Don't allow some additional special characters in mount point names.
+- Fix: Convert single quote character to underscore in mount point names.
+
+###2019.01.30
+- Fix: Issues with color schemes not displaying dialogs properly.
+- Fix: Change cd icon to a font awesome icon.
+- Fix: Remove extraneous mount information from mount points.
+
+###2019.01.26
+- Add: Added the '--allow-discards' option to LUKS open for SSD drives.
+
+###2019.01.22a
+- Fix: Add cd icon for iso shares.
+- Fix: Disk used and free display to conform to the Display Used/Free Columns setting.
+- Fix: Used/free differences for 6.4 through 6.6 and 6.7.
+
+###2019.01.21a
+- Fix: Changes in Edit Script for a cleaner layout.  Added highlight for 'Run in Background' selected.
+- Fix: Used and free bar graphs.
+
+###2019.01.20
+- Fix: Remove unused style sheets and change icons to font awesome.
+
+###2019.01.19a
+- Fix: Change event for mounting remote shares so network is ready and remote shares will mount.
+
+###2019.01.17
+- Fix: Add Enhanced OSX Interoperability paramaters to UD shares for v6.7.
+
+###2019.01.14
+- Fix icons for v6.
+
+###2018.12.31
+- Fix: Adjusted NFS mount to prevent endless off line log entries.
+
+###2018.12.30b
+- Fix: Adjusted time outs to try to help with CIFS mounts hanging when remote server goes off-line.
+
+###2018.12.11
+- Fix: Update nmap package.
+
+###2018.11.29
+- Fix: Share UD mounted devices when Active Directory sharing is enabled.
+
+###2018.11.25
+- Fix: SMB 'Load Shares' not working in all cases.
+- Add: Log an error when the common or device script fails.
+- Fix: Changed script icon to show that a script file is defined.  The icon will be grayed when there is no script file.
+
+###2018.11.24a
+- Add: Additional actions to execute_script to allow detection of unmounting progress and detection of errors.
+
+###2018.11.23
+- Fix: Device was showing as mounted when it was not.
+
+###2018.11.18
+- Fix: Remove log message about nmblookup failure.
+
+###2018.11.17
+- Fix: Situation where remote SMB server status check would fail.
+
+###2018.11.10a
+- Add: autov() wrapper for css/js calls for faster webui loading.
+
+###2018.11.05
+- Fix: Dropdown color for Unraid 6.6.
+
+###2018.11.04
+- Fix: Unraid capitalization.
+
+###2018.10.18
+- Fix: Unmount SMB shares as file type cifs to try to help with remote server off-line.
+- Fix: Do not allow ampersand character in mount point name.
+
+###2018.10.11a
+- Fix: Text alignment on Unraid 6.6.
+- Fix: Temperature issue on nvme drive.
+
+###2018.09.23
+- Fix: Changed "Search for Server" text on SMB/NFS share button for Black and White themes for smaller button size.
+- Fix: Situation where "Load Shares" would not show properly when no shares were found.
+- Fix: Update packages: exfat-utils, fuse-exfat, and libbsd.
+
+###2018.06.01a
+- Fix: Used and free space display for nfs, smb, and iso mount point with spaces.
+
+###2018.04.09
+- Fix: Detection of Unraid array disks when more slots that disks are assigned.
+
+###2018.03.21
+- Fix: Remove Unraid 6.1, 6.2, and 6.3 compatibility hacks.  The minimum supported Unraid version is now 6.4.
+
+###2018.03.03b
+- Fix: Php warnings in Unraid 6.5.
+
+###2018.01.09b
+- Fix: Adjust device name for a nvme device to remove the partition marker and add it back for formatting the disk.
+
+###2018.01.08b
+- Add: Detection for an attempt to mount a null device.
+- Fix: Don't add null devices to the unassigned devces list.
+
+###2018.01.07c
+- Fix: Remove the preclear rc.diskinfo for disk status in UD.  It's not really necessary and is causing too many support issues.
+- Fix: Some code improvements.
+
+###2018.01.01a
+- Add: Set the security level for CIFS mounts to 'ntlm' when mounting SMB remotes with SMB v1 only.
+
+###2017.12.30
+- Fix: Changes to support rc.diskinfo for encrypted disks.
+
+###2017.12.26a
+- Add: Ability to mount encrypted array disks.
+
+###2017.11.22
+- Add: Option to force all CIFS (remote shares) to be mounted with SMB v1.  Some remote mounts give errors when mounted with SMB v2. 
+
+###2017.11.05
+- Fix: Only log error message when remote SMB/NFS share is off-line when it is mounted.
+
+###2017.11.02
+- Fix: Log messages for clarity.
+
+###2017.11.01a
+- Fix: Move all logging to syslog.
+
+###2017.10.31
+- Fix: Rework size, used, and free space to minimize disk and share probing.  This may help with some of the long waits when viewing the UD webpage.
+- Fix: Remove inappropriate characters from mountpoints for remote SMB and NFS shares.
+
+###2017.10.30b
+- Add: Additional remote SMB share mount logging.
+- Fix: Don't display temperatures over 128 C.
+- Fix: Modify the capture of the drive temperature.
+
+###2017.10.29b
+- Fix: Don't add free space of an unmounted partition to the disk total.
+- Fix: Show unique open files from lsof and exclude directory operations.
+
+###2017.10.28c
+- Fix: Host off-line log message showed wrong information for NFS server.
+- Fix: Added a scheme where an SMB share would be mounted with the highest SMB protocol supported by the remote server.
+- Fix: Drive showed graphic display of used/free when text mode selected.
+- Fix: Change the disk free space value to actual 'df' value rather than calculated from size minus used.
+
+###2017.10.22
+- Add: Additional checks and a log message if SMB/NFS host is off-line.
+- Add: Timeout to mount command on SMB/NFS to try to prevent hangs.
+
+###2017.10.07
+- Add: nvme drive temperature.
+
+###2017.09.30a
+- Add: Disk log button to the left of the disk serial number.
+
+###2017-09-20
+- Fix: Partitions not mounting when set to auto mount on a disk with multiple partitions and one of the partitions is not formatted.
+- Fix: File type and open files not showing properly on a disk with multiple partitions.
+- Fix: Colors of usage and free disk indicators.
+
+###2017-09-17
+- Fix: Reversion of smb and nfs timeouts.
+- Fix: Disk usage display when the disk has more than one partition.
+- Fix: Remove beta warning from format dialog.
+
+###2017-09-10
+- Add: Update exfat-utils, fuse-exfat, and libbsd packages.
+
+###2017.09.09a
+- Fix: Add timeouts to prevent hanging when a remote share (smb or nfs) goes off-line.
+- Fix: Set 'browseable' properly when no smb users are defined.
+- Fix: Create Unraid compatible mbr so disks partitioned in UD can be installed in the array without re-formatting.
+
+###2017.09.04
+- Add: Configurable option to enable/disable the rc.diskinfo background daemon in preclear.  Defaults to off.
+
+###2017.09.03
+- Add: Start partition on XFS and BTRFS disks based on the 'Default Partition Format' setting in Settings->DiskSettings to allow the disk to be included in the array.
+
+###2017.07.09c
+- Add: Re-enabled preclear diskinfo.  This is a background daemon used by the preclear and Unassigned Devices plugins to cut down on the disk queries when doing a disk preclear.
+- Add: Check that the rc.diskinfo daemon is running before using the diskinfo.json file for disk status.
+- Fix: An issue when trying to mount an ntfs disk read only when the first mount was successful but issued an error/warning message.
+- Add: Warning in the format and partition dialog that a UD partitioned disk cannot be added to the array.
+
+###2017.07.04a
+- Add: Add back in the fixes from 2017.06.28a.
+- Fix: Change mount point form methods to POST to fix mount point name change issue.
+- Fix: Code changes for better readability.
+- Fix: Toggle status not persistent in disks with more than one partition.
+- Fix: Skip loading message with diskinfo (not necessary).
+
+###2017.07.03
+- Fix: Removed unused waitMe code.
+- Fix: Revert 2017.06.28a changes causing issues with mount point change on multi partitioned disks.
+- Fix: Disable preclear diskinfo causing issues with displaying correct unassigned disks.
+- Fix: Set simple/complete cookie path to root to prevent conflicts.
+
+###2017.06.28a
+- Fix: will try to use IP address if server can't resolve NETBIOS name.
+- Fix: detect all networks(ip/hostname/gateway).
+- Fix: add back NFS host searching using nmap.
+- Fix: bind events dynamically instead of running script commands every update.
+
+###2017.06.28
+- Add: diskinfo daemon support. Will only work when Preclear Disk plugin is installed.
+- Change: removed waitMe effect from content loading (easier to maintain).
+- Fix: add back some animations on the Mount/Unmount button.
+- Add: Tighter integration with the preclear plugin.
+
+###2017.06.23a
+- Add: More debug info about commands.
+- Fix: Changed blockdev to lsblk due to performance issues (blockdev hanging on high disk load).
+- Fix: Avoid hdparm to be invoked twice on each disk.
+
+###2017.06.21
+- Fix: Modifications for Unraid 6.4 Azure and Gray themes.
+
+###2017.06.15
+- Add: Add timeout to SMART probing commands.
+
+###2017.06.11a
+- Fix: Modifications for Unraid 6.4 Azure and Gray themes.
+
+###2017.06.10
+- Fix: Modifications for Unraid 6.4 Azure and Gray themes.
+
+###2017.05.21
+- Add: Updated fuse-exfat and exfat-utils packages.
+
+###2017.05.14
+- Add: Additional help about formatting disks in UD and installing the disk into the array.
+- Fix: Plugin start script cleanup.
+
+###2017.05.11
+- Add: Additional help and tool tip text to explain using Enter to save the mount point.
+
+###2017.05.04a
+- Fix: Moved script logs to /tmp/unassigned.devices.
+- Fix: Force unmount SMB/NFS shares and iso mounts when shutting down server.
+
+###2017.03.23
+- Fix: Restored missing Historical Devices icon.
+
+###2017.03.12
+- Fix: Remove automount switches from partitions to eliminate confusion.  It applies to the disk and not to partitions.
+
+###2017.02.23
+- Fix: All iso files are now mounted read only.
+
+###2017.02.21
+- Fix: Remove -t iso9660 from iso mount so other than CD iso files can be mounted.
+
+###2017.02.20
+- Fix: Remove 'Download' button from help.
+
+###2017.02.16
+- Fix: 	Use serial instead of device name to display Preclear status.
+
+###2017.02.10
+- Fix: Some minor webgui changes and enhancements.
+
+###2017.02.09a
+- Fix: More code cleanup.
+- Fix: Change to fix issue with public SMB shares when SMB settings have not been saved.
+
+###2017.02.04
+- Fix: Code cleanup.
+- Add: Integrate with 6.3 recycle bin.
+
+###2017.01.31a
+- Add: Change 'Rescan' and 'Log' buttons to icons.  Add log download icon.
+
+###2017.01.30
+- Fix: Remove mount point directory when SMB or NFS mount fails.
+- Add: Additional checks that SMB and NFS remote servers are online before trying to auto mount remote shares.
+
+###2017.01.29c
+- Fix: Modified the warning about re-starting Docker before Docker will see UD shares.
+- Fix: Additional help text about using UD script to mount/unmount devices.
+- Add: Added (SMB) and (NFS) to the 'Share' button table header to show the sharing enabled in the UD settings.
+- Fix: Don't calculate size and space on a disconnected SMB or NFS mount.
+- Fix: Changed 'df' for calculating the size and used space on a device to a device specific call to 'df'.
+
+###2017.01.24
+- Add: Security updates.
+- Fix: Deal with special characters in share name and drive label.
+- Fix: Minor gui changes. 
+- Fix: Updated exfat and libbsd packages.
+
+###2017.01.17
+- Fix: Do not allow backslashes in SMB/NFS and iso mounts.
+
+###2016.12.15
+- Add: Additional SMART information.
+- Fix: Clicking 'Done' on dialogs did not return to the "Unassigned Devices" tab.
+- Fix: Removed toggle switch labels to save space.
+
+###2016.12.09
+- Add: Add noatime and nodiratime mount options to ntfs, vfat, exfat, and ext4.
+
+###2016.12.04
+- Add: Ability to make NFS shares private.
+
+###2016.10.22b
+- Fix: Updates for compatibility with Unraid 6.2 and later.
+
+###2016.10.20
+- Fix: Adjust stop event based on version of Unraid being used.
+- Fix: Inappropriate SMB servers were found when Unraid was the master browser.
+
+###2016.10.02
+- Fix: Remove mount point path when changing the mount point name to minimize confusion.
+- Fix: Fixed a reversion from the preclear plugin integration where a device with more than one partition would not display properly.
+
+###2016.09.26
+- Add: Better Preclear Plugin integration.  Preclears can be started and stopped in UD.  Thanks gfjardim.
+
+###2016.09.23
+- Add: Logging when disks_mounted and unmounting_disks events occur.
+
+###2016.09.08
+- Removed the installation of the ntfs-3g driver in v6.2.  The driver is built in now.
+
+###2016.08.19
+- Fix: Issues with hidden shares.
+
+###2016.05.27
+- Add: Smb shares hidden.
+
+###2016.05.03
+- Add: nvme devices.  Note: Consider this a beta feature as I have no way to test.
+
+###2016.04.30
+- Fix: Install proper version of ntfs-3g package for Unraid 6.1.
+
+###2016.04.24
+- Add: Additional 'Help' text.
+
+###2016.04.17
+- Fix: Block mounting smb shares with a '$' in the share path name.
+
+###2016.04.16a
+- Add: Move all packages to github repository for better package management and control.
+- Fix: Install parted 3.1 for Unraid 6.1 and parted 3.2 for Unraid 6.2.
+
+###2016.04.16
+- Fix: Revert parted package back to 3.1 because of package dependency problems in 6.1.9.
+
+##2016.04.15
+- Add: additional format logging.
+
+###2016.04.12a
+- Add: force flags to xfs, btrfs, and ext4 format commands to prevent formatting failures on SSD drives.
+- Fix: Remove 'Auto mount' switch when a disk is not formatted.
+- Fix: Grey 'Format' button while pre-clearing a disk.
+
+###2016.04.09
+- Fix: NFS export issue with managing /etc/exports file.
+- Fix: remove sharing of remote shares with NFS.  NFS does not allow remote shares to be exported on the local machine.
+
+###2016.03.26
+- Add: Update parted package link.
+- Add: Update NTFS-3g package.
+
+###2016.03.16
+- Fix: NTFS formatted disk not being recognized by Windows. Thanks gfjardim.
+- Fix: Update parted package. Thanks gfjardim.
+
+###2016.03.15
+- Fix: Text adjustments in dialogs.
+- Fix: Preclear status detection for >2TB disks. Thanks gfjardim.
+- Fix: Realpath() only takes one parameter, 2 given. Thanks gfjardim.
+
+###2016.03.13
+- Add: File browse for iso file selection.
+
+###2016.03.12a
+- Fix: Mount detection causing issues.
+
+###2016.03.12
+- Fix: Compatibility with V6.2 second parity disk showing up as an unassigned device.
+
+###2016.03.11
+- Fix: Remote share NFS mount not mounting properly.
+
+###2016.03.07
+- Add: Explanation about restarting Docker after configuring SMB or Iso shares.
+- Fix: Issue with 'Done' on edit page not exiting.
+
+###2016.03.02
+- Fix: SMB/NFS and Iso shares not shared with NFS when enabled.
+- Fix: Similar names causing mounting and display problems.
+- Fix: Changes 'Remote SMB Share' to 'Remote SMB/NFS Share' to minimize confusion.
+- Fix: Shares drop down in add SMB/NFS share did not reliably populate.
+
+###2016.03.01a
+- Fix: Consolidate SMB and Iso shares to minimize vertical scrolling.
+
+###2016.02.29
+- Fix: iso files with spaces in the name would not mount.
+- Fix: Changed log message about no script to execute.
+
+###2016.02.28
+- Add: Iso file mount.
+
+###2016.02.28
+- Fix: Shares with spaces were not displayed properly when adding a NFS share.
+
+###2016.02.17
+- Fix: php errors when '#' in by-id name.
+
+###2016.02.16
+- Fix: Don't show pre-clear plugin icon when card reader device not installed.
+- Fix: Don't show pre-clear plugin icon when FS is vfat or exfat.
+
+###2016.02.15
+- Fix: Card reader with no device installed will now show 'Insert', not 'Format'.
+- Fix: Elimnate format messages on console.
+- Fix: exfat format and fsck not working properly.
+
+###2016.02.13
+- Add: Configuration setting so USB devices can be auto mounted and shared without user interaction.
+
+###2016.02.10a
+- Fix: Icon display issue when browsing to Tower/Main/UnassignedDevices.
+
+###2016.02.10
+- Add: Update GPL license and copyright notices.
+
+###2016.02.06a
+- Fix: New devices will not default to auto mount and share.  User must manually set to auto mount and share.
+
+###2016.02.06
+- Update: Updated exfat packages to 1.2.1.
+
+###2016.02.05
+- Fix: Don't show execute script icon if there is no script file.
+- Fix: Minor change for robustness when determining array devices.
+
+###2016.02.03
+- Fix: Change 'Apply' to 'Save' button on the script edit page.  It was not working as it should when some changes were made.
+- Add: Run device script in a window to test/debug the script and see the results from the script.
+
+###2016.02.02
+- Add: Script logging.
+
+###2016.02.01
+- Fix: Keep Unraid flash drive from showing up in the unassigned devices when a flash device is plugged in with an 'Unraid' label,.
+
+###2016.01.31
+- Fix: Show spin status and disk temperature when a disk is pre-clearing.
+
+###2016.01.30a
+- Fix: Adjusted layout of script edit page.
+
+###2016.01.30
+- Fix: Combined all scripts into one - rc.unassigned.  This is more consistent with Unraid standards.
+- Add: Changed the sequence of the drive sleep command so a no idle command can be set in the script.
+
+###2016.01.29
+- Fix: Changed back to the new SMB hosts lookup.  Fixed the unnecessary console messages.
+- Fix: Combined udev scripts (mount, umount, and reload) into a rc.udev script.
+
+###2016.01.28a
+- Fix: Changed log time to 24 hour format.
+- Fix: Failed mount did not clean up properly.
+- Fix: Revert the SMB hosts lookup because of console messages that could not be suppressed.
+
+###2016.01.28
+- Fix: Changed the SMB hosts lookup.
+- Fix: The mount point could be changed from the /mnt/disks/ directory.
+
+###2016.01.26a
+- Fix: Check for NFS sharing enabled before adding or removing NFS share.
+- Fix: Check for SMB sharing enabled before adding or removing SMB share.
+
+###2016.01.25
+- Fix: Modified logging to be consistent with Unraid format and provide clearer information.
+- Fix: Changed the users lookup for smb security to make it more robust.
+
+###2016.01.24a
+- Fix: Changed the disk spin status check.  If the disk is unmounted and there is no script, then the spin status will not be checked, otherwise it will be checked.
+- Fix: Removed sharing log messages that didn't apply when not sharing the device.
+
+###2016.01.24
+- Fix: Changed terminology from 'SMB Mount' to 'Remote SMB Mount'.
+- Fix: Smart Report limited to 'Disk Attributes'.
+- Fix: Cosmetic changes.
+- Add: Capability to mount NFS share as well as SMB share to 'Remote SMB Mount'.
+- Add: Remove script files when the configuration is removed for devices and Remote SMB Mounts.
+
+###2016.01.23
+- Fix: Reverted the host lookup in the Add SMB Mount.  The host lookup does not use nmap.
+- Fix: Don't poll unmounted disks for standby status.  Using hdparm on some disks causes them to spin up.
+
+###2016.01.21
+- Fix: Remove nmap package.
+
+###2016.01.20
+- Fix: Rearranged some items on main page for clarity.
+- Fix: Display SSD temperatures.  Only hard disk temps were displayed.
+- Fix: Share 'SMB Share' in Unraid shares with unassigned devices SMB Security settings. 
+- Add: Download log button in help to download a zip log file.
+- Add: If an ntfs formatted drive cannot be mounted read-write, then mount it read only.
+- Add: Additional help information and tool tips.
+- Add: Added smart report.  Unraid 6.1.7 has some additional disk settings for reporting errors and specific disk settings that will not work for unassigned devices.  You should not use the SDx Settings.
+
+###2016.01.18
+- Fix: Updated unassigned_umount log messages.
+- Fix: Another modification to "unassigned_umount all".
+- Fix: NFS sharing not working.
+- Fix: Rearranged buttons on script edit page.
+
+###2016.01.17d
+- Add: Log button on main page.
+
+2016.01.17c
+- Fix: Only devices with auto mount off will be unmounted with the command "unassigned_umount all".  This does not apply to stopping the array.
+- Fix: SMB Security would not allow writing to the share.
+
+###2016.01.17
+- Fix: Automount toggle on SMB shares not working.
+- Fix: SMB and devices would not unmount when the array was stopping and automount was off.
+
+###2016.01.16b
+- Fix: Several packages downloading when not necessary.
+
+###2016.01,16
+- First dlandon updated version.
+- Fix: Revert to 2015.09.19.
+- Fix: Compatibility with Unraid 6.1.7.
+- Fix: Update and remove plugin was messy.
+
+###2015.09.19
+- Fix: DVD/BluRay drives being included
+
+###2015.09.18e
+- Add: Destructive Mode selection on Settings, allowing users to delete and format disk/partitions.
+- Fix: >2TB partitions not correctly aligned on format.
+- Fix: Areca disks not appearing correctly.
+- Fix: errors appearing on console if a symlinks already exist.
+- Fix: file browser opening a new window.
+
+###2015.09.17d
+- Fix: black CSS conformity
+- Fix: not working on non-tabbed mode
+
+2015.09.17b
+- Fix: UDEV killing long run scripts;
+
+###2015.09.17a
+- Add: Settings Page;
+- Add: SMB security;
+- Add: NFS export;
+- Add: common script that will be executed prior to disk script;
+- Add: format empty disk;
+- Add: log view and upload when Help is on;
+- Fix: "Add SMB mount" not working with hidden shares;
+- Fix: webGui hanging while mounting/unmounting.
+
+###2015.09.07a
+- Fix: SMB mount not working.
+- Fix: mount path change not working.
+- Fix: division by zero if SMB mount fail.
+- Add: search for SMB hosts in the current workgroup.
+- Improvement: better integration with Preclear Disk.
+
+###2015.09.04
+- Fix: 6.1 compatibility.
+- Add: Move unassigned.devices scripts from /usr/local/sbin to usr/local/emhttp/plugins/&name;/scripts.
+- Add: Create symlinks to /usr/local/sbin for backwards compatibility.
+- Fix: Fixed package removal issues.
+
+###2015.08.12
+- Fix: 6.1-rc3 compatibility
+
+###2015.07.21a
+- Fix: Unraid 6.1-rc1 compatibility
+- Add: link to Preclear if the plugin is present
+
+###2015.06.17
+- Fix: mask smb passwords in the log file (thanks ljm42)
+- Fix: adjust ownership of mountpoints to nobody:users
+- Fix: buttons now tabbed/non-tabbed compliant
+- Fix: mono-partitioned disks stats now shows disk size instead of partition size (thanks Freddie) 
+
+###2015.06.16b
+- Fix: Rescan disks button not showing up on non-tabbed view
+- Fix: duplicate hdd entry due to udev's duplicate links
+- Fix: Rescan disks not working
+- Add: Show/hide SMB Mounts/Historical Devices
+
+###2015.06.15a
+- Revert: run scripts in the backgroud (caused race condition issues)
+- Add: "Run in background" option to "Edit Script" page
+- Add: SMB Mounts
+
+###2015.06.11a
+- Fix: mounting/unmounting scripts hanging the webui
+
+###2015.05.18
+- Fix: empty cacheId variable crashing the code
+
+###2015.05.17
+- Improve: detection of SCSI disks
+
+###2015.05.16
+- Fix: drives without partition table not appearing.
+
+###2015.05.15
+- Fix: not removing missing disk configuration
+- Fix: add trim/discard to SSD mount options (XFS/EXT4 only)
+- Add: show preclear status
+- Upgrade: NTFS-3G to 2015.3.14
+
+###2015.04.30
+- Add filesystem check for partitions.
+
+###2015.04.29
+- Fix: exfat mounting permissions
+- Add: exfat-utils-1.1.1-x86_64-1_SBo.tgz
+
+###2015.04.28
+- Fix: a small typo
+- Fix: disks with automount off will not we unmounted on array stop
+
+###2015.04.27
+- Fix: sharing toggle will be applied immediately
+
+###2015.04.26
+- Renamed to Unassigned Devices
+- Add switch do disable SAMBA sharing
+
+###2015.04.24b
+- Show used and free space as bars
+- Fix multiple cache disks support
+
+###2015.04.24a
+- Fix webGui being hammered with update requests
+- Fix mounting all disks if no devide was supplied
+- Set sleep time (15 minutes) to mounted disks
+
+###2015.04.24
+- Fix some css quirks
+
+###2015.04.23a
+- Major revamp, will work with SATA/USB disks. It will presume autostart for USB disks, and not for SATA ones.
+
+###2015.04.13
+- Fix: table color with black theme
+
+###2015.04.07
+- Fix: drive mounting even if automount is off
+
+###2015.03.24
+- Few stylesheet changes
+
+###2015.03.14
+- Add libbsd, required by hfsprogs
+
+###2015.03.13a
+- Change hfsprogs from 32 to 64 bits (my bad).
+
+###2015.03.12b
+- Feature freeze
+
+###2015.03.12a
+- Better file browser on Edit Scripts
+
+###2015.03.12
+- A few bugfixes.
+
+###2015.03.11
+- Better UI management - disks only get listed if usb tab is selected.
+
+###2015.03.10
+- Add the possibility of running scripts
+
+###2015.03.09c
+- Fix some stylesheet
+
+###2015.03.09b
+- Add automount switch
+
+###2015.03.09
+- Better identification name
+
+###2015.03.08c
+- Add exFAT fs support
+
+###2015.03.08a
+- Remove USB Devices tab when no USB disk is plugged in.
+
+###2015.03.08
+- initial release.
+</CHANGES>
+
+<!--
+The 'pre-install' script.
+-->
+<FILE Run="/bin/bash">
+<INLINE>
+# Remove emhttp files so we can re-install.
+rm -rf /usr/local/emhttp/plugins/&name;/* 2>/dev/null
+
+# Remove old 'bundle' files.
+rm -f $(ls &packages;/*.tgz 2>/dev/null | grep -v '&version;')
+</INLINE>
+</FILE>
+
+<!--
+Get the plugin bundle.
+-->
+<FILE Name="&packages;/&name;-&version;.tgz">
+<URL>"&gitURL;/&name;-&version;.tgz"</URL>
+<MD5>&MD5;</MD5>
+</FILE>
+
+<!--
+nmap-7.70-x86_64-3.txz
+-->
+<FILE Name="&packages;/nmap-7.70-x86_64-3.txz" Run="upgradepkg --install-new">
+<URL>"&gitURL;/packages/nmap-7.70-x86_64-3.txz"</URL>
+<MD5>2917b9c1db64491ba1b09d38db468f20</MD5>
+</FILE>
+
+<!--
+exfat-utils-1.2.8-x86_64-1_slonly.txz
+-->
+<FILE Name="&packages;/exfat-utils-1.2.8-x86_64-1_slonly.txz" Run="upgradepkg --install-new">
+<URL>"&gitURL;/packages/exfat-utils-1.2.8-x86_64-1_slonly.txz"</URL>
+<MD5>dd92c74adbefa546545471cae04f6501</MD5>
+</FILE>
+
+<!--
+fuse-exfat-1.2.8-x86_64-1_slonly.txz
+-->
+<FILE Name="&packages;/fuse-exfat-1.2.8-x86_64-1_slonly.txz" Run="upgradepkg --install-new">
+<URL>"&gitURL;/packages/fuse-exfat-1.2.8-x86_64-1_slonly.txz"</URL>
+<MD5>76335e187ab513c96967b36e0d01d6d4</MD5>
+</FILE>
+
+<!--
+hfsprogs-332.25-x86_64-2sl.txz
+-->
+<FILE Name="&packages;/hfsprogs-332.25-x86_64-2sl.txz" Run="upgradepkg --install-new">
+<URL>"&gitURL;/packages/hfsprogs-332.25-x86_64-2sl.txz"</URL>
+<MD5>9ddd7cb7e0782e9fb7756b1946808228</MD5>
+</FILE>
+
+<!--
+libbsd-0.8.7-x86_64-1_slonly.txz
+-->
+<FILE Name="&packages;/libbsd-0.8.7-x86_64-1_slonly.txz" Run="upgradepkg --install-new">
+<URL>"&gitURL;/packages/libbsd-0.8.7-x86_64-1_slonly.txz"</URL>
+<MD5>42b559543f2c1a9fe42d6aabfc18ac8a</MD5>
+</FILE>
+
+<!--
+parted-3.2-x86_64-2.txz
+-->
+<FILE Name="&packages;/parted-3.2-x86_64-2.txz" Run="upgradepkg --install-new">
+<URL>"&gitURL;/packages/parted-3.2-x86_64-2.txz"</URL>
+<MD5>1026cb6b665bbeff2d514d6510d00bc5</MD5>
+</FILE>
+
+<!--
+libnl-1.1.4-x86_64-1.txz
+-->
+<FILE Name="&packages;/libnl-1.1.4-x86_64-1.txz" Run="upgradepkg --install-new">
+<URL>"&gitURL;/packages/libnl-1.1.4-x86_64-1.txz"</URL>
+<MD5>435837a5bf0401a937d6ec93e458333b</MD5>
+</FILE>
+
+<!--
+Unassigned devices background start script.
+-->
+<FILE Name="/tmp/start_unassigned_devices" Mode="0770">
+<INLINE>
+#!/bin/bash
+# Start unassigned devices if the array is started.
+if [[ -e /proc/mdcmd ]]; then
+  if [[ $(cat /proc/mdcmd|grep mdState|cut -d"=" -f2) == STARTED ]]; then
+    /usr/local/emhttp/plugins/&name;/scripts/rc.unassigned mount auto 2>/dev/null
+  fi
+fi
+
+# Remove the background start script.
+rm -f /tmp/start_unassigned_devices 2>/dev/null
+</INLINE>
+</FILE>
+
+<FILE Name="/boot/config/plugins/&name;/&name;.cfg">
+<INLINE>
+<![CDATA[
+]]>
+</INLINE>
+</FILE>
+
+<FILE Name="/boot/config/plugins/&name;/samba_mount.cfg">
+<INLINE>
+<![CDATA[
+]]>
+</INLINE>
+</FILE>
+
+<FILE Name="/boot/config/plugins/&name;/iso_mount.cfg">
+<INLINE>
+<![CDATA[
+]]>
+</INLINE>
+</FILE>
+
+<FILE Name="/tmp/&name;/smb-settings.conf">
+<INLINE>
+<![CDATA[
+]]>
+</INLINE>
+</FILE>
+
+<FILE Name="/tmp/&name;/config/smb-extra.conf">
+<INLINE>
+<![CDATA[
+#unassigned_devices_start
+#Unassigned devices share includes
+   include = /tmp/unassigned.devices/smb-settings.conf
+#unassigned_devices_end
+]]>
+</INLINE>
+</FILE>
+
+<!--
+Add smb-extra parameters.
+-->
+<FILE Name="/tmp/&name;/add-smb-extra" Mode="0770">
+<INLINE>
+<![CDATA[
+#!/bin/bash
+if [[ `grep '#unassigned_devices' /boot/config/smb-extra.conf` = "" ]]; then
+	cat /boot/config/smb-extra.conf | grep 'include = /etc/samba/unassigned-shares/' > /tmp/unassigned.devices/smb-settings.conf
+	sed -i "/include = \/etc\/samba\/unassigned-shares/d" /boot/config/smb-extra.conf
+	sed -i '/^\s*$/d' /boot/config/smb-extra.conf
+	printf "\n" >> /boot/config/smb-extra.conf
+	cat /tmp/unassigned.devices/config/smb-extra.conf >> /boot/config/smb-extra.conf
+	/usr/bin/smbcontrol $(/usr/bin/cat /var/run/smbd.pid 2>/dev/null) reload-config 2>&1
+fi
+]]>
+</INLINE>
+</FILE>
+
+<!--
+Remove smb-extra parameters.
+-->
+<FILE Name="/tmp/&name;/remove-smb-extra" Mode="0770">
+<INLINE>
+<![CDATA[
+#!/bin/bash
+sed '/#unassigned_devices_start/,/#unassigned_devices_end/d' /boot/config/smb-extra.conf >> smb.tmp
+printf %s "$(< smb.tmp)" > /boot/config/smb-extra.conf
+rm -f smb.tmp
+]]>
+</INLINE>
+</FILE>
+
+<!--
+The 'post-install' script.
+-->
+<FILE Run="/bin/bash">
+<INLINE>
+# Create logs directory.
+mkdir /tmp/&name; 2>/dev/null
+
+# Install the plugin bundle.
+# Create plugin directory
+mkdir /boot/config/plugins/&name; 2>/dev/null
+
+# Install the 'bundle'.
+tar -xf &packages;/&name;-&version;.tgz -C /usr/local/emhttp/plugins 2>/dev/null
+
+# move the rules file
+mv /usr/local/emhttp/plugins/&name;/99_persistent_unassigned.rules /etc/udev/rules.d/
+chmod 644 -R /etc/udev/rules.d/99_persistent_unassigned.rules 2>/dev/null
+
+# Adjust plugin permissions.
+chmod 755 -R /usr/local/emhttp/plugins/&name; 2>/dev/null
+
+# Create a symlink to rm.
+ln -sf /bin/rm /usr/local/emhttp/plugins/&name;/scripts/
+
+# Fix permissions of executable files
+chmod +x /usr/local/emhttp/plugins/&name;/scripts/* /usr/local/emhttp/plugins/&name;/event/*
+
+# Create a symlink to unassigned devices scripts.
+ln -sf /usr/local/emhttp/plugins/&name;/scripts/rc.unassigned /usr/local/sbin
+ln -sf /usr/local/emhttp/plugins/&name;/scripts/mkmbr.sh /usr/local/sbin
+
+# create mount point
+rm -rf /var/state/&name;
+mkdir -p /mnt/disks /var/state/&name;
+chown nobody:users /mnt/disks
+chmod 777 /var/state/&name;
+
+# Add unassigned_devices to smb-extra.conf.
+at -M -f /tmp/&name;/add-smb-extra now 2>/dev/null
+
+# Create a scripts directory to run UD device scripts
+mkdir - /tmp/&name;/scripts
+
+# mount disks
+at -M -f /tmp/start_unassigned_devices now 2>/dev/null
+
+# Rename original Dynamix page
+if [[ -e /usr/local/emhttp/plugins/dynamix/OpenDevices.page ]]; then
+  mv -f /usr/local/emhttp/plugins/dynamix/OpenDevices.page /usr/local/emhttp/plugins/dynamix/OpenDevices.page-
+fi
+
+# Clean out old plugin packages
+find /boot/config/plugins/&name; -maxdepth 1 -type f -iname "*.t*z" -delete
+find &packages; -type f -iname "&name;*.txz" ! -iname "*&version;*" -delete
+find &packages; -type f -iname "&name;*.md5" ! -iname "*&version;*" -delete
+
+# reload udev rules
+udevadm control --reload-rules
+
+echo ""
+echo "-----------------------------------------------------------"
+echo " &name; has been installed."
+echo " This plugin requires Dynamix webGui to operate"
+echo " Copyright 2015, gfjardim"
+echo " Copyright 2016-2019, &author;"
+echo " Version: &version;"
+echo "-----------------------------------------------------------"
+echo ""
+</INLINE>
+</FILE>
+
+<!--
+The 'remove' script.
+-->
+<FILE Run="/bin/bash" Method="remove">
+<INLINE>
+# umount disks and smb mounts
+/usr/local/emhttp/plugins/&name;/scripts/rc.unassigned umount all 2>/dev/null
+rmdir /mnt/disks 2>/dev/null
+
+# Remove installed packages
+find "&packages;/" -type f -iname "*.txz" -delete
+
+# Remove possible leftovers
+rm -rf /usr/local/emhttp/plugins/&name; \
+       /var/state/&name; \
+       &packages;
+
+rm -f /tmp/plugins/&name;.plg \
+      /usr/local/sbin/rc.unassigned \
+	  /usr/local/sbin/mkmbr.sh \
+      /etc/udev/rules.d/99_persistent_unassigned.rules
+
+# reload udev rules
+udevadm control --reload-rules
+
+# Restore original Dynamix page
+mv -f /usr/local/emhttp/plugins/dynamix/OpenDevices.page- /usr/local/emhttp/plugins/dynamix/OpenDevices.page
+
+# Remove all plugin files from emhttp.
+rm -rf /usr/local/emhttp/plugins/&name; 2>/dev/null
+
+# Remove all installed packages.
+removepkg nmap-7.70-x86_64-3 2>/dev/null
+removepkg exfat-utils-1.2.8-x86_64-1_slonly 2>/dev/null
+removepkg fuse-exfat-1.2.8-x86_64-1_slonly.txz 2>/dev/null
+removepkg hfsprogs-332.25-x86_64-2sl 2>/dev/null
+removepkg libbsd-0.8.7-x86_64-1_slonly 2>/dev/null
+removepkg parted-3.2-x86_64-2 2>/dev/null
+removepkg libnl-1.1.4-x86_64-1 2>/dev/null
+
+# Remove unassigned_devices from smb-extra.conf.
+at -M -f /tmp/&name;/remove-smb-extra now 2>/dev/null
+
+# Remove the tmp directory.
+rm -r /tmp/&name; 2>/dev/null
+
+echo ""
+echo "-----------------------------------------------------------"
+echo " &name; has been uninstalled."
+echo "-----------------------------------------------------------"
+echo ""
+
+</INLINE>
+</FILE>
+
+</PLUGIN>

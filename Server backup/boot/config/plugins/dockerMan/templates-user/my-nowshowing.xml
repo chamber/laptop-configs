@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>nowshowing</Name>
+  <Repository>ninthwalker/nowshowing</Repository>
+  <Registry>https://registry.hub.docker.com/u/ninthwalker/nowshowing/</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>https://forums.lime-technology.com/topic/56483-support-ninthwalker-nowshowing/</Support>
+  <Overview>Sends an email and creates a website of recently added media to your Plex Server</Overview>
+  <Category>MediaApp:Video MediaServer:Video</Category>
+  <WebUI>http://[IP]:[PORT:6878]</WebUI>
+  <TemplateURL>https://github.com/ninthwalker/docker-templates</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/ninthwalker/NowShowing/master/images/nowshowing-icon.png</Icon>
+  <ExtraParams/>
+  <DateInstalled>1493898482</DateInstalled>
+  <Description>Sends an email and creates a website of recently added media to your Plex Server</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>6878</HostPort>
+        <ContainerPort>6878</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/nowshowing</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>192.168.2.26</Value>
+      <Name>PLEX_SERVER_IP</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>chamber82</Value>
+      <Name>PLEX_USERNAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>ConDeb1983@</Value>
+      <Name>PLEX_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>smtp.gmail.com</Value>
+      <Name>SMTP_SERVER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>587</Value>
+      <Name>SMTP_PORT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>conors.notifications@gmail.com</Value>
+      <Name>EMAIL_USERNAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>ConDeb1983@</Value>
+      <Name>EMAIL_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>PLEX_TOKEN</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>99</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Config Name="PLEX SERVER IP" Target="PLEX_SERVER_IP" Default="" Mode="" Description="PLEX_SERVER_IP" Type="Variable" Display="always-hide" Required="true" Mask="false">192.168.2.26</Config>
+  <Config Name="PLEX USERNAME" Target="PLEX_USERNAME" Default="" Mode="" Description="PLEX_USERNAME" Type="Variable" Display="always-hide" Required="false" Mask="false">chamber82</Config>
+  <Config Name="PLEX PASSWORD" Target="PLEX_PASSWORD" Default="" Mode="" Description="PLEX_PASSWORD" Type="Variable" Display="always-hide" Required="false" Mask="true">ConDeb1983@</Config>
+  <Config Name="SMTP SERVER" Target="SMTP_SERVER" Default="" Mode="" Description="SMTP_SERVER" Type="Variable" Display="always-hide" Required="true" Mask="false">smtp.gmail.com</Config>
+  <Config Name="SMTP PORT" Target="SMTP_PORT" Default="" Mode="" Description="SMTP_PORT" Type="Variable" Display="always-hide" Required="true" Mask="false">587</Config>
+  <Config Name="EMAIL USERNAME" Target="EMAIL_USERNAME" Default="" Mode="" Description="EMAIL_USERNAME" Type="Variable" Display="always-hide" Required="true" Mask="false">conors.notifications@gmail.com</Config>
+  <Config Name="EMAIL PASSWORD" Target="EMAIL_PASSWORD" Default="" Mode="" Description="EMAIL_PASSWORD" Type="Variable" Display="always-hide" Required="true" Mask="true">ConDeb1983@</Config>
+  <Config Name="Host Port" Target="6878" Default="6878" Mode="tcp" Description="Container Port: 6878" Type="Port" Display="always-hide" Required="true" Mask="false">6878</Config>
+  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/nowshowing" Mode="rw" Description="Container Path: /config" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user/appdata/nowshowing</Config>
+  <Config Name="PLEX TOKEN" Target="PLEX_TOKEN" Default="" Mode="" Description="PLEX_TOKEN (Optional - use if you don't want to enter Plex username/password)" Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="Optional PUID - Usually do not change this. See instructions" Type="Variable" Display="advanced-hide" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Optional PGID - Usually do not change this. See instructions" Type="Variable" Display="advanced-hide" Required="false" Mask="false">100</Config>
+</Container>

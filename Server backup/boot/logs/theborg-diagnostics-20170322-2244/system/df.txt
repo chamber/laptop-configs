@@ -1,0 +1,23 @@
+Filesystem      Size  Used Avail Use% Mounted on
+rootfs          3.8G  503M  3.3G  14% /
+tmpfs           3.8G  276K  3.8G   1% /run
+devtmpfs        3.8G     0  3.8G   0% /dev
+cgroup_root     3.8G     0  3.8G   0% /sys/fs/cgroup
+tmpfs           128M  2.7M  126M   3% /var/log
+/dev/sda1        15G  311M   15G   3% /boot
+/dev/md1        3.7T  3.6T   91G  98% /mnt/disk1
+/dev/md2        3.7T  3.6T  115G  97% /mnt/disk2
+/dev/md3        2.8T  2.7T  114G  96% /mnt/disk3
+/dev/md4        3.7T  2.8T  886G  77% /mnt/disk4
+shfs             14T   13T  1.2T  92% /mnt/user
+/dev/loop0       20G  2.9G   15G  17% /var/lib/docker
+shm              64M  8.0K   64M   1% /var/lib/docker/containers/cff49434a17a2c61a3468f68f7225629be5945c0a5504d0c8b8a1149ceb2ba02/shm
+shm              64M     0   64M   0% /var/lib/docker/containers/236261a3c0edf76e2cfa8b036472f202165f2e7ee0356a04592c685f47c9ec2f/shm
+shm              64M     0   64M   0% /var/lib/docker/containers/ce38f127de4a78190092b78dcce5f8469bd70dabce3f31504a026cd2b72f862d/shm
+shm              64M  4.0K   64M   1% /var/lib/docker/containers/f90c325a209b870cdc21167792d3ed48dd91f71bf7ab6170f4292ab8c07a802e/shm
+shm              64M  4.0K   64M   1% /var/lib/docker/containers/24b30919fd8c093438684694d303c24cdcf07c182de7000b45e5fbd01a2aee7e/shm
+shm              64M  4.0K   64M   1% /var/lib/docker/containers/d787bab3e7729259f42607e4daae987fafce1d52d5bf16345ffb240c0204c856/shm
+shm              64M  4.0K   64M   1% /var/lib/docker/containers/7b84b0f9c35ac120effb9c5266232461c8606897d6aac63437f70fc6820aa604/shm
+/dev/loop1      1.0G   17M  905M   2% /etc/libvirt
+shm              64M     0   64M   0% /var/lib/docker/containers/3051499ee2fc6b0858c902ebdb99f427d33a01188cc6b126377943f57734047b/shm
+shm              64M     0   64M   0% /var/lib/docker/containers/247f59ffb54e8d7102efad50e4609c4b00b62e622e6d1a5dc5984e3fd9d65c2c/shm

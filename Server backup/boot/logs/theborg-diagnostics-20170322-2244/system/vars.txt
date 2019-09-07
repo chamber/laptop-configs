@@ -1,0 +1,1099 @@
+cpuload
+(
+)
+devs
+(
+)
+disks
+(
+    [parity] => Array
+        (
+            [idx] => 0
+            [name] => parity
+            [device] => sdb
+            [id] => ST4000VN000-2AH166_WDH02G0R
+            [rotational] => 1
+            [size] => 3907018532
+            [status] => DISK_OK
+            [temp] => 31
+            [numReads] => 82029
+            [numWrites] => 12543
+            [numErrors] => 0
+            [format] => GPT: 4K-aligned
+            [type] => Parity
+            [comment] => 
+            [color] => green-on
+            [exportable] => no
+            [fsStatus] => -
+            [fsColor] => grey-off
+            [spindownDelay] => -1
+            [spinupGroup] => host1
+            [deviceSb] => 
+            [idSb] => ST4000VN000-2AH166_WDH02G0R
+            [sizeSb] => 3907018532
+        )
+
+    [disk1] => Array
+        (
+            [idx] => 1
+            [name] => disk1
+            [device] => sde
+            [id] => ST4000VN000-1H4168_Z3069XJ8
+            [rotational] => 1
+            [size] => 3907018532
+            [status] => DISK_OK
+            [temp] => 38
+            [numReads] => 114951
+            [numWrites] => 8206
+            [numErrors] => 0
+            [format] => GPT: 4K-aligned
+            [type] => Data
+            [comment] => 
+            [color] => green-on
+            [exportable] => no
+            [fsStatus] => Mounted
+            [fsColor] => green-on
+            [fsError] => 
+            [fsType] => xfs
+            [fsSize] => 3905110812
+            [fsFree] => 95402008
+            [spindownDelay] => -1
+            [spinupGroup] => host5
+            [deviceSb] => md1
+            [idSb] => ST4000VN000-1H4168_Z3069XJ8
+            [sizeSb] => 3907018532
+        )
+
+    [disk2] => Array
+        (
+            [idx] => 2
+            [name] => disk2
+            [device] => sdf
+            [id] => ST4000VN000-1H4168_Z304HMKS
+            [rotational] => 1
+            [size] => 3907018532
+            [status] => DISK_OK
+            [temp] => 40
+            [numReads] => 85035
+            [numWrites] => 166
+            [numErrors] => 0
+            [format] => GPT: 4K-aligned
+            [type] => Data
+            [comment] => 
+            [color] => green-on
+            [exportable] => no
+            [fsStatus] => Mounted
+            [fsColor] => green-on
+            [fsError] => 
+            [fsType] => xfs
+            [fsSize] => 3905110812
+            [fsFree] => 120265684
+            [spindownDelay] => -1
+            [spinupGroup] => host6
+            [deviceSb] => md2
+            [idSb] => ST4000VN000-1H4168_Z304HMKS
+            [sizeSb] => 3907018532
+        )
+
+    [disk3] => Array
+        (
+            [idx] => 3
+            [name] => disk3
+            [device] => sdc
+            [id] => ST3000DM001-1CH166_Z1F41Y2G
+            [rotational] => 1
+            [size] => 2930266532
+            [status] => DISK_OK
+            [temp] => 40
+            [numReads] => 88630
+            [numWrites] => 765
+            [numErrors] => 0
+            [format] => GPT: 4K-aligned
+            [type] => Data
+            [comment] => 
+            [color] => green-on
+            [exportable] => no
+            [fsStatus] => Mounted
+            [fsColor] => green-on
+            [fsError] => 
+            [fsType] => xfs
+            [fsSize] => 2928835740
+            [fsFree] => 119014364
+            [spindownDelay] => -1
+            [spinupGroup] => host3
+            [deviceSb] => md3
+            [idSb] => ST3000DM001-1CH166_Z1F41Y2G
+            [sizeSb] => 2930266532
+        )
+
+    [disk4] => Array
+        (
+            [idx] => 4
+            [name] => disk4
+            [device] => sdd
+            [id] => WDC_WD40EFRX-68N32N0_WD-WCC7K6CZFT52
+            [rotational] => 1
+            [size] => 3907018532
+            [status] => DISK_OK
+            [temp] => 41
+            [numReads] => 86201
+            [numWrites] => 3449
+            [numErrors] => 0
+            [format] => GPT: 4K-aligned
+            [type] => Data
+            [comment] => 
+            [color] => green-on
+            [exportable] => no
+            [fsStatus] => Mounted
+            [fsColor] => green-on
+            [fsError] => 
+            [fsType] => xfs
+            [fsSize] => 3905587740
+            [fsFree] => 928605572
+            [spindownDelay] => -1
+            [spinupGroup] => host4
+            [deviceSb] => md4
+            [idSb] => WDC_WD40EFRX-68N32N0_WD-WCC7K6CZFT52
+            [sizeSb] => 3907018532
+        )
+
+    [disk5] => Array
+        (
+            [idx] => 5
+            [name] => disk5
+            [device] => 
+            [id] => 
+            [rotational] => 
+            [size] => 0
+            [status] => DISK_NP
+            [temp] => *
+            [numReads] => 0
+            [numWrites] => 0
+            [numErrors] => 0
+            [format] => 
+            [type] => Data
+            [comment] => 
+            [color] => grey-off
+            [exportable] => no
+            [fsStatus] => -
+            [fsColor] => grey-off
+            [fsError] => 
+            [fsType] => auto
+            [fsSize] => 0
+            [fsFree] => 0
+            [spindownDelay] => -1
+            [spinupGroup] => 
+            [deviceSb] => 
+            [idSb] => 
+            [sizeSb] => 0
+        )
+
+    [disk6] => Array
+        (
+            [idx] => 6
+            [name] => disk6
+            [device] => 
+            [id] => 
+            [rotational] => 
+            [size] => 0
+            [status] => DISK_NP
+            [temp] => *
+            [numReads] => 0
+            [numWrites] => 0
+            [numErrors] => 0
+            [format] => 
+            [type] => Data
+            [comment] => 
+            [color] => grey-off
+            [exportable] => no
+            [fsStatus] => -
+            [fsColor] => grey-off
+            [fsError] => 
+            [fsType] => auto
+            [fsSize] => 0
+            [fsFree] => 0
+            [spindownDelay] => -1
+            [spinupGroup] => 
+            [deviceSb] => 
+            [idSb] => 
+            [sizeSb] => 0
+        )
+
+    [disk7] => Array
+        (
+            [idx] => 7
+            [name] => disk7
+            [device] => 
+            [id] => 
+            [rotational] => 
+            [size] => 0
+            [status] => DISK_NP
+            [temp] => *
+            [numReads] => 0
+            [numWrites] => 0
+            [numErrors] => 0
+            [format] => 
+            [type] => Data
+            [comment] => 
+            [color] => grey-off
+            [exportable] => no
+            [fsStatus] => -
+            [fsColor] => grey-off
+            [fsError] => 
+            [fsType] => auto
+            [fsSize] => 0
+            [fsFree] => 0
+            [spindownDelay] => -1
+            [spinupGroup] => 
+            [deviceSb] => 
+            [idSb] => 
+            [sizeSb] => 0
+        )
+
+    [disk8] => Array
+        (
+            [idx] => 8
+            [name] => disk8
+            [device] => 
+            [id] => 
+            [rotational] => 
+            [size] => 0
+            [status] => DISK_NP
+            [temp] => *
+            [numReads] => 0
+            [numWrites] => 0
+            [numErrors] => 0
+            [format] => 
+            [type] => Data
+            [comment] => 
+            [color] => grey-off
+            [exportable] => no
+            [fsStatus] => -
+            [fsColor] => grey-off
+            [fsError] => 
+            [fsType] => auto
+            [fsSize] => 0
+            [fsFree] => 0
+            [spindownDelay] => -1
+            [spinupGroup] => 
+            [deviceSb] => 
+            [idSb] => 
+            [sizeSb] => 0
+        )
+
+    [parity2] => Array
+        (
+            [idx] => 29
+            [name] => parity2
+            [device] => 
+            [id] => 
+            [rotational] => 
+            [size] => 0
+            [status] => DISK_NP_DSBL
+            [temp] => *
+            [numReads] => 0
+            [numWrites] => 0
+            [numErrors] => 0
+            [format] => 
+            [type] => Parity
+            [comment] => 
+            [color] => grey-off
+            [exportable] => no
+            [fsStatus] => -
+            [fsColor] => grey-off
+            [spindownDelay] => -1
+            [spinupGroup] => 
+            [deviceSb] => 
+            [idSb] => 
+            [sizeSb] => 0
+        )
+
+    [cache] => Array
+        (
+            [idx] => 30
+            [name] => cache
+            [device] => 
+            [id] => 
+            [rotational] => 
+            [size] => 0
+            [status] => DISK_NP
+            [temp] => *
+            [numReads] => 0
+            [numWrites] => 0
+            [numErrors] => 0
+            [format] => -
+            [type] => Cache
+            [comment] => 
+            [color] => grey-off
+            [exportable] => no
+            [fsStatus] => -
+            [fsColor] => grey-off
+            [fsError] => 
+            [fsType] => auto
+            [fsSize] => 0
+            [fsFree] => 0
+            [spindownDelay] => -1
+            [spinupGroup] => 
+            [deviceSb] => 
+            [idSb] => 
+            [sizeSb] => 0
+            [uuid] => 
+        )
+
+    [cache2] => Array
+        (
+            [idx] => 31
+            [name] => cache2
+            [device] => 
+            [id] => 
+            [rotational] => 
+            [size] => 0
+            [status] => DISK_NP
+            [temp] => *
+            [numReads] => 0
+            [numWrites] => 0
+            [numErrors] => 0
+            [format] => -
+            [type] => Cache
+            [comment] => 
+            [color] => grey-off
+            [exportable] => no
+            [fsStatus] => -
+            [fsColor] => grey-off
+            [spindownDelay] => -1
+            [spinupGroup] => 
+            [deviceSb] => 
+            [idSb] => 
+            [sizeSb] => 0
+        )
+
+    [cache3] => Array
+        (
+            [idx] => 32
+            [name] => cache3
+            [device] => 
+            [id] => 
+            [rotational] => 
+            [size] => 0
+            [status] => DISK_NP
+            [temp] => *
+            [numReads] => 0
+            [numWrites] => 0
+            [numErrors] => 0
+            [format] => -
+            [type] => Cache
+            [comment] => 
+            [color] => grey-off
+            [exportable] => no
+            [fsStatus] => -
+            [fsColor] => grey-off
+            [spindownDelay] => -1
+            [spinupGroup] => 
+            [deviceSb] => 
+            [idSb] => 
+            [sizeSb] => 0
+        )
+
+    [cache4] => Array
+        (
+            [idx] => 33
+            [name] => cache4
+            [device] => 
+            [id] => 
+            [rotational] => 
+            [size] => 0
+            [status] => DISK_NP
+            [temp] => *
+            [numReads] => 0
+            [numWrites] => 0
+            [numErrors] => 0
+            [format] => -
+            [type] => Cache
+            [comment] => 
+            [color] => grey-off
+            [exportable] => no
+            [fsStatus] => -
+            [fsColor] => grey-off
+            [spindownDelay] => -1
+            [spinupGroup] => 
+            [deviceSb] => 
+            [idSb] => 
+            [sizeSb] => 0
+        )
+
+    [flash] => Array
+        (
+            [idx] => 34
+            [name] => flash
+            [device] => sda
+            [id] => Cruzer_Fit
+            [rotational] => 0
+            [size] => 15630304
+            [status] => DISK_OK
+            [temp] => *
+            [numReads] => 165
+            [numWrites] => 41
+            [numErrors] => 0
+            [format] => unknown
+            [type] => Flash
+            [comment] => u..e
+            [color] => green-on
+            [exportable] => yes
+            [fsStatus] => Mounted
+            [fsColor] => yellow-on
+            [fsError] => 
+            [fsType] => vfat
+            [fsSize] => 15615064
+            [fsFree] => 15297216
+        )
+
+)
+monitor
+(
+    [u..d] => Array
+        (
+            [disk1] => 99
+            [disk2] => 99
+            [disk3] => 96
+            [disk4] => 96
+        )
+
+    [s..t] => Array
+        (
+            [disk4.187] => 4
+            [disk4.ack] => true
+        )
+
+    [a..y] => Array
+        (
+            [parity] => Parity check
+        )
+
+)
+network
+(
+    [e..0] => Array
+        (
+            [BONDING] => yes
+            [BONDNAME] => bond0
+            [BONDNICS] => eth0,eth1,eth2,eth3
+            [BONDING_MODE] => 1
+            [BONDING_MIIMON] => 100
+            [DHCP_KEEPRESOLV] => yes
+            [DNS_SERVER1] => 208.67.222.222
+            [DNS_SERVER2] => 208.67.220.220
+            [DNS_SERVER3] => 
+            [BRIDGING] => yes
+            [BRNAME] => br0
+            [BRNICS] => bond0
+            [BRSTP] => yes
+            [BRFD] => 0
+            [DESCRIPTION:0] => 
+            [USE_DHCP:0] => no
+            [IPADDR:0] => 192.168.2.26
+            [NETMASK:0] => 255.255.255.0
+            [GATEWAY] => 192.168.2.1
+            [MTU] => 
+            [TYPE] => access
+        )
+
+)
+sec_afp
+(
+    [disk1] => Array
+        (
+            [export] => -
+            [security] => public
+            [readList] => 
+            [writeList] => 
+            [volsizelimit] => 
+            [voldbpath] => 
+        )
+
+    [disk2] => Array
+        (
+            [export] => -
+            [security] => public
+            [readList] => 
+            [writeList] => 
+            [volsizelimit] => 
+            [voldbpath] => 
+        )
+
+    [disk3] => Array
+        (
+            [export] => -
+            [security] => public
+            [readList] => 
+            [writeList] => 
+            [volsizelimit] => 
+            [voldbpath] => 
+        )
+
+    [disk4] => Array
+        (
+            [export] => -
+            [security] => public
+            [readList] => 
+            [writeList] => 
+            [volsizelimit] => 
+            [voldbpath] => 
+        )
+
+    [disk5] => Array
+        (
+            [export] => -
+            [security] => public
+            [readList] => 
+            [writeList] => 
+            [volsizelimit] => 
+            [voldbpath] => 
+        )
+
+    [disk6] => Array
+        (
+            [export] => -
+            [security] => public
+            [readList] => 
+            [writeList] => 
+            [volsizelimit] => 
+            [voldbpath] => 
+        )
+
+    [disk7] => Array
+        (
+            [export] => -
+            [security] => public
+            [readList] => 
+            [writeList] => 
+            [volsizelimit] => 
+            [voldbpath] => 
+        )
+
+    [disk8] => Array
+        (
+            [export] => -
+            [security] => public
+            [readList] => 
+            [writeList] => 
+            [volsizelimit] => 
+            [voldbpath] => 
+        )
+
+    [cache] => Array
+        (
+            [export] => -
+            [security] => public
+            [readList] => 
+            [writeList] => 
+            [volsizelimit] => 
+            [voldbpath] => 
+        )
+
+    [M..a] => Array
+        (
+            [export] => -
+            [security] => public
+            [readList] => 
+            [writeList] => 
+            [volsizelimit] => 
+            [voldbpath] => 
+        )
+
+    [V..M] => Array
+        (
+            [export] => -
+            [security] => public
+            [readList] => 
+            [writeList] => 
+            [volsizelimit] => 
+            [voldbpath] => 
+        )
+
+    [a..a] => Array
+        (
+            [export] => -
+            [security] => public
+            [readList] => 
+            [writeList] => 
+            [volsizelimit] => 
+            [voldbpath] => 
+        )
+
+    [d..s] => Array
+        (
+            [export] => -
+            [security] => public
+            [readList] => 
+            [writeList] => 
+            [volsizelimit] => 
+            [voldbpath] => 
+        )
+
+    [s..m] => Array
+        (
+            [export] => -
+            [security] => public
+            [readList] => 
+            [writeList] => 
+            [volsizelimit] => 
+            [voldbpath] => 
+        )
+
+)
+sec
+(
+    [disk1] => Array
+        (
+            [export] => e
+            [fruit] => no
+            [security] => public
+            [readList] => 
+            [writeList] => 
+        )
+
+    [disk2] => Array
+        (
+            [export] => e
+            [fruit] => no
+            [security] => public
+            [readList] => 
+            [writeList] => 
+        )
+
+    [disk3] => Array
+        (
+            [export] => e
+            [fruit] => no
+            [security] => public
+            [readList] => 
+            [writeList] => 
+        )
+
+    [disk4] => Array
+        (
+            [export] => e
+            [fruit] => no
+            [security] => public
+            [readList] => 
+            [writeList] => 
+        )
+
+    [disk5] => Array
+        (
+            [export] => e
+            [fruit] => no
+            [security] => public
+            [readList] => 
+            [writeList] => 
+        )
+
+    [disk6] => Array
+        (
+            [export] => e
+            [fruit] => no
+            [security] => public
+            [readList] => 
+            [writeList] => 
+        )
+
+    [disk7] => Array
+        (
+            [export] => e
+            [fruit] => no
+            [security] => public
+            [readList] => 
+            [writeList] => 
+        )
+
+    [disk8] => Array
+        (
+            [export] => e
+            [fruit] => no
+            [security] => public
+            [readList] => 
+            [writeList] => 
+        )
+
+    [cache] => Array
+        (
+            [export] => e
+            [fruit] => no
+            [security] => public
+            [readList] => 
+            [writeList] => 
+        )
+
+    [flash] => Array
+        (
+            [export] => e
+            [fruit] => no
+            [security] => public
+            [readList] => 
+            [writeList] => 
+        )
+
+    [M..a] => Array
+        (
+            [export] => e
+            [fruit] => no
+            [security] => public
+            [readList] => 
+            [writeList] => 
+        )
+
+    [V..M] => Array
+        (
+            [export] => -
+            [fruit] => no
+            [security] => public
+            [readList] => 
+            [writeList] => 
+        )
+
+    [a..a] => Array
+        (
+            [export] => e
+            [fruit] => no
+            [security] => public
+            [readList] => 
+            [writeList] => 
+        )
+
+    [d..s] => Array
+        (
+            [export] => -
+            [fruit] => no
+            [security] => public
+            [readList] => 
+            [writeList] => 
+        )
+
+    [s..m] => Array
+        (
+            [export] => -
+            [fruit] => no
+            [security] => public
+            [readList] => 
+            [writeList] => 
+        )
+
+)
+sec_nfs
+(
+    [disk1] => Array
+        (
+            [export] => -
+            [security] => public
+            [hostList] => 
+        )
+
+    [disk2] => Array
+        (
+            [export] => -
+            [security] => public
+            [hostList] => 
+        )
+
+    [disk3] => Array
+        (
+            [export] => -
+            [security] => public
+            [hostList] => 
+        )
+
+    [disk4] => Array
+        (
+            [export] => -
+            [security] => public
+            [hostList] => 
+        )
+
+    [disk5] => Array
+        (
+            [export] => -
+            [security] => public
+            [hostList] => 
+        )
+
+    [disk6] => Array
+        (
+            [export] => -
+            [security] => public
+            [hostList] => 
+        )
+
+    [disk7] => Array
+        (
+            [export] => -
+            [security] => public
+            [hostList] => 
+        )
+
+    [disk8] => Array
+        (
+            [export] => -
+            [security] => public
+            [hostList] => 
+        )
+
+    [cache] => Array
+        (
+            [export] => -
+            [security] => public
+            [hostList] => 
+        )
+
+    [M..a] => Array
+        (
+            [export] => e
+            [security] => public
+            [hostList] => 
+        )
+
+    [V..M] => Array
+        (
+            [export] => e
+            [security] => public
+            [hostList] => 
+        )
+
+    [a..a] => Array
+        (
+            [export] => -
+            [security] => public
+            [hostList] => 
+        )
+
+    [d..s] => Array
+        (
+            [export] => -
+            [security] => public
+            [hostList] => 
+        )
+
+    [s..m] => Array
+        (
+            [export] => -
+            [security] => public
+            [hostList] => 
+        )
+
+)
+shares
+(
+    [M..a] => Array
+        (
+            [name] => M..a
+            [nameOrig] => M..a
+            [comment] => 
+            [allocator] => highwater
+            [splitLevel] => 
+            [floor] => 0
+            [include] => 
+            [exclude] => 
+            [useCache] => no
+            [cow] => auto
+            [color] => green-on
+            [free] => 1263287628
+            [size] => 0
+        )
+
+    [V..M] => Array
+        (
+            [name] => V..M
+            [nameOrig] => V..M
+            [comment] => 
+            [allocator] => highwater
+            [splitLevel] => 
+            [floor] => 0
+            [include] => 
+            [exclude] => 
+            [useCache] => no
+            [cow] => auto
+            [color] => green-on
+            [free] => 1263287628
+            [size] => 0
+        )
+
+    [a..a] => Array
+        (
+            [name] => a..a
+            [nameOrig] => a..a
+            [comment] => 
+            [allocator] => highwater
+            [splitLevel] => 
+            [floor] => 0
+            [include] => 
+            [exclude] => 
+            [useCache] => no
+            [cow] => auto
+            [color] => green-on
+            [free] => 1263287628
+            [size] => 0
+        )
+
+    [d..s] => Array
+        (
+            [name] => d..s
+            [nameOrig] => d..s
+            [comment] => s..s
+            [allocator] => highwater
+            [splitLevel] => 1
+            [floor] => 0
+            [include] => 
+            [exclude] => 
+            [useCache] => prefer
+            [cow] => no
+            [color] => green-on
+            [free] => 1263287628
+            [size] => 0
+        )
+
+    [s..m] => Array
+        (
+            [name] => s..m
+            [nameOrig] => s..m
+            [comment] => s..a
+            [allocator] => highwater
+            [splitLevel] => 1
+            [floor] => 0
+            [include] => 
+            [exclude] => 
+            [useCache] => prefer
+            [cow] => no
+            [color] => green-on
+            [free] => 1263287628
+            [size] => 0
+        )
+
+)
+var
+(
+    [MAX_ARRAYSZ] => 30
+    [MAX_CACHESZ] => 24
+    [COMMENT] => Media server
+    [DOMAIN] => 
+    [DOMAIN_SHORT] => 
+    [DOMAIN_LOGIN] => Administrator
+    [NAME] => theBorg
+    [NTP_SERVER1] => pool.ntp.org
+    [NTP_SERVER2] => 
+    [NTP_SERVER3] => 
+    [SECURITY] => user
+    [WORKGROUP] => WORKGROUP
+    [SYS_MODEL] => Custom
+    [SYS_ARRAY_SLOTS] => 10
+    [SYS_CACHE_SLOTS] => 4
+    [SYS_FLASH_SLOTS] => 1
+    [cacheNumDevices] => 0
+    [cacheSbNumDisks] => 0
+    [currTime] => 1490222601
+    [defaultFormat] => 2
+    [defaultFsType] => xfs
+    [shutdownTimeout] => 90
+    [emhttpPort] => 80
+    [flashGUID] => 0..4
+    [flashProduct] => Cruzer_Fit
+    [flashVendor] => SanDisk
+    [fsState] => Started
+    [fsCopyPrcnt] => 0
+    [fsNumMounted] => 4
+    [fsNumUnmountable] => 0
+    [fsUnmountableMask] => 0
+    [joinStatus] => Not joined
+    [localMaster] => yes
+    [hideDotFiles] => no
+    [mdColor] => green-on
+    [mdNumDisks] => 5
+    [mdNumDisabled] => 1
+    [mdNumInvalid] => 1
+    [mdNumMissing] => 0
+    [mdNumNew] => 0
+    [mdNumErased] => 0
+    [mdResync] => 3907018532
+    [mdResyncCorr] => 1
+    [mdResyncPos] => 35802044
+    [mdResyncDb] => 2827000
+    [mdResyncDt] => 30
+    [mdResyncAction] => check P
+    [mdResyncSize] => 3907018532
+    [mdState] => STARTED
+    [mdVersion] => 2.7.1
+    [poll_attributes] => 1800
+    [poll_attributes_default] => 1800
+    [poll_attributes_status] => default
+    [nr_requests] => 128
+    [nr_requests_default] => 128
+    [nr_requests_status] => default
+    [md_num_stripes] => 1280
+    [md_num_stripes_default] => 1280
+    [md_num_stripes_status] => default
+    [md_sync_window] => 384
+    [md_sync_window_default] => 384
+    [md_sync_window_status] => default
+    [md_sync_thresh] => 192
+    [md_sync_thresh_default] => 192
+    [md_sync_thresh_status] => default
+    [md_write_method] => auto
+    [md_write_method_default] => auto
+    [md_write_method_status] => default
+    [fuse_remember] => 330
+    [fuse_remember_default] => 330
+    [fuse_remember_status] => default
+    [fuse_directio] => auto
+    [fuse_directio_default] => auto
+    [fuse_directio_status] => default
+    [queueDepth] => 1
+    [regFILE] => /boot/config/Basic.key
+    [regGUID] => 0..4
+    [regTy] => Basic
+    [regTo] => C..R
+    [regTm] => 1461957657
+    [regTm2] => 0
+    [regGen] => 0
+    [sbName] => /boot/config/super.dat
+    [sbVersion] => 2.5.3
+    [sbUpdated] => 1490222020
+    [sbEvents] => 25
+    [sbState] => 0
+    [sbClean] => no
+    [sbSynced] => 1490222020
+    [sbSyncErrs] => 0
+    [sbSynced2] => 0
+    [sbSyncExit] => 0
+    [sbNumDisks] => 6
+    [sbLabel] => 0781-5571-1001-381214111144
+    [deviceCount] => 5
+    [shareCount] => 5
+    [shareDisk] => auto
+    [shareUser] => e
+    [shareUserInclude] => 
+    [shareUserExclude] => 
+    [shareSMBEnabled] => yes
+    [shareSMBCount] => 3
+    [shareNFSEnabled] => yes
+    [shareNFSCount] => 2
+    [shareAFPEnabled] => yes
+    [shareAFPCount] => 0
+    [shareCacheEnabled] => yes
+    [shareCacheFloor] => 2000000
+    [shareInitialGroup] => Domain Users
+    [shareInitialOwner] => Administrator
+    [shareMoverActive] => no
+    [shareMoverLogging] => yes
+    [shareMoverSchedule] => 40 3 * * *
+    [shareAvahiEnabled] => yes
+    [shareAvahiSMBName] => %h
+    [shareAvahiSMBModel] => Xserve
+    [shareAvahiAFPName] => %h-AFP
+    [shareAvahiAFPModel] => Xserve
+    [spindownDelay] => 0
+    [spinupGroups] => no
+    [startMode] => Normal
+    [startArray] => no
+    [configValid] => yes
+    [timeZone] => Europe/London
+    [version] => 6.3.2
+    [csrf_token] => 7..3
+)

@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>plex</Name>
+  <Repository>linuxserver/plex</Repository>
+  <Registry>https://hub.docker.com/r/linuxserver/plex/</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>Plex organizes video, music and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices. [br]&#xD;
+[b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]&#xD;
+[b]VERSION[/b] Set to either latest,plexpass or a spesific version e.g. "0.9.12.11.1406-8403350" [br]&#xD;
+[b]/config[/b] Where plex should store settings and metadatalogs and configuration[br]&#xD;
+[b]/media[/b] Map this to your media, you can use several submappings here[br]&#xD;
+</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:32400]/web</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/plex-icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1553078848</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Plex organizes video, music and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices. [br]&#xD;
+[b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]&#xD;
+[b]VERSION[/b] Set to either latest,plexpass or a spesific version e.g. "0.9.12.11.1406-8403350" [br]&#xD;
+[b]/config[/b] Where plex should store settings and metadatalogs and configuration[br]&#xD;
+[b]/media[/b] Map this to your media, you can use several submappings here[br]&#xD;
+</Description>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/PlexMediaServer/</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/Media/TV/</HostDir>
+      <ContainerDir>/TV</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/Media/Movies/</HostDir>
+      <ContainerDir>/Movies</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/Media/Music/</HostDir>
+      <ContainerDir>/Music</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/Media/Pictures/</HostDir>
+      <ContainerDir>/Pictures</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>99</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>latest</Value>
+      <Name>VERSION</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Host Path 1" Target="/config" Default="/mnt/user/appdata/PlexMediaServer/" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/PlexMediaServer/</Config>
+  <Config Name="Host Path 2" Target="/TV" Default="/mnt/user/Media/TV/" Mode="rw" Description="Container Path: /TV" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/Media/TV/</Config>
+  <Config Name="Host Path 3" Target="/Movies" Default="/mnt/user/Media/Movies/" Mode="rw" Description="Container Path: /Movies" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/Media/Movies/</Config>
+  <Config Name="Key 1" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="Key 2" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+  <Config Name="Key 3" Target="VERSION" Default="latest" Mode="" Description="Container Variable: VERSION" Type="Variable" Display="always" Required="false" Mask="false">latest</Config>
+  <Config Name="Music" Target="/Music" Default="" Mode="rw" Description="Container Path: /Music" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/Media/Music/</Config>
+  <Config Name="Pictures" Target="/Pictures" Default="" Mode="rw" Description="Container Path: /Pictured" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/Media/Pictures/</Config>
+</Container>

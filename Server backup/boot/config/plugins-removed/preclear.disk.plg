@@ -1,0 +1,617 @@
+<?xml version='1.0' standalone='yes'?>
+
+<!DOCTYPE PLUGIN [
+<!ENTITY name      "preclear.disk">
+<!ENTITY repo      "unRAID-plugins">
+<!ENTITY author    "gfjardim">
+<!ENTITY version   "2019.02.12c">
+<!ENTITY launch    "Tools/Preclear">
+<!ENTITY gitURL    "https://raw.githubusercontent.com/&author;/&repo;/master">
+<!ENTITY pluginURL "&gitURL;/plugins/&name;.plg">
+]>
+
+<PLUGIN name="&name;" author="&author;" launch="&launch;" version="&version;" pluginURL="&pluginURL;">
+
+<CHANGES>
+##&name;
+
+###2019.02.12b
+- Fix: queue persistent across reboots
+- Fix: better enqueue handling (script 1.0.3)
+- Fix: exiting on bad resume file
+
+###2019.02.12
+- Add: preclear queue
+- Add: download log from each preclear session
+
+###2019.02.11
+- Add: preclear log icon to status
+- Add: real-time syslog monitoring
+
+###2019.02.10
+- Fix: bad substitutionon line 590
+
+###2019.02.06b
+- Add: present serial number on notifications
+
+###2019.02.06a
+- Fix: footer not appearing
+
+###2019.02.06
+- Fix: add unRAID 6.7 support
+- Fix: decrease backgroung information pooling
+- Fix: script 1.0.1 - commit all resume information to flash drive prior to create the resume file
+
+###2018.10.07
+- Fix: remove glyphicon fount dependency
+- Fix: vshift in title banners on 6.6.1
+- Fix: install full ncurse package depending on stripped version installed (no GCC version dependant)
+- Fix: bump preclear script to 1.0.0 (first main version)
+
+###2018.09.20
+- Fix: Unraid 6.6 - black theme dropdown ui displaying white-on-white text
+
+###2018.09.17
+- Add: resume preclear button
+
+###2018.09.16
+- Fix: changed unnamed pipes to named pipes in verify and erase operations (more control over dd process pid and exit status)
+- Fix: pre-read now starts at the beggining of the disk
+- Add: more verbosity to the log ( progress on write/read operations)
+- Add: disk temperature to the page footer
+
+###2018.08.27
+- Fix: change 'direct' iflag option to 'nocache' - apparently some hdds don't like it
+- Fix: only export initial smart status if not resuming
+
+###2018.08.23
+- Fix: not toggling between preclear scripts
+
+###2018.08.22
+- Fix: make sure blkid file is created before retrieving dd pid
+- FIx: export syslog messages to preclear disk log
+
+###2018.08.21c
+- Add: SMART info to preclear log
+
+###2018.08.21b
+- Fix: remove fsync option from read/write disk
+
+###2018.08.21a
+- Fix: avoid custom version of Tooltipster to load if the official version is present
+- Fix: detect wrong csrf_token and update it
+- Add: disk log to Tools > Preclear Disk
+
+###2018.08.21
+- Fix: diskinfo PHP warnings
+- Fix: revert direct I/O usage in dd invocation (reduced write performance)
+
+###2018.08.20
+- Fix: increase verbosity of script.
+
+###2018.05.03
+- Fix: script not completely zeroing the disk
+
+###2018.04.27
+- Fix: script deem failed small dd reads/writes
+
+###018.04.24
+- Fix: rc.diskinfo - PHP Warning: Missing argument 2 for force_reload()
+- Fix: script not detecting array disks correctly
+- Fix: correctly detect dd exit code - may fix link problems hanging preclear operation
+- Fix: pause dd if s6-sync (part of s6-utils used by linuxserver) is invoked
+
+###2018.03.29
+- Fix: early unRAID 6.5 compatibility
+
+###2017.11.14
+- Fix: wrong TMUX being installed on v6.3.5
+
+###2017.11.01
+- Fix: remove strings dependency
+
+###2017.09.27
+- Fix: diskinfo not starting properly
+
+###2017.09.25
+- Fix: install/update not showing the Done button
+
+###2017.09.23
+- Fix: diskinfo - PHP Warning: strpos(): Empty needle in /etc/rc.d/rc.diskinfo on line 339
+
+###2017.09.22a
+- Fix: update TMUX and add support to 6.4-rc9f
+
+###2017.09.22
+- Fix: resume not working due to a bug introduced in 2017.09.20
+
+###2017.09.20
+- Fix: better time handling across resumes
+
+###2017.09.19
+- Fix: convert popups to Sweet Alert
+- Fix: added more verbosity in the preclear script
+
+###2017.09.17a
+- Fix: resume not working properly with pre-read
+
+###2017.09.17
+- Fix: persistent elapsed time on resumed sessions
+
+###2017.09.16
+- Fix: detect dd hang and restart it
+- Add: resume stopped preclear session
+
+###2017.07.10
+- Add Cron keepalive
+
+###2017.07.08
+- Fix: dismiss Statistics status saved at temporary dir;
+- Fix: diskinfo 0.1.0 - better array disk detection;
+
+###2017.07.05c
+- Fix: diskinfo 0.0.9 - not showing SSD temperature
+
+###2017.07.05b
+- Fix: diskinfo 0.0.8 - not properly detect the absent of cached info
+
+###2017.07.05
+- Fix: add more files to preclear log download
+
+###2017.07.04
+- Fix: diskinfo 0.0.7 - minor bugfixes
+
+###2017.06.30b
+- Fix: NVME support?
+
+###2017.06.30a
+- Fix: README typo.
+
+###2017.06.30
+- Fix: diskinfo 0.0.6 - reload unRAID config every 30 secondsinstead of every 5 seconds;
+- Fix: Non-static method should not be called statically (PHP 5.4 error)
+
+###2017.06.27
+- Fix: diskinfo 0.0.5 - add compatibility to future Unassigned Devices adoption
+
+###2017.06.24
+- Add: present preclear status on footer
+
+###2017.06.23
+- Add: diskinfo 0.0.4 -  refreshes disk info based on UDEV events
+- Add: diskinfo 0.0.4 -  detect precleared disks
+- Add: preclear_disk 0.8.8 - pause on hdparm/smartctl/sync processes running
+- Add: packages to unRAID 6.4
+
+###2017.06.21
+- Fix: diskinfo 0.0.3 - suport restart
+- Fix: diskinfo daemon restart after update
+
+###2017.06.20
+- Fix: tooltips not properly appearing;
+- Fix: temperature not showing properly;
+- Fix: diskinfo 0.0.2 - timeouts not properly working;
+- Fix: script 0.8.7 - pause write every 2% to let SMART queries to complete;
+
+###2017.06.15
+- Fix: small bug in diskinfo daemon
+
+###2017.06.14
+- Fix: gather information in the background avoiding webgui to freeze
+- Fix: script version 0.8.6 - add timeout to 'smartctl' commands
+- Fix: Azure theme compatibility
+
+###2017.03.23
+- Fix: mismatch short serial numbers - bug introduced in the last version 
+- Fix: preclear not stopping on Windows browsers
+
+###2017.03.21
+- Fix: Plugin not working in older unRAID versions
+
+###2017.02.16
+- Fix: pause not working
+
+###2017.02.15
+- Fix: more serial fixes
+
+###2017.02.14
+- Fix: change identifier from device to serial number
+
+###2017.02.05
+- Add: Erase and Preclear function
+
+###2017.02.01
+- Add: tooltipster
+- Fix: replace buttons to icons
+- Fix: disk size wrongly reported
+- Fix: log not being reported
+
+###2017.01.27
+- Fix: comply with unRAID's XSS and CSRF hardening
+
+###2016.12.24
+- Add: increase verbosity of script
+
+###2016.12.23a
+- Fix: zero/erase failing due to false exit code
+
+###2016.12.23
+- Fix: better log dd errors
+
+###2016.12.21
+- Add: Secure Erase disk
+
+###2016.12.20a
+- Fix: remove send statistics
+
+###2016.12.20
+- Fix: recompile TOR package, avoiding logrotate error
+- Add: TOR SlackBuild sources to GitHub
+
+###2016.12.19
+- Add: send statistics;
+- Add: tor package;
+- Fix: removed array disk appearing as unavailable disk;
+- Fix: install correct packages on unRAID 6.3
+- Fix: script - better error reporting;
+
+###2016.10.31
+- Add: generate some debug info
+
+###2016.10.29
+- Fix: small bug in script display
+- Fix: Array disks connected to Areca cards showing up
+- Fix: Detect if script author is Joe L. or bjp999
+- Add: script write errors to log file
+- Add: Download log file from the webui
+
+###2016.10.26
+- Add: Copy to Clipboard button on Preview window
+- Fix: unescaped quotes breaking read of "state.ini" file
+- Fix: remove PHP "split" function due deprecation
+- Fix: script - better SMART detection
+- Fix: script - greatly improve speed and memory footprint in read operations
+- Fix: script - faster display refresh
+
+###2016.09.27
+- Fix: better PHP exception handling.
+
+###2016.09.26b
+- Fix: not loading information if /boot/preclear_reports directory doesn't exist
+
+###2016.09.26a
+- Fix: prepare better Unassigned Devices integration
+
+###2016.09.25
+- Fix: utempter depencency not installed
+- Add: "Answer Yes" button on Joe L. script if needed.
+- Add: preclear command to show status on shell
+
+###2016.09.23a
+- Fix: script error appearing if SMART is not available
+
+###2016.09.23
+- Add: show reports of listed disks;
+- Fix: page scrolling while updating;
+- Fix: make link point to Tools;
+- Fix: increase disk column width;
+- Fix: better script report.
+
+###2016.09.11
+- Fix: better report formating
+
+###016.09.10
+- Fix: preclear report not being created due to filename invalid characters.
+
+###2016.08.29
+- Fix: slow read with custom settings
+
+###2016.08.28
+- Fix: create temp folder on plugin installation
+
+###2016.08.26
+- Fix: merge beta script
+- Fix: high memory consumption
+
+###2016.06.23
+- Fix: install utempter
+
+###2016.06.22
+- Add: Notification capability
+- Fix: Move Preclear icon to Tools
+- Fix: Fix unknown terminal "screen" error
+- Fix: Preclear script not reading the end of the disk
+- Update: tmux (2.1), libevent (2.0.22) and ncurses (5.9-4)
+
+###2016.03.24a
+- Fix: better smartctl device testing
+
+###2016.03.24
+- Fix: displaying negative numbers
+
+###2016.03.22
+- Fix: Better S.M.A.R.T. report
+- Add: Save a report in /boot/preclear_reports
+
+###2016.03.21
+- Add: pause any preclear operations while array start/stop
+- Add: Initial SMART reporting
+
+###2016.03.20
+- Fix: disk detected as part of the array if cache slot was empty
+
+###2016.03.11b
+- Add: New Preclear script
+- Forked: to beta
+
+###2015.11.18
+- Add: logging capabilities
+- Fix: php error if disk.cfg file doesn't exist
+
+###2015.09.28a
+- Fix: DVD/BluRay drives being included
+- Fix: some minor bugs
+
+###2015.09.18
+- Fix: Areca disks not appearing correctly.
+
+###2015.09.17b
+- Fix: black CSS conformity
+
+###2015.09.17
+- Release: maintenance release.
+
+###2015.09.08
+- Add: ncurses package, avoiding the use of the xterm hack.
+
+###2015.09.07d
+- Improvement: better integration with Unassigned Devices.
+- Fix: unRAID 6.1.1 doesn't have a 'screen' terminal descriptor; xterm used instead.
+
+###2015.08.12
+- Fix: 6.1-rc3 compatibility
+
+###2015.07.23
+- Fix: better unRAID 6.1 compatibility
+- Fix: clearer notification system
+
+###2015.07.21
+- Fix: unRAID 6.1-rc1 compatibility
+
+###2015.06.16
+- Fix: duplicate hdd entry due to udev's duplicate links
+
+###2015.06.15
+- Fix: minor bugfixes
+
+###2015.06.13
+- Fix: remove ^n markup from preclear status
+- Fix: show a wait message while preclear is starting
+- Fix: add MD5 verification to downloaded files
+- Fix: remove the Start Preclear link if an tmux session is already open
+
+###2015.05.20b
+- Minor bugfixes
+
+###2015.05.20a
+- Add support to bjp999 version
+
+###2015.05.20
+- Remove preclear script from package. It must be manually added to /boot/config/plugins/preclear.disk/ directory.
+
+###2015.05.18b
+- Fix: empty cacheId variable crashing the code
+
+###2015.05.18a
+- Fix: plugin not appearing under Settings/Utilities
+
+###2015.05.18
+- Add: fast preclear option (bjp999 mod)
+
+###2015.05.17a
+- Improve: detection of SCSI disks
+
+###2015.05.16a
+- Add: other preclear operations
+
+###2015.05.16
+- Initial release.
+</CHANGES>
+
+<!--
+The 'plugin' package file.
+-->
+<FILE Name="/boot/config/plugins/&name;/&name;-&version;.txz">
+<URL>&gitURL;/archive/&name;-&version;.txz</URL>
+</FILE>
+
+<!--
+The 'plugin' package MD5 hash.
+-->
+<FILE Name="/boot/config/plugins/&name;/&name;-&version;.md5">
+<URL>&gitURL;/archive/&name;-&version;.md5</URL>
+</FILE>
+
+<!--The 'readvz' script.-->
+<FILE Name="/boot/readvz" Mode="755">
+<URL>&gitURL;/source/packages/readvz</URL>
+</FILE>
+
+<!--
+The 'packages-install' script.
+-->
+<FILE Run="/bin/bash">
+<INLINE>
+download_install() {
+  local dest="/boot/config/plugins/&name;/${2}"
+  local src="&gitURL;/source/packages/${2}"
+  local md5=$1
+  if [ ! -f "${dest}" ]; then
+    curl --location --silent --fail "${src}" --output "${dest}"
+  fi
+  file_md5=$(/usr/bin/md5sum ${dest})
+  if [ "${file_md5:0:32}" != "${md5:0:32}" ]; then
+    echo "Wrong '${2}' package md5 hash."
+    rm "${dest}"
+    exit 1
+  else
+    /sbin/installpkg "$dest"
+  fi
+}
+
+is_unraid_version() {
+  if [ -f "/etc/unraid-version" ]; then
+    . /etc/unraid-version
+  else
+    version="0.0"
+  fi
+  return $( php -r "echo ( version_compare('$version','$2', '$1') ) ? 0 : 1;" )
+}
+
+if is_unraid_version '&gt;=' '6.5.3' &amp;&amp; is_unraid_version '&lt;' '6.6.3'; then
+  download_install c04358fd7d7cb0b5ca67f215871f3692 ncurses-6.0-x86_64-3.txz   
+  download_install 9ba9d61dcd90d45719d27b9e7a111913 libevent-2.1.8-x86_64-1.txz
+  download_install a48783401331620b7c7e5d7af58f53db tmux-2.5-x86_64-1.txz      
+  download_install aed1f39d4a5acddb225b542145e0eeaf utempter-1.1.6-x86_64-2.txz
+
+elif is_unraid_version '&gt;=' '6.6.3' &amp;&amp; is_unraid_version '&lt;' '6.7'; then
+  download_install 96ebaee8f6a62f220dbdf4723a81e535 ncurses-6.1_20180324-x86_64-1.txz
+  download_install 9ba9d61dcd90d45719d27b9e7a111913 libevent-2.1.8-x86_64-1.txz      
+  download_install a4a7fdd5ff9910bee3477a2aa0e5fa25 tmux-2.7-x86_64-1.txz            
+  download_install aed1f39d4a5acddb225b542145e0eeaf utempter-1.1.6-x86_64-2.txz      
+
+elif is_unraid_version '&gt;=' '6.7'; then
+  download_install 4e76295aad8c9bf8c98301a9b7ec2e64 libevent-2.1.8-x86_64-3.txz         
+  download_install 007c068e334c2358621d3d1ea959da80 ncurses-6.1_20190112-x86_64-1.txz   
+  download_install 00d6b305ad4f01504a9419dd959e8cce openssl10-solibs-1.0.2o-x86_64-1.txz
+  download_install a40eef8aa01885ff6ea592a7e8e6b2da tmux-2.8-x86_64-1.txz               
+  download_install 1af347c4d9feff774320d9c1e7920ac3 utempter-1.1.6-x86_64-3.txz         
+
+else
+  echo "unRAID version ($version) not supported."
+  exit 1;
+fi
+
+# Verify and install plugin package
+sum1=$(/usr/bin/md5sum /boot/config/plugins/&name;/&name;-&version;.txz)
+sum2=$(/usr/bin/cat /boot/config/plugins/&name;/&name;-&version;.md5)
+if [ "${sum1:0:32}" != "${sum2:0:32}" ]; then
+  echo "Wrong 'plugin' package md5 hash."
+  rm /boot/config/plugins/&name;/&name;-&version;.txz
+  rm /boot/config/plugins/&name;/&name;-&version;.md5
+  exit 1
+else
+  upgradepkg --install-new /boot/config/plugins/&name;/&name;-&version;.txz
+fi
+
+
+</INLINE>
+</FILE>
+
+<!--
+The 'post-install' script.
+-->
+<FILE Run="/bin/bash">
+<INLINE>
+# Create a symlink to /root/mdcmd
+if [[ ! -e /root/mdcmd ]]; then
+  ln -sf /usr/local/sbin/mdcmd /root/mdcmd
+fi
+
+# Creating some directories
+mkdir -p /tmp/.preclear/ /usr/local/bin/
+
+#dismissed="/boot/config/plugins/statistics.sender/dismissed"
+#version_dismiss="/boot/config/plugins/&name;/statistics.sender.dismissed-&version;"
+#if [ ! -f "$version_dismiss" ]; then
+#  rm -f "$dismissed"
+#  touch "$version_dismiss"
+#fi
+
+# Make sure log file exists
+touch /var/log/preclear.disk.log
+
+# Update file access mode
+chmod 644 $(awk '/\.(htm|php|js|page|css|png|plg|gif|cfg|md)$/ {print "/"$0}' /var/log/packages/&name;-&version;) 
+chmod -R 755 /usr/local/emhttp/plugins/&name;/script/
+ln -sf /usr/local/emhttp/plugins/&name;/script/preclear.sh /usr/local/bin/preclear
+
+# Install diskinfo service
+mv /usr/local/emhttp/plugins/&name;/rc.diskinfo /etc/rc.d/rc.diskinfo
+chmod +x /etc/rc.d/rc.diskinfo
+
+# Add CRON entry to keep alive
+cat &lt;&lt;'EOT' &gt; /etc/cron.d/diskinfo
+# Diskinfo daemon keepalive
+*/1 * * * * /etc/rc.d/rc.diskinfo --daemon &amp;&gt; /dev/null
+EOT
+chmod 600 /etc/cron.d/diskinfo
+
+# Add UDEV rule
+mv /usr/local/emhttp/plugins/&name;/99_diskinfo.rules /etc/udev/rules.d/99_diskinfo.rules
+chmod 644 /etc/udev/rules.d/99_diskinfo.rules
+udevadm control --reload-rules
+
+# Cleaning old source files
+find /boot/config/plugins/&name;/ -type f -iname "&name;*.txz" ! -iname "*&version;*" -delete
+find /boot/config/plugins/&name;/ -type f -iname "&name;*.md5" ! -iname "*&version;*" -delete
+find /boot/config/plugins/&name;/ -type f -iname "tor-*.txz" -delete
+
+# Start diskinfo
+/etc/rc.d/rc.diskinfo --quit &amp;&gt;/dev/null
+rm -f /var/local/emhttp/plugins/diskinfo/diskinfo.json &amp;&gt;/dev/null
+echo "sleep 5 ; /etc/rc.d/rc.diskinfo --daemon &amp;&gt;/dev/null" | at now &amp;&gt;/dev/null
+
+echo ""
+echo "-----------------------------------------------------------"
+echo " &name; has been installed."
+echo " This plugin requires Dynamix webGui to operate"
+echo " Copyright 2015-2017, gfjardim"
+echo " Version: &version;"
+echo "-----------------------------------------------------------"
+echo ""
+</INLINE>
+</FILE>
+
+<!--
+The 'remove' script.
+-->
+<FILE Run="/bin/bash" Method="remove">
+<INLINE>
+
+# kill all tmux sessions
+for session in $(tmux ls | grep preclear | cut -d':' -f1); do 
+  tmux kill-session -t "${session}" >/dev/null 2>&amp;1
+done
+
+find /var/log/packages -type f -iname "&name;-*" -delete
+
+# Remove plugin related files
+rm -rf /boot/config/plugins/&name; \
+       /usr/local/emhttp/plugins/&name; \
+       /var/state/&name; \
+       /boot/.preclear/ \
+       /tmp/.preclear \
+       rm /var/run/preclear_queue.pid
+
+# Remove diskinfo
+rm /etc/cron.d/diskinfo
+sleep 1
+/etc/rc.d/rc.diskinfo --quit
+rm /var/local/emhttp/plugins/diskinfo/diskinfo.json \
+   /etc/rc.d/rc.diskinfo
+
+echo ""
+echo "-----------------------------------------------------------"
+echo " &name; has been uninstalled."
+echo " Please reboot your server to complete uninstall this plugin."
+echo " Copyright 2015-2018, gfjardim"
+echo " Version: &version;"
+echo "-----------------------------------------------------------"
+echo ""
+
+exit 0
+</INLINE>
+</FILE>
+
+</PLUGIN>

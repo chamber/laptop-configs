@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Name>OpenRemote Controller</Name>
+  <Date>2015-08-15</Date>
+  <Description>
+    OpenRemote is software integration platform for residential and commercial building automation.[br][br]
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+    [b]/config[/b] This is where the OpenRemote configuration files will reside[br][br]
+    Don't forget to enter in the host port and the app config directory
+  </Description>
+  <Overview>
+    OpenRemote is software integration platform for residential and commercial building automation. OpenRemote allows you to create your own Android or iOS remote interfaces. [br]
+    This docker app will host your custom remote interfaces. Please visit [b]http://openremote.org/display/docs/Get+Started[/b] to get started and create your designer account.
+  </Overview>
+  <Support>http://lime-technology.com/forum/index.php?topic=39413.0</Support>
+  <Registry>https://registry.hub.docker.com/u/aptalca/docker-openremote/</Registry>
+  <GitHub>https://github.com/aptalca/docker-openremote</GitHub>
+  <Repository>aptalca/docker-openremote</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+    <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort></HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name></Name>
+      <Value></Value>
+    </Variable>
+  </Environment>    
+  <Data>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:8080]/controller</WebUI>
+  <Banner></Banner>
+  <Icon>http://www.openremote.org/download/attachments/11468891/OpenRemote%20iTunes%20Icon%20512x512.png</Icon>
+  <Beta>False</Beta>
+  <Category>HomeAutomation:</Category>
+  <Changes>
+    [center][font size=5]OpenRemote Controller Change Log[/font][/center]
+    
+    [font size=4]2015.08.15[/font]
+    - Run as user nobody (instead of root)
+    - Updated to Phusion 0.9.17
+    
+    [font size=4]2015.04.20[/font]
+    - Initial Release
+    
+  </Changes>
+</Containers>

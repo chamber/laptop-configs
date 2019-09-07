@@ -1,0 +1,606 @@
+### Version 6.6.7 2019-02-22
+
+Base distro﻿:
+
+- docker: version 18.06.3 (CVE-2019-5736)
+
+### Version 6.6.6 2018-12-01
+
+Base distro﻿:
+
+- openssl: version 1.1.1a (CVE-2018-0734 CVE-2018-5407)
+- openssl-solibs: version 1.1.1a (CVE-2018-0734 CVE-2018-5407)
+- samba: version 4.8.7 (CVE-2018-14629 CVE-2018-16841 CVE-2018-16851 CVE-2018-16853)
+
+Linux kernel:
+
+- version 4.18.20
+- OOT Intel 10gbps network driver: ixgbe: version 5.5.2
+
+Management:
+
+- bug fix: error reported by 'btrfs filesystem show' prevented proper btrs cache pool analysis
+- update smartmontools drivedb and hwdata/{pci.ids,usb.ids,oui.txt,manuf.txt}
+- webgui: Black and White theme: make select arrow consistent for all browsers
+- webgui: All themes: create consistent select arrow for all browsers using pure css
+- webgui: Fixed: flash share warning is given when SMB is disabled
+- webgui: Added customizable header background color
+- webgui: All themes: css corrections
+- webgui: Revert FAT32 filename collisions
+- webgui: Dashboard: add disk utilization, cpu load & memory usage coloring
+- webgui: Syslinux Configuration: rename Basic/Advanced view to Raw/Menu
+- webgui: Fixed: parity schedule not taking zero values (e.g. Sunday=0)
+- webgui: Prevent Adblocker from hiding share list
+- webgui: Fixed missing font-awesome class in VM CPU popup window
+- webgui: Improved PCIe ACS override help text
+- webgui: Improved VFIO allow unsafe interrupts help text
+- webgui: Apply syslinux changes to all menus except safe mode
+- webgui: add per DIMM information toggle
+- webgui: Fixed PHP warnings in Vars.page
+- webgui: Docker: narrow CPU pinning list to fit lower resolutions
+- webgui: Added confirmation checkbox when missing disk in array
+- webgui: Disable cache slots selection when cache disks are re-arranged
+- webgui: Added confirmation checkbox when missing cache disk
+- webgui: Remove unused information in array view
+
+### Version 6.6.5 2018-11-08
+
+Management:
+
+- bug fix: crond was not getting started
+- webgui: Black and White theme: display arrow in select field
+
+### Version 6.6.4 2018-11-07
+
+Base distro﻿:
+
+- curl: version 7.62.0 (CVE-2018-16839, CVE-2018-16840, CVE-2018-16842)
+- dcron: version 4.5 (rev 5) (reversion)
+- openssh: version 7.9p1
+- openssl: version 1.1.1
+- openssl-solibs: version 1.1.1
+
+Linux kernel:
+
+- version 4.18.17
+
+Management:
+
+- bug fix: desktop gui 'home page' not honoring user defined http port number
+- update smartmontools drivedb and hwdata/{pci.ids,usb.ids,oui.txt,manuf.txt}
+- webgui: Docker: changed LOG file size reading to prevent HTTP time-outs
+- webgui: improve usb device detection/parsing for vm usb list
+- webgui: Added warning when Flash device is set as public share
+- webgui: Black and White theme: simplified input & select boxes
+- webgui: VM edit: fixed overflow in cpu pinning
+- webgui: GUI: make header scrollable with floating menu
+- webgui: Add viewport meta setting for Safari
+- webgui: Viewport minimum width is 1280px
+- webgui: Hide select arrow across all browsers
+- webgui: Improved Docker and VM settings consistency
+- webgui: css correction for input & select element
+- webgui: Scroll menu: change hardcoded height to dynamic value
+- webgui: Docker styling corrections
+- webgui: jquery ui style corrections
+- webgui: Use viewport for mobile and tablet devices
+- webgui: Fixed: warning on docker container page when array is stopped
+- webgui: Diagnostics Add share storage location
+- webgui: VM manager: fixed: set memballoon model='none' if any PCI device passthrough configured
+
+### Version 6.6.3 2018-10-20
+
+Base distro﻿:
+
+- libvirt: version 4.7.0 (fix: virsh believes VMs are down when they are up)
+
+Linux kernel:
+
+- version 4.18.15
+
+Management:
+
+- Add the 'tss' user and group to keep libvirt from complaining
+- create /root/.docker folder symlink to flash /boot/config/plugins/dockerMan
+- webgui: Diagnostics: add totals in btrfs usage information
+- webgui: Docker: fix button color in alert messages
+- webgui: Update CPUvms.page help text
+- webgui: Code change to prevent CA from modifying system file
+- webgui: Fix container log size
+- webgui: Improve private docker registry support (correctly pulling and updating containers)
+- webgui: VM: upon editing vm allow adding vdisk after having none
+
+### Version 6.6.2 2018-10-13
+
+Base distro﻿:
+
+- cairo: version 1.15.14
+- fontconfig: version 2.13.1
+- freetype: version 2.9.1
+- glibc: version 2.28
+- glibc-solibs: version 2.28
+- harfbuzz: version 1.9.0
+- jansson: *removed*
+- libdrm: version 2.4.94
+- librsvg: version 2.44.6
+- libvirt: version 4.8.0
+- libXinerama: version 1.1.4
+- libXxf86misc: version 1.0.4
+- mesa: version 18.2.1
+- pango: version 1.42.4
+- p11-kit: version 0.23.14
+- samba: version 4.8.6
+- xterm: version 337
+- xf86-video-ast: version 1.1.5 [revert]
+- xf86-video-mga: version 1.6.5 [revert]
+- xf86-video-vesa: version 2.3.4 [revert]
+- xorg-server: version 1.19.6 [revert]
+           
+Linux kernel:
+
+- version 4.18.14
+- OOT Intel 10gbps network drivers: ixgbe-5.5.1, ixgbevf-4.5.1
+    
+Management:
+
+- blacklist DRM_AST Aspeed video driver
+- emhttp: added instrumentation to FUSE/shfs
+- update smartmontools drivedb and hwdata/{pci.ids,usb.ids,oui.txt,manuf.txt}
+- webgui: Revert docker run Security
+- webgui: Updated button styling
+- webgui: Added new setting "Font size"
+- webgui: Styling update: height & width scaling
+- webgui: Docker: fixed autostart order not updated when "wait" values are present
+- webgui: Docker: added "container size" calculation
+- webgui: on Tools/Vars set PHP_AUTH_PW to asterisks
+- webgiu: Change anonymized email address
+- webgiu: Add global CPU core pinning for containers
+- webgiu: fixed: VM CPU mode not properly updated
+            
+### Version 6.6.1 2018-09-27
+
+Base distro﻿:
+
+- fuse: version 2.9.8
+- hwloc: version 1.11.0
+
+Linux kernel:
+
+- version 4.18.10
+  - CONFIG_CIFS_SMB311: SMB3.1.1 network file system support [note this is for client connections]
+  - CONFIG_CRYPTO_DEV_SP_PSP: Platform Security Processor (PSP) device [turned back on since Threadripper issued fixed]
+
+Management:
+
+- emhttp: Fixed: initial NFS export of a share did not result in immediate update of /etc/exports file.
+- update smartmontools drivedb and hwdata/{pci.ids,usb.ids,oui.txt,manuf.txt}
+- webgui: Docker: cap cpu+memory load at 100%
+- webgui: Dashboard: add context menu to both image and title
+- webgui: Adjusted font size
+- webgui: Style corrections
+- webgui: Use PHP version_compare to check Unraid versions
+- webgui: Make font sizes relative
+- webgui: Updated buttons styling
+- webgui: Shadox box styling update
+- webgui: New display setting: "Custom header text color"
+
+### Version 6.6.0 2018-09-19
+
+Base distro﻿:
+
+- aaa_base: version 14.2 (rev 5)
+- aaa_elflibs: version 15.0 (rev 2)
+- acl: version 2.2.53
+- acpid: version 2.0.29
+- adwaita-icon-theme: version 3.28.0
+- appres: version 1.0.5 (rev 2)
+- at-spi2-atk: version 2.26.2
+- at-spi2-core: version 2.28.0
+- at: version 3.1.20 (rev 5)
+- atk: version 2.28.1
+- attr: version 2.4.48
+- avahi: version 0.7 (rev2)
+- bash: version 4.4.023
+- bin: version 11.1 (rev 2)
+- bridge-utils: version 1.5 (rev 2)
+- btrfs-progs: version v4.17
+- bzip2: version 1.0.6 (rev 3)
+- ca-certificates: version 20180409
+- cairo: version 1.15.12
+- celt051: version 0.5.1.3 (rev 2)
+- cifs-utils: version 6.7 (rev 2)
+- coreutils: version 8.29 (rev 2)
+- cpio: version 2.12 (rev 2)
+- cpufrequtils: version 08 (rev 2)
+- cryptsetup: version 1.7.5 (rev 2)
+- curl: version 7.61.1 (CVE-2018-14618, CVE-2018-1000300, CVE-2018-1000301, CVE-2018-0500)
+- cyrus-sasl: version 2.1.27_rc8
+- db48: version 4.8.30 (rev 4)
+- dbus: version 1.12.8
+- dcron: version 4.5 (rev 8)
+- dejavu-fonts-ttf: version 2.37 (rev 4)
+- dhcpcd: version 7.0.6
+- diffutils: version 3.6 (rev 2)
+- dmidecode: version 3.1 (rev 2)
+- dnsmasq: version 2.79 (rev 2)
+- docker: version 18.06.1-ce
+- e2fsprogs: version 1.44.2
+- ebtables: version 2.0.10 (rev 2)
+- editres: version 1.0.7 (rev 2)
+- elvis: version 2.2_0 (rev 4)
+- encodings: version 1.0.4 (rev 2)
+- etc: version 15.0 (rev 6)
+- ethtool: version 4.17
+- eudev: version 3.2.5 (rev2)
+- file: version 5.33
+- findutils: version 4.4.2 (rev 2)
+- flex: version 2.6.4 (rev 3)
+- floppy: version 5.5 (rev 2)
+- fontconfig: version 2.12.6 (rev 2)
+- freetype: version 2.9 (rev 2)
+- fribidi: version 1.0.4
+- fuse: version 2.9.7 (rev3)
+- gawk: version 4.2.1 (rev 2)
+- gd: version 2.2.5 (rev2)
+- gdbm: version 1.15
+- gdk-pixbuf2: version 2.36.12
+- genpower: version 1.0.5 (rev 3)
+- getty-ps: version 2.1.0b (rev 4)
+- glew: version 2.1.0 (rev 2)
+- glib2: version 2.56.1
+- glibc-solibs: version 2.27 (rev 4)
+- glibc-zoneinfo: version 2018e (rev 3)
+- glibc: version 2.27 (rev 4)
+- glu: version 9.0.0 (rev 2)
+- gmp: version 6.1.2 (rev 2)
+- gnome-themes-standard: version 3.22.3 (rev 2)
+- gnupg: version 1.4.23 (CVE-2018-12020)
+- gnutls: version 3.6.2 (rev 2)
+- gptfdisk: version 1.0.3 (rev 2)
+- grep: version 3.1 (rev 2)
+- gtk+3: version 3.22.30
+- gzip: version 1.9 (rev 2)
+- harfbuzz: version 1.8.1
+- haveged: version 1.9.2
+- hdparm: version 9.56
+- hicolor-icon-theme: version 0.17 (rev 2)
+- hostname: version 3.18 (rev 2)
+- htop: version 2.2.0
+- icu4c: version 61.1
+- imlib2: version 1.5.1
+- inetd: version 1.79s (rev 11)
+- infozip: version 6.0 (rev 4)
+- inotify-tools: version 3.14 (rev 2)
+- intel-microcode: version 20180807
+- iproute2: version 4.17.0
+- iptables: version 1.6.2 (rev 2)
+- iputils: version s20140519 (rev 2)
+- kernel-firmware: version 20180904_85c5d90
+- keyutils: version 1.5.10 (rev 2)
+- kmod: version 25 (rev 2)
+- lbzip2: version 2.5
+- less: version 530 (rev 3)
+- libaio: version 0.3.111
+- libarchive: version 3.3.2 (rev 3)
+- libcap-ng: version 0.7.8 (rev 3)
+- libcgroup: version 0.41 (rev 5)
+- libcroco: version 0.6.12 (rev 2)
+- libdaemon: version 0.14 (rev2)
+- libdmx: version 1.1.4
+- libdrm: version 2.4.92
+- libedit: version 20180525_3.1
+- libee: version 0.4.1 (rev 2)
+- libepoxy: version 1.4.3 (rev 2)
+- libestr: version 0.1.10 (rev 2)
+- libevdev: version 1.5.9 (rev 2)
+- libevent: version 2.1.8 (rev 3)
+- libfastjson: version 0.99.8 (rev2)
+- libffi: version 3.2.1 (rev 2)
+- libfontenc: version 1.1.3 (rev 2)
+- libgcrypt: version 1.8.3 (CVE-2018-0495)
+- libgpg-error: version 1.31
+- libgudev: version 232 (rev 2)
+- libICE: version 1.0.9 (rev 3)
+- libidn: version 1.35
+- libjpeg-turbo: version 1.5.3 (rev 2)
+- liblogging: version 1.0.6 (rev2)
+- libmnl: version 1.0.4 (rev 3)
+- libnetfilter_conntrack: version 1.0.7
+- libnfnetlink: version 1.0.1 (rev 2)
+- libnftnl: version 1.1.0
+- libnl3: version 3.4.0 (rev 2)
+- libpcap: version 1.8.1 (rev 2)
+- libpciaccess: version 0.14 (rev 2)
+- libpng: version 1.6.34 (rev 2)
+- libpthread-stubs: version 0.4 (rev 2)
+- librsvg: version 2.42.5
+- libseccomp: version 2.3.3 (rev2)
+- libSM: version 1.2.2 (rev 3)
+- libssh2: version 1.8.0 (rev 3)
+- libtasn1: version 4.13 (rev 2)
+- libtirpc: version 1.0.3 (rev 2)
+- libunistring: version 0.9.10
+- libunwind: version 1.2.1
+- libusb-compat: version 0.1.5 (rev2)
+- libusb: version 1.0.22
+- libvirt-php: version 0.5.4 (rev3)
+- libvirt: version 4.6.0
+- libwebsockets: version 2.4.2
+- libX11: version 1.6.6 (CVE-2018-14598, CVE-2018-14599, CVE-2018-14600)
+- libx86: version 1.1 (rev 3)
+- libXau: version 1.0.8 (rev 3)
+- libXaw: version 1.0.13 (rev 2)
+- libxcb: version 1.13 (rev 2)
+- libXcomposite: version 0.4.4 (rev 3)
+- libXcursor: version 1.1.15 (rev 2)
+- libXdamage: version 1.1.4 (rev 3)
+- libXdmcp: version 1.1.2 (rev 3)
+- libXevie: version 1.0.3 (rev 3)
+- libXext: version 1.3.3 (rev 3)
+- libXfixes: version 5.0.3 (rev 2)
+- libXfont2: version 2.0.3 (rev 2)
+- libXfontcache: version 1.0.5 (rev 3)
+- libXft: version 2.3.2 (rev 4)
+- libXi: version 1.7.9 (rev 2)
+- libXinerama: version 1.1.3 (rev 3)
+- libxkbfile: version 1.0.9 (rev 2)
+- libxml2: version 2.9.8 (rev 2)
+- libXmu: version 1.1.2 (rev 3)
+- libXpm: version 3.5.12 (rev 2)
+- libXrandr: version 1.5.1 (rev 2)
+- libXrender: version 0.9.10 (rev 2)
+- libXres: version 1.2.0 (rev 2)
+- libxshmfence: version 1.3 (rev 2)
+- libxslt: version 1.1.32 (rev 2)
+- libXt: version 1.1.5 (rev 2)
+- libXtst: version 1.2.3 (rev 2)
+- libXxf86dga: version 1.1.4 (rev 3)
+- libXxf86misc: version 1.0.3 (rev 3)
+- libXxf86vm: version 1.1.4 (rev 3)
+- listres: version 1.0.4 (rev 2)
+- lm_sensors: version 3.4.0 (rev 2)
+- logrotate: version 3.14.0 (rev 2)
+- lsof: version 4.91
+- lsscsi: version 0.29
+- lvm2: version 2.02.177
+- lz4: version 1.8.2
+- mc: version 4.8.21
+- mesa: version 18.1.2
+- mkfontdir: version 1.0.7 (rev 2)
+- mkfontscale: version 1.1.3 (rev 2)
+- mozilla-firefox: version 62.0 (CVE-2018-12377, CVE-2018-12378, CVE-2018-12379, CVE-2018-16541, CVE-2018-12381, CVE-2018-12382, CVE-2018-12383, CVE-2018-12375, CVE-2018-12376, CVE-2018-12359, CVE-2018-12360, CVE-2018-12361, CVE-2018-12358, CVE-2018-12362, CVE-2018-5156, CVE-2018-12363, CVE-2018-12364, CVE-2018-12365, CVE-2018-12371, CVE-2018-12366, CVE-2018-12367, CVE-2018-12368, CVE-2018-12369, CVE-2018-12370, CVE-2018-5186, CVE-2018-5187, CVE-2018-5188)
+- mpfr: version 4.0.1 (rev 2)
+- mtdev: version 1.1.5 (rev 2)
+- nano: version 2.9.8
+- ncompress: version 4.2.4.4 (rev 2)
+- ncurses: version 6.1_20180616
+- net-tools: version 20170208_479bb4a (rev 2)
+- netatalk: version 3.1.11 (rev2)
+- nettle: version 3.4 (rev 2)
+- network-scripts: version 15.0 (rev 8)
+- nghttp2: version 1.32.0 (CVE-2018-1000168)
+- nginx: version 1.14.0
+- ntfs-3g: version 2017.3.23 (rev 2)
+- ntp: version 4.2.8p12 (CVE-2016-1549, CVE-2018-12327)
+- numactl: version 2.0.11 (rev2)
+- openldap-client: version 2.4.46
+- openssh: version 7.7p1
+- openssl-solibs: version 1.1.0i
+- openssl10-solibs: version 1.0.2o
+- openssl: version 1.1.0i (CVE-2018-0732, CVE-2018-0737)
+- p11-kit: version 0.23.12
+- pango: version 1.42.1
+- patch: version 2.7.6 (rev 3) (CVE-2018-1000156)
+- pciutils: version 3.5.6 (rev 2)
+- pcre: version 8.42
+- php: version 7.2.8
+- pixman: version 0.34.0 (rev 2)
+- pkgtools: version 15.0 (rev 20)
+- pm-utils: version 1.4.1 (rev 6)
+- procps-ng: version 3.3.15 (CVE-2018-1124, CVE-2018-1126, CVE-2018-1125, CVE-2018-1123, CVE-2018-1122)
+- qemu: version 3.0.0
+- reiserfsprogs: version 3.6.27 (rev2)
+- rpcbind: version 0.2.4 (rev 4)
+- rsync: version 3.1.3 (rev 2)
+- rsyslog: version 8.36.0
+- samba: version 4.8.5 (CVE-2018-1139, CVE-2018-1140, CVE-2018-10858, CVE-2018-10918, CVE-2018-10919)
+- sed: version 4.5
+- sessreg: version 1.1.1 (rev 2)
+- setxkbmap: version 1.3.1 (rev 2)
+- shadow: version 4.2.1 (rev 4)
+- shared-mime-info: version 1.9 (rev 2)
+- spice: version 0.14.0 (rev2)
+- sqlite: version 3.24.0
+- ssmtp: version 2.64 (rev5)
+- startup-notification: version 0.12 (rev 3)
+- sudo: version 1.8.23
+- sysfsutils: version 2.1.0 (rev 2)
+- sysvinit-scripts: version 2.1 (rev 12)
+- sysvinit: version 2.90
+- talloc: version 2.1.14
+- tar: version 1.30 (rev 2)
+- tcp_wrappers: version 7.6 (rev 2)
+- tdb: version 1.3.16
+- telnet: version 0.17 (rev 4)
+- tevent: version 0.9.37
+- traceroute: version 2.1.0 (rev 2)
+- transset: version 1.0.2 (rev 2)
+- tree: version 1.7.0 (rev 2)
+- ttyd: version 1.4.0 (rev 3) remove auth_token.js reference
+- usbredir: version 0.7.1 (rev2)
+- usbutils: version 010
+- utempter: version 1.1.6 (rev 3)
+- util-linux: version 2.32
+- vala: version 0.28.1 (rev2)
+- vbetool: version 1.2.2 (rev 2)
+- vsftpd: version 3.0.3 (rev 5)
+- vte3: version 0.44.3 (rev2)
+- wget: version 1.19.5 (CVE-2018-0494)
+- which: version 2.21 (rev 2)
+- xauth: version 1.0.10 (rev 2)
+- xcb-util: version 0.4.0 (rev 3)
+- xclock: version 1.0.7 (rev 3)
+- xdpyinfo: version 1.3.2 (rev 2)
+- xdriinfo: version 1.0.6 (rev 2)
+- xev: version 1.2.2 (rev 2)
+- xf86-input-evdev: version 2.10.6
+- xf86-input-keyboard: version 1.9.0 (rev 3)
+- xf86-input-mouse: version 1.9.3
+- xf86-input-synaptics: version 1.9.1
+- xf86-video-ast: version 1.1.5 (rev 5)
+- xf86-video-mga: version 1.6.5 (rev 3)
+- xf86-video-vesa: version 2.4.0 (rev 3)
+- xfsprogs: version 4.16.1
+- xhost: version 1.0.7 (rev 2)
+- xinit: version 1.4.0 (rev 2)
+- xkbcomp: version 1.4.2
+- xkbevd: version 1.1.4 (rev 2)
+- xkbutils: version 1.0.4 (rev 3)
+- xkeyboard-config: version 2.22 (rev 2)
+- xkill: version 1.0.5 (rev 2)
+- xload: version 1.1.3 (rev 2)
+- xlsatoms: version 1.1.2 (rev 2)
+- xlsclients: version 1.1.4 (rev 2)
+- xmessage: version 1.0.5 (rev 2)
+- xmodmap: version 1.0.9 (rev 2)
+- xorg-server: version 1.20.0 (rev 2)
+- xprop: version 1.2.3 (rev 2)
+- xrandr: version 1.5.0 (rev 2)
+- xrdb: version 1.1.1 (rev 2)
+- xrefresh: version 1.0.6 (rev 2)
+- xset: version 1.2.4 (rev 2)
+- xsetroot: version 1.1.2 (rev 2)
+- xsm: version 1.0.4 (rev 2)
+- xterm: version 333
+- xtrans: version 1.3.5 (rev 2)
+- xwd: version 1.0.7 (rev 2)
+- xwininfo: version 1.1.4 (rev 2)
+- xwud: version 1.0.5 (rev 2)
+- xz: version 5.2.4
+- zlib: version 1.2.11 (rev 2)
+
+Linux kernel:
+
+- version 4.18.8
+  - md/unraid: version 2.9.4 fix Warning with stack trace when array autostart set to No
+- removed OOT Intel ixgbe and ixgbevf, restored in-tree drivers:
+  - CONFIG_IXGBE: Intel(R) 10GbE PCI Express adapters support
+  - CONFIG_IXGBEVF: Intel(R) 10GbE PCI Express Virtual Function Ethernet support
+- added per customer request:
+  - CONFIG_BLK_DEV_SKD: STEC S1120 Block Driver
+  - CONFIG_BNXT: Broadcom NetXtreme-C/E support
+  - CONFIG_CHR_DEV_ST: SCSI tape support
+- changed from built-in to module:
+  - CONFIG_BLK_DEV_SR: SCSI CDROM support
+- set CRYPTO_DEV_SP_PSP=N otherwise udev deadlocks on threadripper
+- highpoint r750: version 1.2.11
+- highpoint rr3740a: version 1.17.0
+
+Management:
+
+- Install Trial key directly and skip email collection step
+- update license.txt and syslinux menus to reflect unRAID OS -> Unraid OS
+- Docker: add optional per-container wait before starting
+- Enable IPv6 for NTP
+- rc.cpufreq: For CPUs using intel_pstate, always use the performance governor.
+  - This also provides power savings on Intel processors while avoiding the ramp-up lag
+    present when using the powersave governor (which is the default if ondemand
+    is requested on these machines).
+- rc.nginx: added locations for robots.txt and js/css versioning
+- this plugin: if legacy dynamix.plg file exists, delete it
+- restore docker custom networks upon docker start
+- update smartmontools drivedb and hwdata/{pci.ids,usb.ids,oui.txt,manuf.txt}
+- webgui: docker: Correct docker container icon name generation
+- webgui: docker: added cpu load and memory load display
+- webgui: docker: added shell/bash selection for console
+- webgui: docker: Make cpu-load and mem-load only visible in advanced mode
+- webgui: Show accumulated encryption status
+- webgui: Prevent openbox from clipping
+- webgui: Plugins: Show support thread if present
+- webgui: Remove control codes, and extended ascii characters from plugin urls on install
+- webgui: Update link for privileged help text
+- webgui: fix regex matching for unraid.net domain name validation when using new openssl1.1
+- webgui: docker: Prevent arbitrary bash execution or redirection on docker create/run commands
+- webgui: Plugins: Preserve support link when updating plugin
+- webgui: diagnostics: Replace consecutive repeated lines in syslog
+- webgui: Remove empty entries when storing individual disk settings
+- webgui: docker: fix connect container console to new window
+- webgui: Use timeout in command execution of diagnostics
+- webgui: Fixed 'Update All Containers' button sometimes hidden in docker list
+- webgui: Added version control in docker API calls
+- webgui: Show docker allocations in column format
+- webgui: fix css help button in themes azure and gray
+- webgui: Added docker autostart wait period
+- webgui: Added CPU selection to docker container edit section
+- webgui: Verify internet access using NCSI method
+  - NCSI = network connection status indicator. This method tries to access a specific Microsoft
+    site to test internet access. The same method is used in Windows.
+- webgui: Added docker autostart wait period
+- webgui: New CPU pinning functionality
+- webgui: Change wording on dashboard page "memory total usable"
+- webgui: Include meminfo in diagnostics
+- webgui: Docker containers page: show container starting up message
+  - Starting docker service and auto-starting containers has been decoupled.
+    This lets the docker page return as soon as the service is ready.
+    The container overview page shows a new message, and will automatically reload to update the
+    status until all containers are auto-started
+- webgui: VMs: preserve XML custom settings in VM config updates
+- webgui: dockerMan: Avoid filename collisions on FAT32
+- webgui: Extract disk log from multiple rotated logs
+- webgui: theme-match marketing site
+- webgui: vm manager: update unraid template logo
+- webgui: Update virtio iso download links
+- webgui: VM Manager: add 'virtio-win-0.1.160-1' to VirtIO-ISOs list
+- webgui: IE: loads.txt is not being generated correctly on 6.6-rc1
+- webgui: Wrap all CSS/JS calls in autov()
+- webgui: Set robots "noindex, nofollow" metatag on all pages, in case a user opens their system up to the internet.
+- webgui: Added CPU isolation
+  - Both CPU pinning and CPU isolation is possible thru the GUI
+- webgui: Make buttons a bit more narrow
+- webgui: Fixed VM disk driver overwriting to default
+- webgui: Fixed primary graphics card selection
+  - Note: this solution isn't complete. Removing a 2nd card doesn't work
+- webgui: Fixed: VM settings Apply button not working in basic mode
+- webgui: Fixed: no wrapping of help text in Docker settings
+- webgui: Improved position of notifications
+- webgui: Fixed: table height in fixed mode
+- webgui: Fixed: VM creation error (parser error on attribute 'function')
+- webgui: More specific removal of driver type to prevent 'qcow2' revert to 'raw'
+- webgui: Robots protection
+- webgui: Added SWAL message for CPU isolation
+- webgui: Fixed: XML -- array conversion for "disk" elements
+- webgui: CPU pinning: make notice to reboot permanent and inline with other pages
+- webgui: VM settings: updated ACS Override and new Unsafe Interrupts option
+- webgui: VM settings: align title capitalization
+- webgui: VM settings: added help text
+- webgui: CPU pinning: separate tabs for VM and Docker
+- webgui: CPU pinning: individual notice message for VM and Docker
+- webgui: Fixed: regression error in docker "check for updates"
+- webgui: Docker containers: list adjustment to fit better smaller screens
+- webgui: Docker containers: imrpoved table spacing
+- webgui: CPU pinning: updated page structure
+- webgui: VM edit: rebuild correctly graphic cards
+- webgui: Prohibit CPU isolation in safe mode
+- webgui: CPU pinning: updated help text for containers and isolated cores
+- webgui: Docker: Suppress error if no volumes present in template
+- webgui: Added "ignore" text to BTRFS profiles warning
+- webgui: CPU Isolation: Prevent PHP error if no CPUs isolated
+- webgui: Updated parity help text and simplified cron entries
+- webgui: include syslinux folder in flash backup
+- webgui: SMART controller update
+  - changed Areca to SAS format
+  - added HP cciss
+  - fixed global controller selection
+- webgui: Disable PCIe ACS override and VFIO allow unsafe interrupt settings in SAFE mode
+- webgui: CPU pinning: hanlde dots in VM names
+- webgui: VM edit: fixed deletion of vdisks
+- webgui: VM settings: css corrections
+- webgui: Other miscellaneous fixes and updates
+- webgui: Docker: fixed templates not saving
+- webgui: Dashboard: fixed incorrect username references
+- webgui: System devices: fixed display of ACS override warning message
+- webgui: Correction in custom parity schedule
+- webgui: VM edit corrections
+  - create image when new vdisk is added
+  - keep sound card selection included
+  - fix add/remove of network interfaces
+- webgui: CPU pinning: preserve "emulatorpin" entry

@@ -1,0 +1,37 @@
+00:00.0 Host bridge [0600]: Intel Corporation Skylake Host Bridge/DRAM Registers [8086:190f] (rev 07)
+	Subsystem: ASRock Incorporation Sky Lake Host Bridge/DRAM Registers [1849:190f]
+	Kernel driver in use: skl_uncore
+00:02.0 VGA compatible controller [0300]: Intel Corporation HD Graphics 530 [8086:1912] (rev 06)
+	Subsystem: ASRock Incorporation Sky Lake Integrated Graphics [1849:1912]
+	Kernel modules: i915
+00:14.0 USB controller [0c03]: Intel Corporation Sunrise Point-H USB 3.0 xHCI Controller [8086:a12f] (rev 31)
+	Subsystem: ASRock Incorporation Sunrise Point-H USB 3.0 xHCI Controller [1849:a12f]
+	Kernel driver in use: xhci_hcd
+00:14.2 Signal processing controller [1180]: Intel Corporation Sunrise Point-H Thermal subsystem [8086:a131] (rev 31)
+	Subsystem: ASRock Incorporation Sunrise Point-H Thermal subsystem [1849:a131]
+00:16.0 Communication controller [0780]: Intel Corporation Sunrise Point-H CSME HECI #1 [8086:a13a] (rev 31)
+	Subsystem: ASRock Incorporation Sunrise Point-H CSME HECI [1849:a13a]
+00:17.0 SATA controller [0106]: Intel Corporation Sunrise Point-H SATA controller [AHCI mode] [8086:a102] (rev 31)
+	Subsystem: ASRock Incorporation Device [1849:a102]
+	Kernel driver in use: ahci
+	Kernel modules: ahci
+00:1b.0 PCI bridge [0604]: Intel Corporation Sunrise Point-H PCI Root Port #19 [8086:a169] (rev f1)
+	Kernel driver in use: pcieport
+00:1c.0 PCI bridge [0604]: Intel Corporation Sunrise Point-H PCI Express Root Port #3 [8086:a112] (rev f1)
+	Kernel driver in use: pcieport
+00:1d.0 PCI bridge [0604]: Intel Corporation Sunrise Point-H PCI Express Root Port #9 [8086:a118] (rev f1)
+	Kernel driver in use: pcieport
+00:1f.0 ISA bridge [0601]: Intel Corporation Sunrise Point-H LPC Controller [8086:a144] (rev 31)
+	Subsystem: ASRock Incorporation Sunrise Point-H LPC Controller [1849:a144]
+00:1f.2 Memory controller [0580]: Intel Corporation Sunrise Point-H PMC [8086:a121] (rev 31)
+	Subsystem: ASRock Incorporation Sunrise Point-H PMC [1849:a121]
+00:1f.3 Audio device [0403]: Intel Corporation Sunrise Point-H HD Audio [8086:a170] (rev 31)
+	Subsystem: ASRock Incorporation Sunrise Point-H HD Audio [1849:5892]
+00:1f.4 SMBus [0c05]: Intel Corporation Sunrise Point-H SMBus [8086:a123] (rev 31)
+	Subsystem: ASRock Incorporation Sunrise Point-H SMBus [1849:a123]
+	Kernel driver in use: i801_smbus
+	Kernel modules: i2c_i801
+00:1f.6 Ethernet controller [0200]: Intel Corporation Ethernet Connection (2) I219-V [8086:15b8] (rev 31)
+	Subsystem: ASRock Incorporation Ethernet Connection (2) I219-V [1849:15b8]
+	Kernel driver in use: e1000e
+	Kernel modules: e1000e

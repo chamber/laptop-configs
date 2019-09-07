@@ -1,0 +1,347 @@
+UID        PID  PPID  C STIME TTY          TIME CMD
+root         1     0  0 22:30 ?        00:00:06 init 
+root         2     0  0 22:30 ?        00:00:00 [kthreadd]
+root         3     2  0 22:30 ?        00:00:00 [ksoftirqd/0]
+root         4     2  0 22:30 ?        00:00:00 [kworker/0:0]
+root         6     2  0 22:30 ?        00:00:00 [kworker/u8:0]
+root         7     2  0 22:30 ?        00:00:01 [rcu_preempt]
+root         8     2  0 22:30 ?        00:00:00 [rcu_sched]
+root         9     2  0 22:30 ?        00:00:00 [rcu_bh]
+root        10     2  0 22:30 ?        00:00:00 [migration/0]
+root        11     2  0 22:30 ?        00:00:00 [lru-add-drain]
+root        12     2  0 22:30 ?        00:00:00 [cpuhp/0]
+root        13     2  0 22:30 ?        00:00:00 [cpuhp/1]
+root        14     2  0 22:30 ?        00:00:00 [migration/1]
+root        15     2  0 22:30 ?        00:00:00 [ksoftirqd/1]
+root        18     2  0 22:30 ?        00:00:00 [cpuhp/2]
+root        19     2  0 22:30 ?        00:00:00 [migration/2]
+root        20     2  0 22:30 ?        00:00:00 [ksoftirqd/2]
+root        22     2  0 22:30 ?        00:00:00 [kworker/2:0H]
+root        23     2  0 22:30 ?        00:00:00 [cpuhp/3]
+root        24     2  0 22:30 ?        00:00:00 [migration/3]
+root        25     2  0 22:30 ?        00:00:00 [ksoftirqd/3]
+root        26     2  0 22:30 ?        00:00:03 [kworker/3:0]
+root        27     2  0 22:30 ?        00:00:00 [kworker/3:0H]
+root        28     2  0 22:30 ?        00:00:00 [kdevtmpfs]
+root        29     2  0 22:30 ?        00:00:00 [netns]
+root       292     2  0 22:30 ?        00:00:00 [oom_reaper]
+root       293     2  0 22:30 ?        00:00:00 [writeback]
+root       295     2  0 22:30 ?        00:00:00 [kcompactd0]
+root       296     2  0 22:30 ?        00:00:00 [ksmd]
+root       297     2  0 22:30 ?        00:00:00 [khugepaged]
+root       298     2  0 22:30 ?        00:00:00 [crypto]
+root       299     2  0 22:30 ?        00:00:00 [kintegrityd]
+root       300     2  0 22:30 ?        00:00:00 [bioset]
+root       302     2  0 22:30 ?        00:00:00 [kblockd]
+root       305     2  0 22:30 ?        00:00:00 [kworker/1:1]
+root       579     2  0 22:30 ?        00:00:00 [ata_sff]
+root       597     2  0 22:30 ?        00:00:00 [devfreq_wq]
+root       697     2  0 22:30 ?        00:00:00 [rpciod]
+root       698     2  0 22:30 ?        00:00:00 [xprtiod]
+root       738     2  0 22:30 ?        00:00:00 [kswapd0]
+root       740     2  0 22:30 ?        00:00:00 [vmstat]
+root       836     2  0 22:30 ?        00:00:00 [nfsiod]
+root       839     2  0 22:30 ?        00:00:00 [cifsiod]
+root       847     2  0 22:30 ?        00:00:00 [bioset]
+root       856     2  0 22:30 ?        00:00:00 [xfsalloc]
+root       857     2  0 22:30 ?        00:00:00 [xfs_mru_cache]
+root       888     2  0 22:30 ?        00:00:00 [kthrotld]
+root       910     2  0 22:30 ?        00:00:00 [kworker/u8:3]
+root       912     2  0 22:30 ?        00:00:00 [acpi_thermal_pm]
+root       970     2  0 22:30 ?        00:00:00 [bioset]
+root       975     2  0 22:30 ?        00:00:00 [bioset]
+root       981     2  0 22:30 ?        00:00:00 [bioset]
+root       985     2  0 22:30 ?        00:00:00 [bioset]
+root       991     2  0 22:30 ?        00:00:00 [bioset]
+root       994     2  0 22:30 ?        00:00:00 [bioset]
+root       997     2  0 22:30 ?        00:00:00 [bioset]
+root      1000     2  0 22:30 ?        00:00:00 [bioset]
+root      1003     2  0 22:30 ?        00:00:00 [bioset]
+root      1004     2  0 22:30 ?        00:00:00 [bioset]
+root      1005     2  0 22:30 ?        00:00:00 [bioset]
+root      1006     2  0 22:30 ?        00:00:00 [bioset]
+root      1007     2  0 22:30 ?        00:00:00 [bioset]
+root      1008     2  0 22:30 ?        00:00:00 [bioset]
+root      1009     2  0 22:30 ?        00:00:00 [bioset]
+root      1010     2  0 22:30 ?        00:00:00 [bioset]
+root      1011     2  0 22:30 ?        00:00:00 [bioset]
+root      1012     2  0 22:30 ?        00:00:00 [bioset]
+root      1013     2  0 22:30 ?        00:00:00 [bioset]
+root      1014     2  0 22:30 ?        00:00:00 [bioset]
+root      1015     2  0 22:30 ?        00:00:00 [bioset]
+root      1016     2  0 22:30 ?        00:00:00 [bioset]
+root      1017     2  0 22:30 ?        00:00:00 [bioset]
+root      1018     2  0 22:30 ?        00:00:00 [bioset]
+root      1061     2  0 22:30 ?        00:00:00 [vfio-irqfd-clea]
+root      1086     2  0 22:30 ?        00:00:00 [kworker/3:2]
+root      1154     2  0 22:30 ?        00:00:00 [bioset]
+root      1158     2  0 22:30 ?        00:00:00 [kworker/0:2]
+root      1163     2  0 22:30 ?        00:00:00 [scsi_eh_0]
+root      1164     2  0 22:30 ?        00:00:00 [scsi_tmf_0]
+root      1165     2  0 22:30 ?        00:00:00 [usb-storage]
+root      1175     2  0 22:30 ?        00:00:00 [bioset]
+root      1184     2  0 22:30 ?        00:00:02 [kworker/3:1H]
+root      1313     1  0 22:30 ?        00:00:00 /sbin/udevd --daemon
+root      1335     2  0 22:30 ?        00:00:00 [scsi_eh_1]
+root      1336     2  0 22:30 ?        00:00:00 [scsi_tmf_1]
+root      1337     2  0 22:30 ?        00:00:00 [scsi_eh_2]
+root      1338     2  0 22:30 ?        00:00:00 [scsi_tmf_2]
+root      1339     2  0 22:30 ?        00:00:00 [scsi_eh_3]
+root      1340     2  0 22:30 ?        00:00:00 [scsi_tmf_3]
+root      1341     2  0 22:30 ?        00:00:00 [scsi_eh_4]
+root      1342     2  0 22:30 ?        00:00:00 [scsi_tmf_4]
+root      1343     2  0 22:30 ?        00:00:00 [scsi_eh_5]
+root      1344     2  0 22:30 ?        00:00:00 [scsi_tmf_5]
+root      1345     2  0 22:30 ?        00:00:00 [scsi_eh_6]
+root      1346     2  0 22:30 ?        00:00:00 [scsi_tmf_6]
+root      1347     2  0 22:30 ?        00:00:00 [kworker/u8:5]
+root      1359     2  0 22:30 ?        00:00:00 [bioset]
+root      1360     2  0 22:30 ?        00:00:00 [bioset]
+root      1361     2  0 22:30 ?        00:00:00 [bioset]
+root      1362     2  0 22:30 ?        00:00:00 [bioset]
+root      1363     2  0 22:30 ?        00:00:00 [bioset]
+root      1469     1  0 22:31 ?        00:00:00 /usr/sbin/rsyslogd -i /var/run/rsyslogd.pid
+root      1552     2  0 22:31 ?        00:00:00 [bond0]
+message+  1592     1  0 22:31 ?        00:00:00 /usr/bin/dbus-daemon --system
+bin       1600     1  0 22:31 ?        00:00:00 /sbin/rpcbind -w
+rpc       1605     1  0 22:31 ?        00:00:00 /sbin/rpc.statd
+root      1615     1  0 22:31 ?        00:00:00 /usr/sbin/inetd
+root      1624     1  0 22:31 ?        00:00:00 /usr/sbin/sshd
+root      1638     1  0 22:31 ?        00:00:00 /usr/sbin/ntpd -g -p /var/run/ntpd.pid
+root      1645     1  0 22:31 ?        00:00:00 /usr/sbin/acpid
+root      1654     1  0 22:31 ?        00:00:00 /usr/sbin/crond -l notice
+daemon    1656     1  0 22:31 ?        00:00:00 /usr/sbin/atd -b 15 -l 1
+root      1661     1  0 22:31 ?        00:00:00 /usr/sbin/nmbd -D
+root      1663     1  0 22:31 ?        00:00:00 /usr/sbin/smbd -D
+root      1665  1663  0 22:31 ?        00:00:00 /usr/sbin/smbd -D
+root      1666  1663  0 22:31 ?        00:00:00 /usr/sbin/smbd -D
+root      1670     1  0 22:31 ?        00:00:00 /usr/sbin/winbindd -D
+root      1672  1670  0 22:31 ?        00:00:00 /usr/sbin/winbindd -D
+root      1682     1  0 22:31 ?        00:00:01 /bin/bash /usr/local/sbin/cpuload
+root      3169     2  0 22:31 ?        00:00:00 [kworker/2:1H]
+root      6937     2  0 22:31 ?        00:00:01 [kworker/1:1H]
+root      6940     2  0 22:31 ?        00:00:01 [kworker/0:1H]
+root      8424     1  0 22:31 ?        00:00:06 /usr/local/sbin/emhttp
+root      8425     1  0 22:31 tty1     00:00:00 -bash
+root      8426     1  0 22:31 tty2     00:00:00 /sbin/agetty 38400 tty2 linux
+root      8427     1  0 22:31 tty3     00:00:00 /sbin/agetty 38400 tty3 linux
+root      8428     1  0 22:31 tty4     00:00:00 /sbin/agetty 38400 tty4 linux
+root      8429     1  0 22:31 tty5     00:00:00 /sbin/agetty 38400 tty5 linux
+root      8430     1  0 22:31 tty6     00:00:00 /sbin/agetty 38400 tty6 linux
+root      8501     2  0 22:31 ?        00:00:00 [lockd]
+root      8502     2  0 22:31 ?        00:00:00 [nfsd]
+root      8503     2  0 22:31 ?        00:00:00 [nfsd]
+root      8504     2  0 22:31 ?        00:00:00 [nfsd]
+root      8505     2  0 22:31 ?        00:00:00 [nfsd]
+root      8506     2  0 22:31 ?        00:00:00 [nfsd]
+root      8507     2  0 22:31 ?        00:00:00 [nfsd]
+root      8508     2  0 22:31 ?        00:00:01 [nfsd]
+root      8509     2  0 22:31 ?        00:00:03 [nfsd]
+root      8511     1  0 22:31 ?        00:00:00 /usr/sbin/rpc.mountd
+root      8519     1  0 22:31 ?        00:00:00 /usr/sbin/netatalk
+root      8526  8519  0 22:31 ?        00:00:00 /usr/sbin/afpd -d -F /etc/netatalk/afp.conf
+root      8527  8519  0 22:31 ?        00:00:00 /usr/sbin/cnid_metad -d -F /etc/netatalk/afp.conf
+avahi     8530     1  0 22:31 ?        00:00:00 avahi-daemon: running [theBorg.local]
+avahi     8531  8530  0 22:31 ?        00:00:00 avahi-daemon: chroot helper
+root      8539     1  0 22:31 ?        00:00:00 /usr/sbin/avahi-dnsconfd -D
+root      8654     2  0 22:31 ?        00:00:00 [md]
+root      8655     2  6 22:31 ?        00:00:46 [mdrecoveryd]
+root      8659     2  0 22:31 ?        00:00:00 [spinupd]
+root      8660     2  0 22:31 ?        00:00:00 [spinupd]
+root      8661     2  0 22:31 ?        00:00:00 [spinupd]
+root      8662     2  0 22:31 ?        00:00:00 [spinupd]
+root      8663     2  0 22:31 ?        00:00:00 [spinupd]
+root      8824     2 15 22:31 ?        00:01:55 [unraidd]
+root      8826     2  0 22:31 ?        00:00:00 [bioset]
+root      8827     2  0 22:31 ?        00:00:00 [bioset]
+root      8829     2  0 22:31 ?        00:00:00 [bioset]
+root      8831     2  0 22:31 ?        00:00:00 [bioset]
+root      8850     2  0 22:31 ?        00:00:00 [xfs-buf/md1]
+root      8851     2  0 22:31 ?        00:00:00 [xfs-data/md1]
+root      8852     2  0 22:31 ?        00:00:00 [xfs-conv/md1]
+root      8853     2  0 22:31 ?        00:00:00 [xfs-cil/md1]
+root      8854     2  0 22:31 ?        00:00:00 [xfs-reclaim/md1]
+root      8855     2  0 22:31 ?        00:00:00 [xfs-log/md1]
+root      8856     2  0 22:31 ?        00:00:00 [xfs-eofblocks/m]
+root      8857     2  0 22:31 ?        00:00:00 [xfsaild/md1]
+root      8867     2  0 22:31 ?        00:00:00 [xfs-buf/md2]
+root      8868     2  0 22:31 ?        00:00:00 [xfs-data/md2]
+root      8869     2  0 22:31 ?        00:00:00 [xfs-conv/md2]
+root      8870     2  0 22:31 ?        00:00:00 [xfs-cil/md2]
+root      8871     2  0 22:31 ?        00:00:00 [xfs-reclaim/md2]
+root      8872     2  0 22:31 ?        00:00:00 [xfs-log/md2]
+root      8873     2  0 22:31 ?        00:00:00 [xfs-eofblocks/m]
+root      8874     2  0 22:31 ?        00:00:00 [xfsaild/md2]
+root      8884     2  0 22:31 ?        00:00:00 [xfs-buf/md3]
+root      8885     2  0 22:31 ?        00:00:00 [xfs-data/md3]
+root      8886     2  0 22:31 ?        00:00:00 [xfs-conv/md3]
+root      8887     2  0 22:31 ?        00:00:00 [xfs-cil/md3]
+root      8888     2  0 22:31 ?        00:00:00 [xfs-reclaim/md3]
+root      8889     2  0 22:31 ?        00:00:00 [xfs-log/md3]
+root      8890     2  0 22:31 ?        00:00:00 [xfs-eofblocks/m]
+root      8891     2  0 22:31 ?        00:00:00 [xfsaild/md3]
+root      8901     2  0 22:31 ?        00:00:00 [xfs-buf/md4]
+root      8902     2  0 22:31 ?        00:00:00 [xfs-data/md4]
+root      8903     2  0 22:31 ?        00:00:00 [xfs-conv/md4]
+root      8904     2  0 22:31 ?        00:00:00 [xfs-cil/md4]
+root      8905     2  0 22:31 ?        00:00:00 [xfs-reclaim/md4]
+root      8906     2  0 22:31 ?        00:00:00 [xfs-log/md4]
+root      8907     2  0 22:31 ?        00:00:00 [xfs-eofblocks/m]
+root      8908     2  0 22:31 ?        00:00:00 [xfsaild/md4]
+root      8924     1  1 22:31 ?        00:00:11 /usr/local/sbin/shfs /mnt/user -disks 30 -o noatime,big_writes,allow_other -o remember=330
+root      9006     2  0 22:31 ?        00:00:01 [loop0]
+root      9007     2  0 22:31 ?        00:00:00 [btrfs-worker]
+root      9008     2  0 22:31 ?        00:00:00 [kworker/u9:0]
+root      9009     2  0 22:31 ?        00:00:00 [btrfs-worker-hi]
+root      9010     2  0 22:31 ?        00:00:00 [btrfs-delalloc]
+root      9011     2  0 22:31 ?        00:00:00 [btrfs-flush_del]
+root      9012     2  0 22:31 ?        00:00:00 [btrfs-cache]
+root      9013     2  0 22:31 ?        00:00:00 [btrfs-submit]
+root      9014     2  0 22:31 ?        00:00:00 [btrfs-fixup]
+root      9015     2  0 22:31 ?        00:00:00 [btrfs-endio]
+root      9016     2  0 22:31 ?        00:00:00 [btrfs-endio-met]
+root      9017     2  0 22:31 ?        00:00:00 [btrfs-endio-met]
+root      9018     2  0 22:31 ?        00:00:00 [btrfs-endio-rai]
+root      9019     2  0 22:31 ?        00:00:00 [btrfs-endio-rep]
+root      9020     2  0 22:31 ?        00:00:00 [btrfs-rmw]
+root      9021     2  0 22:31 ?        00:00:00 [btrfs-endio-wri]
+root      9022     2  0 22:31 ?        00:00:00 [btrfs-freespace]
+root      9023     2  0 22:31 ?        00:00:00 [btrfs-delayed-m]
+root      9024     2  0 22:31 ?        00:00:00 [btrfs-readahead]
+root      9025     2  0 22:31 ?        00:00:00 [btrfs-qgroup-re]
+root      9026     2  0 22:31 ?        00:00:00 [btrfs-extent-re]
+root      9027     2  0 22:31 ?        00:00:00 [btrfs-cleaner]
+root      9028     2  0 22:31 ?        00:00:00 [btrfs-transacti]
+root      9039     1  0 22:31 ?        00:00:01 dockerd -p /var/run/docker.pid --storage-driver=btrfs --storage-driver=btrfs
+root      9055  9039  0 22:31 ?        00:00:00 docker-containerd -l unix:///var/run/docker/libcontainerd/docker-containerd.sock --shim docker-containerd-shim --metrics-interval=0 --start-timeout 2m --state-dir /var/run/docker/libcontainerd/containerd --runtime docker-runc
+root      9497  9055  0 22:32 ?        00:00:00 docker-containerd-shim cff49434a17a2c61a3468f68f7225629be5945c0a5504d0c8b8a1149ceb2ba02 /var/run/docker/libcontainerd/cff49434a17a2c61a3468f68f7225629be5945c0a5504d0c8b8a1149ceb2ba02 docker-runc
+root      9515  9497  0 22:32 ?        00:00:00 s6-svscan -t0 /var/run/s6/services
+root      9607  9515  0 22:32 ?        00:00:00 s6-supervise s6-fdholderd
+root      9680  9039  0 22:32 ?        00:00:00 /usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 8181 -container-ip 172.17.0.2 -container-port 8181
+root      9791  9055  0 22:32 ?        00:00:00 docker-containerd-shim 236261a3c0edf76e2cfa8b036472f202165f2e7ee0356a04592c685f47c9ec2f /var/run/docker/libcontainerd/236261a3c0edf76e2cfa8b036472f202165f2e7ee0356a04592c685f47c9ec2f docker-runc
+root      9809  9791  0 22:32 ?        00:00:00 s6-svscan -t0 /var/run/s6/services
+root      9892     2  0 22:32 ?        00:00:00 [kworker/1:2]
+root      9949  9039  0 22:32 ?        00:00:00 /usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 8585 -container-ip 172.17.0.3 -container-port 80
+root      9957  9809  0 22:32 ?        00:00:00 s6-supervise s6-fdholderd
+root      9986  9055  0 22:32 ?        00:00:00 docker-containerd-shim ce38f127de4a78190092b78dcce5f8469bd70dabce3f31504a026cd2b72f862d /var/run/docker/libcontainerd/ce38f127de4a78190092b78dcce5f8469bd70dabce3f31504a026cd2b72f862d docker-runc
+root     10004  9986  0 22:32 ?        00:00:00 s6-svscan -t0 /var/run/s6/services
+root     10258 10004  0 22:32 ?        00:00:00 s6-supervise s6-fdholderd
+root     10318  9039  0 22:32 ?        00:00:00 /usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 7878 -container-ip 172.17.0.4 -container-port 7878
+root     10375  9055  0 22:32 ?        00:00:00 docker-containerd-shim f90c325a209b870cdc21167792d3ed48dd91f71bf7ab6170f4292ab8c07a802e /var/run/docker/libcontainerd/f90c325a209b870cdc21167792d3ed48dd91f71bf7ab6170f4292ab8c07a802e docker-runc
+root     10430 10375  0 22:32 ?        00:00:00 s6-svscan -t0 /var/run/s6/services
+root     10572 10004  0 22:32 ?        00:00:00 s6-supervise plexemail
+root     10573 10004  0 22:32 ?        00:00:00 s6-supervise cron
+root     10576 10573  0 22:32 ?        00:00:00 bash ./run
+nobody   10577 10572  0 22:32 ?        00:00:00 python -m SimpleHTTPServer 8080
+root     10589 10576  0 22:32 ?        00:00:00 /usr/sbin/crond -f -S -l 0 -c /etc/crontabs
+root     10621 10430  0 22:32 ?        00:00:00 s6-supervise s6-fdholderd
+root     10694  9515  0 22:32 ?        00:00:00 s6-supervise avahi
+root     10695  9515  0 22:32 ?        00:00:00 s6-supervise dbus
+root     10696  9515  0 22:32 ?        00:00:00 s6-supervise plex
+nobody   10700 10696  4 22:32 ?        00:00:31 /usr/lib/plexmediaserver/Plex Media Server
+105      10702 10695  0 22:32 ?        00:00:00 dbus-daemon --system --nofork
+root     10813  9039  0 22:32 ?        00:00:00 /usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 3579 -container-ip 172.17.0.5 -container-port 3579
+root     10830  9055  0 22:32 ?        00:00:00 docker-containerd-shim 24b30919fd8c093438684694d303c24cdcf07c182de7000b45e5fbd01a2aee7e /var/run/docker/libcontainerd/24b30919fd8c093438684694d303c24cdcf07c182de7000b45e5fbd01a2aee7e docker-runc
+root     10848 10830  0 22:32 ?        00:00:00 s6-svscan -t0 /var/run/s6/services
+106      10865 10694  0 22:32 ?        00:00:00 avahi-daemon: running [theBorg.local]
+root     10985 10848  0 22:32 ?        00:00:00 foreground  if   /etc/s6/init/init-stage2-redirfd   foreground    if     if      s6-echo      -n      --      [s6-init] making user provided files available at /var/run/s6/etc...          foreground      backtick      -n      S6_RUNTIME_PROFILE       printcontenv       S6_RUNTIME_PROFILE            importas      -u      S6_RUNTIME_PROFILE      S6_RUNTIME_PROFILE      backtick      -n      S6_RUNTIME_PROFILE_SRC       ifte        s6-echo        /etc/cont-profile.d/${S6_RUNTIME_PROFILE}               s6-echo        /etc              s6-test       -n       ${S6_RUNTIME_PROFILE}            importas      -u      S6_RUNTIME_PROFILE_SRC      S6_RUNTIME_PROFILE_SRC      if       s6-rmrf       /var/run/s6/etc            if       s6-mkdir       -pm       0755       /var/run/s6/etc            forx      i       fix-attrs.d       cont-init.d       cont-finish.d       services.d            importas      -u      i      i      if       s6-test       -d       ${S6_RUNTIME_PROFILE_SRC}/${i}            if       s6-ln       -s       ${S6_RUNTIME_PROFILE_SRC}/${i}       /var/run/s6/etc/${i}                importas     -u     ?     ?     if      s6-echo      --      exited ${?}.          ifelse      s6-test      0      -eq      0           exit      0          exit     ${?}        if     if      s6-echo      -n      --      [s6-init] ensuring user provided files have correct perms...          foreground      redirfd      -r      0      /etc/s6/init/init-stage2-fixattrs.txt      fix-attrs          importas     -u     ?     ?     if      s6-echo      --      exited ${?}.          ifelse      s6-test      0      -eq      0           exit      0          exit     ${?}        if     if     -t      s6-test      -d      /var/run/s6/etc/fix-attrs.d          if      s6-echo      [fix-attrs.d] applying ownership & permissions fixes...          if      pipeline       s6-ls       -0       --       /var/run/s6/etc/fix-attrs.d            pipeline       s6-sort       -0       --            forstdin      -0      --      i      importas      -u      i      i      if       s6-echo       --       [fix-attrs.d] ${i}: applying...             foreground       redirfd       -r       0       /var/run/s6/etc/fix-attrs.d/${i}       fix-attrs            importas      -u      ?      ?      if       s6-echo       --       [fix-attrs.d] ${i}: exited ${?}.            ifelse       s6-test       0       -eq       0             exit       0            exit      ${?}          if      s6-echo      --      [fix-attrs.d] done.             if     if     -t      s6-test      -d      /var/run/s6/etc/cont-init.d          if      s6-echo      [cont-init.d] executing container initialization scripts...          if      pipeline       s6-ls       -0       --       /var/run/s6/etc/cont-init.d            pipeline       s6-sort       -0       --            forstdin      -o      0      -0      --      i      importas      -u      i      i      if       s6-echo       --       [cont-init.d] ${i}: executing...             foreground       /var/run/s6/etc/cont-init.d/${i}            importas      -u      ?      ?      if       s6-echo       --       [cont-init.d] ${i}: exited ${?}.            ifelse       s6-test       0       -eq       0             exit       0            exit      ${?}          if      s6-echo      --      [cont-init.d] done.             if     if     -t      s6-test      -d      /var/run/s6/etc/services.d          if      s6-echo      [services.d] starting services          if      pipeline       s6-ls       -0       --       /var/run/s6/etc/services.d            forstdin      -0      -p      --      i      importas      -u      i      i      if       s6-test       -d       /var/run/s6/etc/services.d/${i}            s6-hiercopy      /var/run/s6/etc/services.d/${i}      /var/run/s6/services/${i}          if      s6-svscanctl      -a      /var/run/s6/services          if      backtick      -D      0      -n      S6_CMD_WAIT_FOR_SERVICES       printcontenv       S6_CMD_WAIT_FOR_SERVICES            importas      -u      S6_CMD_WAIT_FOR_SERVICES      S6_CMD_WAIT_FOR_SERVICES      backtick      -D      5000      -n      S6_CMD_WAIT_FOR_SERVICES_MAXTIME       printcontenv       S6_CMD_WAIT_FOR_SERVICES_MAXTIME            importas      -u      S6_CMD_WAIT_FOR_SERVICES_MAXTIME      S6_CMD_WAIT_FOR_SERVICES_MAXTIME      if      -t       if        s6-test        ${S6_CMD_WAIT_FOR_SERVICES}        -ne        0              s6-test       1       -ne       0            if       pipeline        s6-ls        -0        --        /var/run/s6/etc/services.d              forstdin       -0       -p       --       i       importas       -u       i       i       ifelse        s6-test        -f        /var/run/s6/services/${i}/notification-fd               s6-svwait        -t        ${S6_CMD_WAIT_FOR_SERVICES_MAXTIME}        -U        /var/run/s6/services/${i}              s6-svwait       -t       ${S6_CMD_WAIT_FOR_SERVICES_MAXTIME}       -u       /var/run/s6/services/${i}                if      s6-echo      --      [services.d] done.               importas   -u   ?   ?   ifelse    s6-test    0    -eq    0       exit    0      exit   ${?}    if  -t   s6-test   1   -ne   0    foreground   s6-setsid   -gq   --   with-contenv   /start.sh    importas  -u  ?  ?  if   s6-echo   --   /start.sh exited ${?}    foreground   redirfd   -w   1   /var/run/s6/env-stage3/S6_CMD_EXITED   s6-echo   -n   --   ${?}    foreground   s6-svscanctl   -t   /var/run/s6/services    s6-pause  -th  importas -u ? ? if  s6-test  ${?}  -ne  0  if  s6-test  0  -ne  0  ifelse  s6-test  0  -ne  1   if   s6-test   !   -f   /var/run/s6/env-stage3/S6_CMD_EXITED    s6-svscanctl  -t  /var/run/s6/services  s6-echo --  !!!!!  init-stage2 failed. !!!!!
+root     10986 10848  0 22:32 ?        00:00:00 s6-supervise s6-fdholderd
+root     10995 10985  0 22:32 ?        00:00:00 foreground  s6-setsid  -gq  --  with-contenv  /start.sh  importas -u ? ? if  s6-echo  --  /start.sh exited ${?}  foreground  redirfd  -w  1  /var/run/s6/env-stage3/S6_CMD_EXITED  s6-echo  -n  --  ${?}  foreground  s6-svscanctl  -t  /var/run/s6/services  s6-pause -th
+root     11008  9039  0 22:32 ?        00:00:00 /usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 9117 -container-ip 172.17.0.6 -container-port 9117
+root     11054  9055  0 22:32 ?        00:00:00 docker-containerd-shim d787bab3e7729259f42607e4daae987fafce1d52d5bf16345ffb240c0204c856 /var/run/docker/libcontainerd/d787bab3e7729259f42607e4daae987fafce1d52d5bf16345ffb240c0204c856 docker-runc
+root     11072 11054  0 22:32 ?        00:00:00 s6-svscan -t0 /var/run/s6/services
+root     11146 10430  0 22:32 ?        00:00:00 s6-supervise radarr
+nobody   11150 11146  0 22:32 ?        00:00:05 mono --debug Radarr.exe -nobrowser -data=/config
+9001     11204 10995  1 22:32 ?        00:00:08 mono Ombi.exe
+root     11311 11072  0 22:32 ?        00:00:00 s6-supervise s6-fdholderd
+root     11356     2  0 22:32 ?        00:00:00 [kworker/2:5]
+root     11361     2  0 22:32 ?        00:00:00 [kworker/1:2H]
+root     11367     2  0 22:32 ?        00:00:00 [kworker/2:8]
+root     11406  9039  0 22:32 ?        00:00:00 /usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 8989 -container-ip 172.17.0.7 -container-port 8989
+root     11508  9055  0 22:32 ?        00:00:00 docker-containerd-shim 7b84b0f9c35ac120effb9c5266232461c8606897d6aac63437f70fc6820aa604 /var/run/docker/libcontainerd/7b84b0f9c35ac120effb9c5266232461c8606897d6aac63437f70fc6820aa604 docker-runc
+root     11526 11508  0 22:32 ?        00:00:00 s6-svscan -t0 /var/run/s6/services
+root     11559  9809  0 22:32 ?        00:00:00 s6-supervise plexpy
+nobody   11561 11559  0 22:32 ?        00:00:05 python /opt/plexpy/PlexPy.py --datadir /config
+nobody   11590 10700  0 22:32 ?        00:00:06 Plex Plug-in [com.plexapp.system] /usr/lib/plexmediaserver/Resources/Plug-ins-3b8374a5c/Framework.bundle/Contents/Resources/Versions/2/Python/bootstrap.py --server-version 1.5.0.3501-3b8374a5c /usr/lib/plexmediaserver/Resources/Plug-ins-3b8374a5c/System.bundle
+root     11655 11072  0 22:32 ?        00:00:00 s6-supervise jackett
+nobody   11658 11655  0 22:32 ?        00:00:03 mono /app/Jackett/JackettConsole.exe
+root     11698 11526  0 22:32 ?        00:00:00 s6-supervise s6-fdholderd
+root     11926 11526  0 22:33 ?        00:00:00 s6-supervise sonarr
+nobody   11929 11926  0 22:33 ?        00:00:06 mono --debug NzbDrone.exe -nobrowser -data=/config
+nobody   12183 10700  0 22:33 ?        00:00:00 /usr/lib/plexmediaserver/Plex Tuner Service /usr/lib/plexmediaserver/Resources/Tuner/Private /usr/lib/plexmediaserver/Resources/Tuner/Shared 1.5.0.3501-3b8374a5c 32600 /waitmutex
+nobody   12238 10700  0 22:33 ?        00:00:03 Plex Plug-in [com.plexapp.agents.subzero] /usr/lib/plexmediaserver/Resources/Plug-ins-3b8374a5c/Framework.bundle/Contents/Resources/Versions/2/Python/bootstrap.py --server-version 1.5.0.3501-3b8374a5c /config/Library/Application Support/Plex Media Server/Plug-ins/Sub-Zero.bundle
+nobody   12240 10700  1 22:33 ?        00:00:06 Plex Plug-in [com.plexapp.plugins.trakttv] /usr/lib/plexmediaserver/Resources/Plug-ins-3b8374a5c/Framework.bundle/Contents/Resources/Versions/2/Python/bootstrap.py --server-version 1.5.0.3501-3b8374a5c /config/Library/Application Support/Plex Media Server/Plug-ins/Trakttv.bundle
+root     12338     2  0 22:33 ?        00:00:00 [loop1]
+root     12346     2  0 22:33 ?        00:00:00 [btrfs-worker]
+root     12347     2  0 22:33 ?        00:00:00 [btrfs-worker-hi]
+root     12348     2  0 22:33 ?        00:00:00 [btrfs-delalloc]
+root     12349     2  0 22:33 ?        00:00:00 [btrfs-flush_del]
+root     12350     2  0 22:33 ?        00:00:00 [btrfs-cache]
+root     12351     2  0 22:33 ?        00:00:00 [btrfs-submit]
+root     12352     2  0 22:33 ?        00:00:00 [btrfs-fixup]
+root     12353     2  0 22:33 ?        00:00:00 [btrfs-endio]
+root     12354     2  0 22:33 ?        00:00:00 [btrfs-endio-met]
+root     12355     2  0 22:33 ?        00:00:00 [btrfs-endio-met]
+root     12356     2  0 22:33 ?        00:00:00 [btrfs-endio-rai]
+root     12357     2  0 22:33 ?        00:00:00 [btrfs-endio-rep]
+root     12358     2  0 22:33 ?        00:00:00 [btrfs-rmw]
+root     12359     2  0 22:33 ?        00:00:00 [btrfs-endio-wri]
+root     12360     2  0 22:33 ?        00:00:00 [btrfs-freespace]
+root     12361     2  0 22:33 ?        00:00:00 [btrfs-delayed-m]
+root     12362     2  0 22:33 ?        00:00:00 [btrfs-readahead]
+root     12363     2  0 22:33 ?        00:00:00 [btrfs-qgroup-re]
+root     12364     2  0 22:33 ?        00:00:00 [btrfs-extent-re]
+root     12390     2  0 22:33 ?        00:00:00 [btrfs-cleaner]
+root     12391     2  0 22:33 ?        00:00:00 [btrfs-transacti]
+root     12408     1  0 22:33 ?        00:00:00 /usr/sbin/virtlockd -d -f /etc/libvirt/virtlockd.conf -p /var/run/libvirt/virtlockd.pid
+root     12414     1  0 22:33 ?        00:00:00 /usr/sbin/virtlogd -d -f /etc/libvirt/virtlogd.conf -p /var/run/libvirt/virtlogd.pid
+root     12435     1  0 22:33 ?        00:00:00 /usr/sbin/libvirtd -d -l -f /etc/libvirt/libvirtd.conf -p /var/run/libvirt/libvirtd.pid
+nobody   12525     1  0 22:33 ?        00:00:00 /usr/sbin/dnsmasq --conf-file=/var/lib/libvirt/dnsmasq/default.conf --leasefile-ro --dhcp-script=/usr/libexec/libvirt_leaseshelper
+root     12526 12525  0 22:33 ?        00:00:00 /usr/sbin/dnsmasq --conf-file=/var/lib/libvirt/dnsmasq/default.conf --leasefile-ro --dhcp-script=/usr/libexec/libvirt_leaseshelper
+nobody   13140 10700  0 22:34 ?        00:00:01 Plex Plug-in [com.plexapp.agents.imdb] /usr/lib/plexmediaserver/Resources/Plug-ins-3b8374a5c/Framework.bundle/Contents/Resources/Versions/2/Python/bootstrap.py --server-version 1.5.0.3501-3b8374a5c /usr/lib/plexmediaserver/Resources/Plug-ins-3b8374a5c/PlexMovie.bundle
+root     13360  9055  0 22:34 ?        00:00:00 docker-containerd-shim 3051499ee2fc6b0858c902ebdb99f427d33a01188cc6b126377943f57734047b /var/run/docker/libcontainerd/3051499ee2fc6b0858c902ebdb99f427d33a01188cc6b126377943f57734047b docker-runc
+root     13378 13360  0 22:34 ?        00:00:00 s6-svscan -t0 /var/run/s6/services
+root     13470 13378  0 22:34 ?        00:00:00 s6-supervise s6-fdholderd
+root     13687 13378  0 22:34 ?        00:00:00 s6-supervise deluge-web
+root     13688 13378  0 22:34 ?        00:00:00 s6-supervise deluged
+nobody   13691 13688  2 22:34 ?        00:00:13 /usr/bin/python2 /usr/bin/deluged -c /config -d --loglevel=info -l /config/deluged.log
+nobody   13693 13687  0 22:34 ?        00:00:02 /usr/bin/python2 /usr/bin/deluge-web -c /config --loglevel=info
+root     13966     1 25 22:35 ?        00:02:23 /usr/bin/qemu-system-x86_64 -name guest=seedbox,debug-threads=on -S -object secret,id=masterKey0,format=raw,file=/var/lib/libvirt/qemu/domain-1-seedbox/master-key.aes -machine pc-i440fx-2.7,accel=kvm,usb=off,dump-guest-core=off,mem-merge=off -cpu host -m 2048 -realtime mlock=off -smp 2,sockets=1,cores=1,threads=2 -uuid 6d1096c0-f4ae-fbbd-5347-6ec104ac8835 -no-user-config -nodefaults -chardev socket,id=charmonitor,path=/var/lib/libvirt/qemu/domain-1-seedbox/monitor.sock,server,nowait -mon chardev=charmonitor,id=monitor,mode=control -rtc base=utc,driftfix=slew -global kvm-pit.lost_tick_policy=discard -no-hpet -no-shutdown -boot strict=on -device ich9-usb-ehci1,id=usb,bus=pci.0,addr=0x7.0x7 -device ich9-usb-uhci1,masterbus=usb.0,firstport=0,bus=pci.0,multifunction=on,addr=0x7 -device ich9-usb-uhci2,masterbus=usb.0,firstport=2,bus=pci.0,addr=0x7.0x1 -device ich9-usb-uhci3,masterbus=usb.0,firstport=4,bus=pci.0,addr=0x7.0x2 -device ahci,id=sata0,bus=pci.0,addr=0x4 -device virtio-serial-pci,id=virtio-serial0,bus=pci.0,addr=0x5 -drive file=/mnt/disk1/VM/seedbox/vdisk1.img,format=raw,if=none,id=drive-virtio-disk2,cache=writeback -device virtio-blk-pci,scsi=off,bus=pci.0,addr=0x6,drive=drive-virtio-disk2,id=virtio-disk2,bootindex=1 -drive file=/mnt/disk1/VM/debian-8.3.0-amd64-netinst.iso,format=raw,if=none,media=cdrom,id=drive-sata0-0-0,readonly=on -device ide-cd,bus=sata0.0,drive=drive-sata0-0-0,id=sata0-0-0,bootindex=2 -netdev tap,fd=24,id=hostnet0,vhost=on,vhostfd=27 -device virtio-net-pci,netdev=hostnet0,id=net0,mac=52:54:00:5e:9e:16,bus=pci.0,addr=0x3 -chardev pty,id=charserial0 -device isa-serial,chardev=charserial0,id=serial0 -chardev socket,id=charchannel0,path=/var/lib/libvirt/qemu/channel/target/domain-1-seedbox/org.qemu.guest_agent.0,server,nowait -device virtserialport,bus=virtio-serial0.0,nr=1,chardev=charchannel0,id=channel0,name=org.qemu.guest_agent.0 -device usb-tablet,id=input0,bus=usb.0,port=1 -vnc 0.0.0.0:0,websocket=5700 -k en-gb -device vmware-svga,id=video0,vgamem_mb=16,bus=pci.0,addr=0x2 -device virtio-balloon-pci,id=balloon0,bus=pci.0,addr=0x8 -msg timestamp=on
+root     13976     2  1 22:35 ?        00:00:08 [vhost-13966]
+root     13979     2  0 22:35 ?        00:00:00 [kvm-pit/13966]
+root     15159     2  0 22:36 ?        00:00:00 [kworker/0:2H]
+root     16959     2  0 22:39 ?        00:00:00 [kworker/1:0]
+root     16973     2  0 22:39 ?        00:00:00 [kworker/u8:1]
+root     16986  9039  0 22:39 ?        00:00:00 /usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 6501 -container-ip 172.17.0.8 -container-port 6501
+root     16998  9055  0 22:40 ?        00:00:00 docker-containerd-shim 247f59ffb54e8d7102efad50e4609c4b00b62e622e6d1a5dc5984e3fd9d65c2c /var/run/docker/libcontainerd/247f59ffb54e8d7102efad50e4609c4b00b62e622e6d1a5dc5984e3fd9d65c2c docker-runc
+root     17018 16998  0 22:40 ?        00:00:00 s6-svscan -t0 /var/run/s6/services
+root     17105 17018  0 22:40 ?        00:00:00 s6-supervise s6-fdholderd
+root     17453 17018  0 22:40 ?        00:00:00 s6-supervise znc
+nobody   17456 17453  0 22:40 ?        00:00:00 /usr/bin/znc -d /config --foreground --debug
+nobody   17543 10700  0 22:40 ?        00:00:01 /usr/lib/plexmediaserver/Plex Media Scanner --scan --refresh --section 4
+root     17597     2  0 22:40 ?        00:00:00 [kworker/3:1]
+root     17598     2  0 22:40 ?        00:00:00 [kworker/3:3]
+root     17665     2  0 22:40 ?        00:00:00 [kworker/2:0]
+root     17666     2  0 22:40 ?        00:00:00 [kworker/2:1]
+root     17721     2  0 22:40 ?        00:00:00 [kworker/1:0H]
+root     18138     2  0 22:41 ?        00:00:00 [kworker/0:1]
+root     18139     2  0 22:41 ?        00:00:00 [kworker/0:3]
+root     18269  1670  0 22:42 ?        00:00:00 /usr/sbin/winbindd -D
+root     18513     2  0 22:42 ?        00:00:00 [kworker/1:3]
+nobody   18662 10700  1 22:43 ?        00:00:01 Plex Plug-in [com.plexapp.agents.plexmusic] /usr/lib/plexmediaserver/Resources/Plug-ins-3b8374a5c/Framework.bundle/Contents/Resources/Versions/2/Python/bootstrap.py --server-version 1.5.0.3501-3b8374a5c /usr/lib/plexmediaserver/Resources/Plug-ins-3b8374a5c/PlexMusic.bundle
+nobody   18701 10700  2 22:43 ?        00:00:01 Plex Plug-in [com.plexapp.agents.localmedia] /usr/lib/plexmediaserver/Resources/Plug-ins-3b8374a5c/Framework.bundle/Contents/Resources/Versions/2/Python/bootstrap.py --server-version 1.5.0.3501-3b8374a5c /usr/lib/plexmediaserver/Resources/Plug-ins-3b8374a5c/LocalMedia.bundle
+nobody   18748 10700  1 22:43 ?        00:00:01 Plex Plug-in [com.plexapp.agents.lastfm] /usr/lib/plexmediaserver/Resources/Plug-ins-3b8374a5c/Framework.bundle/Contents/Resources/Versions/2/Python/bootstrap.py --server-version 1.5.0.3501-3b8374a5c /usr/lib/plexmediaserver/Resources/Plug-ins-3b8374a5c/LastFM.bundle
+root     18894     2  0 22:43 ?        00:00:00 [kworker/0:0H]
+nobody   19026 10700  3 22:43 ?        00:00:00 Plex Plug-in [com.plexapp.agents.htbackdrops] /usr/lib/plexmediaserver/Resources/Plug-ins-3b8374a5c/Framework.bundle/Contents/Resources/Versions/2/Python/bootstrap.py --server-version 1.5.0.3501-3b8374a5c /usr/lib/plexmediaserver/Resources/Plug-ins-3b8374a5c/HTbackdrops.bundle
+nobody   19028 10700  3 22:43 ?        00:00:00 Plex Plug-in [com.plexapp.agents.lyricfind] /usr/lib/plexmediaserver/Resources/Plug-ins-3b8374a5c/Framework.bundle/Contents/Resources/Versions/2/Python/bootstrap.py --server-version 1.5.0.3501-3b8374a5c /usr/lib/plexmediaserver/Resources/Plug-ins-3b8374a5c/LyricFind.bundle
+root     19097  1654  0 22:44 ?        00:00:00 /bin/sh -c /usr/local/emhttp/plugins/dynamix/scripts/monitor &> /dev/null
+root     19098 19097  0 22:44 ?        00:00:00 /usr/bin/php -q /usr/local/emhttp/plugins/dynamix/scripts/monitor
+root     19100 19098  0 22:44 ?        00:00:00 sh -c wget -qO /dev/null 127.0.0.1:$(lsof -i -P -sTCP:LISTEN|grep -Pom1 '^emhttp.*:\K\d+')/update.htm?cmdStatus=apply\&csrf_token=718EAC2DBCD39E03
+root     19101 19100  0 22:44 ?        00:00:00 sh -c wget -qO /dev/null 127.0.0.1:$(lsof -i -P -sTCP:LISTEN|grep -Pom1 '^emhttp.*:\K\d+')/update.htm?cmdStatus=apply\&csrf_token=718EAC2DBCD39E03
+root     19102 19101  0 22:44 ?        00:00:00 lsof -i -P -sTCP:LISTEN
+root     19103 19101  0 22:44 ?        00:00:00 grep -Pom1 ^emhttp.*:\K\d+
+root     19176  1682  0 22:44 ?        00:00:00 sleep 0.992749271
+root     19183  8425  0 22:44 tty1     00:00:00 /usr/bin/php -q /usr/local/sbin/diagnostics
+root     19200 19183  0 22:44 tty1     00:00:00 sh -c ps -ef 2>/dev/null|todos >'/theborg-diagnostics-20170322-2244/system/ps.txt'
+root     19201 19200  0 22:44 tty1     00:00:00 ps -ef
+root     19202 19200  0 22:44 tty1     00:00:00 todos

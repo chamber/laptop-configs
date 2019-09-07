@@ -1,0 +1,154 @@
+END USER LICENSE AGREEMENT FOR LIME TECHNOLOGY SOFTWARE PRODUCT
+
+AUGUST 26, 2005. Revised: JUNE 11, 2008; DECEMBER 1, 2013; JUNE 1, 2014;
+SEPTEMBER 25, 2014; FEBRUARY 10, 2015; JULY 7, 2016; SEPTEMBER 12, 2018
+
+This End User License Agreement ("EULA") is a contract between you (either an
+individual or an entity) and Lime Technology, Inc. ("Lime Technology"), which
+governs your use of the Lime Technology Unraid(tm) Operating System software.
+Read the terms of this EULA carefully.  By installing, copying or otherwise
+using the software (as defined below), you agree to be bound by the terms of
+this EULA.  If you do not agree with the terms of this EULA, you are not
+permitted to install, copy or use the software.
+
+DEFINITIONS
+
+"Software" means this Lime Technology Unraid Operating System software package,
+including the software product Unraid System Management Utility (emhttp and
+webGui), the User Share File System (shfs), and various Open Source Software
+components, as well as associated media, printed materials and online or
+electronic documentation.
+
+"Open Source Software" means various open source software components,
+including, without limitation, Linux, Samba, Netatalk, DHCP, and GlibC licensed
+under the terms of applicable open source license agreements included in the
+materials relating to such software.
+
+OPEN SOURCE SOFTWARE
+
+The Open Source Software is composed of individual software components, each of
+which has its own copyright and its own applicable license conditions. You must
+review the licenses within the individual packages to understand your rights
+under them.  Copyrights to the Open Source Software are held by the copyright
+holders indicated in the notices in the corresponding source files or in other
+materials accompanying the software package.
+
+LIMITED LICENSE
+
+Lime Technology grants you a limited, revocable, non-exclusive,
+non-transferable license to install and use the Software for your own personal
+or internal business use.  If Lime Technology provides an upgrade or update to
+the Software previously licensed to you, the terms of this EULA shall continue
+to apply to such upgraded or updated version.
+
+RESTRICTIONS
+
+You may not copy the Software except for a reasonable number of
+machine-readable copies of the Software for backup or archival purposes.  You
+may not remove any titles, trademarks or trade names, copyright notices,
+legends, or other proprietary markings on the Software. You may not resell, or
+otherwise transfer or share the Software. You may not reverse engineer,
+decompile, or disassemble the Software. You may not use the Software for any
+illegal or unauthorized purpose.
+
+PROPRIETARY RIGHTS RESERVED BY LIME TECHNOLOGY
+
+Lime Technology retains all right, title, and interest in and to the Software
+and in all related copyrights, trade secrets, patents, trademarks, and any
+other intellectual and industrial property and proprietary rights, including
+registrations, applications, renewals, and extensions of such rights.  Lime
+Technology retains all rights not expressly granted to you.
+
+TRIAL VERSION
+
+"Trial Version” means a version of the Software to be used only to review,
+demonstrate and evaluate the Software for a limited time period.  Use of the
+software Trial Version requires you to obtain a Trial registration key from
+Lime Technology.  Trial keys sent via email require you to agree to supply a
+valid email address in order to recieve the key.  You may only register one
+Trial key per server.
+
+Even though a license fee is not paid for the use of Trial Version software,
+it does not mean that there are no conditions for using such software. By
+installing, copying, or otherwise using the Software You agree to be bound
+by the terms of this EULA.  If You do not agree to the terms of this EULA, do
+not install or use the Software.
+
+TERMINATION
+
+The license is effective until terminated by you or Lime Technology.   Your
+rights under this license will terminate automatically without notice if you
+fail to comply with any term(s) of this license.  In the event of termination,
+you must destroy all copies of the Software and remove all copies of the
+Software from any computer(s) on which it is installed.
+
+INSTALLATION OF THIRD-PARTY SOFTWARE
+
+Any installation and/or use of any third-party software, including Add-ons,
+Extensions, Plugins, Containers, Virtual Machine Images, etc. IS SOLEY AT
+YOUR OWN RISK. Lime Technology does not recommend or endorse any third-party
+software for any particular purpose, and shall assume no responsibility for
+their use.
+
+NO WARRANTY
+
+YOU EXPRESSLY ACKNOWLEDGE AND AGREE THAT USE OF THE SOFTWARE IS AT YOUR SOLE
+RISK AND THE SOFTWARE IS PROVIDED "AS IS" WITH ALL FAULTS AND WITHOUT WARRANTY
+OF ANY KIND, AND SOFTWARE PROVIDER HEREBY DISCLAIMS ALL WARRANTIES AND
+CONDITIONS WITH RESPECT TO THE SOFTWARE AND ANY SERVICES, EITHER EXPRESS,
+IMPLIED OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+AND/OR CONDITIONS OF MERCHANTABILITY, SATISFACTORY QUALITY, FITNESS FOR A
+PARTICULAR PURPOSE, ACCURACY, QUIET ENJOYMENT, AND NON-INFRINGEMENT. LIME
+TECHNOLOGY DOES NOT WARRANT THAT THE FUNCTIONS CONTAINED IN, OR SERVICES
+PERFORMED OR PROVIDED BY, THE SOFTWARE WILL MEET YOUR REQUIREMENTS, THAT THE
+OPERATION OF THE SOFTWARE OR SERVICES WILL BE UNINTERRUPTED OR ERROR-FREE, OR
+THAT DEFECTS IN THE SOFTWARE OR SERVICES WILL BE CORRECTED. NO ORAL OR WRITTEN
+INFORMATION OR ADVICE GIVEN BY APPLICATION PROVIDER OR ITS AUTHORIZED
+REPRESENTATIVE SHALL CREATE A WARRANTY. SOME JURISDICTIONS DO NOT ALLOW THE
+EXCLUSION OF IMPLIED WARRANTIES OR LIMITATIONS ON APPLICABLE STATUTORY RIGHTS
+OF A CONSUMER, SO THE ABOVE EXCLUSION AND LIMITATIONS MAY NOT APPLY TO YOU.
+
+LIMITATION OF LIABILITY
+
+YOU ACKNOWLEDGE AND AGREE THAT, TO THE FULLEST EXTENT PERMITTED BY ANY
+APPLICABLE LAW, THE DISCLAIMERS OF LIABILITY CONTAINED HEREIN APPLY TO ANY AND
+ALL DAMAGES OR INJURY WHATSOEVER CAUSED BY OR RELATED TO USE OF, OR INABILITY
+TO USE, THE SOFTWARE UNDER ANY CAUSE OR ACTION WHATSOEVER OF ANY JURISDICTION,
+INCLUDING, WITHOUT LIMITATION, ACTIONS FOR BREACH OF WARRANTY, BREACH OF
+CONTRACT OR TORT (INCLUDING NEGLIGENCE) AND THAT LIME TECHNOLOGY SHALL NOT BE
+LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY OR CONSEQUENTIAL
+DAMAGES, INCLUDING FOR LOSS OF PROFITS, GOODWILL OR DATA, IN ANY WAY WHATSOEVER
+ARISING OUT OF THE USE OF, OR INABILITY TO USE, THE SOFTWARE.  THE ENTIRE
+LIABILITY OF LIME TECHNOLOGY AND ANY OF ITS AFFILIATES OR SUBSIDIARIES UNDER
+ANY PROVISION OF THIS EULA AND YOUR EXCLUSIVE REMEDY FOR ALL OF THE FOREGOING
+SHALL BE LIMITED TO THE AMOUNT ACTUALLY PAID BY YOU FOR THE SOFTWARE. THE
+FOREGOING LIMITATIONS, EXCLUSIONS AND DISCLAIMERS SHALL APPLY TO THE MAXIMUM
+EXTENT PERMITTED BY APPLICABLE LAW, EVEN IF ANY REMEDY FAILS ITS ESSENTIAL
+PURPOSE.  SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF LIABILITY FOR
+CERTAIN TYPES OF DAMAGES, THEREFORE, SOME OF THE ABOVE LIMITATIONS IN THE
+SECTION MAY NOT APPLY TO YOU.
+
+GENERAL
+
+This EULA is governed by the laws of the State of California, U.S.A. without
+regard to conflict of law principles.  The United Nations Convention for the
+International Sale of Goods shall not apply.  This EULA is the entire agreement
+between You and Lime Technology regarding the subject matter herein, and
+supersedes the terms of any purchase orders and any other communications or
+advertising with respect to the Software.  If any provision of this EULA is
+held invalid, the remainder of this EULA shall continue in full force and
+effect.  This EULA may be modified only by written agreement signed by
+authorized representatives of you and Lime Technology.
+
+CONTACT INFORMATION
+
+If you have any questions about this EULA, or if you want to contact Lime
+Technology for any reason, please direct all correspondence to:
+
+Lime Technology, Inc.  
+160 S Old Springs Rd  
+Ste 100-A  
+Anaheim, CA 92808  
+support@lime-technology.com.
+
+Unraid is a registered trademark (#4,406,621) of Lime Technology, Inc.

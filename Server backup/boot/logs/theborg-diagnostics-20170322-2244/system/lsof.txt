@@ -1,0 +1,156 @@
+COMMAND     PID     USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+rpcbind    1600      bin    6u  IPv4  10000      0t0  UDP *:111 
+rpcbind    1600      bin    7u  IPv4  10001      0t0  UDP *:927 
+rpcbind    1600      bin    8u  IPv4  10002      0t0  TCP *:111 (LISTEN)
+rpc.statd  1605      rpc    5u  IPv4    304      0t0  UDP 127.0.0.1:933 
+rpc.statd  1605      rpc    8u  IPv4    309      0t0  UDP *:53047 
+rpc.statd  1605      rpc    9u  IPv4    311      0t0  TCP *:56711 (LISTEN)
+inetd      1615     root    4u  IPv4  10022      0t0  TCP *:37 (LISTEN)
+inetd      1615     root    5u  IPv4  10023      0t0  UDP *:37 
+inetd      1615     root    6u  IPv4  10024      0t0  TCP *:21 (LISTEN)
+inetd      1615     root    7u  IPv4  10025      0t0  TCP *:23 (LISTEN)
+sshd       1624     root    3u  IPv4    319      0t0  TCP *:22 (LISTEN)
+ntpd       1638     root   16u  IPv4   3908      0t0  UDP *:123 
+ntpd       1638     root   17u  IPv4   3913      0t0  UDP 127.0.0.1:123 
+ntpd       1638     root   18u  IPv4  16468      0t0  UDP 192.168.2.26:123 
+ntpd       1638     root   22u  IPv4  25326      0t0  UDP 172.17.0.1:123 
+nmbd       1661     root   17u  IPv4   3932      0t0  UDP *:137 
+nmbd       1661     root   18u  IPv4   3933      0t0  UDP *:138 
+nmbd       1661     root   19u  IPv4   3943      0t0  UDP 192.168.2.26:137 
+nmbd       1661     root   20u  IPv4   3944      0t0  UDP 192.168.2.255:137 
+nmbd       1661     root   21u  IPv4   3945      0t0  UDP 192.168.2.26:138 
+nmbd       1661     root   22u  IPv4   3946      0t0  UDP 192.168.2.255:138 
+nmbd       1661     root   24u  IPv4  29525      0t0  UDP 172.17.0.1:137 
+nmbd       1661     root   25u  IPv4  29526      0t0  UDP 172.17.255.255:137 
+nmbd       1661     root   26u  IPv4  29527      0t0  UDP 172.17.0.1:138 
+nmbd       1661     root   27u  IPv4  29528      0t0  UDP 172.17.255.255:138 
+nmbd       1661     root   28u  IPv4  38692      0t0  UDP 192.168.122.1:137 
+nmbd       1661     root   29u  IPv4  38693      0t0  UDP 192.168.122.255:137 
+nmbd       1661     root   30u  IPv4  38694      0t0  UDP 192.168.122.1:138 
+nmbd       1661     root   31u  IPv4  38695      0t0  UDP 192.168.122.255:138 
+smbd       1663     root   30u  IPv4  10085      0t0  TCP *:445 (LISTEN)
+smbd       1663     root   31u  IPv4  10086      0t0  TCP *:139 (LISTEN)
+emhttp     8424     root    3u  IPv4  22630      0t0  TCP *:80 (LISTEN)
+rpc.mount  8511     root    7u  IPv4  23719      0t0  UDP *:60484 
+rpc.mount  8511     root    8u  IPv4  23721      0t0  TCP *:52283 (LISTEN)
+rpc.mount  8511     root    9u  IPv4  23723      0t0  UDP *:58397 
+rpc.mount  8511     root   10u  IPv4  23725      0t0  TCP *:37909 (LISTEN)
+rpc.mount  8511     root   11u  IPv4  23727      0t0  UDP *:37168 
+rpc.mount  8511     root   12u  IPv4  23729      0t0  TCP *:53077 (LISTEN)
+afpd       8526     root    3u  IPv4  58129      0t0  TCP *:548 (LISTEN)
+cnid_meta  8527     root    3u  IPv4  22715      0t0  TCP 127.0.0.1:4700 (LISTEN)
+avahi-dae  8530    avahi   14u  IPv4  22404      0t0  UDP *:5353 
+avahi-dae  8530    avahi   15u  IPv4  22405      0t0  UDP *:48145 
+docker-pr  9680     root    4u  IPv4  27952      0t0  TCP *:8181 (LISTEN)
+docker-pr  9949     root    4u  IPv4  28100      0t0  TCP *:8585 (LISTEN)
+docker-pr 10318     root    4u  IPv4  28259      0t0  TCP *:7878 (LISTEN)
+Plex\x20M 10700   nobody   51u  IPv4  29170      0t0  TCP *:32400 (LISTEN)
+Plex\x20M 10700   nobody   55u  IPv4  29171      0t0  TCP 127.0.0.1:32401 (LISTEN)
+Plex\x20M 10700   nobody   61u  IPv4  35237      0t0  UDP *:1901 
+Plex\x20M 10700   nobody   63u  IPv4  35238      0t0  UDP 192.168.2.26:49730 
+Plex\x20M 10700   nobody   66u  IPv4  32976      0t0  UDP *:32414 
+Plex\x20M 10700   nobody   67u  IPv4  32977      0t0  UDP *:32410 
+Plex\x20M 10700   nobody   68u  IPv4  32978      0t0  UDP *:32412 
+Plex\x20M 10700   nobody   69u  IPv4  35240      0t0  UDP *:32413 
+Plex\x20M 10700   nobody   70u  IPv4  35241      0t0  UDP 127.0.0.1:48657 
+Plex\x20M 10700   nobody   71u  IPv4  35242      0t0  UDP 127.0.0.1:48469 
+Plex\x20M 10700   nobody   72u  IPv4  35243      0t0  UDP 192.168.2.26:48684 
+Plex\x20M 10700   nobody   73u  IPv4  35244      0t0  UDP 172.17.0.1:60430 
+Plex\x20M 10700   nobody   74u  IPv4  35245      0t0  UDP 127.0.0.1:55133 
+Plex\x20M 10700   nobody   75u  IPv4  35246      0t0  UDP 127.0.0.1:44204 
+Plex\x20M 10700   nobody   76u  IPv4  35247      0t0  UDP 192.168.2.26:37457 
+Plex\x20M 10700   nobody   77u  IPv4  35248      0t0  UDP 172.17.0.1:43786 
+Plex\x20M 10700   nobody   81u  IPv4  61900      0t0  UDP 192.168.2.26:35949->208.67.222.222:53 
+Plex\x20M 10700   nobody   83u  IPv4  57960      0t0  TCP 127.0.0.1:32400->127.0.0.1:41980 (ESTABLISHED)
+Plex\x20M 10700   nobody   85u  IPv4  62021      0t0  UDP 192.168.2.26:36794->208.67.222.222:53 
+Plex\x20M 10700   nobody   86u  IPv4  35239      0t0  UDP 172.17.0.1:32971 
+Plex\x20M 10700   nobody   92u  IPv4  61953      0t0  UDP 192.168.2.26:44926->208.67.222.222:53 
+Plex\x20M 10700   nobody   93u  IPv4  37896      0t0  TCP 192.168.2.26:32400->192.168.2.9:48836 (ESTABLISHED)
+Plex\x20M 10700   nobody   94u  IPv4  37063      0t0  TCP 127.0.0.1:32400->127.0.0.1:41164 (ESTABLISHED)
+Plex\x20M 10700   nobody   95u  IPv4  61624      0t0  TCP 127.0.0.1:32400->127.0.0.1:42174 (ESTABLISHED)
+Plex\x20M 10700   nobody   96u  IPv4  60876      0t0  TCP 127.0.0.1:32400->127.0.0.1:42118 (ESTABLISHED)
+Plex\x20M 10700   nobody   97u  IPv4  62492      0t0  TCP 127.0.0.1:45438->127.0.0.1:35661 (ESTABLISHED)
+Plex\x20M 10700   nobody  100u  IPv4  59790      0t0  TCP 127.0.0.1:42346->127.0.0.1:36737 (ESTABLISHED)
+Plex\x20M 10700   nobody  103u  IPv4  62495      0t0  TCP 127.0.0.1:32400->127.0.0.1:42224 (ESTABLISHED)
+Plex\x20M 10700   nobody  105u  IPv4  61981      0t0  UDP 192.168.2.26:50306->208.67.220.220:53 
+Plex\x20M 10700   nobody  107u  IPv4  60331      0t0  TCP 127.0.0.1:32400->127.0.0.1:42232 (ESTABLISHED)
+Plex\x20M 10700   nobody  110u  IPv4  61656      0t0  TCP 127.0.0.1:36886->127.0.0.1:37935 (ESTABLISHED)
+Plex\x20M 10700   nobody  111u  IPv4  60332      0t0  UDP 192.168.2.26:40058->208.67.222.222:53 
+Plex\x20M 10700   nobody  114u  IPv4  61246      0t0  TCP 127.0.0.1:32400->127.0.0.1:42230 (CLOSE_WAIT)
+Plex\x20M 10700   nobody  115u  IPv4  60333      0t0  TCP 127.0.0.1:32400->127.0.0.1:42234 (ESTABLISHED)
+Plex\x20M 10700   nobody  116u  IPv4  61928      0t0  UDP 192.168.2.26:33337->208.67.220.220:53 
+Plex\x20M 10700   nobody  117u  IPv4  61435      0t0  UDP 192.168.2.26:57706->208.67.222.222:53 
+docker-pr 10813     root    4u  IPv4  29751      0t0  TCP *:3579 (LISTEN)
+avahi-dae 10865      106   10u  IPv4  28511      0t0  UDP *:5353 
+avahi-dae 10865      106   11u  IPv4  28513      0t0  UDP *:33818 
+docker-pr 11008     root    4u  IPv4  29839      0t0  TCP *:9117 (LISTEN)
+docker-pr 11406     root    4u  IPv4  29191      0t0  TCP *:8989 (LISTEN)
+Plex\x20S 11590   nobody    4u  IPv4  61245      0t0  TCP 127.0.0.1:42224->127.0.0.1:32400 (ESTABLISHED)
+Plex\x20S 11590   nobody    5u  IPv4  59789      0t0  TCP 127.0.0.1:42118->127.0.0.1:32400 (ESTABLISHED)
+Plex\x20S 11590   nobody    6u  IPv4  30449      0t0  TCP 127.0.0.1:33897 (LISTEN)
+Plex\x20T 12183   nobody   14u  IPv4  30525      0t0  TCP 127.0.0.1:32600 (LISTEN)
+Plex\x20T 12183   nobody   62u  IPv4  32247      0t0  TCP 127.0.0.1:41336->127.0.0.1:33897 (CLOSE_WAIT)
+Plex\x20T 12183   nobody   63u  IPv4  30472      0t0  TCP 192.168.2.26:48480->52.210.15.168:80 (CLOSE_WAIT)
+Plex\x20T 12183   nobody   64u  IPv4  30469      0t0  TCP 192.168.2.26:54806->54.229.174.245:443 (CLOSE_WAIT)
+Plex\x20T 12183   nobody   79u  IPv4  29579      0t0  TCP 127.0.0.1:41340->127.0.0.1:33897 (CLOSE_WAIT)
+Plex\x20S 12238   nobody    5u  IPv4  32748      0t0  TCP 127.0.0.1:36201 (LISTEN)
+Plex\x20S 12240   nobody    4u  IPv4  33791      0t0  TCP 127.0.0.1:35374 (LISTEN)
+Plex\x20S 12240   nobody    5u  IPv4  36956      0t0  TCP 127.0.0.1:37793 (LISTEN)
+Plex\x20S 12240   nobody    9u  IPv4  36121      0t0  TCP 127.0.0.1:41126->127.0.0.1:32400 (CLOSE_WAIT)
+Plex\x20S 12240   nobody   14u  IPv4  36145      0t0  TCP 192.168.2.26:34600->104.20.82.229:443 (ESTABLISHED)
+Plex\x20S 12240   nobody   21u  IPv4  38000      0t0  TCP 127.0.0.1:41164->127.0.0.1:32400 (ESTABLISHED)
+libvirtd  12435     root   14u  IPv4  34933      0t0  TCP 127.0.0.1:16509 (LISTEN)
+dnsmasq   12525   nobody    3u  IPv4  34995      0t0  UDP *:67 
+dnsmasq   12525   nobody    5u  IPv4  34998      0t0  UDP 192.168.122.1:53 
+dnsmasq   12525   nobody    6u  IPv4  34999      0t0  TCP 192.168.122.1:53 (LISTEN)
+Plex\x20S 13140   nobody    4u  IPv4  37903      0t0  TCP 127.0.0.1:38033 (LISTEN)
+deluged   13691   nobody   10u  IPv4  36823      0t0  TCP *:42628 (LISTEN)
+deluged   13691   nobody   12u  IPv4  39355      0t0  TCP 127.0.0.1:58846 (LISTEN)
+deluged   13691   nobody   13u  IPv4  36824      0t0  TCP *:4433 (LISTEN)
+deluged   13691   nobody   14u  IPv4  36828      0t0  UDP *:42628 
+deluged   13691   nobody   15u  IPv4  36832      0t0  UDP *:1900 
+deluged   13691   nobody   16u  IPv4  36833      0t0  UDP 127.0.0.1:1900 
+deluged   13691   nobody   17u  IPv4  36834      0t0  UDP 127.0.0.1:45204 
+deluged   13691   nobody   18u  IPv4  36835      0t0  UDP 127.0.0.1:1900 
+deluged   13691   nobody   19u  IPv4  36836      0t0  UDP 127.0.0.1:38363 
+deluged   13691   nobody   20u  IPv4  36837      0t0  UDP 192.168.2.26:1900 
+deluged   13691   nobody   21u  IPv4  36838      0t0  UDP 192.168.2.26:33346 
+deluged   13691   nobody   22u  IPv4  36839      0t0  UDP 172.17.0.1:1900 
+deluged   13691   nobody   23u  IPv4  36840      0t0  UDP 172.17.0.1:38119 
+deluged   13691   nobody   24u  IPv4  36841      0t0  UDP 192.168.122.1:1900 
+deluged   13691   nobody   25u  IPv4  36842      0t0  UDP 192.168.122.1:36939 
+deluged   13691   nobody   26u  IPv4  36845      0t0  UDP *:6771 
+deluged   13691   nobody   27u  IPv4  36846      0t0  UDP 127.0.0.1:6771 
+deluged   13691   nobody   28u  IPv4  36847      0t0  UDP 127.0.0.1:52648 
+deluged   13691   nobody   29u  IPv4  36848      0t0  UDP 127.0.0.1:6771 
+deluged   13691   nobody   30u  IPv4  36849      0t0  UDP 127.0.0.1:45141 
+deluged   13691   nobody   31u  IPv4  36850      0t0  UDP 192.168.2.26:6771 
+deluged   13691   nobody   32u  IPv4  36851      0t0  UDP 192.168.2.26:47705 
+deluged   13691   nobody   33u  IPv4  36852      0t0  UDP 172.17.0.1:6771 
+deluged   13691   nobody   34u  IPv4  36853      0t0  UDP 172.17.0.1:42314 
+deluged   13691   nobody   35u  IPv4  36854      0t0  UDP 192.168.122.1:6771 
+deluged   13691   nobody   36u  IPv4  36855      0t0  UDP 192.168.122.1:60886 
+deluged   13691   nobody   37u  IPv4  38748      0t0  TCP 127.0.0.1:58846->127.0.0.1:57972 (ESTABLISHED)
+deluged   13691   nobody   40u  IPv4  48969      0t0  TCP 192.168.2.26:42628->84.52.230.231:44596 (ESTABLISHED)
+deluged   13691   nobody   42u  IPv4  52511      0t0  TCP 192.168.2.26:42628->192.131.44.99:37284 (ESTABLISHED)
+deluge-we 13693   nobody    3u  IPv4  38436      0t0  TCP *:8112 (LISTEN)
+deluge-we 13693   nobody    9u  IPv4  37346      0t0  TCP 127.0.0.1:57972->127.0.0.1:58846 (ESTABLISHED)
+qemu-syst 13966     root   21u  IPv4  38352      0t0  TCP *:5900 (LISTEN)
+qemu-syst 13966     root   22u  IPv4  38353      0t0  TCP *:5700 (LISTEN)
+docker-pr 16986     root    4u  IPv4  49692      0t0  TCP *:6501 (LISTEN)
+Plex\x20M 17543   nobody   50u  IPv4  59589      0t0  TCP 127.0.0.1:41980->127.0.0.1:32400 (ESTABLISHED)
+Plex\x20M 17543   nobody   81u  IPv4  30529      0t0  TCP 192.168.2.26:53306->109.237.24.233:443 (ESTABLISHED)
+Plex\x20S 18662   nobody    4u  IPv4  59663      0t0  TCP 127.0.0.1:36737 (LISTEN)
+Plex\x20S 18662   nobody    8u  IPv4  60877      0t0  TCP 127.0.0.1:36737->127.0.0.1:42346 (ESTABLISHED)
+Plex\x20S 18662   nobody   11u  IPv4  61623      0t0  TCP 127.0.0.1:42174->127.0.0.1:32400 (ESTABLISHED)
+Plex\x20S 18701   nobody    4u  IPv4  58027      0t0  TCP 127.0.0.1:36577 (LISTEN)
+Plex\x20S 18748   nobody    4u  IPv4  59808      0t0  TCP 127.0.0.1:39829 (LISTEN)
+Plex\x20S 19026   nobody    4u  IPv4  61649      0t0  TCP 127.0.0.1:35661 (LISTEN)
+Plex\x20S 19026   nobody    8u  IPv4  62493      0t0  TCP 127.0.0.1:35661->127.0.0.1:45438 (ESTABLISHED)
+Plex\x20S 19026   nobody    9u  IPv4  62729      0t0  UDP 192.168.2.26:33974->208.67.222.222:53 
+Plex\x20S 19028   nobody    4u  IPv4  62488      0t0  TCP 127.0.0.1:37935 (LISTEN)
+Plex\x20S 19028   nobody    8u  IPv4  62496      0t0  TCP 127.0.0.1:37935->127.0.0.1:36886 (ESTABLISHED)
+Plex\x20S 19028   nobody    9u  IPv4  61434      0t0  TCP 127.0.0.1:42232->127.0.0.1:32400 (ESTABLISHED)
+Plex\x20S 19028   nobody   11u  IPv4  62022      0t0  TCP 127.0.0.1:42234->127.0.0.1:32400 (ESTABLISHED)
+lsof      19102     root    4u  IPv4  61899      0t0  UDP 192.168.2.26:56488->208.67.222.222:53 
+lsof      19102     root    5u  IPv4  61335      0t0  UDP 192.168.2.26:48815->208.67.220.220:53 

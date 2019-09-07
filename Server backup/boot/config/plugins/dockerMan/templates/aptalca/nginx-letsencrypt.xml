@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Name>Nginx-letsencrypt</Name>
+  <Description>
+    Nginx based webserver with a built-in letsencrypt client that automates free SSL certificate generation and renewal processes. [br][br]
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+    [b]/config[/b] This is where the nginx configuration and website files will reside[br][br]
+    Don't forget to enter in the host ports, e-mail address, the domain url(without any subdomains like www) and the subdomains (just the subdomains, comma separated, no spaces) (under advanced view). [br][br]
+    Note: Make sure that the port 443 in the container is accessible from the outside of your lan. It is OK to map container's port 443 to another port on the host (ie 943) as long as your router will forward port 443 from the outside to port 943 on the host and it will end up at port 443 in the container. If this is confusing, just leave 443 mapped to 443 and forward port 443 on your router to your unraid IP.[br][br]
+    Prior to SSL certificate creation, letsencrypt creates a temporary webserver and checks to see if it is accessible through the domain url provided for validation. Make sure that your server is reachable through your.domain.url:443 and that port 443 is forwarded on your router to the container's port 443 prior to running this docker. Otherwise letsencrypt validation will fail, and no certificates will be generated.[br]
+    Additional support provided in this thread: http://lime-technology.com/forum/index.php?topic=43696.0 [br]
+    Please see the docker hub page for full instructions: https://hub.docker.com/r/aptalca/nginx-letsencrypt/
+  </Description>
+  <Overview>
+    Nginx based webserver with a built-in letsencrypt client that automates free SSL certificate generation and renewal processes. Also includes fail2ban for security.
+  </Overview>
+  <Support>http://lime-technology.com/forum/index.php?topic=39413.0</Support>
+  <Registry>https://registry.hub.docker.com/u/aptalca/nginx-letsencrypt/</Registry>
+  <GitHub>https://github.com/aptalca/docker-webserver</GitHub>
+  <Repository>aptalca/nginx-letsencrypt</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>true</Privileged>
+    <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort></HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>443</HostPort>
+        <ContainerPort>443</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>EMAIL</Name>
+      <Value></Value>
+    </Variable>
+    <Variable>
+      <Name>URL</Name>
+      <Value></Value>
+    </Variable>
+    <Variable>
+      <Name>SUBDOMAINS</Name>
+      <Value>www</Value>
+    </Variable>
+  </Environment>    
+  <Data>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>https://[IP]:[PORT:443]</WebUI>
+  <Banner></Banner>
+  <Icon>http://technoloman.com/wp-content/uploads/2015/12/Lets_encrypt_logo.png</Icon>
+  <Date>2016-09-22</Date>
+  <Category>Network:Web Network:Proxy</Category>
+  <Changes>
+    [center][font size=5]Nginx-Letsencrypt Change Log[/font][/center]
+
+    [font size=4]2016.09.22[/font]
+    - Fixed deletion of symlink after failed install
+
+    [font size=4]2016.08.19[/font]
+    - Added ability to generate certs ONLY for subdomains, without the url (many thanks to @stuwil for PR) - Greatly simplified the cert renewal process - Updated php - Added auto generated pfx private key - Added ability to change DH bit parameter without having to delete the existing file
+
+    [font size=4]2016.06.18[/font]
+    - Log rotation fixed - Letsencrypt log moved to its own folder - Fixed missing e-mail paramater when renewing through cron
+
+    [font size=4]2016.06.03[/font]
+    - Added ability to change url and subdomains (container will automatically recognize changes to the variables upon start, and will update the cert accordingly)
+    - Updated nginx to 1.10.1
+    - Switched to using certbot, the new official letsencrypt client maintained by EFF
+
+    [font size=4]2016.05.16[/font]
+    - Updated nginx to 1.10.0
+    - Updated phusion baseimage to 18
+
+    [font size=4]2016.04.16[/font]
+    - Fixed bug with detecting fail2ban.sock, which prevented fail2ban start
+
+    [font size=4]2016.04.12[/font]
+    - Many changes under the hood to streamline (hopefully the last update for a while)
+    - New/renewed certs will be 4096 bits
+    - Added option for 4096 bit dhparams
+    - No more git, only uses the single letsencrypt-auto script
+    - All environment variables match (bash, init and cron)
+    - Fixed bug affecting multiple subdomains
+    - Finally fixed php (may have to change your site config to use "fastcgi_pass unix:/var/run/php5-fpm.sock;" as in here: https://github.com/aptalca/docker-webserver/blob/master/defaults/default ) and delete your nginx-fpm.conf file and restart
+
+    [font size=4]2016.04.11[/font]
+    - Fixed cron environment issue that could break script updates
+
+    [font size=4]2016.04.08[/font]
+    - Fixed update bug (accidentally removed a line in previous update)
+
+    [font size=4]2016.04.07[/font]
+    - Remove the git pull (sorry for the too frequent updates but they removed the need for git pull the day after I implemented it :-)
+    
+    [font size=4]2016.04.05[/font]
+    - Added nightly git pull to prevent letsencrypt update errors
+
+    [font size=4]2016.03.29[/font]
+    - IMPORTANT UPDATE
+    - Cron script has been fixed (wasn't getting the correct env variables)
+    - Letsencrypt updates more frequently (infrequent updates could error and break cert updates)
+    - Cron now runs everynight at midnight to check status and updates letsencrypt
+    - Letsencrypt log file gets appended with cron output for tracking update history
+ 
+    [font size=4]2016.03.08[/font]
+    - Fixed issue with fail2ban not starting after container crash or ungraceful shutdown
+
+    [font size=4]2016.01.15[/font]
+    - Added fail2ban support (Important: If updating container, [b][u][span style='color: #E80000;']please edit your container settings and check "Privileged" under advanced settings[/span][/u][/b]. Without it, fail2ban does not work due to inability to modify iptables)
+
+    [font size=4]2016.01.05[/font]
+    - Fixed permissions for php-fpm and memcached (they were not starting)
+    - Fixed silly typo causing cert renewal every 6 days instead of 60
+
+    [font size=4]2016.01.03[/font]
+    - Update to support multiple subdomains
+    
+    [font size=4]2015.12.29[/font]
+    - Initial release
+  </Changes>
+</Containers>

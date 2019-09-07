@@ -1,0 +1,98 @@
+<?xml version="1.0" standalone="yes"?>
+<!DOCTYPE PLUGIN [
+<!ENTITY name "ca.cleanup.appdata">
+<!ENTITY author "Andrew Zawadzki">
+<!ENTITY version "2019.01.13">
+<!ENTITY md5 "e870cbc2ee4c8e1ca432d107cd7d6502">
+<!ENTITY launch "Settings/CleanUpAppdata">
+<!ENTITY plugdir "/usr/local/emhttp/plugins/&name;">
+<!ENTITY github "Squidly271/ca.cleanup.appdata">
+<!ENTITY pluginURL "https://raw.githubusercontent.com/&github;/master/plugins/&name;.plg">
+]>
+<PLUGIN name="&name;" author="&author;" version="&version;" launch="&launch;" pluginURL="&pluginURL;" icon="paint-brush" support="http://lime-technology.com/forum/index.php?topic=53695.0">
+  <CHANGES>
+###2019.01.13
+- Update Icon
+
+###2018.12.31
+- Add in some checks for when user had a severely misconfigured application previously installed
+
+###2018.10.19
+- Fix Broken Pipe
+
+###2018.03.15
+- Ignore metadata files created by OSX
+
+###2017.11.23
+- Reorganization as part of updates to CA proper
+- Relocate Icon to Settings / User Utilities
+
+###2017.01.28
+- Fixed: Errors when no templates have any possibilities for cleanup
+
+###2016.11.11
+- Initial Release
+
+</CHANGES>
+  <!-- The 'pre-install' script. -->
+  <FILE Run="/usr/bin/php">
+    <INLINE><![CDATA[
+<?
+  $version = parse_ini_file("/etc/unraid-version");
+  
+  if ( version_compare($version['version'],"6.1.0", "<") )
+  {
+    echo "********************************************************************\n";
+    echo "\n";
+    echo "Community Applications Requires unRaid version 6.1 or greater to run\n";
+    echo "\n";
+    echo "********************************************************************\n";
+    exit(1);
+  }
+  if ( is_file("/usr/local/emhttp/plugins/community.applications/Backup.page") ) {
+    echo "Your installed version of Community Applications already includes Cleanup Appdata... Aborting Installation\n";
+    exit(1);
+  }
+?>
+]]></INLINE>
+  </FILE>
+  <FILE Run="/bin/bash">
+    <INLINE>
+# Remove old 'source' files
+rm -f $(ls /boot/config/plugins/&name;/&name;*.txz 2&gt;/dev/null | grep -v '&version;')
+</INLINE>
+  </FILE>
+  <!--
+The 'source' file.
+-->
+  <FILE Name="/boot/config/plugins/&name;/&name;-&version;-x86_64-1.txz" Run="upgradepkg --install-new">
+    <URL>https://raw.github.com/&github;/master/archive/&name;-&version;-x86_64-1.txz</URL>
+    <MD5>&md5;</MD5>
+  </FILE>
+  <!--
+The 'post-install' script
+-->
+  <FILE Run="/bin/bash">
+    <INLINE>
+rm -rf /usr/local/emhttp/plugins/ca.cleanup.appdata/CA.page
+rm -rf /usr/local/emhttp/plugins/ca.cleanup.appdata/caHelp.page
+echo ""
+echo "----------------------------------------------------"
+echo " &name; has been installed."
+echo " Copyright 2015-2016, Andrew Zawadzki"
+echo " Version: &version;"
+echo "----------------------------------------------------"
+echo ""
+</INLINE>
+  </FILE>
+  <!--
+The 'remove' script.
+-->
+  <FILE Run="/bin/bash" Method="remove">
+    <INLINE>
+removepkg &name;-&version;-x86_64-1
+rm -rf &plugdir;
+rm -rf /boot/config/plugins/&name;
+</INLINE>
+  </FILE>
+</PLUGIN>

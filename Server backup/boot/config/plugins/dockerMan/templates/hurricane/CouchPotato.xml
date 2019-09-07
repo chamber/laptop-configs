@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container version="2">
+  <Name>CouchPotato</Name>
+  <Beta>False</Beta>
+  <Category>Downloaders: MediaApp:Video</Category>
+  <Overview>
+    CouchPotato (CP) is an automatic NZB and torrent downloader. You can keep
+    a "movies I want"-list and it will search for NZBs/torrents of these movies
+    every X hours. Once a movie is found, it will send it to SABnzbd or
+    download the torrent to a specified directory.
+  </Overview>
+  <Registry>https://store.docker.com/community/images/hurricane/couchpotato/</Registry>
+  <GitHub>https://github.com/hurricanehrndz/docker-containers/tree/master/couchpotato</GitHub>
+  <Repository>hurricane/couchpotato</Repository>
+  <Support>http://lime-technology.com/forum/index.php?topic=39286</Support>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Network>bridge</Network>
+  <WebUI>http://[IP]:[PORT:5050]/</WebUI>
+  <Icon>http://i.imgur.com/popkAe6.png</Icon>
+  <ExtraParams>--log-opt max-size=2m --log-opt max-file=1</ExtraParams>
+  <Config Type="Path" Name="Config directory" Target="/config" Default="/mnt/user/appdata/couchpotato" Mode="rw" Description="Host path to store CP's databases and configuration." Display="always" Required="true">/mnt/user/appdata/couchpotato</Config>
+  <Config Type="Path" Name="User shares" Target="/mnt/user" Default="/mnt/user" Mode="rw" Description="unRAID's path to user shares with cache." Display="always" Required="true">/mnt/user/</Config>
+  <Config Type="Variable" Name="Run as specified user" Target="APP_USER" Default="nobody" Description="Run application with specified user name." Mask="false" Display="advanced" Required="true">nobody</Config>
+  <Config Type="Variable" Name="Run with user ID" Target="APP_UID" Default="99" Description="Run application with specified user id." Mask="false" Display="advanced" Required="true">99</Config>
+  <Config Type="Variable" Name="Run with group ID" Target="APP_GID" Default="100" Description="Run application with specified group id." Mask="false" Display="advanced" Required="true">99</Config>
+  <Config Type="Variable" Name="Update on start-up." Target="EDGE" Default="1" Description="Update application during start-up." Mask="false" Display="advanced" Required="true">1</Config>
+  <Config Type="Variable" Name="Permission mask." Target="UMASK" Default="002" Description="Mask controlling permission of newly create files and directories." Mask="false" Display="advanced" Required="true">002</Config>
+  <Config Type="Port" Name="CouchPotato Web UI Port" Target="5050" Default="5050" Mode="tcp" Description="CP's Web UI Port used to access and configure the service." Display="always" Required="true">5050</Config>
+</Container>

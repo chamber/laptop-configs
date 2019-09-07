@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>DarkStat</Name>
+  <Repository>mace/darkstat</Repository>
+  <Registry>https://registry.hub.docker.com/u/mace/darkstat/</Registry>
+  <Network>host</Network>
+  <Privileged>false</Privileged>
+  <Support>https://lime-technology.com/forum/index.php?topic=40630.0</Support>
+  <Overview>&#xD;
+    Captures network traffic, calculates statistics about usage, and serves reports over HTTP.[br][br]&#xD;
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]&#xD;
+    [b]/config[/b] This is where Darkstat will store it&#xB4;s database and logs[br]&#xD;
+    [br]&#xD;
+    [b][span style='color: #E80000;']Notes[/span][/b][br]&#xD;
+    [u]Environment Variables[/u][br]&#xD;
+    Define the variables,[br][br]&#xD;
+	[b]ETH[/b] (Match your unRAID interface, don&#xB4;t use "br0" use eth0, eth1 etc...)[br]&#xD;
+	[b]PORT[/b] (Port for WebUI, if changed don't forget to change it in Additional Fields)[br]&#xD;
+	[b]IP_HOST[/b] (IP of unRAID server)[br]&#xD;
+	[b]IP_RANGE[/b] (IP-range of the local network)[br][br]&#xD;
+  </Overview>
+  <Category>Network:Management</Category>
+  <WebUI>http://[IP]:[PORT:666]/</WebUI>
+  <TemplateURL/>
+  <Icon>http://i.imgur.com/pa3eozo.png</Icon>
+  <ExtraParams/>
+  <DateInstalled>1492199259</DateInstalled>
+  <Description>&#xD;
+    Captures network traffic, calculates statistics about usage, and serves reports over HTTP.[br][br]&#xD;
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]&#xD;
+    [b]/config[/b] This is where Darkstat will store it&#xB4;s database and logs[br]&#xD;
+    [br]&#xD;
+    [b][span style='color: #E80000;']Notes[/span][/b][br]&#xD;
+    [u]Environment Variables[/u][br]&#xD;
+    Define the variables,[br][br]&#xD;
+	[b]ETH[/b] (Match your unRAID interface, don&#xB4;t use "br0" use eth0, eth1 etc...)[br]&#xD;
+	[b]PORT[/b] (Port for WebUI, if changed don't forget to change it in Additional Fields)[br]&#xD;
+	[b]IP_HOST[/b] (IP of unRAID server)[br]&#xD;
+	[b]IP_RANGE[/b] (IP-range of the local network)[br][br]&#xD;
+  </Description>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/DarkStat</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>eth0</Value>
+      <Name>ETH</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>666</Value>
+      <Name>PORT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>192.168.2.26</Value>
+      <Name>IP_HOST</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>192.168.2.0/255.255.255.0</Value>
+      <Name>IP_RANGE</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Config Name="Key 1" Target="ETH" Default="eth0" Mode="" Description="Container Variable: ETH" Type="Variable" Display="always" Required="false" Mask="false">eth0</Config>
+  <Config Name="Key 2" Target="PORT" Default="666" Mode="" Description="Container Variable: PORT" Type="Variable" Display="always" Required="false" Mask="false">666</Config>
+  <Config Name="Key 3" Target="IP_HOST" Default="192.168.1.XXX" Mode="" Description="Container Variable: IP_HOST" Type="Variable" Display="always" Required="false" Mask="false">192.168.2.26</Config>
+  <Config Name="Key 4" Target="IP_RANGE" Default="192.168.1.0/255.255.255.0" Mode="" Description="Container Variable: IP_RANGE" Type="Variable" Display="always" Required="false" Mask="false">192.168.2.0/255.255.255.0</Config>
+  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/DarkStat" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/DarkStat</Config>
+</Container>

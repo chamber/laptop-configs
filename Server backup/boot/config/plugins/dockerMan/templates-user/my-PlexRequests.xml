@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>plexrequests</Name>
+  <Repository>linuxserver/plexrequests</Repository>
+  <Registry>https://hub.docker.com/r/linuxserver/plexrequests/</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>http://lime-technology.com/forum/index.php?topic=46320.0</Support>
+  <Overview>Simple automated way for users to request new content for Plex[br]&#xD;
+  [br][br][b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]&#xD;
+  [b]/config[/b] : Storing all plexrequests config files [br]&#xD;
+  [b]Setting URL_BASE variable to /requests will enable reverse proxy of this container[/br]substitute requests for another name if you wish[/b]&#xD;
+</Overview>
+  <Category>Downloaders: Network:Other MediaApp:Video Tools:</Category>
+  <WebUI>http://[IP]:[PORT:3000]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/plexrequests-icon.png</Icon>
+  <ExtraParams/>
+  <DateInstalled>1485208338</DateInstalled>
+  <Description>Simple automated way for users to request new content for Plex[br]&#xD;
+  [br][br][b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]&#xD;
+  [b]/config[/b] : Storing all plexrequests config files [br]&#xD;
+  [b]Setting URL_BASE variable to /requests will enable reverse proxy of this container[/br]substitute requests for another name if you wish[/b]&#xD;
+</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>3000</HostPort>
+        <ContainerPort>3000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/plexrequests</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>99</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>0</Value>
+      <Name>URL_BASE</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Config Name="Host Port 1" Target="3000" Default="3000" Mode="tcp" Description="Container Port: 3000" Type="Port" Display="always" Required="true" Mask="false">3000</Config>
+  <Config Name="Key 1" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="Key 2" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+  <Config Name="Key 3" Target="URL_BASE" Default="0" Mode="" Description="Container Variable: URL_BASE" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/plexrequests" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/plexrequests</Config>
+</Container>

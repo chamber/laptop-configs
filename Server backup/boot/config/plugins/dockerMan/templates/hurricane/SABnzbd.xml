@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container version="2">
+  <Name>SABnzbd</Name>
+  <Beta>False</Beta>
+  <Category>Downloaders:</Category>
+  <Overview>
+    SABnzbd is an Open Source Binary Newsreader written in Python. It's totally
+    free, incredibly easy to use, and works practically everywhere.  [br][br]
+
+    SABnzbd makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb. SABnzbd takes over from there,
+    where it will be automatically downloaded, verified, repaired, extracted
+    and filed away with zero human interaction.
+  </Overview>
+  <Registry>https://store.docker.com/community/images/hurricane/sabnzbd/</Registry>
+  <GitHub>https://github.com/hurricanehrndz/docker-containers/tree/master/sabnzbd</GitHub>
+  <Repository>hurricane/sabnzbd</Repository>
+  <Support>http://lime-technology.com/forum/index.php?topic=39286</Support>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Network>bridge</Network>
+  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
+  <Icon>http://i.imgur.com/GTfJONm.png</Icon>
+  <ExtraParams>--log-opt max-size=2m --log-opt max-file=1</ExtraParams>
+  <Config Type="Path" Name="Config directory" Target="/config" Default="/mnt/user/appdata/sabnzbd" Mode="rw" Description="Host path to store SAB's databases and configuration." Display="always" Required="true">/mnt/user/appdata/sabnzbd</Config>
+  <Config Type="Path" Name="User shares" Target="/mnt/user" Default="/mnt/user" Mode="rw" Description="unRAID's path to user shares with cache." Display="always" Required="true">/mnt/user/</Config>
+  <Config Type="Variable" Name="Run as specified user" Target="APP_USER" Default="nobody" Description="Run application with specified user name." Mask="false" Display="advanced" Required="true">nobody</Config>
+  <Config Type="Variable" Name="Run with user ID" Target="APP_UID" Default="99" Description="Run application with specified user id." Mask="false" Display="advanced" Required="true">99</Config>
+  <Config Type="Variable" Name="Run with group ID" Target="APP_GID" Default="100" Description="Run application with specified group id." Mask="false" Display="advanced" Required="true">99</Config>
+  <Config Type="Variable" Name="Update on start-up." Target="EDGE" Default="1" Description="Update application during start-up." Mask="false" Display="advanced" Required="true">1</Config>
+  <Config Type="Variable" Name="Permission mask." Target="UMASK" Default="002" Description="Mask controlling permission of newly create files and directories." Mask="false" Display="advanced" Required="true">002</Config>
+  <Config Type="Port" Name="SABnzbd Web UI Port" Target="8080" Default="8080" Mode="tcp" Description="SAB's Web UI Port used to access and configure the service." Display="always" Required="true">8080</Config>
+</Container>

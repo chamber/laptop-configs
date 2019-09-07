@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>Subsonic</Name>
+  <Beta>True</Beta>
+  <Category>MediaServer:Video MediaServer:Music</Category>
+  <Description>
+    Subsonic is an open source, web-based media server. [br][br]
+
+    Because Subsonic was written in Java, it may be run on any operating system with Java support. [br]
+    Subsonic supports streaming to multiple clients simultaneously, and supports any streamable media (including MP3, AAC, and Ogg).[br]
+    Subsonic also supports on-the-fly media conversion (through the use of plugins) of most popular media formats, including WMA, FLAC, and more.[br][br]
+
+    [b][span style='color: #E80000;']Directions:[/span][/b][br]
+    [b]/subsonic[/b]  : set this path to where you wish Subsonic to store it's configuration.[br]
+    [b]/music[/b]     : set this path to where you wish Subsonic to search for music.[br]
+    [b]/podcasts[/b]  : set this path to where you wish Subsonic to store and share podcasts from.[br]
+    [b]/playlists[/b] : set this path to where you wish Subsonic to store and share playlists from.[br]
+    [br][br]
+    Optional Environment Variables:[br]
+    [b]HTTPS_PORT[/b] : this is the HTTPS port for Subsonic, if set HTTP is disabled not matter its value. [br]
+    [b]HTTP_PORT[/b]  : this is the HTTP port for Subsonic, its only effective if SSL_PORT is set to 0. [br]
+    [b]MAX_MEM[/b]    : this is the numberic value for the maximum Java heap size. [br]
+    [span style=\'color: #E80000;\']If changing SSL_PORT and WEB_PORT values please ensure you change the maps as well.[/span][br]
+  </Description>
+  <Registry>https://registry.hub.docker.com/u/hurricane/subsonic/</Registry>
+  <GitHub>https://github.com/hurricanehrndz/docker-containers/tree/master/subsonic</GitHub>
+  <Repository>hurricane/subsonic</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment>
+    <Variable>
+      <Name>HTTP_PORT</Name>
+      <Value>4040</Value>
+    </Variable>
+    <Variable>
+      <Name>HTTPS_PORT</Name>
+      <Value>0</Value>
+    </Variable>
+    <Variable>
+      <Name>MAX_MEM</Name>
+      <Value>150</Value>
+    </Variable>
+  </Environment>
+  <Networking>
+    <Mode>host</Mode>
+     <Publish>
+      <Port>
+        <HostPort>4040</HostPort>
+        <ContainerPort>4040</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>4050</HostPort>
+        <ContainerPort>4050</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/subsonic/</HostDir>
+      <ContainerDir>/subsonic</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:4040]/</WebUI>
+  <Banner>http://i.imgur.com/zlBhvgD.png</Banner>
+  <Icon>http://i.imgur.com/ue0BK5z.png</Icon>
+</Container>

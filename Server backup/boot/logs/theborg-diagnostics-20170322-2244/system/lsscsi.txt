@@ -1,0 +1,18 @@
+[0:0:0:0]    disk    SanDisk  Cruzer Fit       1.00  /dev/sda   /dev/sg0 
+  state=running queue_depth=1 scsi_level=7 type=0 device_blocked=0 timeout=30
+  dir: /sys/bus/scsi/devices/0:0:0:0  [/sys/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.0/host0/target0:0:0/0:0:0:0]
+[1:0:0:0]    disk    ATA      ST4000VN000-2AH1 SC60  /dev/sdb   /dev/sg1 
+  state=running queue_depth=1 scsi_level=6 type=0 device_blocked=0 timeout=30
+  dir: /sys/bus/scsi/devices/1:0:0:0  [/sys/devices/pci0000:00/0000:00:17.0/ata1/host1/target1:0:0/1:0:0:0]
+[3:0:0:0]    disk    ATA      ST3000DM001-1CH1 CC27  /dev/sdc   /dev/sg2 
+  state=running queue_depth=1 scsi_level=6 type=0 device_blocked=0 timeout=30
+  dir: /sys/bus/scsi/devices/3:0:0:0  [/sys/devices/pci0000:00/0000:00:17.0/ata3/host3/target3:0:0/3:0:0:0]
+[4:0:0:0]    disk    ATA      WDC WD40EFRX-68N 0A82  /dev/sdd   /dev/sg3 
+  state=running queue_depth=1 scsi_level=6 type=0 device_blocked=0 timeout=30
+  dir: /sys/bus/scsi/devices/4:0:0:0  [/sys/devices/pci0000:00/0000:00:17.0/ata4/host4/target4:0:0/4:0:0:0]
+[5:0:0:0]    disk    ATA      ST4000VN000-1H41 SC46  /dev/sde   /dev/sg4 
+  state=running queue_depth=1 scsi_level=6 type=0 device_blocked=0 timeout=30
+  dir: /sys/bus/scsi/devices/5:0:0:0  [/sys/devices/pci0000:00/0000:00:17.0/ata5/host5/target5:0:0/5:0:0:0]
+[6:0:0:0]    disk    ATA      ST4000VN000-1H41 SC46  /dev/sdf   /dev/sg5 
+  state=running queue_depth=1 scsi_level=6 type=0 device_blocked=0 timeout=30
+  dir: /sys/bus/scsi/devices/6:0:0:0  [/sys/devices/pci0000:00/0000:00:17.0/ata6/host6/target6:0:0/6:0:0:0]

@@ -1,0 +1,149 @@
+<?xml version="1.0" standalone="yes"?>
+<!DOCTYPE PLUGIN [
+<!ENTITY name "ca.update.applications">
+<!ENTITY author "Andrew Zawadzki">
+<!ENTITY version "2019.04.15">
+<!ENTITY md5 "1bb9559aeaa6f24910a709ef0643592d">
+<!ENTITY launch "Settings/AutoUpdateApps">
+<!ENTITY plugdir "/usr/local/emhttp/plugins/&name;">
+<!ENTITY github "Squidly271/ca.update.applications">
+<!ENTITY pluginURL "https://raw.githubusercontent.com/&github;/master/plugins/&name;.plg">
+]>
+<PLUGIN name="&name;" author="&author;" version="&version;" launch="&launch;" pluginURL="&pluginURL;" icon="refresh" support="http://lime-technology.com/forum/index.php?topic=53693.0">
+  <CHANGES>
+###2019.04.15
+- Remove experimental code mistakenly added
+
+###2019.04.13
+- Prevent extraneous notifications on unRaid 6.7.0-rc7+
+
+###2019.02.22
+- Work around for unRaid believing an image is installed, but one isn't under certain circumstances
+- Fix up coloring in credits popup
+
+###2019.01.31
+- Add note that custom is a cron expression
+
+###2019.01.14
+- Support new style icons
+
+###2019.01.01
+- By request, remove spinning icon :(
+
+###2018.12.31
+- Update icon for future release of unRaid
+- Display aberration if plugin does not have an icon associated with it
+
+###2018.11.11
+- autov function
+
+###2018.10.19
+- Fix Broken Pipe
+
+###2018.03.02
+- Fixed: PHP Warnings (hidden) being issued on 6.5.0+
+
+###2017.11.23
+- Reorganization as part of updates to CA proper
+###2017.10.28
+- Prevent back to top displaying on 6.4.0-rc10b+
+
+###2017.06.09
+- Fix display aberration on 6.4
+- Add in support for number of seconds to wait for container to stop gracefully before killing
+
+###2017.03.18
+- Added in ability to run custom stop / start scripts for docker updates.  See CA manual for details
+
+###2017.02.19
+- Fixed uninstall routine
+
+###2016.12.18
+- Force tabbed mode display
+
+###2016.11.30
+- Fix 6.2.4 Compatibility
+
+###2016.11.25
+- Added Docker App autoupdates
+- Added Selectable run times for Plugin and Docker updates
+- Fixed Under certain circumstances, plugin updates could get installed prior to age requirements
+
+###2016.11.11
+- Initial Release
+
+</CHANGES>
+  <!-- The 'pre-install' script. -->
+  <FILE Run="/usr/bin/php">
+    <INLINE><![CDATA[
+<?
+  $version = parse_ini_file("/etc/unraid-version");
+  
+  if ( version_compare($version['version'],"6.2.0", "<") )
+  {
+    echo "*********************************************************************************************\n";
+    echo "\n";
+    echo "Community Applications Auto Update Applications Requires unRaid version 6.2 or greater to run\n";
+    echo "\n";
+    echo "*********************************************************************************************\n";
+    exit(1);
+  }
+  if ( is_file("/usr/local/emhttp/plugins/community.applications/Backup.page") ) {
+    echo "Your installed version of Community Applications already includes Plugin Auto Update... Aborting Installation\n";
+    exit(1);
+  }
+  if ( is_file("/usr/local/emhttp/plugins/ca.update.applications/scripts/updateApplications.sh") ) {
+    echo "Upgrading from previous cron system.  Plugin autoupdates will happen at Midnight Daily.  This time can now be adjusted directly within the plugin\n\n";
+    @unlink("/etc/cron.daily/updateApplications.sh");
+    @unlink("/usr/local/emhttp/plugins/ca.update.applications/scripts/updateApplications.sh");
+    $cron = "# Generated cron settings for plugin autoupdates\n0 0 * * * /usr/local/emhttp/plugins/ca.update.applications/scripts/updateApplications.php >/dev/null 2>&1\n";
+    file_put_contents("/boot/config/plugins/ca.update.applications/plugin_update.cron",$cron);
+  }
+?>
+]]></INLINE>
+  </FILE>
+  <FILE Run="/bin/bash">
+    <INLINE>
+# Remove old 'source' files
+rm -f $(ls /boot/config/plugins/&name;/&name;*.txz 2&gt;/dev/null | grep -v '&version;')
+</INLINE>
+  </FILE>
+  <!--
+The 'source' file.
+-->
+  <FILE Name="/boot/config/plugins/&name;/&name;-&version;-x86_64-1.txz" Run="upgradepkg --install-new">
+    <URL>https://raw.githubusercontent.com/&github;/master/archive/&name;-&version;-x86_64-1.txz</URL>
+    <MD5>&md5;</MD5>
+  </FILE>
+  <!--
+The 'post-install' script
+-->
+  <FILE Run="/bin/bash">
+    <INLINE>
+mv /boot/config/plugins/community.applications/AutoUpdateSettings.json /boot/config/plugins/ca.update.applications/AutoUpdateSettings.json &gt; /dev/null 2&gt; /dev/null
+/usr/local/sbin/update_cron
+mkdir -p /boot/config/plugins/ca.update.applications/scripts/stopping
+mkdir -p /boot/config/plugins/ca.update.applications/scripts/starting
+rm -rf /usr/local/emhttp/plugins/ca.update.applications/CA.page
+rm -rf /usr/local/emhttp/plugins/ca.update.applications/caHelp.page
+echo ""
+echo "----------------------------------------------------"
+echo " &name; has been installed."
+echo " Copyright 2015-2016, Andrew Zawadzki"
+echo " Version: &version;"
+echo "----------------------------------------------------"
+echo ""
+</INLINE>
+  </FILE>
+  <!--
+The 'remove' script.
+-->
+  <FILE Run="/bin/bash" Method="remove">
+    <INLINE>
+removepkg &name;-&version;-x86_64-1
+rm -rf &plugdir;
+rm -rf /boot/config/plugins/&name;
+/usr/local/sbin/update_cron
+</INLINE>
+  </FILE>
+</PLUGIN>

@@ -1,0 +1,4 @@
+2017-03-22 22:35:05.567+0000: 12437: info : libvirt version: 2.4.0
+2017-03-22 22:35:05.567+0000: 12437: info : hostname: theBorg
+2017-03-22 22:35:05.567+0000: 12437: warning : qemuDomainObjTaint:3885 : Domain id=1 name='seedbox' uuid=6d1096c0-f4ae-fbbd-5347-6ec104ac8835 is tainted: high-privileges
+2017-03-22 22:35:05.567+0000: 12437: warning : qemuDomainObjTaint:3885 : Domain id=1 name='seedbox' uuid=6d1096c0-f4ae-fbbd-5347-6ec104ac8835 is tainted: host-cpu

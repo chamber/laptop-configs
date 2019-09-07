@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>PlexMediaServer</Name>
+  <Description>The Plex Media Server enriches your life by organizing all your personal media, presenting it beautifully and streaming it to all of your devices. It's easy to use, it's awesome, and it's free![br][br]&#13;
+[b][span style='color: #E80000;']Directions:[/span][/b][br]&#13;
+[b]/config[/b] : this is where PMS will store it's databases and configuration.[br][br]&#13;
+[b]Tip:[/b] You can add more volume mappings if you wish PMS has access to it.&#13;
+</Description>
+  <Registry>https://registry.hub.docker.com/u/limetech/plex/</Registry>
+  <Repository>limetech/plex</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>true</Privileged>
+  <Environment/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>32400</HostPort>
+        <ContainerPort>32400</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/PlexMediaServer</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/Media/TV/</HostDir>
+      <ContainerDir>/TV</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/Media/Movies/</HostDir>
+      <ContainerDir>/Movies</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Version>0a6c5f2f</Version>
+  <WebUI>http://[IP]:[PORT:32400]/web/index.html</WebUI>
+  <Banner></Banner>
+  <Icon>http://d2631fvi2jdnb6.cloudfront.net/docker/limetech/plex.png</Icon>
+  <ExtraParams></ExtraParams>
+</Container>

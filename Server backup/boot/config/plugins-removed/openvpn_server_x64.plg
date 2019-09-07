@@ -1,0 +1,174 @@
+<?xml version="1.0" standalone="yes"?>
+<!DOCTYPE PLUGIN [
+<!ENTITY name "openvpnserver">
+<!ENTITY author "peter_sm">
+<!ENTITY plgauthor "petersm1">
+<!ENTITY version "2019.02.09">
+<!ENTITY launch "Settings/&name;">
+<!ENTITY gitURL "https://github.com/&plgauthor;">
+<!ENTITY gitpkgURL "&gitURL;/packages/raw/master">
+<!ENTITY pluginURL "https://raw.githubusercontent.com/&plgauthor;/openvpnserver/master/openvpn_server_x64.plg">
+<!ENTITY pkgURL "https://mirrors.slackware.com/slackware/">
+<!ENTITY pkgs "/boot/packages/">
+<!ENTITY plugin "/boot/config/plugins/&name;">
+<!ENTITY emhttp "/usr/local/emhttp/plugins/&name;">
+]>
+<PLUGIN name="&name;" author="&author;" plgauthor="&plgauthor;" version="&version;" gitURL="&gitURL;" gitpkgURL="&gitpkgURL;" launch="&launch;" pluginURL="&pluginURL;" pkgURL="&pkgURL;" pkgs="&pkgs;" plugin="&plugin;" emhttp="&emhttp;" support="https://forums.lime-technology.com/topic/33783-openvpn-server-client-for-unraid-62-61-are-still-supported/">
+  <CHANGES>
+##&name;
+###2019.02.09
+- Update of OpenVPN packages to 2.4.6-2
+- Update of Tcl packages to 8.6.9-1
+###2018.04.26
+- Update of OpenVPN packages to 2.4.6
+###2018.04.25
+- Update of Tcl packages to 8.6.8-3
+- Update of expect packages to 5.45.4-2
+###2018.04.12
+- Only adding explicit-exit-notify in udp mode.
+###2018.04.11
+- Removed a version check of OpenVPN that was an unused function.
+###2018.04.10
+- Update of script to fetch your WAN IP
+###2018.03.03b
+- Update of OpenVPN packages to 2.4.5
+- Added a link to OpenVPN Overview of changes.
+###2018.03.03a
+- Added support for Elliptic Curve crypto!
+- After changing to EC or still using RSA you must....
+ - Re-save settings on page "server config". 
+  - Start to update with the default settings. RSA and EC have its own default settings.
+ - Create new server certs and clients.
+- Added a drop box on "Cert and Misc Settings" for manually DL one of the 
+available releases of easyrsa for manually install (Can be useful if default branch is broken)
+- The list of TLS Ciphers is updated.
+- Added -remote-cert-eku to server/client. 
+The --remote-cert-eku ensures that a server will verify that the client 
+certificate provided is truly a client certificate, and vice versa.
+- Default settings are updated.
+- Added cert/keys log to log page when generate the server cert/keys.
+- Added a log file when creating new client in client folder.
+- More settings for redirect-gateway in server settings.
+- More info about EAsyRSA(Installed version, current version and commits date)
+- Update of Tcl packages to  tcl-8.6.8-x86_64-2
+- Update of expect packages to 5.45.4.
+###2018.01.27
+- Changed thew way to DL easyrsa, now it will DL the default branch instead of force DL the master branch.
+###2017.12.23
+- Update of Tcl packages to 8.6.8
+###2017.12.18
+-  New function to retrieve name of Ethernet Network interface
+###2017.10.29
+- Update of expect packages to 5.45.3
+###2017.10.14c
+- Now the webpage is locked during generate of the server certificates!! 
+###2017.10.08
+- New tab for download of client's config file !
+###2017.09.29
+- Update of OpenVPN packages to 2.4.4
+###2017.08.14a
+- Moved slackware packages to git repository
+###2017.08.14
+- Update of Tcl packages to 8.6.7
+###2017.08.09
+- Added forum support link
+###2017.08.06
+- Added launch link
+###2017.06.30
+- Update DL link to --&gt; https://mirrors.slackware.com/slackware from http://mirrors.slackware.com/slackware
+###2017.06.25
+- Update of OpenVPN packages to 2.4.3
+###2017.05.28
+- Update of Tcl packages to 8.6.6
+###2017.04.09c
+- Update of OpenVPN packages to 2.4.1
+###2016.12.31
+- Update of OpenVPN packages to 2.4.0 !
+- Updated list of selectable Encryption Ciphers.
+- The list have the new cipher AEAD (GCM) data channel cipher.
+- Update settings for compression. Now including the new LZ4 compression, which is slicker and faster.
+- Added OpenDNS to DHCP options.
+- Added a button to restart OpenVPN server.
+- Added tls-crypt feature. This will also encrypt the client (and server) certificates that usually contain information that can be traced back to a person and/or machine.
+- Small GUI updates.
+</CHANGES>
+  <!--
+2014-12-25 - Initial Release
+openvpnserver version 3 64Bit with easyrsa V3
+-->
+  <FILE Name="&pkgs;tcl-8.6.9-x86_64-1.txz" Run="upgradepkg --install-new">
+    <URL>&gitpkgURL;/tcl-8.6.9-x86_64-1.txz</URL>
+    <MD5>28973a4faaa47fc39984dc506f3ab162</MD5>
+  </FILE>
+  <FILE Name="&pkgs;expect-5.45.4-x86_64-2.txz" Run="upgradepkg --install-new">
+    <URL>&gitpkgURL;/expect-5.45.4-x86_64-2.txz</URL>
+    <MD5>0c54c544ae24c5c59d25a5d52930e24a</MD5>
+  </FILE>
+  <FILE Name="&pkgs;openvpn-2.4.6-x86_64-2.txz" Run="upgradepkg --install-new">
+    <URL>&gitpkgURL;/openvpn-2.4.6-x86_64-2.txz</URL>
+    <MD5>67b625b30a71a76d765c60c24cf3e2ac</MD5>
+  </FILE>
+  <!--
+get from github as tarball
+-->
+  <FILE Name="&plugin;/&name;-&version;.tar.gz">
+    <URL>"https://github.com/&plgauthor;/openvpnserver/archive/&version;.tar.gz"</URL>
+  </FILE>
+  <!--
+The 'install' script.
+-->
+  <FILE Run="/bin/bash">
+    <INLINE>
+mkdir -p /dev/net
+if [ ! -c /dev/net/tun ]; then
+	mknod /dev/net/tun c 10 200
+fi
+modprobe tun
+echo 1 &gt; /proc/sys/net/ipv4/ip_forward
+mkdir -p /var/run/openvpnserver/
+ 
+if [ ! -d &emhttp; ]; then
+	mkdir -p &emhttp;
+fi
+
+tar -zxf &plugin;/&name;-&version;.tar.gz --strip=1 -C &emhttp;/
+find &plugin; -type f -iname "*.tar.gz" ! -iname "&name;-&version;.tar.gz" -delete
+chmod 0770 &emhttp;/event/*
+chmod 0770 &emhttp;/scripts/*
+
+cp -nr &emhttp;/&name; /boot/config/plugins
+ln -sf /usr/local/emhttp/plugins/openvpnserver/scripts/rc.openvpnserver /etc/rc.d/
+</INLINE>
+  </FILE>
+  <!--
+The 'remove' script.
+-->
+  <FILE Run="/bin/bash" Method="remove">
+    <INLINE>
+&emhttp;/scripts/rc.&name; stop
+rm -rf &emhttp;
+rm -f &plugin;/&name;-&version;.tar.gz
+# Cleanup previous plugin installation
+rm -rf /var/local/emhttp/plugins/&name;
+rm -rf /var/run/&name;
+rm -rf /var/log/&name;.log
+rm -rf /var/log/plugins/&name;
+rm -f /etc/rc.d/rc.openvpnserver
+</INLINE>
+  </FILE>
+  <FILE Name="/var/local/emhttp/plugins/openvpnserver/check-my-ip.sh" Mode="0770">
+    <INLINE><![CDATA[
+#!/bin/bash
+if ping -c 1 icanhazip.com  &>/dev/null
+then
+        curl -s --max-time 15 --silent icanhazip.com
+else
+        curl -s --max-time 15 --silent  https://api.ipify.org/
+fi
+]]></INLINE>
+  </FILE>
+  <FILE Name="/var/log/plugins/openvpnserver">
+    <INLINE><![CDATA[
+]]></INLINE>
+  </FILE>
+</PLUGIN>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>Smuxi</Name>
+  <Beta>False</Beta>
+  <Category>Network:Messenger</Category>
+  <Description>
+    Smuxi is an irssi-inspired, flexible, user-friendly and cross-platform IRC client for sophisticated users.[br][br]
+    Smuxi is based on the client-server model: The core application (engine) can[br]
+    be placed onto a server which is connected to the Internet around-the-clock;[br]
+    one or more frontends then connect to the core. This way, the connection to[br]
+    IRC can be kept up even when all frontends have been closed. The combination[br]
+    of screen and irssi served as example for this architecture.[br]
+    [b][span style='color: #E80000;']Directions:[/span][/b][br]
+    [b]/config[/b] : set this path to where you wish Smuxi to store it's configuration.[br]
+  </Description>
+  <Registry>https://registry.hub.docker.com/u/hurricane/docker-nzbdrone/</Registry>
+  <GitHub>https://github.com/HurricaneHernandez/docker-smuxi.git</GitHub>
+  <Repository>hurricane/docker-smuxi</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment>
+    <Variable>
+      <Name>USERNAME</Name>
+      <Value>admin</Value>
+    </Variable>
+    <Variable>
+      <Name>PASSWORD</Name>
+      <Value>admin</Value>
+    </Variable>
+  </Environment>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish>
+      <Port>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/opt/appdata/smuxi/</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI></WebUI>
+  <Banner>http://i.imgur.com/Mm4KYoU.png</Banner>
+  <Icon>http://i.imgur.com/OKQbbge.png</Icon>
+</Container>

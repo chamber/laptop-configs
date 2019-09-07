@@ -1,0 +1,321 @@
+
+/boot
+total 144848
+-rwxrwxrwx 1 root root  4399600 Feb 16 14:03 bzimage
+-rwxrwxrwx 1 root root 80333596 Feb 16 14:07 bzroot
+-rwxrwxrwx 1 root root 62528060 Feb 16 14:05 bzroot-gui
+-rwxrwxrwx 1 root root    11951 Feb 16 14:03 changes.txt
+drwxrwxrwx 6 root root     8192 Mar 22 22:40 config
+-rwxrwxrwx 1 root root   122308 Mar 19  2016 ldlinux.c32
+-rwxrwxrwx 1 root root    69632 Mar 19  2016 ldlinux.sys
+-rwxrwxrwx 1 root root     7959 Feb 16 14:03 license.txt
+drwxrwxrwx 2 root root     8192 Mar 22 22:44 logs
+-rwxrwxrwx 1 root root     1266 Feb 16 14:03 make_bootable.bat
+-rwxrwxrwx 1 root root     2916 Feb 16 14:03 make_bootable_linux
+-rwxrwxrwx 1 root root     1930 Feb 16 14:03 make_bootable_mac
+-rwxrwxrwx 1 root root   150024 Feb 16 14:03 memtest
+drwxrwxrwx 2 root root     8192 Jan  1 00:22 packages
+drwxrwxrwx 2 root root     8192 Mar 16 10:10 previous
+-rwxrwxrwx 1 root root    14322 Jun 23  2016 readvz
+drwxrwxrwx 2 root root     8192 Mar 16 10:10 syslinux
+-rwxrwxrwx 1 root root   581726 Mar 16 10:13 syslog.txt
+
+/boot/config
+total 160
+-rwxrwxrwx  1 root root   256 Apr 29  2016 Basic.key
+-rwxrwxrwx  1 root root   256 Mar 30  2016 Trial.key
+-rwxrwxrwx  1 root root 12567 Mar 22 22:31 disk.cfg
+-rwxrwxrwx  1 root root   193 Sep 18  2016 docker.cfg
+-rwxrwxrwx  1 root root   207 Mar 22 22:40 domain.cfg
+-rwxrwxrwx  1 root root    71 Mar  4  2016 go
+-rwxrwxrwx  1 root root   381 Mar 30  2016 ident.cfg
+-rwxrwxrwx  1 root root   293 Mar 30  2016 network.cfg
+-rwxrwxrwx  1 root root   127 Mar 21 03:32 parity-checks.log
+-rwxrwxrwx  1 root root   800 Mar 30  2016 passwd
+drwxrwxrwx 12 root root  8192 Mar 16 12:14 plugins
+drwxrwxrwx  3 root root  8192 Oct  2 04:40 plugins-old-versions
+-rwxrwxrwx  1 root root   512 Mar 20 11:30 random-seed
+-rwxrwxrwx  1 root root   551 Mar 30  2016 shadow
+-rwxrwxrwx  1 root root   522 Mar 30  2016 share.cfg
+drwxrwxrwx  2 root root  8192 Sep 18  2016 shares
+-rwxrwxrwx  1 root root   101 Mar 30  2016 smbpasswd
+drwxrwxrwx  2 root root  8192 Mar 31  2016 ssh
+-rwxrwxrwx  1 root root  4096 Mar 22 22:33 super.dat
+
+/boot/config/plugins
+total 176
+drwxrwxrwx 2 root root  8192 Feb 24 09:21 ca.backup
+-rwxrwxrwx 1 root root  3662 Feb 24 09:21 ca.backup.plg
+drwxrwxrwx 2 root root  8192 Jan 31 10:34 ca.cleanup.appdata
+-rwxrwxrwx 1 root root  2392 Jan 31 10:34 ca.cleanup.appdata.plg
+drwxrwxrwx 2 root root  8192 Mar 22 00:26 community.applications
+-rwxrwxrwx 1 root root 24787 Mar 22 00:26 community.applications.plg
+drwxrwxrwx 5 root root  8192 Mar 31  2016 dockerMan
+drwxrwxrwx 4 root root  8192 Mar 17 15:28 dynamix
+drwxrwxrwx 2 root root  8192 Mar 30  2016 dynamix.kvm.manager
+-rwxrwxrwx 1 root root  1773 Sep 16  2016 dynamix.plg
+-rwxrwxrwx 1 root root  5572 Jan  1 00:22 openvpn_server_x64.plg
+drwxrwxrwx 2 root root  8192 Jan  1 00:22 openvpnserver
+drwxrwxrwx 2 root root  8192 Feb 17 11:34 preclear.disk
+-rwxrwxrwx 1 root root  9578 Feb 17 11:34 preclear.disk.plg
+drwxrwxrwx 2 root root  8192 Feb 15 09:54 speedtest
+-rwxrwxrwx 1 root root  8010 Feb 15 09:54 speedtest.plg
+drwxrwxrwx 2 root root  8192 Feb 16 22:10 statistics.sender
+-rwxrwxrwx 1 root root  2936 Feb 16 22:10 statistics.sender.plg
+
+/boot/extra
+folder does not exist
+
+/boot/syslinux
+total 888
+-rwxrwxrwx 1 root root 122308 Mar  4  2016 ldlinux.c32
+-rwxrwxrwx 1 root root 186500 Mar  4  2016 libcom32.c32
+-rwxrwxrwx 1 root root  24148 Mar  4  2016 libutil.c32
+-rwxrwxrwx 1 root root   1767 Mar  4  2016 make_bootable_mac.sh
+-rwxrwxrwx 1 root root  10772 Mar  4  2016 mboot.c32
+-rwxrwxrwx 1 root root    447 Mar  4  2016 mbr.bin
+-rwxrwxrwx 1 root root  26596 Mar  4  2016 menu.c32
+-rwxrwxrwx 1 root root 237572 Mar  4  2016 syslinux
+-rwxrwxrwx 1 root root    387 Sep 18  2016 syslinux.cfg
+-rwxrwxrwx 1 root root    387 Feb 16 14:03 syslinux.cfg-
+-rwxrwxrwx 1 root root 243712 Mar  4  2016 syslinux.exe
+
+/var/log
+total 288
+-rw------- 1 root   root     384 Mar 22 22:36 btmp
+-rw-r--r-- 1 root   root       0 Dec  5 13:32 cron
+-rw-r--r-- 1 root   root       0 Dec  5 13:32 debug
+-rw-rw-rw- 1 root   root   47134 Mar 22 22:31 dmesg
+-rw-rw-rw- 1 root   root    6763 Mar 22 22:32 docker.log
+-rw-r--r-- 1 root   root      32 Mar 22 22:36 faillog
+-rw-r--r-- 1 root   root     292 Mar 22 22:36 lastlog
+drwxr-xr-x 5 root   root     160 Mar 22 22:33 libvirt
+-rw-r--r-- 1 root   root     343 Mar 22 22:33 maillog
+-rw-r--r-- 1 root   root       0 Dec  5 13:32 messages
+drwxr-xr-x 2 root   root      40 May 16  2001 nfsd
+drwxr-xr-x 2 root   root    3820 Mar 22 22:31 packages
+drwxr-xr-x 2 root   root     240 Mar 22 22:31 plugins
+-rw-rw-rw- 1 root   root       0 Mar 22 22:31 preclear.disk.log
+drwxr-xr-x 2 root   root      40 Oct 27  1998 removed_packages
+drwxr-xr-x 2 root   root      40 Oct 27  1998 removed_scripts
+drwxr-xr-x 3 root   root     160 Mar 22 22:42 samba
+drwxr-xr-x 2 root   root     200 Mar 22 22:31 scripts
+-rw-r--r-- 1 root   root       0 Dec  5 13:32 secure
+drwxr-xr-x 3 root   root      60 Feb 16 22:02 setup
+-rw-r--r-- 1 root   root       0 Dec  5 13:32 spooler
+-rw-r--r-- 1 root   root  211576 Mar 22 22:44 syslog
+drwxr-xr-x 2 nobody users     40 Feb  9 18:42 tor
+-rw-rw-r-- 1 root   utmp    7296 Mar 22 22:36 wtmp
+
+/var/log/plugins
+total 4
+lrwxrwxrwx 1 root root 34 Mar 22 22:31 ca.backup.plg -> /boot/config/plugins/ca.backup.plg
+lrwxrwxrwx 1 root root 43 Mar 22 22:31 ca.cleanup.appdata.plg -> /boot/config/plugins/ca.cleanup.appdata.plg
+lrwxrwxrwx 1 root root 47 Mar 22 22:31 community.applications.plg -> /boot/config/plugins/community.applications.plg
+lrwxrwxrwx 1 root root 45 Feb 16 22:03 dynamix.plg -> /usr/local/emhttp/plugins/dynamix/dynamix.plg
+lrwxrwxrwx 1 root root 43 Mar 22 22:31 openvpn_server_x64.plg -> /boot/config/plugins/openvpn_server_x64.plg
+-rw-rw-rw- 1 root root  1 Mar 22 22:31 openvpnserver
+lrwxrwxrwx 1 root root 38 Mar 22 22:31 preclear.disk.plg -> /boot/config/plugins/preclear.disk.plg
+lrwxrwxrwx 1 root root 34 Mar 22 22:31 speedtest.plg -> /boot/config/plugins/speedtest.plg
+lrwxrwxrwx 1 root root 42 Mar 22 22:31 statistics.sender.plg -> /boot/config/plugins/statistics.sender.plg
+lrwxrwxrwx 1 root root 55 Feb 16 22:03 unRAIDServer.plg -> /usr/local/emhttp/plugins/unRAIDServer/unRAIDServer.plg
+
+/var/log/packages
+total 2172
+-rw-r--r-- 1 root root   2263 Feb 16 22:00 aaa_base-14.2-x86_64-2
+-rw-r--r-- 1 root root   2720 Feb 16 22:00 aaa_elflibs-14.2-x86_64-23
+-rw-r--r-- 1 root root   3017 Feb 16 22:00 acl-2.2.52-x86_64-1
+-rw-r--r-- 1 root root   1211 Feb 16 22:00 acpid-2.0.26-x86_64-1
+-rw-r--r-- 1 root root   6498 Feb 16 22:01 apcupsd-3.14.14-x86_64-2_SBo_LT
+-rw-r--r-- 1 root root   1127 Feb 16 22:00 at-3.1.19-x86_64-2
+-rw-r--r-- 1 root root   2509 Feb 16 22:00 attr-2.4.47-x86_64-1
+-rw-r--r-- 1 root root  10046 Feb 16 22:01 avahi-0.6.32-x86_64-1_SBo_LT
+-rw-r--r-- 1 root root   7552 Feb 16 22:00 bash-4.4.005-x86_64-1
+-rw-r--r-- 1 root root   1046 Feb 16 22:01 beep-1.3-x86_64-1_SBo
+-rw-r--r-- 1 root root   1146 Feb 16 22:00 bin-11.1-x86_64-1
+-rw-r--r-- 1 root root   1507 Feb 16 22:00 bridge-utils-1.5-x86_64-1
+-rw-r--r-- 1 root root   2501 Feb 16 22:00 btrfs-progs-v4.7.2-x86_64-1
+-rw-r--r-- 1 root root   1352 Feb 16 22:00 bzip2-1.0.6-x86_64-1
+-rw-r--r-- 1 root root  13186 Feb 16 22:00 ca-certificates-20160104-noarch-1
+-rw-r--r-- 1 root root   2276 Mar 22 22:31 ca.backup-2017.02.21-x86_64-1
+-rw-r--r-- 1 root root   1284 Mar 22 22:31 ca.cleanup.appdata-2017.01.28-x86_64-1
+-rw-r--r-- 1 root root   1445 Feb 16 22:01 celt051-0.5.1.3-x86_64-1_SBo
+-rw-r--r-- 1 root root   1571 Feb 16 22:00 cifs-utils-6.4-x86_64-2
+-rw-r--r-- 1 root root   3749 Mar 22 22:31 community.applications-2017.03.21
+-rw-r--r-- 1 root root    934 Feb 16 22:01 containerd-0.2.5-x86_64-1_SBo
+-rw-r--r-- 1 root root   9110 Feb 16 22:00 coreutils-8.25-x86_64-2
+-rw-r--r-- 1 root root   1816 Feb 16 22:00 cpufrequtils-008-x86_64-1
+-rw-r--r-- 1 root root   3162 Feb 16 22:00 cryptsetup-1.7.1-x86_64-1
+-rw-r--r-- 1 root root  19699 Feb 16 22:00 curl-7.51.0-x86_64-1
+-rw-r--r-- 1 root root   5559 Feb 16 22:00 cyrus-sasl-2.1.26-x86_64-1
+-rw-r--r-- 1 root root   1252 Feb 16 22:00 db48-4.8.30-x86_64-2
+-rw-r--r-- 1 root root   4091 Feb 16 22:00 dbus-1.10.8-x86_64-1
+-rw-r--r-- 1 root root   1383 Feb 16 22:00 dcron-4.5-x86_64-5
+-rw-r--r-- 1 root root 143808 Feb 16 22:00 devs-2.3.1-noarch-25
+-rw-r--r-- 1 root root   1530 Feb 16 22:00 dhcpcd-6.8.2-x86_64-2
+-rw-r--r-- 1 root root   4283 Feb 16 22:00 diffutils-3.5-x86_64-1
+-rw-r--r-- 1 root root   1088 Feb 16 22:00 dmidecode-3.0-x86_64-1
+-rw-r--r-- 1 root root   2169 Feb 16 22:00 dnsmasq-2.76-x86_64-1
+-rw-r--r-- 1 root root 433644 Feb 16 22:01 docker-1.12.6-x86_64-1_SBo_LT
+-rw-r--r-- 1 root root   1210 Feb 16 22:00 dosfstools-3.0.28-x86_64-1_LT
+-rw-r--r-- 1 root root   5066 Feb 16 22:00 e2fsprogs-1.43.3-x86_64-1
+-rw-r--r-- 1 root root   1616 Feb 16 22:00 ebtables-2.0.10-x86_64-1
+-rw-r--r-- 1 root root   1878 Feb 16 22:00 eject-2.1.5-x86_64-4
+-rw-r--r-- 1 root root   4647 Feb 16 22:00 elvis-2.2_0-x86_64-2
+-rw-r--r-- 1 root root   1122 Feb 16 22:00 etc-14.2-x86_64-8
+-rw-r--r-- 1 root root    978 Feb 16 22:00 ethtool-4.5-x86_64-1
+-rw-r--r-- 1 root root   3536 Feb 16 22:00 eudev-3.1.5a-x86_64-8
+-rw-r--r-- 1 root root   4365 Mar 22 22:31 expect-5.45-x86_64-1
+-rw-r--r-- 1 root root   7040 Feb 16 22:01 file-5.28-x86_64-1
+-rw-r--r-- 1 root root   4997 Feb 16 22:00 findutils-4.4.2-x86_64-1
+-rw-r--r-- 1 root root   3443 Feb 16 22:00 flex-2.6.0-x86_64-1
+-rw-r--r-- 1 root root   2402 Feb 16 22:00 floppy-5.5-x86_64-1
+-rw-r--r-- 1 root root   1713 Feb 16 22:00 fuse-2.9.7-x86_64-1_LT
+-rw-r--r-- 1 root root   4791 Feb 16 22:00 gawk-4.1.4-x86_64-1
+-rw-r--r-- 1 root root   1455 Feb 16 22:00 gd-2.2.4-x86_64-1_LT
+-rw-r--r-- 1 root root   2031 Feb 16 22:01 gdbm-1.12-x86_64-2
+-rw-r--r-- 1 root root   1286 Feb 16 22:00 genpower-1.0.5-x86_64-2
+-rw-r--r-- 1 root root   1965 Feb 16 22:00 getty-ps-2.1.0b-x86_64-2
+-rw-r--r-- 1 root root  47229 Feb 16 22:00 glib2-2.46.2-x86_64-4
+-rw-r--r-- 1 root root  23241 Feb 16 22:00 glibc-2.24-x86_64-2
+-rw-r--r-- 1 root root   8569 Feb 16 22:00 glibc-solibs-2.24-x86_64-2
+-rw-r--r-- 1 root root  71464 Feb 16 22:00 glibc-zoneinfo-2016j-noarch-1
+-rw-r--r-- 1 root root   1075 Feb 16 22:01 gmp-6.1.1-x86_64-1
+-rw-r--r-- 1 root root  57229 Feb 16 22:00 gnutls-3.5.8-x86_64-1
+-rw-r--r-- 1 root root   1190 Feb 16 22:00 gptfdisk-1.0.0-x86_64-1
+-rw-r--r-- 1 root root   5132 Feb 16 22:00 grep-2.26-x86_64-2
+-rw-r--r-- 1 root root   1281 Feb 16 22:00 gzip-1.8-x86_64-1
+-rw-r--r-- 1 root root   1146 Feb 16 22:00 hdparm-9.48-x86_64-1
+-rw-r--r-- 1 root root   1092 Feb 16 22:00 htop-2.0.1-x86_64-1
+-rw-r--r-- 1 root root   7746 Feb 16 22:00 icu4c-56.1-x86_64-2
+-rw-r--r-- 1 root root    920 Feb 16 22:00 inetd-1.79s-x86_64-9
+-rw-r--r-- 1 root root   1573 Feb 16 22:00 infozip-6.0-x86_64-3
+-rw-r--r-- 1 root root   1418 Feb 16 22:00 inotify-tools-3.14-x86_64-1
+-rw-r--r-- 1 root root   5011 Feb 16 22:00 iproute2-4.4.0-x86_64-1
+-rw-r--r-- 1 root root   6660 Feb 16 22:01 iptables-1.6.0-x86_64-2
+-rw-r--r-- 1 root root   1202 Feb 16 22:00 iputils-s20140519-x86_64-1
+-rw-r--r-- 1 root root   1123 Feb 16 22:01 irqbalance-1.1.0-x86_64-1_SBo
+-rw-r--r-- 1 root root   1132 Feb 16 22:01 jemalloc-4.2.1-x86_64-1_SBo
+-rw-r--r-- 1 root root   2262 Feb 16 22:01 keyutils-1.5.9-x86_64-1
+-rw-r--r-- 1 root root   2455 Feb 16 22:00 kmod-23-x86_64-2
+-rw-r--r-- 1 root root    915 Feb 16 22:00 less-481-x86_64-1
+-rw-r--r-- 1 root root   1022 Feb 16 22:00 libaio-0.3.109-x86_64-1
+-rw-r--r-- 1 root root   2689 Feb 16 22:01 libarchive-3.2.1-x86_64-1
+-rw-r--r-- 1 root root   2347 Feb 16 22:00 libcap-ng-0.7.7-x86_64-1
+-rw-r--r-- 1 root root   2555 Feb 16 22:01 libcgroup-0.41-x86_64-1
+-rw-r--r-- 1 root root   1139 Feb 16 22:01 libdaemon-0.14-x86_64-1_SBo
+-rw-r--r-- 1 root root    841 Feb 16 22:01 libestr-0.1.10-x86_64-1_SBo
+-rw-r--r-- 1 root root   2248 Mar 22 22:31 libevent-2.0.22-x86_64-1
+-rw-r--r-- 1 root root   1483 Feb 16 22:01 libfastjson-0.99.4-x86_64-1_SBo
+-rw-r--r-- 1 root root   1245 Feb 16 22:00 libffi-3.2.1-x86_64-1
+-rw-r--r-- 1 root root   1251 Feb 16 22:00 libgcrypt-1.7.3-x86_64-1
+-rw-r--r-- 1 root root   3641 Feb 16 22:00 libgpg-error-1.23-x86_64-1
+-rw-r--r-- 1 root root   1363 Feb 16 22:00 libgudev-230-x86_64-1
+-rw-r--r-- 1 root root   6298 Feb 16 22:01 libidn-1.33-x86_64-1
+-rw-r--r-- 1 root root   1869 Feb 16 22:01 libjpeg-turbo-1.5.0-x86_64-1
+-rw-r--r-- 1 root root   3625 Feb 16 22:01 liblogging-1.0.5-x86_64-1_SBo
+-rw-r--r-- 1 root root   1057 Feb 16 22:01 libmnl-1.0.3-x86_64-1
+-rw-r--r-- 1 root root   1729 Feb 16 22:01 libnetfilter_conntrack-1.0.5-x86_64-1
+-rw-r--r-- 1 root root   1192 Feb 16 22:01 libnfnetlink-1.0.1-x86_64-1
+-rw-r--r-- 1 root root   1198 Feb 16 22:00 libnftnl-1.0.6-x86_64-1
+-rw-r--r-- 1 root root   8986 Feb 16 22:01 libnl3-3.2.27-x86_64-1
+-rw-r--r-- 1 root root   4034 Feb 16 22:01 libpcap-1.7.4-x86_64-1
+-rw-r--r-- 1 root root   1055 Feb 16 22:00 libpciaccess-0.13.4-x86_64-1
+-rw-r--r-- 1 root root   1483 Feb 16 22:01 libpng-1.6.27-x86_64-1
+-rw-r--r-- 1 root root   2293 Feb 16 22:01 libseccomp-2.3.1-x86_64-1_SBo
+-rw-r--r-- 1 root root   8209 Feb 16 22:00 libssh2-1.7.0-x86_64-1
+-rw-r--r-- 1 root root   2799 Feb 16 22:01 libtasn1-4.9-x86_64-1
+-rw-r--r-- 1 root root   2861 Feb 16 22:00 libtirpc-1.0.1-x86_64-2
+-rw-r--r-- 1 root root   2837 Feb 16 22:00 libunistring-0.9.3-x86_64-1
+-rw-r--r-- 1 root root   1003 Feb 16 22:01 libusb-1.0.21-x86_64-1_LT
+-rw-r--r-- 1 root root   1059 Feb 16 22:01 libusb-compat-0.1.5-x86_64-1_LT
+-rw-r--r-- 1 root root  20934 Feb 16 22:01 libvirt-2.4.0-x86_64-1_SBo_LT
+-rw-r--r-- 1 root root   2442 Feb 16 22:01 libvirt-php-0.5.2-x86_64-1_SBo
+-rw-r--r-- 1 root root    770 Feb 16 22:01 libx86-1.1-x86_64-2
+-rw-r--r-- 1 root root  17294 Feb 16 22:00 libxml2-2.9.4-x86_64-3
+-rw-r--r-- 1 root root   2356 Feb 16 22:00 lm_sensors-3.4.0-x86_64-1
+-rw-r--r-- 1 root root   1162 Feb 16 22:00 logrotate-3.8.9-x86_64-1
+-rw-r--r-- 1 root root    494 Feb 16 22:01 lshw-B.02.17-x86_64-r2588-1_SBo_LT
+-rw-r--r-- 1 root root   1053 Feb 16 22:00 lsof-4.89-x86_64-1
+-rw-r--r-- 1 root root    928 Feb 16 22:00 lsscsi-0.28-x86_64-1
+-rw-r--r-- 1 root root   4055 Feb 16 22:01 lvm2-2.02.166-x86_64-1
+-rw-r--r-- 1 root root   1674 Feb 16 22:01 lz4-r131-x86_64-1_SBo
+-rw-r--r-- 1 root root   1256 Feb 16 22:00 lzo-2.09-x86_64-1
+-rw-r--r-- 1 root root  13968 Feb 16 22:00 mc-4.8.16-x86_64-2
+-rw-r--r-- 1 root root   1577 Feb 16 22:00 mpfr-3.1.5-x86_64-1
+-rw-r--r-- 1 root root   6005 Feb 16 22:01 nano-2.7.1-x86_64-1
+-rw-r--r-- 1 root root   1138 Feb 16 22:00 ncompress-4.2.4.4-x86_64-1
+-rw-r--r-- 1 root root  58397 Mar 22 22:31 ncurses-5.9-x86_64-4
+-rw-r--r-- 1 root root   1609 Feb 16 22:01 net-tools-1.60.20120726git-x86_64-1
+-rw-r--r-- 1 root root   5783 Feb 16 22:01 netatalk-3.1.10-x86_64-1_LT
+-rw-r--r-- 1 root root   2903 Feb 16 22:01 nettle-3.2-x86_64-1
+-rw-r--r-- 1 root root   1353 Feb 16 22:01 network-scripts-14.2-noarch-4
+-rw-r--r-- 1 root root   1830 Feb 16 22:01 nfs-utils-1.3.4-x86_64-1_LT
+-rw-r--r-- 1 root root   3333 Feb 16 22:01 ntfs-3g-2016.2.22-x86_64-1
+-rw-r--r-- 1 root root  22461 Feb 16 22:01 ntp-4.2.8p9-x86_64-1
+-rw-r--r-- 1 root root   1307 Feb 16 22:01 numactl-2.0.11-x86_64-1_SBo
+-rw-r--r-- 1 root root   3254 Feb 16 22:01 openldap-client-2.4.42-x86_64-1
+-rw-r--r-- 1 root root   2082 Feb 16 22:01 openssh-7.4p1-x86_64-1
+-rw-r--r-- 1 root root  36443 Feb 16 22:01 openssl-1.0.2k-x86_64-1
+-rw-r--r-- 1 root root   1598 Feb 16 22:01 openssl-solibs-1.0.2k-x86_64-1
+-rw-r--r-- 1 root root   1612 Mar 22 22:31 openvpn-2.4.0-x86_64-1
+-rw-r--r-- 1 root root   3784 Feb 16 22:01 p11-kit-0.23.2-x86_64-1
+-rw-r--r-- 1 root root   1067 Feb 16 22:01 patch-2.7.5-x86_64-1
+-rw-r--r-- 1 root root   1340 Feb 16 22:01 pciutils-3.4.1-x86_64-2
+-rw-r--r-- 1 root root   5591 Feb 16 22:01 pcre-8.39-x86_64-1
+-rw-r--r-- 1 root root  11748 Feb 16 22:01 php-7.0.15-x86_64-1_LT
+-rw-r--r-- 1 root root    998 Feb 16 22:01 pixman-0.34.0-x86_64-1
+-rw-r--r-- 1 root root   4851 Feb 16 22:01 pkgtools-14.2-noarch-13
+-rw-r--r-- 1 root root   3540 Feb 16 22:01 pm-utils-1.4.1-x86_64-5
+-rw-r--r-- 1 root root   2200 Mar 22 22:31 preclear.disk-2017.02.16a
+-rw-r--r-- 1 root root   5785 Feb 16 22:01 procps-ng-3.3.11-x86_64-1
+-rw-r--r-- 1 root root   1354 Feb 16 22:01 pv-1.6.0-x86_64-1_SBo
+-rw-r--r-- 1 root root   3059 Mar 22 22:31 pyOpenSSL-0.15.1-x86_64-1_slack
+-rw-r--r-- 1 root root 257713 Mar 22 22:31 python-2.7.13-x86_64-1
+-rw-r--r-- 1 root root   6190 Feb 16 22:01 qemu-2.7.1-x86_64-1_SBo_LT
+-rw-r--r-- 1 root root   1622 Feb 16 22:01 reiserfsprogs-3.6.25-x86_64-1_LT
+-rw-r--r-- 1 root root   1195 Feb 16 22:01 rpcbind-0.2.3-x86_64-1
+-rw-r--r-- 1 root root   1268 Feb 16 22:01 rsync-3.1.2-x86_64-1
+-rw-r--r-- 1 root root   2479 Feb 16 22:01 rsyslog-8.23.0-x86_64-1_SBo
+-rw-r--r-- 1 root root   1022 Feb 16 22:01 runc-1.0.0_rc2-x86_64-1_SBo
+-rw-r--r-- 1 root root  52586 Feb 16 22:01 samba-4.5.5-x86_64-1_LT
+-rw-r--r-- 1 root root   4641 Feb 16 22:01 sed-4.2.2-x86_64-1
+-rw-r--r-- 1 root root  18986 Feb 16 22:01 shadow-4.2.1-x86_64-1
+-rw-r--r-- 1 root root   1883 Feb 16 22:01 smartmontools-6.5-x86_64-1_LT
+-rw-r--r-- 1 root root   3269 Mar 22 22:31 speedtest-2017.02.13-x86_64-1
+-rw-r--r-- 1 root root   1616 Feb 16 22:01 spice-0.12.8-x86_64-1_SBo
+-rw-r--r-- 1 root root   1273 Feb 16 22:01 sqlite-3.13.0-x86_64-1
+-rw-r--r-- 1 root root   1155 Feb 16 22:01 ssmtp-2.64-x86_64-4_SBo_LT
+-rw-r--r-- 1 root root   1210 Mar 22 22:31 statistics.sender-2017.02.15
+-rw-r--r-- 1 root root   5622 Feb 16 22:01 sudo-1.8.16-x86_64-1
+-rw-r--r-- 1 root root   1379 Feb 16 22:01 sysfsutils-2.1.0-x86_64-1
+-rw-r--r-- 1 root root   1544 Feb 16 22:01 sysvinit-2.88dsf-x86_64-4
+-rw-r--r-- 1 root root    969 Feb 16 22:01 sysvinit-scripts-2.0-noarch-33
+-rw-r--r-- 1 root root   4738 Feb 16 22:01 tar-1.29-x86_64-1
+-rw-r--r-- 1 root root  18218 Mar 22 22:31 tcl-8.6.5-x86_64-2
+-rw-r--r-- 1 root root   1510 Feb 16 22:01 tcp_wrappers-7.6-x86_64-1
+-rw-r--r-- 1 root root   1029 Feb 16 22:01 telnet-0.17-x86_64-2
+-rw-r--r-- 1 root root    943 Mar 22 22:31 tmux-2.2-x86_64-2
+-rw-r--r-- 1 root root   1739 Mar 22 22:31 tor-0.2.9.9-x86_64-2_unRAID
+-rw-r--r-- 1 root root   1502 Feb 16 22:01 traceroute-2.0.21-x86_64-1
+-rw-r--r-- 1 root root    936 Feb 16 22:01 tree-1.7.0-x86_64-1
+-rw-r--r-- 1 root root   1423 Feb 16 22:01 usbredir-0.7.1-x86_64-1_SBo
+-rw-r--r-- 1 root root   1027 Feb 16 22:01 usbutils-008-x86_64-1
+-rw-r--r-- 1 root root    897 Mar 22 22:31 utempter-1.1.6-x86_64-2
+-rw-r--r-- 1 root root  13914 Feb 16 22:01 util-linux-2.28.2-x86_64-1
+-rw-r--r-- 1 root root    781 Feb 16 22:01 vbetool-1.2.2-x86_64-1
+-rw-r--r-- 1 root root   2806 Feb 16 22:01 vsftpd-3.0.3-x86_64-3
+-rw-r--r-- 1 root root   4715 Feb 16 22:01 wget-1.18-x86_64-1
+-rw-r--r-- 1 root root   1158 Feb 16 22:01 which-2.21-x86_64-1
+-rw-r--r-- 1 root root   2635 Feb 16 22:01 xfsprogs-4.3.0-x86_64-1
+-rw-r--r-- 1 root root   3150 Feb 16 22:01 xz-5.2.2-x86_64-1
+-rw-r--r-- 1 root root   1094 Feb 16 22:01 yajl-2.1.0-x86_64-2_SBo
+-rw-r--r-- 1 root root    974 Feb 16 22:01 zlib-1.2.8-x86_64-1
+
+/tmp
+total 0
+drwxrwxrwx 3 root root 60 Mar 22 22:31 ca.backup
+drwxrwxrwx 3 root root 60 Mar 22 22:31 community.applications
+drwxrwxrwx 2 root root 80 Mar 22 22:31 emhttp
+drwxr-xr-x 4 root root 80 Mar 22 22:31 notifications
+drwxr-xr-x 2 root root 40 Feb 16 22:02 plugins

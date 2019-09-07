@@ -1,0 +1,21 @@
+{
+    "notify": "yes",
+    "delay": "3",
+    "Global": "false",
+    "cron": {
+        "pluginCronFrequency": "Daily",
+        "pluginCronDay": "0",
+        "pluginCronDayOfMonth": "1",
+        "pluginCronHour": "0",
+        "pluginCronMinute": "0",
+        "pluginCronCustom": ""
+    },
+    "ca.backup.plg": "true",
+    "ca.cleanup.appdata.plg": "true",
+    "ca.update.applications.plg": "true",
+    "community.applications.plg": "true",
+    "NerdPack.plg": "true",
+    "speedtest.plg": "true",
+    "statistics.sender.plg": "true",
+    "unassigned.devices.plg": "true"
+}
