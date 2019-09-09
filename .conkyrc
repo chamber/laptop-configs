@@ -1,9 +1,0 @@
-out_to_console yes
-out_to_x no
-background no
-update_interval 2
-total_run_times 0
-use_spacer none
-
-TEXT
-¹ $kernel | > ${execi 2curl -sH "X-Plex-Token:aU6qcpWsCh9xx9D6dq9g" http://cjk.dlinkddns.com:32400/status/sessions | grep "MediaContainer size" | sed 's/<MediaContainer size="//g' | sed 's/">//g'} | º ${execpi 600 checkupdates | wc -l} | ñ ${battery_percent BAT1}% |ª ${acpitemp} | í ${exec amixer get Master -M | grep -oE -m1 "[[:digit:]]*%"} | É ${time %k:%M} | ¤ ${addr wlp3s0} ${wireless_link_qual_perc wlp3s0}%
