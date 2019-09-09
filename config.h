@@ -32,6 +32,7 @@ static const Rule rules[] = {
          { "Calibre",   NULL,       NULL,       1 << 1,       False,       -1 },
 	 {  NULL,       NULL,      "mutt",      1 << 4,       True,        -1 },
 	 {  NULL,       NULL,      "ncmpcpp",   1 << 1,       True,        -1 },
+	 { "URxvt",     "Scratchpad",  "Scratchpad",   1 << 5,        True,        -1 },
  };
 
 
@@ -63,7 +64,7 @@ static const Layout layouts[] = {
 /* commands */
 static const char *dmenucmd[] = { "dmenu_run", "-fn", "Hermit-8", "-b", "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
 static const char *termcmd[]  = { "urxvt", NULL };
-static const char *scratchpadcmd[] = { "urxvt", "-name", "Scratchpad", "-geometry", "273x15", NULL };
+static const char *scratchpadcmd[] = { "urxvt", "-name", "Scratchpad", "-geometry", "73x5", NULL };
 static const char *filecmd[] = { "pcmanfm", NULL };
 static const char *mailcmd[] = { "urxvt", "-title", "mutt", "-e", "mutt", NULL };
 static const char *musiccmd[] = { "urxvt", "-title", "ncmpcpp", "-e", "ncmpcpp", NULL };
