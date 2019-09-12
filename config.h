@@ -20,7 +20,7 @@ static const Bool showbar           = True;     /* False means no bar */
 static const Bool topbar            = True;     /* False means bottom bar */
 
 /* tagging */
-static const char *tags[] = {"Term","Media","File","WWW","Misc"};
+static const char *tags[] = {"Term","Media","File","WWW","Misc","VMs"};
 
 static const Rule rules[] = {
          /* class      instance    title       tags mask     isfloating   monitor     */
@@ -31,8 +31,10 @@ static const Rule rules[] = {
          { "vlc",       NULL,       NULL,       1 << 1,       True,        -1 },
          { "Calibre",   NULL,       NULL,       1 << 1,       False,       -1 },
 	 {  NULL,       NULL,      "mutt",      1 << 4,       True,        -1 },
+	 { "discord",   NULL,      "NULL",      1 << 4,       True,        -1 },
+	 { "VirtualBox Manager",   NULL,      "NULL",      1 << 5,       True,        -1 },
 	 {  NULL,       NULL,      "ncmpcpp",   1 << 1,       True,        -1 },
-	 { "URxvt",     "Scratchpad",  "Scratchpad",   1 << 5,        True,        -1 },
+	 { "URxvt",     "Scratchpad",  "Scratchpad",   0,        True,        -1 },
  };
 
 
