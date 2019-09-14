@@ -14,4 +14,4 @@ TEXT
 í ${exec amixer get Master -M | grep -oE -m1 "[[:digit:]]*%"} | \
 É ${time %k:%M} | \
 ¤ ${if_existing /proc/net/route 00000000}${execi 850 /usr/local/bin/conkyip}${else}No Network...${endif} | \
-¤ ${wireless_essid wlp3s0} ${if_existing /proc/net/route wlp3s0}${addr wlp3s0}${else}${if_existing /proc/net/route enp0s25}${addr enp0s25}${else}${else}Network disconnected$${endif}${endif}${endif} ${wireless_link_qual_perc wlp3s0}%
+¤ ${wireless_essid wlp3s0} ${if_existing /proc/net/route wlp3s0}${addr wlp3s0}${else}${if_existing /proc/net/route enp0s25}${addr enp0s25}${else}Network disconnected$${endif}${endif}${endif} ${wireless_link_qual_perc wlp3s0}%
