@@ -25,16 +25,17 @@ static const char *tags[] = {"Term","Media","File","WWW","Disc","VManage","Vbox"
 static const Rule rules[] = {
          /* class      instance    title       tags mask     isfloating   monitor     */
          { "urxvt",     NULL,       NULL,       0,            True,        -1 },
+         { "st",     NULL,       NULL,       0,            True,        -1 },
          { "Chromium",  NULL,       NULL,       1 << 3,       False,       -1 },
          { "Pcmanfm",   NULL,       NULL,       1 << 2,       False,       -1 },
          { "MPlayer",   NULL,       NULL,       1 << 1,       True,        -1 },
          { "vlc",       NULL,       NULL,       1 << 1,       True,        -1 },
          { "Calibre",   NULL,       NULL,       1 << 1,       False,       -1 },
-	 {  NULL,       NULL,      "mutt",      1 << 4,       True,        -1 },
-	 { "discord",   NULL,      "NULL",      1 << 4,       True,        -1 },
-	 { "VirtualBox Manager",   NULL,      "NULL",      1 << 5,       True,        -1 },
-	 { "VirtualBox Machine",   NULL,      "NULL",      1 << 6,       True,        -1 },
+	 { "discord",   NULL,      NULL,      1 << 4,       False,        -1 },
+	 { "VirtualBox Manager",   NULL,      NULL,      1 << 5,       True,        -1 },
+	 { "VirtualBox Machine",   NULL,      NULL,      1 << 6,       False,        -1 },
 	 {  NULL,       NULL,      "ncmpcpp",   1 << 1,       True,        -1 },
+	 {  NULL,       NULL,      "mutt",      1 << 4,       True,        -1 },
 	 { "URxvt",     "Scratchpad",  "Scratchpad",   0,        True,        -1 },
  };
 
@@ -67,12 +68,12 @@ static const Layout layouts[] = {
 /* commands */
 static const char *dmenucmd[] = { "dmenu_run", "-fn", "Hermit-8", "-b", "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
 static const char *termcmd[]  = { "urxvt", NULL };
+static const char *stcmd[]  = { "st", "-e", "tmux", NULL };
 static const char *scratchpadcmd[] = { "urxvt", "-name", "Scratchpad", "-geometry", "73x5", NULL };
 static const char *filecmd[] = { "pcmanfm", NULL };
 static const char *mailcmd[] = { "urxvt", "-title", "mutt", "-e", "mutt", NULL };
 static const char *musiccmd[] = { "urxvt", "-title", "ncmpcpp", "-e", "ncmpcpp", NULL };
 static const char *webcmd[] = { "chromium", NULL };
-static const char *prts[] = { "scrot", NULL };
 static const char *play[] = { "ncmpcpp", "toggle" };
 static const char *stop[] = { "ncmpcpp", "stop" };
 static const char *prev[] = { "ncmpcpp", "prev" };
@@ -85,6 +86,7 @@ static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
+	{ MODKEY|ControlMask,           XK_Return, spawn,          {.v = stcmd } },
 	{ MODKEY|ControlMask,           XK_s,      spawn,          {.v = scratchpadcmd } },
 	{ MODKEY|ShiftMask,             XK_m,      spawn,          {.v = mailcmd } },
 	{ MODKEY|ShiftMask,             XK_n,      spawn,          {.v = musiccmd } },
