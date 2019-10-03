@@ -11,6 +11,7 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 setopt inc_append_history
 setopt share_history
+stty sane
 
 # Customize to your needs...
 export VISUAL="vim"
@@ -28,12 +29,10 @@ alias eP='vim ~/.zshrc'
 alias eC='vim ~/.conkyrc'
 alias eD='vim /home/conor/dwm/config.h'
 alias eX='vim ~/.Xresources'
-alias redwm='cd /home/conor/dwm; updpkgsums; makepkg -efi'
 alias reload='. ~/.zshrc'
 alias icons='for i in {50..255}; do  printf "\\$(printf '%03o' $i)\n" ; done'
 alias theme='gtk-chtheme'
 alias grab='lftp server'
-alias wbox='lftp whatbox'
 alias fehbg='feh --bg-scale'
 alias ..='cd ..'
 alias watch='mplayer'
@@ -42,13 +41,18 @@ alias Movies='cd /media/Movies/'
 alias TV='cd /media/TV/'
 alias genpass='tr -dc A-Za-z0-9_ < /dev/urandom | head -c 27 | xargs'
 alias batt='acpi'
-alias snip='scrot -s'
+alias snip='scrot -s /tmp/snip.png'
 alias linkq='iwconfig wlp3s0 | grep -i --color quality'
 alias phone='aft-mtp-mount ~/nexus'
 alias pvm='ping 192.168.2.4'
 alias lease='cat /run/systemd/netif/leases/3'
 alias windows='VBoxManage startvm windows'
-
+alias gentoo='VBoxManage startvm Gentoo'
+alias sr='screen -r'
+alias sls='screen -ls'
+alias nf='neofetch --w3m'
+alias tls='tmux ls'
+alias ntm='tmux new-session \; split-window -h\; select-pane -t 1\; split-window -v \; select-pane -t 1\; send-keys 'ranger' C-m\;'
 # dropbox
 
 alias dropbox="~/.dropbox-dist/dropboxd" #load dropbox daemon
@@ -66,8 +70,8 @@ alias gp='git push'
 alias gs='git status'
 
 #SSH Sessions
-alias svm=''
-alias scb=''
+alias svm='ssh conor@192.168.2.4'
+alias scb='ssh conor@192.168.2.5'
 
 # privileged access
 
@@ -82,7 +86,9 @@ if [ $UID -ne 0 ]; then
     alias update='sudo pacman -Syu'
     alias whoup='sudo nmap -sN 192.168.2.0/24'
     alias abs='sudo abs'
-    alias hvpn='sudo openvpn --config /etc/openvpn/laptop.conf'
+#    alias hvpn='screen -dmS vpn bash -c "sudo openvpn --config /etc/openvpn/laptop.conf"'
+    alias hvpn='sudo openvpn --config /etc/openvpn/laptop.conf > /dev/null &'
+    alias cisco='sudo minicom cisco-profile'
 fi
 
 # pacman aliases (if applicable, replace 'pacman' with your favourite AUR helper)
@@ -102,7 +108,6 @@ if [ $UID -ne 0 ]; then
   alias pak="sudo packer -S"
 fi
   alias pacm="makepkg -fci"  # '[m]ake'           - make package from PKGBUILD file in current directory
-  alias aur="sudo packer -Syu" # - upgrade AUR compnents via packer
 
 # Fonts
 alias Fonts='fc-cache -vf ~/.fonts'
@@ -159,11 +164,6 @@ function unpack() {
     fi
 }
 
-#upload to bB
-
-function imageup() {curl https://images.baconbits.org/upload.php -X POST -F "ImageUp=@$1"
-                   }
-
 #Can't be arsed with ps bollocks and such
 
 function checkup() {
@@ -173,6 +173,10 @@ function checkup() {
 function hg() {
      history 0 | grep $1 | grep -v grep
       }
+
+function ta() {
+	tmux attach -d -t $1
+	}
 
 function gc() {
      git commit -m "$1"
