@@ -2,9 +2,10 @@
 
 #Xresoures setup
 xrdb -merge ~/.Xresources
+systemctl --user import-environment DISPLAY
 
 #defaults
-export BROWSER=chromium &
+export BROWSER=google-chrome-stable &
 export EDITOR=vim &
 
 #set info bar
@@ -15,6 +16,7 @@ sh ~/.fehbg &
 
 #Fonts
 xset +fp /usr/share/fonts/local
+xset +fp ~/.fonts 
 xset +fp /usr/share/fonts/OTF
 xset +fp /usr/share/fonts/TTF
 xset +fp /usr/share/fonts/Type1
@@ -33,14 +35,15 @@ udiskie &
 autocutsel -fork &
 autocutsel -selection PRIMARY -fork &
 
-sleep 10 && ~/.dropbox-dist/dropboxd &
+#sleep 10 && ~/.dropbox-dist/dropboxd &
 
 #Set auto lock
 xautolock -time 10 -locker slock -nowlocker slock -detectsleep -corners 000+ -cornerdelay 3 &
 
-exec urxvt &
-sleep 3 && exec chromium &
+exec st &
+sleep 3 && exec google-chrome-stable &
 sleep 4 && exec pcmanfm &
+sleep 5 && exec discord &
 
 compton &
 
