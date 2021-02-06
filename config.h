@@ -27,7 +27,7 @@ static const Rule rules[] = {
          { "urxvt",     NULL,       NULL,       0,            True,        -1 },
          { "st",        NULL,       NULL,       0,            True,        -1 },
          { "Google-chrome",  NULL,       NULL,       1 << 3,       False,       -1 },
-	 { "Firefox",   NULL,       NULL,       1 << 3,       False,       -1 },
+	 { "firefox",   NULL,       NULL,       1 << 3,       False,       -1 },
          { "Firefox",   NULL,       "Firefox Preferences",        1 << 3,         True,     -1 },
          { "Pcmanfm",   NULL,       NULL,       1 << 2,       False,       -1 },
          { "MPlayer",   NULL,       NULL,       1 << 1,       True,        -1 },
@@ -75,7 +75,7 @@ static const char *scratchpadcmd[] = { "urxvt", "-name", "Scratchpad", "-geometr
 static const char *filecmd[] = { "pcmanfm", NULL };
 static const char *mailcmd[] = { "urxvt", "-title", "mutt", "-e", "mutt", NULL };
 static const char *musiccmd[] = { "urxvt", "-title", "ncmpcpp", "-e", "ncmpcpp", NULL };
-static const char *webcmd[] = { "google-chrome-stable", NULL };
+static const char *webcmd[] = { "firefox", NULL };
 static const char *play[] = { "ncmpcpp", "toggle" };
 static const char *stop[] = { "ncmpcpp", "stop" };
 static const char *prev[] = { "ncmpcpp", "prev" };
