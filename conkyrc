@@ -9,7 +9,7 @@ conky.config = {
 };
 
 conky.text = [=[
-¹ $kernel | > ${execi 2curl -sH "X-Plex-Token:aU6qcpWsCh9xx9D6dq9g" http://itsconplex.ddns.net:32400/status/sessions | grep "MediaContainer size" | sed 's/<MediaContainer size="//g' | sed 's/">//g'} | \
+¹ $kernel | > ${execi 2curl -sH "X-Plex-Token:" http://net:32400/status/sessions | grep "MediaContainer size" | sed 's/<MediaContainer size="//g' | sed 's/">//g'} | \
 º ${execpi 600 checkupdates | wc -l} | \
 ñ ${battery_percent BAT1}% | \
 ñ ${battery_percent BAT0}% | \
