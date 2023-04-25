@@ -5,7 +5,7 @@ xrdb -merge ~/.Xresources
 systemctl --user import-environment DISPLAY
 
 #defaults
-export BROWSER=google-chrome-stable &
+export BROWSER=firefox &
 export EDITOR=vim &
 
 #set info bar
@@ -41,12 +41,10 @@ autocutsel -selection PRIMARY -fork &
 xautolock -time 10 -locker slock -nowlocker slock -detectsleep -corners 000+ -cornerdelay 3 &
 
 exec st &
-sleep 3 && exec google-chrome-stable &
+sleep 3 && exec firefox &
 sleep 4 && exec pcmanfm &
-sleep 5 && exec discord &
+#sleep 5 && exec discord &
 
 compton &
-
-sleep 15 && google-musicmanager &
 
 exec dwm
