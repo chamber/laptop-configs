@@ -16,18 +16,19 @@ stty sane
 # Customize to your needs...
 export VISUAL="vim"
 export EDITOR="vim"
-export BROWSER="chromium"
+export BROWSER="firefox"
+export PATH="$HOME/.local/bin:$PATH"
 
 # File Extensions
 for ext in png jpg gif;		do alias -s $ext=$PICVIEW; done
 for ext in html org php com net no;	do alias -s $ext=$BROWSER;done
 
 alias ls='ls --color=auto'
-alias ll='ls -l'
+alias ll='ls -lh'
 alias la='ls -la'
 alias eP='vim ~/.zshrc'
 alias eC='vim ~/.conkyrc'
-alias eD='vim /home/conor/dwm/config.h'
+alias eD='cd ~/dwm && vim /home/conor/dwm/config.h'
 alias eX='vim ~/.Xresources'
 alias reload='. ~/.zshrc'
 alias icons='for i in {50..255}; do  printf "\\$(printf '%03o' $i)\n" ; done'
@@ -39,7 +40,7 @@ alias watch='mplayer'
 alias free='dfc'
 alias Movies='cd /media/Movies/'
 alias TV='cd /media/TV/'
-alias genpass='tr -dc A-Za-z0-9_ < /dev/urandom | head -c 27 | xargs'
+alias genpass='tr -dc A-Za-z0-9_ < /dev/urandom | head -c 32 | xargs'
 alias batt='acpi'
 alias snip='scrot -s /tmp/snip.png'
 alias linkq='iwconfig wlp3s0 | grep -i --color quality'
@@ -47,15 +48,12 @@ alias phone='aft-mtp-mount ~/nexus'
 alias pvm='ping 192.168.2.4'
 alias lease='cat /run/systemd/netif/leases/3'
 alias windows='VBoxManage startvm windows'
-alias gentoo='VBoxManage startvm Gentoo'
 alias sr='screen -r'
 alias sls='screen -ls'
 alias nf='neofetch --w3m'
 alias tls='tmux ls'
 alias ntm='tmux new-session \; split-window -h\; select-pane -t 1\; split-window -v \; select-pane -t 1\; send-keys 'ranger' C-m\;'
-# dropbox
-
-alias dropbox="~/.dropbox-dist/dropboxd" #load dropbox daemon
+alias wip='ip -4 addr show  | grep -oP "(?<=inet ).*(?=/)" | grep -v "127.0.0.1"'
 
 # Alsamixer
 
@@ -70,8 +68,13 @@ alias gp='git push'
 alias gs='git status'
 
 #SSH Sessions
-alias svm='ssh conor@192.168.2.4'
-alias scb='ssh conor@192.168.2.5'
+alias svm='ssh @'
+alias scb='ssh @'
+alias borg='ssh @'
+alias rpi='ssh @'
+alias usg='ssh @'
+alias whatb='ssh @'
+alias ssh_mpc='ssh -p 18765 ' 
 
 # privileged access
 
@@ -84,11 +87,13 @@ if [ $UID -ne 0 ]; then
     alias kick='sudo reboot'
     alias die='sudo poweroff'
     alias update='sudo pacman -Syu'
-    alias whoup='sudo nmap -sN 192.168.2.0/24'
+    alias whoup='sudo nmap -sN 10.0.2.0/24'
     alias abs='sudo abs'
-#    alias hvpn='screen -dmS vpn bash -c "sudo openvpn --config /etc/openvpn/laptop.conf"'
-    alias hvpn='sudo openvpn --config /etc/openvpn/laptop.conf > /dev/null &'
+    alias w-up='wg-quick up wg0'
+    alias w-down='wg-quick down wg0'
     alias cisco='sudo minicom cisco-profile'
+    alias batstart='sudo /usr/bin/perl /usr/bin/tpacpi-bat -v -s ST 0 $1'
+    alias batstop='sudo /usr/bin/perl /usr/bin/tpacpi-bat -v -s SP 0 $1'
 fi
 
 # pacman aliases (if applicable, replace 'pacman' with your favourite AUR helper)
@@ -120,6 +125,8 @@ alias c='clear'
 alias h='cd ~/ && clear'
 alias ulb='cd /usr/local/bin/'
 alias starwars='telnet towel.blinkenlights.nl'
+#alias headphones='echo "power on" && echo "connect 00:1E:7C:31:2F:04" | bluetoothctl'
+#alias headphones='echo "power on" | bluetoothctl && echo "connect 00:1E:7C:31:2F:04" | bluetoothctl'
 
 # Functions
 
@@ -164,6 +171,7 @@ function unpack() {
     fi
 }
 
+
 #Can't be arsed with ps bollocks and such
 
 function checkup() {
@@ -181,6 +189,11 @@ function ta() {
 function gc() {
      git commit -m "$1"
        }
+
+# New folder
+function new () {
+  mkdir "$1" && chown -R conor:users "$1"
+}
 
 function excuse()
 {
